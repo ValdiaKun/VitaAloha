@@ -41,6 +41,49 @@ jobs:
             --output "$RUNNER_TEMP/apktool.jar"
           java -jar "$RUNNER_TEMP/apktool.jar" --version
 
+      - name: Set unique package ID and app label
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path("AndroidManifest.xml")
+          manifest = path.read_text()
+          original = 'com.alohamobile.browser'
+          clone = 'com.alohamobile.browser.vitaaloha'
+
+          # Change the install identity, not the app's Java/smali component class names.
+          manifest, count = re.subn(
+              r'(<manifest\b[^>]*\bpackage=")' + re.escape(original) + r'(")',
+              r'\g<1>' + clone + r'\2',
+              manifest,
+              count=1,
+          )
+          if count != 1:
+              raise SystemExit("Could not uniquely update the manifest package ID")
+
+          # Give app-scoped authorities and custom permission names their own namespace.
+          manifest = re.sub(
+              r'(android:authorities=")' + re.escape(original) + r'(?=\.)',
+              r'\g<1>' + clone,
+              manifest,
+          )
+          for suffix in (
+              '.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION',
+              '.permission.CHILD_SERVICE',
+          ):
+              manifest = manifest.replace(original + suffix, clone + suffix)
+
+          # Make the second launcher entry distinguishable from the original app.
+          manifest = manifest.replace('android:label="Aloha"', 'android:label="VitaAloha"', 1)
+          path.write_text(manifest)
+
+          assert 'package="' + clone + '"' in manifest
+          assert 'android:label="VitaAloha"' in manifest
+          print(f"Package ID: {clone}")
+          print("App label: VitaAloha")
+          PY
+
       - name: Build unsigned APK
         run: |
           mkdir -p build-output
@@ -78,12 +121,13 @@ jobs:
           "$ANDROID_HOME/build-tools/36.0.0/zipalign" -c -v 4 \
             build-output/VitaAloha-ci-signed.apk
 
-      - name: Record build metadata
+      - name: Verify package ID and record build metadata
         run: |
           {
             echo "Commit: $GITHUB_SHA"
             echo "Apktool: $(java -jar "$RUNNER_TEMP/apktool.jar" --version)"
             echo "Java: $(java -version 2>&1 | head -n 1)"
+            echo "Expected package ID: com.alohamobile.browser.vitaaloha"
             echo "APK size:"
             ls -lh build-output/VitaAloha-ci-signed.apk
             echo "APK SHA-256:"
@@ -91,6 +135,7 @@ jobs:
             echo "Package metadata:"
             "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging build-output/VitaAloha-ci-signed.apk | head -n 5
           } | tee build-output/BUILD-INFO.txt
+          "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging build-output/VitaAloha-ci-signed.apk | grep -F "package: name='com.alohamobile.browser.vitaaloha'"
 
       - name: Upload signed test APK and build report
         uses: actions/upload-artifact@v4
