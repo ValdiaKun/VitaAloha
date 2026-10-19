@@ -88,6 +88,9 @@ jobs:
           print("App label: VitaAloha")
           PY
 
+      - name: Run focused recording-policy regression tests
+        run: python3 scripts/test_recording_policy.py
+
       - name: Validate source assets, native libraries, and recording policy
         run: |
           python3 - <<'PY'
@@ -114,8 +117,8 @@ jobs:
           assert "youtube.com" in config["videoRecordingDisabled"]
           assert "youtube.com" in config["videoDownloadsDisabled"]
           assert "example.com" not in config["videoRecordingDisabled"]
-          # The source's existing matcher performs a case-insensitive substring
-          # comparison; ensure no new wildcard/suffix rule was introduced.
+          # The source matches substrings on a GURL-normalized host. Boundary checks
+          # in the recording method preserve lookalike-host blocking.
           assert all("*" not in host for hosts in config.values() for host in hosts)
           print("Recording policy OK: Stripchat recording allowed; download restriction preserved.")
           print("Regression policy OK: YouTube remains blocked; example.com remains unblocked.")
