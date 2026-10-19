@@ -1937,6 +1937,54 @@
     throw p0
 
     :cond_6
+    # Preserve the old substring block for lookalike hostnames, but allow the exact
+    # Stripchat domain and its true subdomains after removing the config entry.
+    const-string v5, "stripchat.com"
+
+    invoke-static {v0, v5, v3}, Lr8/z6l;->K(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    move-result v5
+
+    if-eqz v5, :stripchat_recording_guard_done
+
+    const-string v6, "stripchat.com"
+
+    invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :stripchat_recording_guard_done
+
+    const-string v6, "stripchat.com."
+
+    invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :stripchat_recording_guard_done
+
+    const-string v6, ".stripchat.com"
+
+    invoke-virtual {v0, v6}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :stripchat_recording_guard_done
+
+    const-string v6, ".stripchat.com."
+
+    invoke-virtual {v0, v6}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :stripchat_recording_guard_done
+
+    # Non-boundary substring matches remain blocked, e.g. stripchat.com.attacker.test.
+    const/4 v0, 0x1
+
+    return v0
+
+    :stripchat_recording_guard_done
     iget-object v4, p0, Lr8/wen;->k:Ljava/lang/Object;
 
     check-cast v4, Ljava/lang/Iterable;
