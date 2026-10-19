@@ -1,0 +1,106 @@
+name: Build VitaAloha APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "automation/**"
+    paths-ignore:
+      - "**.md"
+      - ".github/workflows/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vitaaloha-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Android SDK tools
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android build tools
+        run: sdkmanager "platform-tools" "build-tools;36.0.0"
+
+      - name: Download pinned Apktool
+        run: |
+          curl --fail --location --retry 3 \
+            https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar \
+            --output "$RUNNER_TEMP/apktool.jar"
+          java -jar "$RUNNER_TEMP/apktool.jar" --version
+
+      - name: Build unsigned APK
+        run: |
+          mkdir -p build-output
+          java -jar "$RUNNER_TEMP/apktool.jar" b . -f \
+            -o "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
+          test -s "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
+
+      - name: Align APK
+        run: |
+          "$ANDROID_HOME/build-tools/36.0.0/zipalign" -p -f 4 \
+            build-output/VitaAloha-unsigned.apk \
+            build-output/VitaAloha-aligned.apk
+
+      - name: Create ephemeral CI test key
+        run: |
+          keytool -genkeypair -noprompt \
+            -keystore "$RUNNER_TEMP/vitaaloha-ci.jks" \
+            -storepass ci-test-password \
+            -keypass ci-test-password \
+            -alias vitaaloha-ci \
+            -dname "CN=VitaAloha CI Test,O=Local Build,C=US" \
+            -keyalg RSA -keysize 2048 -validity 3650
+
+      - name: Sign APK for testing
+        run: |
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" sign \
+            --ks "$RUNNER_TEMP/vitaaloha-ci.jks" \
+            --ks-key-alias vitaaloha-ci \
+            --ks-pass pass:ci-test-password \
+            --key-pass pass:ci-test-password \
+            --out build-output/VitaAloha-ci-signed.apk \
+            build-output/VitaAloha-aligned.apk
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose \
+            build-output/VitaAloha-ci-signed.apk
+          "$ANDROID_HOME/build-tools/36.0.0/zipalign" -c -v 4 \
+            build-output/VitaAloha-ci-signed.apk
+
+      - name: Record build metadata
+        run: |
+          {
+            echo "Commit: $GITHUB_SHA"
+            echo "Apktool: $(java -jar "$RUNNER_TEMP/apktool.jar" --version)"
+            echo "Java: $(java -version 2>&1 | head -n 1)"
+            echo "APK size:"
+            ls -lh build-output/VitaAloha-ci-signed.apk
+            echo "APK SHA-256:"
+            sha256sum build-output/VitaAloha-ci-signed.apk
+            echo "Package metadata:"
+            "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging build-output/VitaAloha-ci-signed.apk | head -n 5
+          } | tee build-output/BUILD-INFO.txt
+
+      - name: Upload signed test APK and build report
+        uses: actions/upload-artifact@v4
+        with:
+          name: VitaAloha-ci-build-${{ github.run_number }}
+          path: |
+            build-output/VitaAloha-ci-signed.apk
+            build-output/BUILD-INFO.txt
+          if-no-files-found: error
+          retention-days: 14
