@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_premium_plus" app:startDestination="@id/premiumPlusFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="PremiumPlusFragment" android:name="com.alohamobile.subscriptions.presentation.PremiumPlusFragment" android:id="@id/premiumPlusFragment">
+        <argument android:name="entryPoint" app:argType="com.alohamobile.purchases.core.data.PremiumEntryPoint$PremiumPlusEntryPoint" />
+    </fragment>
+</navigation>

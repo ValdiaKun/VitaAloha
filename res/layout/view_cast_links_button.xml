@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="@dimen/icon_size_48" android:layout_height="@dimen/icon_size_48"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_player_links" app:tint="?staticColorWhiteBasic" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption2Medium" android:textColor="?staticColorWhiteBasic" android:gravity="center" android:layout_gravity="center" android:id="@id/counterTextView" android:padding="1.0dp" android:layout_width="16.0dp" android:layout_height="16.0dp" android:translationX="-1.0dp" android:translationY="-1.0dp" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="6.0sp" app:autoSizeTextType="uniform" />
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="108.0dp" android:width="108.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:scaleX="0.67" android:scaleY="0.67" android:translateX="84.48" android:translateY="84.48">
+        <group>
+            <clip-path android:pathData="M0,0h512v512h-512z" />
+            <path android:fillColor="#98dee7" android:pathData="M170.53,91.05C264.51,105.46 609.92,-116.07 673.73,-108.39C725.22,-89.2 795.68,20.57 699.01,27.85C578.16,36.94 244.69,77.78 241.13,139.6C238.27,189.05 616.13,273.5 646.47,270.55L636.22,442.93C623.14,433.81 281.88,159.59 160.02,190.8C68.26,214.3 299.76,709.19 301.02,754.22L-156.89,845.25L-124.77,807.94C-57.49,721.42 147.39,226.09 60.01,158.7C-48.58,74.96 -195.04,457.28 -282.65,491.93L-355.95,324.29L-637.55,101.95C-666.63,69.23 -727.52,46.27 -584.91,18.63C-406.64,-15.93 -160.23,-29.99 -87.54,-87.46C-11.99,-147.19 -26.42,-376.38 -36.43,-484.16C-15.91,-522.67 208.46,-598.06 211.7,-478.25C215.74,-328.48 76.55,76.64 170.53,91.05Z" />
+            <path android:fillColor="@drawable/$ic_aqua_light_foreground_starfish__0" android:pathData="M0,0h512.22v512.22h-512.22z" />
+        </group>
+    </group>
+</vector>

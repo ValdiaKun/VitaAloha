@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorTertiary" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_follow_us" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="horizontal" android:background="?layerColorFloor1" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:id="@id/tiktokButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" app:icon="@drawable/static_ic_social_tiktok_40" app:iconSize="@dimen/icon_size_40" style="?materialIconButtonStyle" />
+            <com.google.android.material.button.MaterialButton android:id="@id/facebookButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginStart="16.0dp" app:icon="@drawable/static_ic_social_facebook_40" app:iconSize="@dimen/icon_size_40" style="?materialIconButtonStyle" />
+            <com.google.android.material.button.MaterialButton android:id="@id/xButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginStart="16.0dp" app:icon="@drawable/static_ic_social_x_40" app:iconSize="@dimen/icon_size_40" style="?materialIconButtonStyle" />
+            <com.google.android.material.button.MaterialButton android:id="@id/instagramButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginStart="16.0dp" app:icon="@drawable/static_ic_social_instagram_40" app:iconSize="@dimen/icon_size_40" style="?materialIconButtonStyle" />
+            <com.google.android.material.button.MaterialButton android:id="@id/youtubeButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginStart="16.0dp" app:icon="@drawable/static_ic_social_youtube_40" app:iconSize="@dimen/icon_size_40" style="?materialIconButtonStyle" />
+            <com.google.android.material.button.MaterialButton android:id="@id/redditButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginStart="16.0dp" app:icon="@drawable/static_ic_social_reddit_40" app:iconSize="@dimen/icon_size_40" style="?materialIconButtonStyle" />
+            <com.google.android.material.button.MaterialButton android:id="@id/linkedinButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginStart="16.0dp" app:icon="@drawable/static_ic_social_linkedin_40" app:iconSize="@dimen/icon_size_40" style="?materialIconButtonStyle" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorTertiary" android:gravity="center" android:id="@id/versionLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" />
+</merge>

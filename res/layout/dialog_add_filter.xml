@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/custom_filter_lists_add_dialog_url_hint">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/urlEditText" android:nextFocusDown="@id/nameEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="2048" android:inputType="textUri" android:imeOptions="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/validationProgressLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <ProgressBar android:layout_width="16.0dp" android:layout_height="16.0dp" android:indeterminate="true" />
+        <TextView android:textAppearance="@style/TextAppearance.Material3.BodySmall" android:textColor="?android:textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_filter_lists_add_dialog_validating" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:hint="@string/custom_filter_lists_add_dialog_name_hint">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/nameEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="256" android:inputType="text" android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

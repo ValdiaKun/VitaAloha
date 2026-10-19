@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListMenuItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/checkbox" android:clickable="false" style="@style/ListMenuItemIconStyle.Start" />
+    <TextView android:ellipsize="end" android:id="@id/checkbox_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:labelFor="@id/checkbox" style="@style/TextAppearance.DensityAdaptive.ListMenuItem" />
+</LinearLayout>

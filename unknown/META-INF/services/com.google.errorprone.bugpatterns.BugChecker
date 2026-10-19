@@ -1,0 +1,12 @@
+org.chromium.tools.errorprone.plugin.AndroidNullableCheck
+org.chromium.tools.errorprone.plugin.NoAndroidAsyncTaskCheck
+org.chromium.tools.errorprone.plugin.NoAndroidLog
+org.chromium.tools.errorprone.plugin.NoDynamicStringsInTraceEventCheck
+org.chromium.tools.errorprone.plugin.NoMoveTaskToFront
+org.chromium.tools.errorprone.plugin.NoRedundantFieldInitCheck
+org.chromium.tools.errorprone.plugin.NoResourcesGetColor
+org.chromium.tools.errorprone.plugin.NoStreams
+org.chromium.tools.errorprone.plugin.NoSynchronizedMethodCheck
+org.chromium.tools.errorprone.plugin.NoSynchronizedThisCheck
+org.chromium.tools.errorprone.plugin.TestClassNameCheck
+org.chromium.tools.errorprone.plugin.UseNetworkAnnotations

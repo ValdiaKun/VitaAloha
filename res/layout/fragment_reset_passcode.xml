@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <ScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/enteringEmailContainer" android:padding="16.0dp" android:visibility="invisible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_reset_passcode" />
+                <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/profile_reset_passcode_description" />
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/emailInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" app:helperTextEnabled="true">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/emailInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/profile_field_email" android:inputType="textEmailAddress" android:imeOptions="actionDone|flagNoPersonalizedLearning" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.alohamobile.component.button.ProgressButton android:id="@id/continueButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:progressButtonText="@string/button_continue" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/enteringVerificationCodeContainer" android:padding="16.0dp" android:visibility="visible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_reset_passcode" />
+                <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:id="@id/verificationCodeDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" />
+                <com.alohamobile.component.view.NumberInputView android:id="@id/numberInputView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+                <com.alohamobile.component.button.ProgressButton android:id="@id/resetButton" android:layout_width="match_parent" android:layout_height="wrap_content" app:progressButtonText="@string/action_reset" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

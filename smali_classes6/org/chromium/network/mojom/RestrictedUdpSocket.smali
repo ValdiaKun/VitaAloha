@@ -1,0 +1,59 @@
+.class public interface abstract Lorg/chromium/network/mojom/RestrictedUdpSocket;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lorg/chromium/mojo/bindings/Interface;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/chromium/network/mojom/RestrictedUdpSocket$SendTo_Response;,
+        Lorg/chromium/network/mojom/RestrictedUdpSocket$Send_Response;,
+        Lorg/chromium/network/mojom/RestrictedUdpSocket$LeaveGroup_Response;,
+        Lorg/chromium/network/mojom/RestrictedUdpSocket$JoinGroup_Response;,
+        Lorg/chromium/network/mojom/RestrictedUdpSocket$Proxy;
+    }
+.end annotation
+
+
+# static fields
+.field public static final MANAGER:Lorg/chromium/mojo/bindings/Interface$Manager;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lorg/chromium/mojo/bindings/Interface$Manager<",
+            "Lorg/chromium/network/mojom/RestrictedUdpSocket;",
+            "Lorg/chromium/network/mojom/RestrictedUdpSocket$Proxy;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    sget-object v0, Lorg/chromium/network/mojom/RestrictedUdpSocket_Internal;->MANAGER:Lorg/chromium/mojo/bindings/Interface$Manager;
+
+    sput-object v0, Lorg/chromium/network/mojom/RestrictedUdpSocket;->MANAGER:Lorg/chromium/mojo/bindings/Interface$Manager;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract joinGroup(Lorg/chromium/network/mojom/IpAddress;Lorg/chromium/network/mojom/IpAddress;Lorg/chromium/network/mojom/RestrictedUdpSocket$JoinGroup_Response;)V
+.end method
+
+.method public abstract leaveGroup(Lorg/chromium/network/mojom/IpAddress;Lorg/chromium/network/mojom/IpAddress;Lorg/chromium/network/mojom/RestrictedUdpSocket$LeaveGroup_Response;)V
+.end method
+
+.method public abstract receiveMore(I)V
+.end method
+
+.method public abstract send(Lorg/chromium/mojo_base/mojom/ReadOnlyBuffer;Lorg/chromium/network/mojom/RestrictedUdpSocket$Send_Response;)V
+.end method
+
+.method public abstract sendTo(Lorg/chromium/mojo_base/mojom/ReadOnlyBuffer;Lorg/chromium/network/mojom/HostPortPair;ILorg/chromium/network/mojom/RestrictedUdpSocket$SendTo_Response;)V
+.end method

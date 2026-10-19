@@ -1,0 +1,100 @@
+.class public final Lr8/kv6;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lr8/jp9;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final b:Lr8/lv6;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lr8/lv6;I)V
+    .locals 0
+
+    iput p2, p0, Lr8/kv6;->a:I
+
+    iput-object p1, p0, Lr8/kv6;->b:Lr8/lv6;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    iget v0, p0, Lr8/kv6;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object p0, p0, Lr8/kv6;->b:Lr8/lv6;
+
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lr8/xrb;->d(Lr8/jv6;Z)Lr8/na3;
+
+    move-result-object p0
+
+    return-object p0
+
+    :pswitch_0
+    iget-object p0, p0, Lr8/kv6;->b:Lr8/lv6;
+
+    invoke-virtual {p0}, Lr8/jv6;->V()Lr8/xv6;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lr8/xv6;->V()Lr8/hlh;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lr8/hlh;->b()Lr8/klh;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {p0}, Lr8/jv6;->V()Lr8/xv6;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lr8/xv6;->V()Lr8/hlh;
+
+    move-result-object v0
+
+    sget-object v1, Lr8/tz2;->c:Lr8/ot0;
+
+    invoke-static {v0, v1}, Lr8/sfb;->o(Lr8/hlh;Lr8/pt0;)Lr8/klh;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lr8/jv6;->V()Lr8/xv6;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lr8/xv6;->V()Lr8/hlh;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Lr8/k8n;->getType()Lr8/w1c;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Lr8/klh;->Z0(Lr8/w1c;)V
+
+    :cond_0
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

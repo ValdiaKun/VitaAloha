@@ -1,0 +1,23 @@
+.class public final Lorg/chromium/components/adblock/controller/R$plurals;
+.super Lgen/base_module/R$plurals;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/components/adblock/controller/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "plurals"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

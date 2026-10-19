@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chrome_bullet_leading_offset">-1.0dp</dimen>
+    <dimen name="popup_menu_dropdown_horizontal_offset">16.0dp</dimen>
+</resources>

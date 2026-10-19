@@ -1,0 +1,25 @@
+.class public final Lr8/gbc;
+.super Lr8/tzd;
+
+# interfaces
+.implements Lr8/kmf;
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# instance fields
+.field public o:Lr8/npk;
+
+.field public p:Lr8/r19;
+
+.field public q:Lr8/npk;
+
+
+# virtual methods
+.method public final d0(Lr8/ut6;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    return-object p0
+.end method

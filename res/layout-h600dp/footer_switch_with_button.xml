@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.materialswitch.MaterialSwitch android:layout_gravity="center_vertical" android:id="@id/toggleSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" style="?switchBlockLargeStyle" />
+    <com.google.android.material.button.MaterialButton android:id="@id/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" style="?containedButtonLargeStyle" />
+</LinearLayout>

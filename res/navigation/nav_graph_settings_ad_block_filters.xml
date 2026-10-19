@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_settings_ad_block_filters" app:startDestination="@id/filterListsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AdBlockFilterListsFragment" android:name="com.alohamobile.settings.adblock.presentation.AdBlockFilterListsFragment" android:id="@id/filterListsFragment">
+        <action android:id="@id/action_filterListsFragment_to_typedFiltersFragment" app:destination="@id/typedFiltersFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_filterListsFragment_to_customFilterListsFragment" app:destination="@id/customFilterListsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+    <fragment android:label="AdBlockAdditionalFiltersFragment" android:name="com.alohamobile.settings.adblock.presentation.AdBlockTypedFiltersFragment" android:id="@id/typedFiltersFragment">
+        <argument android:name="filtersType" app:argType="com.alohamobile.settings.adblock.domain.AdBlockFilter$Type" app:nullable="false" />
+    </fragment>
+    <fragment android:label="AdBlockCustomFilterListsFragment" android:name="com.alohamobile.settings.adblock.presentation.AdBlockCustomFilterListsFragment" android:id="@id/customFilterListsFragment" />
+</navigation>

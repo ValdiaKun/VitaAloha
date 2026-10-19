@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_brand_secondary_rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/previewContainer" android:padding="4.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="164:124" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="match_parent" android:stateListAnimator="@null" app:cardBackgroundColor="?fillColorSenary" app:cardElevation="0.0dp" app:shapeAppearance="?shapeAppearanceL">
+            <include android:id="@id/folderPreviewContainer" layout="@layout/list_item_file_manager_folder_preview" />
+            <include layout="@layout/list_item_file_manager_selectable_checkbox" />
+            <include layout="@layout/view_aloha_file_badge" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+    <include layout="@layout/list_item_file_manager_base_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

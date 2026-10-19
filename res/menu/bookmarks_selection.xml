@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/actionToggleSelect" android:checked="false" android:title="@string/downloads_action_select_all" app:actionLayout="@layout/menu_item_checkbox_action_mode" app:showAsAction="always" />
+    <item android:id="@id/actionMove" android:title="@string/action_move" app:showAsAction="never" />
+    <item android:id="@id/actionDelete" android:title="@string/action_delete" app:showAsAction="never" />
+</menu>

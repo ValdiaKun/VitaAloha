@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView android:paddingTop="8.0dp" android:paddingBottom="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="0.0dp" app:tint="?fillColorQuinary" />
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@id/menuUserInfo" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/view_menu_user_info" />
+            <LinearLayout android:orientation="vertical" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/shape_rounded_rectangle_m_bottom" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="?layerColorFloor1">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/menuWidgetsLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:minWidth="148.0dp" android:paddingHorizontal="16.0dp">
+                        <androidx.fragment.app.FragmentContainerView android:id="@id/startWidgetContainer" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minWidth="148.0dp" app:layout_constraintEnd_toStartOf="@id/horizontalSpace" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <Space android:id="@id/horizontalSpace" android:layout_width="12.0dp" android:layout_height="0.0dp" app:layout_constraintEnd_toStartOf="@id/endWidgetContainer" app:layout_constraintStart_toEndOf="@id/startWidgetContainer" app:layout_constraintTop_toTopOf="parent" />
+                        <androidx.fragment.app.FragmentContainerView android:id="@id/endWidgetContainer" android:layout_width="0.0dp" android:layout_height="wrap_content" android:minWidth="148.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/horizontalSpace" app:layout_constraintTop_toTopOf="parent" />
+                        <androidx.fragment.app.FragmentContainerView android:id="@id/bottomWidgetContainer" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:minWidth="148.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/startWidgetContainer" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <Space android:id="@id/setDefaultBrowserButtonTopSpace" android:layout_width="match_parent" android:layout_height="12.0dp" />
+                    <com.google.android.material.button.MaterialButton android:id="@id/setDefaultBrowserButton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48.0dp" android:text="@string/set_default_browser" android:insetTop="0.0dp" android:insetBottom="0.0dp" android:layout_marginHorizontal="16.0dp" app:icon="@drawable/ic_logo_aloha_new_24" app:iconTint="?fillColorBrandPrimary" style="?containedButtonSecondaryWithImageStyle" />
+                </LinearLayout>
+                <Space android:layout_width="match_parent" android:layout_height="4.0dp" />
+                <androidx.fragment.app.FragmentContainerView android:id="@id/shortcutsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Space android:layout_width="match_parent" android:layout_height="4.0dp" />
+                <com.google.android.material.card.MaterialCardView android:id="@id/actionsLayoutCardView" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?layerColorFloor1" app:cardElevation="0.0dp" app:cardPreventCornerOverlap="false" app:shapeAppearance="@style/ShapeAppearance.M.TopOnly">
+                    <LinearLayout android:orientation="vertical" android:id="@id/actionsLayout" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

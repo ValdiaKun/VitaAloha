@@ -1,0 +1,286 @@
+.class public final enum Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+.super Ljava/lang/Enum;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000f\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001BA\u0008\u0002\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002\u0012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002\u0012\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002\u0012\u000c\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u0002\u00a2\u0006\u0004\u0008\u0008\u0010\tR\u001d\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0004\u0010\n\u001a\u0004\u0008\u000b\u0010\u000cR\u001d\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0005\u0010\n\u001a\u0004\u0008\r\u0010\u000cR\u001d\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0006\u0010\n\u001a\u0004\u0008\u000e\u0010\u000cR\u001d\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0007\u0010\n\u001a\u0004\u0008\u000f\u0010\u000cj\u0002\u0008\u0010j\u0002\u0008\u0011\u00a8\u0006\u0012"
+    }
+    d2 = {
+        "Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;",
+        "",
+        "Lkotlin/Function0;",
+        "Lr8/k25;",
+        "backgroundColor",
+        "loaderColor",
+        "rippleColor",
+        "textColor",
+        "<init>",
+        "(Ljava/lang/String;ILr8/xp9;Lr8/xp9;Lr8/xp9;Lr8/xp9;)V",
+        "Lr8/xp9;",
+        "getBackgroundColor",
+        "()Lr8/xp9;",
+        "getLoaderColor",
+        "getRippleColor",
+        "getTextColor",
+        "Premium",
+        "Text",
+        "compose_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x3,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field private static final synthetic $ENTRIES:Lr8/g38;
+
+.field private static final synthetic $VALUES:[Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+.field public static final enum Premium:Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+.field public static final enum Text:Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+
+# instance fields
+.field private final backgroundColor:Lr8/xp9;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr8/xp9;"
+        }
+    .end annotation
+.end field
+
+.field private final loaderColor:Lr8/xp9;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr8/xp9;"
+        }
+    .end annotation
+.end field
+
+.field private final rippleColor:Lr8/xp9;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr8/xp9;"
+        }
+    .end annotation
+.end field
+
+.field private final textColor:Lr8/xp9;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr8/xp9;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private static final synthetic $values()[Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+    .locals 2
+
+    sget-object v0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->Premium:Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    sget-object v1, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->Text:Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    filled-new-array {v0, v1}, [Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static constructor <clinit>()V
+    .locals 8
+
+    new-instance v0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    sget-object v3, Lr8/il5;->A:Lr8/il5;
+
+    sget-object v4, Lr8/il5;->B:Lr8/il5;
+
+    sget-object v5, Lr8/il5;->C:Lr8/il5;
+
+    sget-object v6, Lr8/il5;->D:Lr8/il5;
+
+    const-string v1, "Premium"
+
+    const/4 v2, 0x0
+
+    invoke-direct/range {v0 .. v6}, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;-><init>(Ljava/lang/String;ILr8/xp9;Lr8/xp9;Lr8/xp9;Lr8/xp9;)V
+
+    sput-object v0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->Premium:Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    new-instance v1, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    sget-object v4, Lr8/il5;->E:Lr8/il5;
+
+    sget-object v5, Lr8/nyd;->b:Lr8/nyd;
+
+    sget-object v6, Lr8/nyd;->c:Lr8/nyd;
+
+    sget-object v7, Lr8/nyd;->d:Lr8/nyd;
+
+    const-string v2, "Text"
+
+    const/4 v3, 0x1
+
+    invoke-direct/range {v1 .. v7}, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;-><init>(Ljava/lang/String;ILr8/xp9;Lr8/xp9;Lr8/xp9;Lr8/xp9;)V
+
+    sput-object v1, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->Text:Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    invoke-static {}, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->$values()[Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->$VALUES:[Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    new-instance v1, Lr8/i38;
+
+    invoke-direct {v1, v0}, Lr8/i38;-><init>([Ljava/lang/Enum;)V
+
+    sput-object v1, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->$ENTRIES:Lr8/g38;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;ILr8/xp9;Lr8/xp9;Lr8/xp9;Lr8/xp9;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lr8/xp9;",
+            "Lr8/xp9;",
+            "Lr8/xp9;",
+            "Lr8/xp9;",
+            ")V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    iput-object p3, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->backgroundColor:Lr8/xp9;
+
+    iput-object p4, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->loaderColor:Lr8/xp9;
+
+    iput-object p5, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->rippleColor:Lr8/xp9;
+
+    iput-object p6, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->textColor:Lr8/xp9;
+
+    return-void
+.end method
+
+.method public static getEntries()Lr8/g38;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lr8/g38;"
+        }
+    .end annotation
+
+    sget-object v0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->$ENTRIES:Lr8/g38;
+
+    return-object v0
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+    .locals 1
+
+    const-class v0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    return-object p0
+.end method
+
+.method public static values()[Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+    .locals 1
+
+    sget-object v0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->$VALUES:[Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final getBackgroundColor()Lr8/xp9;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lr8/xp9;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->backgroundColor:Lr8/xp9;
+
+    return-object p0
+.end method
+
+.method public final getLoaderColor()Lr8/xp9;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lr8/xp9;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->loaderColor:Lr8/xp9;
+
+    return-object p0
+.end method
+
+.method public final getRippleColor()Lr8/xp9;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lr8/xp9;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->rippleColor:Lr8/xp9;
+
+    return-object p0
+.end method
+
+.method public final getTextColor()Lr8/xp9;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lr8/xp9;"
+        }
+    .end annotation
+
+    iget-object p0, p0, Lcom/alohamobile/uikit/compose/theme/uikit/buttons/data/MiniButtonType;->textColor:Lr8/xp9;
+
+    return-object p0
+.end method

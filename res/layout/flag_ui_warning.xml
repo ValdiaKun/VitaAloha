@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/flag_ui_warning" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/error_red" android:id="@id/flags_warning" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="WARNING: EXPERIMENTAL FEATURES AHEAD!" android:textIsSelectable="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/flags_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+</LinearLayout>

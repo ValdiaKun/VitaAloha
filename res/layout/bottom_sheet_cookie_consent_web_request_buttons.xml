@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/buttonsContainer" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:ellipsize="end" android:id="@id/allowAllButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cookie_consent_action_allow_all" android:maxLines="1" />
+        <com.google.android.material.button.MaterialButton android:ellipsize="end" android:id="@id/denyAllButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cookie_consent_action_deny_all" android:maxLines="1" />
+        <com.google.android.material.button.MaterialButton android:ellipsize="end" android:id="@id/customizeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cookie_consent_action_customize" android:maxLines="1" />
+    </LinearLayout>
+</FrameLayout>

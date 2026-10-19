@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_separated" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@id/revealConfirmationLayout" layout="@layout/view_sensitive_data_reveal_confirmation" />
+        <FrameLayout android:id="@id/revealBackground" android:background="?fillColorBrandPrimary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.08" />
+        <include android:id="@id/revealedKeyPhraseLayout" android:visibility="gone" layout="@layout/view_recovery_phrase_revealed" />
+    </FrameLayout>
+</LinearLayout>

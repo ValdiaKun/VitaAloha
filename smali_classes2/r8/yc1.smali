@@ -1,0 +1,32 @@
+.class public final Lr8/yc1;
+.super Ljava/util/concurrent/atomic/AtomicInteger;
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# virtual methods
+.method public final byteValue()B
+    .locals 0
+
+    invoke-super {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->intValue()I
+
+    move-result p0
+
+    int-to-byte p0, p0
+
+    return p0
+.end method
+
+.method public final shortValue()S
+    .locals 0
+
+    invoke-super {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->intValue()I
+
+    move-result p0
+
+    int-to-short p0, p0
+
+    return p0
+.end method

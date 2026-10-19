@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="14.0dp" android:width="18.0dp" android:viewportWidth="18.0" android:viewportHeight="14.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h18v14h-18z" />
+        <group>
+            <clip-path android:pathData="M1,3C1,1.895 1.895,1 3,1H15C16.105,1 17,1.895 17,3V11C17,12.105 16.105,13 15,13H3C1.895,13 1,12.105 1,11V3Z" />
+            <path android:fillColor="#2e42a5" android:pathData="M1,1V13H17V1H1Z" android:fillType="evenOdd" />
+            <group>
+                <clip-path android:pathData="M1,1h9v7h-9z" />
+                <path android:fillColor="#2e42a5" android:pathData="M1,1h9v7h-9z" />
+                <path android:fillColor="#f7fcff" android:pathData="M-0.002,7.5L1.978,8.368L10.045,1.944L11.09,0.654L8.972,0.363L5.682,3.132L3.033,4.997L-0.002,7.5Z" />
+                <path android:fillColor="#f50100" android:pathData="M0.269,8.108L1.278,8.613L10.715,0.534H9.298L0.269,8.108Z" />
+                <path android:fillColor="#f7fcff" android:pathData="M11.002,7.5L9.022,8.368L0.955,1.944L-0.09,0.654L2.028,0.363L5.318,3.132L7.967,4.997L11.002,7.5Z" />
+                <path android:fillColor="#f50100" android:pathData="M10.935,7.937L9.926,8.441L5.907,4.982L4.716,4.595L-0.19,0.658H1.227L6.13,4.502L7.433,4.965L10.935,7.937Z" />
+                <path android:fillColor="#f50100" android:pathData="M5.992,1H4.992V4H1V5H4.992V8H5.992V5H10V4H5.992V1Z" android:fillType="evenOdd" />
+                <path android:fillColor="#f7fcff" android:pathData="M4.242,0.25H6.742V3.25H10.75V5.75H6.742V8.75H4.242V5.75H0.25V3.25H4.242V0.25ZM4.992,4H1V5H4.992V8H5.992V5H10V4H5.992V1H4.992V4Z" android:fillType="evenOdd" />
+            </group>
+        </group>
+        <path android:fillColor="#00000000" android:pathData="M15,0.5C16.381,0.5 17.5,1.619 17.5,3V11C17.5,12.381 16.381,13.5 15,13.5H3C1.619,13.5 0.5,12.381 0.5,11V3C0.5,1.619 1.619,0.5 3,0.5H15Z" android:strokeColor="?staticColorGreyAlpha50" android:strokeWidth="1.0" />
+    </group>
+</vector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/videoTrimmingContainer" android:background="?staticColorUltimateBlackBasic" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.PlayerView android:id="@id/playerView" android:layout_width="match_parent" android:layout_height="match_parent" app:resize_mode="fit" app:use_controller="false" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/topControlPanel" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <com.alohamobile.player.presentation.videotrimming.SystemGestureExclusionVideoTrimmingControlsPanelLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/bottomControlPanel" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </com.alohamobile.player.presentation.videotrimming.SystemGestureExclusionVideoTrimmingControlsPanelLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

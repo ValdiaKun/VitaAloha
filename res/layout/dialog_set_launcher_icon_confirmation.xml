@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="center" android:id="@id/applicationIcon" android:layout_width="80.0dp" android:layout_height="80.0dp" android:layout_marginTop="8.0dp" app:shapeAppearance="?shapeAppearanceL" />
+    <Space android:id="@id/dialogIconSpacer" android:layout_width="match_parent" android:layout_height="24.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dialog_set_launcher_icon_title" android:textAlignment="center" style="@style/Component.Aloha.Dialog.Title.Text" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/dialog_set_launcher_icon_message" android:textAlignment="center" style="@style/Component.Aloha.Dialog.Body.Text" />
+</LinearLayout>

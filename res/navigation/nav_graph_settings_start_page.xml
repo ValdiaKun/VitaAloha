@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_settings_start_page" app:startDestination="@id/startPageSettingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="StartPageSettingsFragment" android:name="com.alohamobile.settings.startpage.ui.StartPageSettingsFragment" android:id="@id/startPageSettingsFragment">
+        <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,18 @@
+.class public interface abstract Lorg/chromium/blink/mojom/NonPersistentNotificationListener$OnClose_Response;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/blink/mojom/NonPersistentNotificationListener;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnClose_Response"
+.end annotation
+
+
+# virtual methods
+.method public abstract call()V
+.end method

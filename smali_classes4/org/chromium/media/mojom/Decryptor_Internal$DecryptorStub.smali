@@ -1,0 +1,564 @@
+.class final Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorStub;
+.super Lorg/chromium/mojo/bindings/Stub;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/media/mojom/Decryptor_Internal;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "DecryptorStub"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lorg/chromium/mojo/bindings/Stub<",
+        "Lorg/chromium/media/mojom/Decryptor;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Lorg/chromium/mojo/system/Core;Lorg/chromium/media/mojom/Decryptor;I)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2, p3}, Lorg/chromium/mojo/bindings/Stub;-><init>(Lorg/chromium/mojo/system/Core;Lorg/chromium/mojo/bindings/Interface;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public accept(Lorg/chromium/mojo/bindings/Message;)Z
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/chromium/mojo/bindings/BadMessageException;
+        }
+    .end annotation
+
+    const-string v0, "unknown method: "
+
+    const-string v1, "expected flags: "
+
+    :try_start_0
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/Message;->asServiceMessage()Lorg/chromium/mojo/bindings/ServiceMessage;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getHeader()Lorg/chromium/mojo/bindings/MessageHeader;
+
+    move-result-object v2
+
+    const/4 v3, 0x4
+
+    invoke-virtual {v2, v3}, Lorg/chromium/mojo/bindings/MessageHeader;->hasFlag(I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v3, 0x0
+
+    :goto_0
+    invoke-virtual {v2, v3}, Lorg/chromium/mojo/bindings/MessageHeader;->hasExactFlags(I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_6
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getMethodId()I
+
+    move-result v1
+
+    const/4 v3, -0x2
+
+    if-eq v1, v3, :cond_5
+
+    const/4 v3, 0x1
+
+    if-eqz v1, :cond_4
+
+    const/4 v4, 0x2
+
+    if-eq v1, v4, :cond_3
+
+    const/4 v4, 0x7
+
+    if-eq v1, v4, :cond_2
+
+    const/16 v4, 0x8
+
+    if-ne v1, v4, :cond_1
+
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDeinitializeDecoderParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDeinitializeDecoderParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDeinitializeDecoderParams;->streamType:I
+
+    invoke-interface {p0, p1}, Lorg/chromium/media/mojom/Decryptor;->deinitializeDecoder(I)V
+
+    return v3
+
+    :cond_1
+    new-instance p0, Lorg/chromium/mojo/bindings/UnknownMethodException;
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getMethodId()I
+
+    move-result p1
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lorg/chromium/mojo/bindings/UnknownMethodException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    :cond_2
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorResetDecoderParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorResetDecoderParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorResetDecoderParams;->streamType:I
+
+    invoke-interface {p0, p1}, Lorg/chromium/media/mojom/Decryptor;->resetDecoder(I)V
+
+    return v3
+
+    :cond_3
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorCancelDecryptParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorCancelDecryptParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorCancelDecryptParams;->streamType:I
+
+    invoke-interface {p0, p1}, Lorg/chromium/media/mojom/Decryptor;->cancelDecrypt(I)V
+
+    return v3
+
+    :cond_4
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object p0
+
+    check-cast p0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget-object v0, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeParams;->audioPipe:Lorg/chromium/mojo/system/DataPipe$ConsumerHandle;
+
+    iget-object v1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeParams;->videoPipe:Lorg/chromium/mojo/system/DataPipe$ConsumerHandle;
+
+    iget-object v2, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeParams;->decryptPipe:Lorg/chromium/mojo/system/DataPipe$ConsumerHandle;
+
+    iget-object p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeParams;->decryptedPipe:Lorg/chromium/mojo/system/DataPipe$ProducerHandle;
+
+    invoke-interface {p0, v0, v1, v2, p1}, Lorg/chromium/media/mojom/Decryptor;->initialize(Lorg/chromium/mojo/system/DataPipe$ConsumerHandle;Lorg/chromium/mojo/system/DataPipe$ConsumerHandle;Lorg/chromium/mojo/system/DataPipe$ConsumerHandle;Lorg/chromium/mojo/system/DataPipe$ProducerHandle;)V
+
+    return v3
+
+    :cond_5
+    sget-object p0, Lorg/chromium/media/mojom/Decryptor_Internal;->MANAGER:Lorg/chromium/mojo/bindings/Interface$Manager;
+
+    invoke-static {p0, p1}, Lorg/chromium/mojo/bindings/InterfaceControlMessagesHelper;->handleRunOrClosePipe(Lorg/chromium/mojo/bindings/Interface$Manager;Lorg/chromium/mojo/bindings/ServiceMessage;)Z
+
+    move-result p0
+
+    return p0
+
+    :cond_6
+    new-instance p0, Lorg/chromium/mojo/bindings/InvalidHeaderException;
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getFlags()I
+
+    move-result p1
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", but got: "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lorg/chromium/mojo/bindings/InvalidHeaderException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+    :try_end_0
+    .catch Lorg/chromium/mojo/bindings/DeserializationException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Lorg/chromium/mojo/bindings/UnmarshalException;
+
+    invoke-direct {p1, p0}, Lorg/chromium/mojo/bindings/UnmarshalException;-><init>(Lorg/chromium/mojo/bindings/DeserializationException;)V
+
+    throw p1
+.end method
+
+.method public acceptWithResponder(Lorg/chromium/mojo/bindings/Message;Lorg/chromium/mojo/bindings/MessageReceiver;)Z
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/chromium/mojo/bindings/BadMessageException;
+        }
+    .end annotation
+
+    const-string v0, "unknown method: "
+
+    const-string v1, "expected flags: "
+
+    :try_start_0
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/Message;->asServiceMessage()Lorg/chromium/mojo/bindings/ServiceMessage;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getHeader()Lorg/chromium/mojo/bindings/MessageHeader;
+
+    move-result-object v2
+
+    const/4 v3, 0x4
+
+    invoke-virtual {v2, v3}, Lorg/chromium/mojo/bindings/MessageHeader;->hasFlag(I)Z
+
+    move-result v4
+
+    const/4 v5, 0x5
+
+    const/4 v6, 0x1
+
+    if-eqz v4, :cond_0
+
+    move v4, v5
+
+    goto :goto_0
+
+    :cond_0
+    move v4, v6
+
+    :goto_0
+    invoke-virtual {v2, v4}, Lorg/chromium/mojo/bindings/MessageHeader;->hasExactFlags(I)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_7
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getMethodId()I
+
+    move-result v1
+
+    const/4 v4, -0x1
+
+    if-eq v1, v4, :cond_6
+
+    if-eq v1, v6, :cond_5
+
+    const/4 v4, 0x3
+
+    if-eq v1, v4, :cond_4
+
+    if-eq v1, v3, :cond_3
+
+    if-eq v1, v5, :cond_2
+
+    const/4 v3, 0x6
+
+    if-ne v1, v3, :cond_1
+
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeVideoParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeVideoParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget-object p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeVideoParams;->encrypted:Lorg/chromium/media/mojom/DecoderBuffer;
+
+    new-instance v1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeVideoResponseParamsProxyToResponder;
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getCore()Lorg/chromium/mojo/system/Core;
+
+    move-result-object p0
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getRequestId()J
+
+    move-result-wide v2
+
+    invoke-direct {v1, p0, p2, v2, v3}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeVideoResponseParamsProxyToResponder;-><init>(Lorg/chromium/mojo/system/Core;Lorg/chromium/mojo/bindings/MessageReceiver;J)V
+
+    invoke-interface {v0, p1, v1}, Lorg/chromium/media/mojom/Decryptor;->decryptAndDecodeVideo(Lorg/chromium/media/mojom/DecoderBuffer;Lorg/chromium/media/mojom/Decryptor$DecryptAndDecodeVideo_Response;)V
+
+    return v6
+
+    :cond_1
+    new-instance p0, Lorg/chromium/mojo/bindings/UnknownMethodException;
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getMethodId()I
+
+    move-result p1
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lorg/chromium/mojo/bindings/UnknownMethodException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    :cond_2
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeAudioParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeAudioParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget-object p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeAudioParams;->encrypted:Lorg/chromium/media/mojom/DecoderBuffer;
+
+    new-instance v1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeAudioResponseParamsProxyToResponder;
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getCore()Lorg/chromium/mojo/system/Core;
+
+    move-result-object p0
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getRequestId()J
+
+    move-result-wide v2
+
+    invoke-direct {v1, p0, p2, v2, v3}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptAndDecodeAudioResponseParamsProxyToResponder;-><init>(Lorg/chromium/mojo/system/Core;Lorg/chromium/mojo/bindings/MessageReceiver;J)V
+
+    invoke-interface {v0, p1, v1}, Lorg/chromium/media/mojom/Decryptor;->decryptAndDecodeAudio(Lorg/chromium/media/mojom/DecoderBuffer;Lorg/chromium/media/mojom/Decryptor$DecryptAndDecodeAudio_Response;)V
+
+    return v6
+
+    :cond_3
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeVideoDecoderParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeVideoDecoderParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget-object p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeVideoDecoderParams;->config:Lorg/chromium/media/mojom/VideoDecoderConfig;
+
+    new-instance v1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeVideoDecoderResponseParamsProxyToResponder;
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getCore()Lorg/chromium/mojo/system/Core;
+
+    move-result-object p0
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getRequestId()J
+
+    move-result-wide v2
+
+    invoke-direct {v1, p0, p2, v2, v3}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeVideoDecoderResponseParamsProxyToResponder;-><init>(Lorg/chromium/mojo/system/Core;Lorg/chromium/mojo/bindings/MessageReceiver;J)V
+
+    invoke-interface {v0, p1, v1}, Lorg/chromium/media/mojom/Decryptor;->initializeVideoDecoder(Lorg/chromium/media/mojom/VideoDecoderConfig;Lorg/chromium/media/mojom/Decryptor$InitializeVideoDecoder_Response;)V
+
+    return v6
+
+    :cond_4
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeAudioDecoderParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeAudioDecoderParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget-object p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeAudioDecoderParams;->config:Lorg/chromium/media/mojom/AudioDecoderConfig;
+
+    new-instance v1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeAudioDecoderResponseParamsProxyToResponder;
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getCore()Lorg/chromium/mojo/system/Core;
+
+    move-result-object p0
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getRequestId()J
+
+    move-result-wide v2
+
+    invoke-direct {v1, p0, p2, v2, v3}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorInitializeAudioDecoderResponseParamsProxyToResponder;-><init>(Lorg/chromium/mojo/system/Core;Lorg/chromium/mojo/bindings/MessageReceiver;J)V
+
+    invoke-interface {v0, p1, v1}, Lorg/chromium/media/mojom/Decryptor;->initializeAudioDecoder(Lorg/chromium/media/mojom/AudioDecoderConfig;Lorg/chromium/media/mojom/Decryptor$InitializeAudioDecoder_Response;)V
+
+    return v6
+
+    :cond_5
+    invoke-virtual {p1}, Lorg/chromium/mojo/bindings/ServiceMessage;->getPayload()Lorg/chromium/mojo/bindings/Message;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptParams;->deserialize(Lorg/chromium/mojo/bindings/Message;)Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptParams;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getImpl()Lorg/chromium/mojo/bindings/Interface;
+
+    move-result-object v0
+
+    check-cast v0, Lorg/chromium/media/mojom/Decryptor;
+
+    iget v1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptParams;->streamType:I
+
+    iget-object p1, p1, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptParams;->encrypted:Lorg/chromium/media/mojom/DecoderBuffer;
+
+    new-instance v3, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptResponseParamsProxyToResponder;
+
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getCore()Lorg/chromium/mojo/system/Core;
+
+    move-result-object p0
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getRequestId()J
+
+    move-result-wide v4
+
+    invoke-direct {v3, p0, p2, v4, v5}, Lorg/chromium/media/mojom/Decryptor_Internal$DecryptorDecryptResponseParamsProxyToResponder;-><init>(Lorg/chromium/mojo/system/Core;Lorg/chromium/mojo/bindings/MessageReceiver;J)V
+
+    invoke-interface {v0, v1, p1, v3}, Lorg/chromium/media/mojom/Decryptor;->decrypt(ILorg/chromium/media/mojom/DecoderBuffer;Lorg/chromium/media/mojom/Decryptor$Decrypt_Response;)V
+
+    return v6
+
+    :cond_6
+    invoke-virtual {p0}, Lorg/chromium/mojo/bindings/Stub;->getCore()Lorg/chromium/mojo/system/Core;
+
+    move-result-object p0
+
+    sget-object v0, Lorg/chromium/media/mojom/Decryptor_Internal;->MANAGER:Lorg/chromium/mojo/bindings/Interface$Manager;
+
+    invoke-static {p0, v0, p1, p2}, Lorg/chromium/mojo/bindings/InterfaceControlMessagesHelper;->handleRun(Lorg/chromium/mojo/system/Core;Lorg/chromium/mojo/bindings/Interface$Manager;Lorg/chromium/mojo/bindings/ServiceMessage;Lorg/chromium/mojo/bindings/MessageReceiver;)Z
+
+    move-result p0
+
+    return p0
+
+    :cond_7
+    new-instance p0, Lorg/chromium/mojo/bindings/InvalidHeaderException;
+
+    invoke-virtual {v2}, Lorg/chromium/mojo/bindings/MessageHeader;->getFlags()I
+
+    move-result p1
+
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v0, ", but got: "
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lorg/chromium/mojo/bindings/InvalidHeaderException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+    :try_end_0
+    .catch Lorg/chromium/mojo/bindings/DeserializationException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    new-instance p1, Lorg/chromium/mojo/bindings/UnmarshalException;
+
+    invoke-direct {p1, p0}, Lorg/chromium/mojo/bindings/UnmarshalException;-><init>(Lorg/chromium/mojo/bindings/DeserializationException;)V
+
+    throw p1
+.end method

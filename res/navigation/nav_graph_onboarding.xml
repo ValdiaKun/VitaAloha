@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/onboarding_nav_graph" app:startDestination="@id/greetingFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_transparent_helper" />
+    <fragment android:label="GreetingFragment" android:name="com.alohamobile.onboarding.presentation.step.GreetingFragment" android:id="@id/greetingFragment">
+        <action android:id="@id/action_greetingFragment_to_surveyFragment" app:destination="@id/surveyFragment" app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+        <action android:id="@id/action_greetingFragment_to_defaultBrowserFragment" app:destination="@id/defaultBrowserFragment" app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+        <action android:id="@id/action_greetingFragment_to_allSetFragment" app:destination="@id/allSetFragment" app:enterAnim="@anim/fade_in" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="SurveyFragment" android:name="com.alohamobile.onboarding.presentation.step.survey.SurveyFragment" android:id="@id/surveyFragment">
+        <action android:id="@id/action_surveyFragment_to_vpnFragment" app:destination="@id/vpnFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="VpnFragment" android:name="com.alohamobile.onboarding.presentation.step.vpn.VpnFragment" android:id="@id/vpnFragment">
+        <action android:id="@id/action_vpnFragment_to_adBlockFragment" app:destination="@id/adBlockFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="AdBlockFragment" android:name="com.alohamobile.onboarding.presentation.step.adblock.AdBlockFragment" android:id="@id/adBlockFragment">
+        <action android:id="@id/action_adBlockFragment_to_downloadsFragment" app:destination="@id/downloadsFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="DownloadsFragment" android:name="com.alohamobile.onboarding.presentation.step.downloads.DownloadsFragment" android:id="@id/downloadsFragment">
+        <action android:id="@id/action_downloadsFragment_to_notificationsFragment" app:destination="@id/notificationsFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+        <action android:id="@id/action_downloadsFragment_to_colorThemeFragment" app:destination="@id/colorThemeFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="NotificationsFragment" android:name="com.alohamobile.onboarding.presentation.step.notifications.NotificationsFragment" android:id="@id/notificationsFragment">
+        <action android:id="@id/action_notificationsFragment_to_colorThemeFragment" app:destination="@id/colorThemeFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="ColorThemeFragment" android:name="com.alohamobile.onboarding.presentation.step.theme.ColorThemeFragment" android:id="@id/colorThemeFragment">
+        <action android:id="@id/action_colorThemeFragment_to_defaultBrowserFragment" app:destination="@id/defaultBrowserFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+        <action android:id="@id/action_colorThemeFragment_to_premiumPromoFragment" app:destination="@id/premiumPromoFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+        <action android:id="@id/action_colorThemeFragment_to_allSetFragment" app:destination="@id/allSetFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="DefaultBrowserFragment" android:name="com.alohamobile.onboarding.presentation.step.defaultbrowser.DefaultBrowserFragment" android:id="@id/defaultBrowserFragment">
+        <action android:id="@id/action_defaultBrowserFragment_to_premiumPromoFragment" app:destination="@id/premiumPromoFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+        <action android:id="@id/action_defaultBrowserFragment_to_allSetFragment" app:destination="@id/allSetFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="PremiumPromoFragment" android:name="com.alohamobile.onboarding.presentation.step.premium.PremiumPromoFragment" android:id="@id/premiumPromoFragment">
+        <action android:id="@id/action_premiumPromoFragment_to_allSetFragment" app:destination="@id/allSetFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="AllSetFragment" android:name="com.alohamobile.onboarding.presentation.step.AllSetFragment" android:id="@id/allSetFragment" />
+    <action android:id="@id/action_global_transparentHelperFragment" app:destination="@id/nav_graph_transparent_helper" app:enterAnim="@null" app:exitAnim="@null" app:popEnterAnim="@null" app:popExitAnim="@null" />
+    <action android:id="@id/action_global_to_premiumPromoFragment" app:destination="@id/premiumPromoFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+    <action android:id="@id/action_global_to_allSetFragment" app:destination="@id/allSetFragment" app:enterAnim="@anim/onboarding_fragment_enter" app:exitAnim="@anim/onboarding_fragment_exit" app:popEnterAnim="@anim/onboarding_fragment_pop_enter" app:popExitAnim="@anim/onboarding_fragment_pop_exit" />
+</navigation>

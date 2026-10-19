@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/dialog_shortcuts_removal_warning_title" android:maxLines="2" android:singleLine="false" android:textAlignment="center" style="@style/Component.Aloha.Dialog.Title.Text" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/dialog_shortcuts_removal_warning_message" android:textAlignment="center" style="@style/Component.Aloha.Dialog.Body.Text" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

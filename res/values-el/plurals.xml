@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Απέτυχε η μεταφόρτωση %1$d αρχείου</item>
+        <item quantity="other">Απέτυχε η μεταφόρτωση %1$d αρχείων</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Ξεπερασμένο όριο. Μειώστε το μήνυμα σε %1$d χαρακτήρα και ξαναδοκιμάστε.</item>
+        <item quantity="other">Ξεπερασμένο όριο. Μειώστε το μήνυμα στους %1$d χαρακτήρες και ξαναδοκιμάστε.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">παραμένει %1$d αίτημα</item>
+        <item quantity="other">παραμένουν %1$d αιτήματα</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Έχετε %1$d δωρεάν αίτημα την ημέρα για το %2$s. Αναβαθμίστε στο Premium Plus και αφαιρέστε τα όρια!</item>
+        <item quantity="other">Έχετε %1$d δωρεάν αιτήματα την ημέρα για το %2$s. Αναβαθμίστε στο Premium Plus και αφαιρέστε τα όρια!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s σελιδοδείκτης</item>
+        <item quantity="other">%s σελιδοδείκτες</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Μπορείτε να δοκιμάσετε τις καλύτερες μας λειτουργίες με το Premium για %1$d ημέρα δωρεάν</item>
+        <item quantity="other">Μπορείτε να δοκιμάσετε τις καλύτερες μας λειτουργίες με το Premium για %1$d ημέρες δωρεάν</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με το Premium για %1$d ημέρα δωρεάν. Ορίστε το Aloha ως τον προεπιλεγμένο περιηγητή σας για να έχετε μια ολοκληρωμένη εμπειρία.</item>
+        <item quantity="other">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με το Premium για %1$d ημέρες δωρεάν. Ορίστε το Aloha ως τον προεπιλεγμένο περιηγητή σας για να έχετε μια ολοκληρωμένη εμπειρία.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Σας δίνουμε %1$d ακόμη μέρα πλήρης πρόσβασης, απολύτως δωρεάν</item>
+        <item quantity="other">Σας δίνουμε %1$d ακόμη μέρες πλήρης πρόσβασης, απολύτως δωρεάν</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">Σας δίνουμε %1$d ακόμη μέρα πλήρης πρόσβασης, εντελώς δωρεάν. Ορίστε το Aloha ως τον προεπιλεγμένο περιηγητή σας για να έχετε μια ολοκληρωμένη εμπειρία.</item>
+        <item quantity="other">Σας δίνουμε %1$d ακόμη μέρες πλήρης πρόσβασης, εντελώς δωρεάν. Ορίστε το Aloha ως τον προεπιλεγμένο περιηγητή σας για να έχετε μια ολοκληρωμένη εμπειρία.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Εάν δεν ελευθερώσετε χώρο, τα αρχεία που υπερβαίνουν το όριο θα γίνουν μόνο για ανάγνωση. Θα διαγραφούν μετά από %d ημέρα.</item>
+        <item quantity="other">Εάν δεν ελευθερώσετε χώρο, τα αρχεία που υπερβαίνουν το όριο θα γίνουν μόνο για ανάγνωση. Θα διαγραφούν μετά από %d ημέρες.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Η συνδρομή σας στο Aloha Cloud έχει λήξει. Το Aloha Cloud θα διαγραφεί μόνιμα σε %1$d ημέρα. Ανανεώστε το πλάνο σας για να επαναφέρετε πρόσβαση.</item>
+        <item quantity="other">Η συνδρομή σας στο Aloha Cloud έχει λήξει. Το Aloha Cloud θα διαγραφεί μόνιμα σε %1$d ημέρες. Ανανεώστε το πλάνο σας για να επαναφέρετε πρόσβαση.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Ανανεώστε τη συνδρομή σας στο Aloha Cloud σε %1$d ημέρα για να μην χάσετε τα cloud αρχεία σας</item>
+        <item quantity="other">Ανανεώστε τη συνδρομή σας στο Aloha Cloud σε %1$d ημέρες για να μην χάσετε τα cloud αρχεία σας</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Η συνδρομή σας στο Aloha Premium έχει λήξει. Τα αρχεία σας θα διαγραφούν αυτόματα σε %1$d ημέρα. Αγοράστε ένα πλάνο Aloha Cloud για να κρατήσετε τα αρχεία σας και να πάρετε επιπλέον αποθηκευτικό χώρο.</item>
+        <item quantity="other">Η συνδρομή σας στο Aloha Premium έχει λήξει. Τα αρχεία σας θα διαγραφούν αυτόματα σε %1$d ημέρες. Αγοράστε ένα πλάνο Aloha Cloud για να κρατήσετε τα αρχεία σας και να πάρετε επιπλέον αποθηκευτικό χώρο.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Η συνδρομή σας στο Aloha Premium έχει λήξει. Το Aloha Cloud θα διαγραφεί μόνιμα σε %1$d ημέρα. Ανανεώστε το πλάνο σας για να αποκτήσετε πρόσβαση ξανά.</item>
+        <item quantity="other">Η συνδρομή σας στο Aloha Premium έχει λήξει. Το Aloha Cloud θα διαγραφεί μόνιμα σε %1$d ημέρες. Ανανεώστε το πλάνο σας για να αποκτήσετε πρόσβαση ξανά.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Ανανεώστε τη συνδρομή σας στο Aloha Premium σε %1$d ημέρα για να μην χάσετε τα cloud αρχεία σας</item>
+        <item quantity="other">Ανανεώστε τη συνδρομή σας στο Aloha Premium σε %1$d ημέρες για να μην χάσετε τα cloud αρχεία σας</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Κάποια αρχεία θα διαγραφούν σε %1$d ημέρα</item>
+        <item quantity="other">Κάποια αρχεία θα διαγραφούν σε %1$d ημέρες</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Κάποια αρχεία θα διαγραφούν σε %1$d ημέρα. Ανανεώστε το πλάνο σας για πρόσβαση στα αρχεία σας.</item>
+        <item quantity="other">Κάποια αρχεία θα διαγραφούν σε %1$d ημέρες. Ανανεώστε το πλάνο σας για πρόσβαση στα αρχεία σας.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Ανανεώστε το Premium σε %1$d ημέρα για να μην χαθούν τα αρχεία cloud σας</item>
+        <item quantity="other">Ανανεώστε το Premium σε %1$d ημέρες για να μην χαθούν τα αρχεία cloud σας</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="one">%d ημέρα</item>
+        <item quantity="other">%d ημέρες</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d αρχείο θα διαγραφεί μόνιμα. Είστε βέβαιοι ότι θέλετε να αδειάσετε τον κάδο;</item>
+        <item quantity="other">%d αρχεία θα διαγραφούν μόνιμα. Είστε βέβαιοι ότι θέλετε να αδειάσετε τον κάδο;</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Λάθος φράση — απομένει %1$d προσπάθεια</item>
+        <item quantity="other">Λάθος φράση — απομένουν %1$d προσπάθειες</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Δεν μπορείτε να επιλέξετε πάνω από %d στοιχείο</item>
+        <item quantity="other">Δεν μπορείτε να επιλέξετε πάνω από %d στοιχεία</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Γρήγορη προώθηση κατά %d δευτερόλεπτο</item>
+        <item quantity="other">Γρήγορη προώθηση κατά %d δευτερόλεπτα</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Μετάβαση προς τα πίσω κατά %d δευτερόλεπτο</item>
+        <item quantity="other">Μετάβαση προς τα πίσω κατά %d δευτερόλεπτα</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d στοιχείο</item>
+        <item quantity="other">%d στοιχεία</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Το Free Premium τελειώνει σε %1$d ημέρα</item>
+        <item quantity="other">Το Free Premium τελειώνει σε %1$d ημέρες</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d ημέρα ακόμα</item>
+        <item quantity="other">%1$d ημέρες ακόμα</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">Παραμένει %1$d προσπάθεια</item>
+        <item quantity="other">Παραμένουν %1$d προσπάθειες</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d μήνες</item>
+        <item quantity="one">%1$d μήνα</item>
+        <item quantity="other">%1$d μήνες</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d μήνα</item>
+        <item quantity="other">%1$d μήνες</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d νέα ειδοποίηση</item>
+        <item quantity="other">%d νέες ειδοποιήσεις</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Γίνεται αποθήκευση %1$d από %2$d αρχείο</item>
+        <item quantity="other">Γίνεται αποθήκευση %1$d από %2$d αρχεία</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">Βρέθηκε %1$d κωδικός</item>
+        <item quantity="other">Βρέθηκαν %1$d κωδικοί</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Με %1$d επιπρόσθετη αποκλειστική λειτουργία διαθέσιμη στους χρήστες Premium</item>
+        <item quantity="other">Με %1$d επιπρόσθετες αποκλειστικές λειτουργίες διαθέσιμες στους χρήστες Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d μπλοκαρισμένο αναδυόμενο παράθυρο</item>
+        <item quantity="other">%d μπλοκαρισμένα αναδυόμενα παράθυρα</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με την &lt;b>κατάσταση Premium&lt;/b> για &lt;b>%1$d μήνα – δωρεάν – από μας!&lt;/b></item>
+        <item quantity="other">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με την &lt;b>κατάσταση Premium&lt;/b> για &lt;b>%1$d μήνες – δωρεάν – από μας!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με την &lt;b>κατάσταση Premium&lt;/b> για &lt;b>%1$d εβδομάδα – δωρεάν – από μας!&lt;/b></item>
+        <item quantity="other">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με την &lt;b>κατάσταση Premium&lt;/b> για &lt;b>%1$d εβδομάδες – δωρεάν – από μας!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με την &lt;b>κατάσταση Premium&lt;/b> για &lt;b>%1$d χρόνο – δωρεάν – από μας!&lt;/b></item>
+        <item quantity="other">Μπορείτε να δοκιμάσετε τις καλύτερές μας λειτουργίες με την &lt;b>κατάσταση Premium&lt;/b> για &lt;b>%1$d χρόνια – δωρεάν – από μας!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s για τον πρώτο μήνα, έπειτα %2$s/μήνα.
+Αυτόματη ανανέωση. Ακυρώστε οποτεδήποτε."</item>
+        <item quantity="other">"%1$s για τους πρώτους %3$d μήνες, έπειτα %2$s/μήνα.
+Αυτόματη ανανέωση. Ακυρώστε οποτεδήποτε."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s τον πρώτο χρόνο, έπειτα %2$s/χρόνο.
+Αυτόματη ανανέωση. Ακυρώστε οποτεδήποτε."</item>
+        <item quantity="other">"%1$s τα πρώτα %3$d χρόνια, έπειτα %2$s/χρόνο.
+Αυτόματη ανανέωση. Ακυρώστε οποτεδήποτε."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d μήνας</item>
+        <item quantity="other">πρώτοι %1$d μήνες</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d χρόνος</item>
+        <item quantity="other">πρώτα %1$d χρόνια</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/μήνα για %2$d μήνα</item>
+        <item quantity="other">%1$s/μήνα για %2$d μήνες</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s τον πρώτο χρόνο</item>
+        <item quantity="other">%1$s τα πρώτα %2$d χρόνια</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d%% έκπτωση τον πρώτο μήνα σας</item>
+        <item quantity="other">%1$d%% έκπτωση τους πρώτους %2$d μήνες σας</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Οι φίλοι σας θα πάρουν το Premium για %1$d μήνα δωρεάν!</item>
+        <item quantity="other">Οι φίλοι σας θα πάρουν το Premium για %1$d μήνες δωρεάν!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Οι φίλοι σας θα πάρουν το Premium για %1$d βδομάδα δωρεάν!</item>
+        <item quantity="other">Οι φίλοι σας θα πάρουν το Premium για %1$d βδομάδες δωρεάν!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Οι φίλοι σας θα πάρουν το Premium για %1$d χρόνο δωρεάν!</item>
+        <item quantity="other">Οι φίλοι σας θα πάρουν το Premium για %1$d χρόνια δωρεάν!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Χάρη σε σας, &lt;b>ο φίλος %1$d&lt;/b> απολαμβάνει το Aloha και εσείς απολαμβάνετε την &lt;b>κατάσταση Premium.&lt;/b></item>
+        <item quantity="other">Χάρη σε σας, &lt;b>οι φίλοι%1$d&lt;/b> απολαμβάνουν το Aloha και εσείς απολαμβάνετε την &lt;b>κατάσταση Premium.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Προσκαλέστε %1$d ακόμα φίλο και πάρτε Free Premium</item>
+        <item quantity="other">Προσκαλέστε %1$d ακόμα φίλους και πάρτε Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Θέλετε να κάνετε βιντεογραφήσεις για πάνω από %1$d δευτερόλεπτο;</item>
+        <item quantity="other">Θέλετε να κάνετε βιντεογραφήσεις για πάνω από %1$d δευτερόλεπτα;</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Έχετε το Premium για %1$d μήνα</item>
+        <item quantity="other">Έχετε το Premium για %1$d μήνες</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Έχετε το Premium για %1$d εβδομάδα</item>
+        <item quantity="other">Έχετε το Premium για %1$d εβδομάδες</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">Έχετε το Premium για %1$d χρόνο</item>
+        <item quantity="other">Έχετε το Premium για %1$d χρόνια</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d κωδικός προσθέθηκε</item>
+        <item quantity="other">%1$d κωδικοί προσθέθηκαν</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d εβδομάδες</item>
+        <item quantity="one">%1$d εβδομάδα</item>
+        <item quantity="other">%1$d εβδομάδες</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d βδομάδα</item>
+        <item quantity="other">%1$d βδομάδες</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d χρόνια</item>
+        <item quantity="one">%1$d χρόνο</item>
+        <item quantity="other">%1$d χρόνια</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d χρόνο</item>
+        <item quantity="other">%1$d χρόνια</item>
+    </plurals>
+</resources>

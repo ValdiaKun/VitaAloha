@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_wfs_info" app:startDestination="@id/wfsInfoFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="WfsInfoFragment" android:name="com.alohamobile.filemanager.wfs.settings.info.WfsInfoFragment" android:id="@id/wfsInfoFragment">
+        <argument android:name="entryPoint" android:defaultValue="INFO_BUTTON" app:argType="com.alohamobile.filemanager.wfs.core.info.WfsInfoEntryPoint" />
+    </fragment>
+</navigation>

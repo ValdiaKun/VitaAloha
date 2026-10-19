@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/tileDecorationView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/tileImageView" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shapeAppearance="?shapeAppearanceL" />
+    <ViewStub android:id="@id/tileContentStub" android:layout="@layout/view_rich_tile_content" android:inflatedId="@id/tileContent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.alohamobile.component.view.ShimmerPlaceholderView android:id="@id/tileShimmer" android:background="@drawable/shape_rounded_rectangle_l" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.google.android.material.button.MaterialButton android:layout_gravity="end|top" android:id="@id/closeTileButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" app:icon="@drawable/styled_ic_circle_close_24" style="?materialIconButtonStyle" />
+</merge>

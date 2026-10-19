@@ -1,0 +1,17 @@
+.class public interface abstract Lorg/chromium/viz/mojom/CompositorFrameSinkClient$Proxy;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lorg/chromium/viz/mojom/CompositorFrameSinkClient;
+.implements Lorg/chromium/mojo/bindings/Interface$Proxy;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/viz/mojom/CompositorFrameSinkClient;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Proxy"
+.end annotation

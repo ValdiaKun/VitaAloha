@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/finishFavoritesEditModeButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="64.0dp" android:src="@drawable/ic_check_24" android:importantForAccessibility="no" android:layout_marginHorizontal="16.0dp" app:backgroundTint="?fillColorBrandPrimary" app:tint="?fillColorOnAccent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

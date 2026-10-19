@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_brand_secondary_rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/previewContainer" android:padding="4.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="164:124" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="match_parent" android:stateListAnimator="@null" app:cardBackgroundColor="?fillColorSenary" app:cardElevation="0.0dp" app:shapeAppearance="?shapeAppearanceL">
+            <ImageView android:id="@id/recordingPreview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+            <View android:id="@id/previewDim" android:background="?staticColorBlackAlpha30" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/processingRequiredIcon" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:src="@drawable/ic_reload" android:importantForAccessibility="no" app:tint="?staticColorWhiteBasic" />
+            <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:id="@id/recording_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="?fillColorBrandPrimary" app:indicatorSize="56.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:trackColor="?staticColorWhiteBasic" app:trackThickness="3.0dp" />
+            <include layout="@layout/list_item_file_manager_selectable_checkbox" />
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+    <include layout="@layout/list_item_file_manager_base_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

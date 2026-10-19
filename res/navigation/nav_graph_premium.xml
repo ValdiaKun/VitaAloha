@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_premium" app:startDestination="@id/premiumFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_referral" />
+    <include app:graph="@navigation/nav_graph_modal" />
+    <include app:graph="@navigation/nav_graph_profile_signup" />
+    <fragment android:label="PremiumFragment" android:name="com.alohamobile.subscriptions.presentation.PremiumFragment" android:id="@id/premiumFragment">
+        <argument android:name="entryPoint" app:argType="com.alohamobile.purchases.core.data.PremiumEntryPoint" />
+        <argument android:name="initialBlock" app:argType="com.alohamobile.premium.browser.presentation.data.PremiumBlock" />
+        <argument android:name="mode" android:defaultValue="SUBSCRIPTION_DEFAULT" app:argType="com.alohamobile.subscriptions.presentation.data.PremiumScreenMode" />
+    </fragment>
+    <action android:id="@id/action_global_modal_nav_graph" app:destination="@id/nav_graph_modal" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="url" app:argType="string" />
+        <argument android:name="toolbarTitle" app:argType="string" />
+        <argument android:name="loadsNewWindowsInPlace" android:defaultValue="true" app:argType="boolean" />
+    </action>
+    <action android:id="@id/action_global_to_nav_graph_referral" app:destination="@id/nav_graph_referral" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_profileSignUp" app:destination="@id/nav_graph_profile_signup" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="enterPoint" android:defaultValue="UNKNOWN" app:argType="com.alohamobile.profile.navigation.ProfileEntryPoint" />
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    </action>
+</navigation>

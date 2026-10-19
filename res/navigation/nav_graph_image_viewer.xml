@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_image_viewer" app:startDestination="@id/imageViewerFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ImageViewerFragment" android:name="com.alohamobile.imageviewer.ImageViewerFragment" android:id="@id/imageViewerFragment">
+        <argument android:name="sourceType" app:argType="com.alohamobile.browser.navigation.SourceType" />
+        <argument android:name="currentImageIndex" app:argType="integer" />
+        <argument android:name="imagesQueue" app:argType="string[]" app:nullable="false" />
+    </fragment>
+</navigation>

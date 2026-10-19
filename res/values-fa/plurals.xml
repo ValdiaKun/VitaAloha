@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="other">آپلود‏ %1$d‎ فایل انجام نشد</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="other">محدودیت تعداد کاراکتر. پیام را به حداکثر %1$d کاراکتر کوتاه کن و دوباره امتحان کن.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="other">%1$d درخواست دیگر باقی مانده</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="other">‏%1$d‎ درخواست رایگان در روز برای مدل‏ %2$s‎ داری. به‏ Premium Plus‎ ارتقا بده و تمام محدودیت‌ها را برطرف کن!‏</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="other">‏%s‎ نشان‌شده</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="other">می‌توانی بهترین قابلیت‌های ما را با اشتراک‏ Premium‎ به‌مدت‏ %1$d‎ روز به‌رایگان امتحان کنی</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="other">می‌توانی بهترین قابلیت‌های ما را با اشتراک‏ Premium‎ به‌مدت‏ %1$d‎ روز به‌رایگان امتحان کنی.‏ Aloha‎ را به‌عنوان مرورگر پیش‌فرضت تنظیم کن تا تجربه‌ی کامل را به دست بیاوری.‏</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="other">به شما‏ %1$d‎ روز بیشتر دسترسی کامل می‌دهیم، کاملا رایگان</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="other">به شما‏ %1$d‎ روز بیشتر دسترسی کامل می‌دهیم، کاملا رایگان.‏ Aloha‎ را به‌عنوان مرورگر پیش‌فرضت تنظیم کن تا تجربه‌ی کامل را به دست بیاوری.‏</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="other">اگر فضا خالی نکنی، فایل‌های بیشتر از محدودیت، فقط‌خواندنی می‌شوند. و بعد از‏ %1$d‎ روز حذف می‌شوند.‏</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="other">اشتراک‏ Aloha Cloud‎ات تمام شده.‏ Aloha Cloud‎ در‏ %1$d‎ روز به‌طور دائمی حذف خواهد شد. اشتراکت را تمدید کن تا دسترسی‌ات دوباره برقرار شود.‏</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="other">اشتراک‏ Aloha Cloud‎ را در‏ %1$d‎ روز آینده تمدید کن تا فایل‌های فضای ابری‌ات از دست نروند</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="other">اشتراک‏ Aloha Premium‎ات تمام شده. فایل‌هایت در‏ %1$d‎ روز به‌طور خودکار حذف خواهد شد. اشتراک‏ Aloha Cloud‎ بخر تا فایل‌هایت را حفظ کنی و فضای ذخیره‌سازی اضافه دریافت کنی.‏</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="other">اشتراک‏ Aloha Premium‎ شما تمام شده.‏ Aloha Cloud‎ در‏ %1$d‎ روز به‌طور دائمی حذف خواهد شد. اشتراکت را تمدید کن تا دسترسی‌ات دوباره برقرار شود.‏</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="other">اشتراک‏ Aloha Premium‎ را در‏ %1$d‎ روز آینده تمدید کن تا فایل‌های فضای ابری‌ات از دست نروند</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="other">بعضی از فایل‌ها‏ %1$d‎ روز دیگر حذف خواهد شد</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="other">بعضی از فایل‌ها‏ %1$d‎ روز دیگر حذف خواهد شد. اشتراکت را تمدید کن تا فایل‌هایت در دسترس باقی بمانند.‏</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="other">‏Premium‎ را در‏ %1$d‎ روز آینده تمدید کن تا فایل‌های فضای ابری‌ات از دست نروند</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">‏%d‎ روز</item>
+        <item quantity="other">‏%d‎ روز</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="other">‏%d‎ آیتم حذف دائمی خواهند شد. مطمئنی می‌خواهی سطل زباله را تخلیه کنی؟</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="other">عبارت اشتباه‏ — %1$d‎ بار دیگر می‌توانی امتحان کنی</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="other">نمی‌توانی بیشتر از‏ %d‎ آیتم انتخاب کنی</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d ثانیه سریع به‌جلو بردن</item>
+        <item quantity="other">%d ثانیه سریع به‌جلو بردن</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d ثانیه به‌عقب بردن</item>
+        <item quantity="other">%d ثانیه به‌عقب بردن</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="other">‏%d‎ آیتم</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="other">‏Free Premium‎ در‏ %1$d‎ روز تمام می‌شود</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="other">‏%1$d‎ روز مانده</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="other">%1$d بار دیگر می‌توانی امتحان کنی</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d ماه</item>
+        <item quantity="other">%1$d ماه</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="other">‏%1$d‎ ماه</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d اعلان جدید</item>
+        <item quantity="other">%d اعلان جدید</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="other">در حال ذخیره‌ی فایل‏ %1$d‎ از مجموع‏ %2$d‎ فایل</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="other">‏%1$d‎ رمز عبور پیدا شد</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="other">علاوه بر‏ %1$d‎ قابلیت اختصاصی بیشتر در اختیار کاربران‏ Premium‎</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="other">‏%d‎ تبلیغ مسدود شده</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="other">می‌توانی بهترین قابلیت‌های ما را با &lt;b>اشتراک Premium&lt;/b> به‌مدت &lt;b>%1$d ماه، – به‌رایگان – امتحان کنی!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="other">می‌توانی بهترین قابلیت‌های ما را با &lt;b>اشتراک Premium&lt;/b> به‌مدت&lt;b>%1$d هفته، -به‌رایگان - امتحان کنی!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="other">می‌توانی بهترین قابلیت‌های ما را با &lt;b>اشتراک Premium&lt;/b> به‌مدت &lt;b>%1$d سال، -به‌رایگان - امتحان کنی!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="other">"‏%1$s/‎ماه برای‏ %3$d‎ ماه اولت، سپس‏ %2$s/‎ماه.‏
+خودبه‌خود تمدید می‌شود. هر زمان خواستی لغو کن.‏"</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="other">"‏%1$s/‎ سال برای‏ %3$d‎ سال اولت، سپس‏ %2$s/‎سال.‏
+خودبه‌خود تمدید می‌شود. هر زمان خواستی لغو کن.‏"</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="other">‏%1$d‎ ماه اول</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="other">‏%1$d‎ سال اول</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="other">‏%1$s/‎ماه برای‏ %2$d‎ ماه</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="other">‏%1$s‎ برای‏ %2$d‎ سال اولت</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="other">‏%1$d%%‎ تخفیف برای‏ %2$d‎ ماه اولت</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="other">دوستانت‏ %1$d‎ ماه Premium کاملا رایگان دریافت می‌کنند!‏</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="other">دوستانت‏ %1$d‎ هفته Premium کاملا رایگان دریافت می‌کنند!‏</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="other">دوستانت‏ %1$d‎ سال Premium کاملا رایگان دریافت می‌کنند!‏</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="other">به لطف شما، &lt;b>%1$d نفر از دوستانت&lt;/b> حالا از استفاده از Aloha لذت می‌برند و خودت هم &lt;b>اشتراک Premium&lt;/b> داری.</item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="other">‏%1$d‎ دوست دیگر دعوت کن تا‏ Free Premium‎ بگیری</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="other">می‌خواهی ضبط‌ها را طولانی‌تر از‏ %1$d‎ ثانیه کنی؟‏</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="other">%1$d ماه Premium داری</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="other">%1$d هفته Premium داری</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="other">%1$d سال Premium داری</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="other">%1$d رمز عبور وارد شد</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="other">%1$d هفته</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="other">‏%1$d‎ هفته</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d سال</item>
+        <item quantity="other">%1$d سال</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="other">‏%1$d‎ سال</item>
+    </plurals>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_profile_signup" app:startDestination="@id/welcomeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_enter_2fa_code" />
+    <include app:graph="@navigation/nav_graph_profile_login" />
+    <fragment android:label="SignUpFragment" android:name="com.alohamobile.profile.auth.presentation.fragment.SignUpFragment" android:id="@id/signUpFragment">
+        <action android:id="@id/action_signUpFragment_to_createPasswordFragment" app:destination="@id/createPasswordFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_signUpFragment_to_nav_graph_profile_login" app:destination="@id/nav_graph_profile_login" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="isTokenExpired" app:argType="boolean" />
+            <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+        </action>
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    </fragment>
+    <fragment android:label="WelcomeFragment" android:name="com.alohamobile.profile.auth.presentation.fragment.WelcomeFragment" android:id="@id/welcomeFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <action android:id="@id/action_welcomeFragment_to_signUpFragment" app:destination="@id/signUpFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_welcomeFragment_to_OAuthEmailRequestFragment" app:destination="@id/OAuthEmailRequestFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <argument android:name="enterPoint" android:defaultValue="UNKNOWN" app:argType="com.alohamobile.profile.navigation.ProfileEntryPoint" />
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+        <action android:id="@id/action_welcomeFragment_to_facebookAuthFragment" app:destination="@id/facebookAuthFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_welcomeFragment_to_nav_graph_profile_login" app:destination="@id/nav_graph_profile_login" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="isTokenExpired" app:argType="boolean" />
+            <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+        </action>
+        <action android:id="@id/action_welcomeFragment_to_nav_graph_enter_2fa_code" app:destination="@id/nav_graph_enter_2fa_code" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="oAuthLoginData" app:argType="com.alohamobile.profile.core.data.auth.OAuthLoginData" />
+            <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+        </action>
+    </fragment>
+    <fragment android:label="CreatePasswordFragment" android:name="com.alohamobile.profile.auth.presentation.fragment.CreatePasswordFragment" android:id="@id/createPasswordFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="email" app:argType="string" />
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    </fragment>
+    <fragment android:label="OAuthEmailRequestFragment" android:name="com.alohamobile.profile.auth.presentation.fragment.OAuthEmailRequestFragment" android:id="@id/OAuthEmailRequestFragment">
+        <argument android:name="oAuthResult" app:argType="com.alohamobile.profile.core.data.auth.OAuthLoginData" />
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    </fragment>
+    <fragment android:label="FacebookAuthFragment" android:name="com.alohamobile.profile.auth.presentation.fragment.FacebookAuthFragment" android:id="@id/facebookAuthFragment" />
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="?fillColorSenary" app:cardElevation="0.0dp" app:contentPaddingBottom="12.0dp" app:contentPaddingLeft="16.0dp" app:contentPaddingRight="16.0dp" app:contentPaddingTop="12.0dp" app:shapeAppearance="?shapeAppearanceM">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:id="@id/chipEmoji" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:id="@id/chipTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</merge>

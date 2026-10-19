@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_video_page_url" />
+    <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:ellipsize="end" android:gravity="center" android:id="@id/webPageUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxLines="1" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:hint="@string/hint_describe_issue" app:counterEnabled="true" app:counterMaxLength="200" app:counterTextAppearance="?textAppearanceCaption2Regular" app:counterTextColor="?textColorTertiary" style="?textInputAreaLayoutStyle">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/textInputEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="200" android:importantForAutofill="no" style="?textInputAreaEditTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="18.0dp" android:text="@string/label_data_shared_with_developers" />
+</LinearLayout>

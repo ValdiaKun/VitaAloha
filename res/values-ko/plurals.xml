@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="other">%1$d개의 파일 업로드 실패</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="other">한도를 초과했습니다. 메시지를 %1$d자로 줄이고 다시 시도하세요.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="other">%1$d개의 요청이 남아 있습니다</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="other">%2$s에 대한 일일 무료 요청이 %1$d개 있습니다. Premium Plus로 업그레이드하고 모든 제한을 없애세요!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="other">%s 북마크</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="other">Premium 상태로 최고의 기능들을 %1$d일 동안 무료로 사용해 보세요</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="other">Premium 상태에서 최고의 기능들을 %1$d일 동안 무료로 사용해보세요. Aloha를 기본 브라우저로 설정하시면 최적의 환경을 경험하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="other">모든 접근 권한을 %1$d일 동안 추가 제공합니다, 완전 무료</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="other">모든 기능을 %1$d일 더 제공해 드립니다, 완전 무료입니다. Aloha를 기본 브라우저로 설정하시면 최적의 환경을 경험하실 수 있습니다.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="other">저장 공간을 확보하지 않으면, 한도를 초과한 파일은 읽기 전용으로 전환됩니다. %1$d일이 지나면 삭제될 예정입니다.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="other">Aloha Cloud 구독이 종료되었습니다. Aloha Cloud가 %1$d일 후에 영구적으로 삭제될 예정입니다. 계속 이용하시려면 요금제를 갱신해 주세요.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="other">클라우드 파일이 삭제되지 않도록 %1$d일 이내에 Aloha Cloud 요금제를 갱신해 주세요</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="other">Aloha Premium 구독이 종료되었습니다. %1$d일 후 파일이 자동으로 삭제됩니다. Aloha Cloud 요금제를 구매하여 파일을 보관하고 추가 저장 공간을 이용하세요.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="other">Aloha Premium 구독이 종료되었습니다. Aloha Cloud가 %1$d일 후에 영구적으로 삭제될 예정입니다. 다시 이용하시려면 요금제를 갱신해 주세요.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="other">클라우드 파일이 삭제되지 않도록 %1$d일 이내에 Aloha Premium 요금제를 갱신해 주세요</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="other">%1$d일 후 일부 파일이 삭제될 예정입니다</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="other">%1$d일 후 일부 파일이 삭제될 예정입니다. 계속해서 이용하시려면 요금제를 갱신해 주세요.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="other">클라우드 파일이 사라지지 않도록 %1$d일 안에 Premium을 갱신하세요</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d 일</item>
+        <item quantity="other">%d 일</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="other">%d개의 항목이 영구적으로 삭제됩니다. 정말로 휴지통을 비우시겠습니까?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="other">잘못된 구문 — %1$d번의 시도 남음</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="other">%d개 이상의 항목을 선택할 수 없습니다</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d초 빨리 감기</item>
+        <item quantity="other">%d초 빨리 감기</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d초 되감기</item>
+        <item quantity="other">%d초 되감기</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="other">%d개의 항목</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="other">%1$d일 후에 Free Premium이 종료됩니다</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="zero">하루 남았습니다</item>
+        <item quantity="other">%1$d일 남았습니다</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="other">%1$d회 시도 가능합니다</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d개월</item>
+        <item quantity="other">%1$d개월</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="other">%1$d 개월</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">새 알림 %d개</item>
+        <item quantity="other">새 알림 %d개</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="other">%2$d개의 파일 중 %1$d개 저장 중</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="other">비밀번호 %1$d개를 찾음</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="other">Premium 사용자만을 위한 %1$d가지의 특별한 추가 기능 제공</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="other">%d개의 팝업 차단됨</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="other">&lt;b>Premium 상태로&lt;/b> 최고의 기능들을 &lt;b>%1$d개월 동안 – 무료 –&lt;/b>로 사용할 수 있습니다!</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="other">&lt;b>Premium 상태로&lt;/b> 최고의 기능들을 &lt;b>%1$d주 동안 – 무료 –&lt;/b>로 사용할 수 있습니다!</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="other">&lt;b>Premium 상태로&lt;/b> 최고의 기능들을 &lt;b>%1$d년 동안 – 무료 –&lt;/b>로 사용할 수 있습니다!</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="other">"첫 %3$d개월 동안 %1$s/월, 이후 %2$s/월.
+자동 갱신됩니다. 언제든지 취소하실 수 있습니다."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="other">"첫 %3$d년 동안 %1$s, 이후 %2$s/년.
+자동 갱신됩니다. 언제든지 취소하실 수 있습니다."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="other">첫 %1$d개월</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="other">첫 %1$d년</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="other">%2$d개월 동안 %1$s/월</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="other">첫 %2$d년 동안 %1$s</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="other">첫 %2$d개월 동안 %1$d%% 할인</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="other">친구들은 Premium을 %1$d개월 동안 무료로 사용할 수 있습니다!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="other">친구들은 Premium을 %1$d주 동안 무료로 사용할 수 있습니다!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="other">친구들은 Premium을 %1$d년 동안 무료로 사용할 수 있습니다!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="other">덕분에 &lt;b>%1$d명의 친구&lt;/b>가 지금 Aloha를 즐기고 있으며 당신은 &lt;b>Premium 등급&lt;/b>을 누리고 있습니다.</item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="other">친구 %1$d명을 더 초대하고 Free Premium을 받으세요</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="other">%1$d초보다 더 길게 녹화하고 싶으신가요?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="other">%1$d개월 동안 Premium을 이용할 수 있습니다</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="other">%1$d주일 동안 Premium을 이용할 수 있습니다</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="other">%1$d년 동안 Premium을 이용할 수 있습니다</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="other">%1$d 비밀번호를 가져왔습니다</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="other">%1$d 주</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="other">%1$d 주</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d년</item>
+        <item quantity="other">%1$d년</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="other">%1$d 년</item>
+    </plurals>
+</resources>

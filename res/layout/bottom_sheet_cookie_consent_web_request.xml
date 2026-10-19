@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:id="@id/contentScrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10.0dp">
+                <com.google.android.material.imageview.ShapeableImageView android:id="@id/alohaIcon" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:src="@drawable/static_ic_aloha" />
+                <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:id="@id/dialogTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cookie_consent_dialog_title" android:layout_marginStart="16.0dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/contentLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cookie_consent_dialog_description" />
+                <com.google.android.material.materialswitch.MaterialSwitch android:textAppearance="?textAppearanceBody2Regular" android:id="@id/useForAllWebsitesSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/cookie_consent_action_use_for_all_sites" />
+                <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:id="@id/websiteMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

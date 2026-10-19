@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_backup_code" app:startDestination="@id/regenerateBackupCodeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="RegenerateBackupCodeFragment" android:name="com.alohamobile.profile.auth.twofactor.presentation.backup.RegenerateBackupCodeFragment" android:id="@id/regenerateBackupCodeFragment">
+        <argument android:name="backupCode" app:argType="string" />
+    </fragment>
+</navigation>

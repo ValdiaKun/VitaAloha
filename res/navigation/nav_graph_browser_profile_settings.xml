@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_browser_profile_settings" app:startDestination="@id/profileSettingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_backup_code" />
+    <include app:graph="@navigation/nav_graph_enable_2fa" />
+    <include app:graph="@navigation/nav_graph_enable_2fa_with_confirmation" />
+    <include app:graph="@navigation/nav_graph_enable_2fa_with_promo" />
+    <include app:graph="@navigation/nav_graph_password_create_key_phrase" />
+    <fragment android:label="ProfileSettingsFragment" android:name="com.alohamobile.profile.account.ProfileSettingsFragment" android:id="@id/profileSettingsFragment">
+        <argument android:name="extraAction" android:defaultValue="@null" app:argType="com.alohamobile.profile.navigation.AuthorizedProfileAction" app:nullable="true" />
+        <action android:id="@id/action_profileFragment_to_nav_graph_password_create_key_phrase" app:destination="@id/nav_graph_password_create_key_phrase" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_profileFragment_to_nav_graph_enable_2fa" app:destination="@id/nav_graph_enable_2fa" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_profileFragment_to_nav_graph_enable_2fa_with_confirmation" app:destination="@id/nav_graph_enable_2fa_with_confirmation" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_profileSettingsFragment_to_nav_graph_enable_2fa_with_promo_and_confirmation" app:destination="@id/nav_graph_enable_2fa_with_promo" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="nextStepWithPasswordConfirmation" android:defaultValue="true" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_profileSettingsFragment_to_nav_graph_enable_2fa_with_promo" app:destination="@id/nav_graph_enable_2fa_with_promo" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="nextStepWithPasswordConfirmation" android:defaultValue="false" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_profileSettingsFragment_to_nav_graph_backup_code" app:destination="@id/nav_graph_backup_code" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="backupCode" app:argType="string" />
+        </action>
+    </fragment>
+</navigation>

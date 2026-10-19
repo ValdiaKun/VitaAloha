@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="56.0dp" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/scrollToNewsBackgroundImageView" android:padding="4.0dp" android:clickable="true" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/shape_rounded_rectangle_max" app:tint="?fillColorBrandPrimary" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/scrollToNewsArrow1ImageView" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/ic_double_arrow_part_1_56" app:tint="?fillColorOnAccent" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/scrollToNewsArrow2ImageView" android:layout_width="56.0dp" android:layout_height="56.0dp" android:src="@drawable/ic_double_arrow_part_2_56" app:tint="?fillColorOnAccent" />
+</merge>

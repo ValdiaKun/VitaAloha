@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="end" android:id="@id/selectCheckBoxLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="center" android:id="@id/checkBoxOverlay" android:background="@drawable/shape_rounded_rectangle_xxs" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginStart="1.0dp" android:backgroundTint="?layerColorFloor1" />
+    <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/selectCheckBox" android:background="@null" android:clickable="false" android:layout_width="30.0dp" android:layout_height="30.0dp" android:minWidth="0.0dp" android:minHeight="0.0dp" />
+</FrameLayout>

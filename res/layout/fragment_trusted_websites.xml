@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar_separated" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.alohamobile.component.view.ZeroScreenView android:id="@id/trustedWebsitesZeroScreen" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" app:zeroScreenDescription="@string/trusted_websites_zero_subtitle" app:zeroScreenImage="@drawable/img_window_120" app:zeroScreenTitle="@string/trusted_websites_zero_title" />
+</FrameLayout>

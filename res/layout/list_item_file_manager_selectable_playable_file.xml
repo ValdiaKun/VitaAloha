@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_brand_secondary_rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/previewContainer" android:padding="4.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="164:124" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.alohamobile.component.util.SafeShapeableImageView android:id="@id/mediaPreview" android:background="?fillColorSenary" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shapeAppearance="?shapeAppearanceL" />
+            <View android:id="@id/mediaPreviewOverlay" android:background="@drawable/shape_rounded_rectangle_l" android:layout_width="match_parent" android:layout_height="match_parent" android:backgroundTint="?layerColorOverlay" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceCaption1" android:textColor="?staticColorWhiteBasic" android:layout_gravity="end" android:id="@id/duration" android:background="@drawable/shape_rounded_rectangle_xxs" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:layout_marginEnd="8.0dp" android:backgroundTint="?staticColorBlackAlpha80" android:paddingHorizontal="2.0dp" app:layout_constraintBottom_toTopOf="@id/playingProgress" app:layout_constraintEnd_toEndOf="parent" app:layout_goneMarginBottom="8.0dp" />
+            <com.alohamobile.component.view.ProgressBar android:id="@id/playingProgress" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="3.0dp" android:layout_marginBottom="8.0dp" android:layout_marginHorizontal="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:progressBarIndicatorColor="?fillColorBrandPrimary" app:progressBarTrackColor="?staticColorWhiteBasic" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/list_item_file_manager_selectable_checkbox" />
+        <include layout="@layout/view_aloha_file_badge" />
+        <include android:id="@id/newDownloadBadgeInclude" layout="@layout/view_new_download_badge" />
+    </FrameLayout>
+    <include layout="@layout/list_item_file_manager_base_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

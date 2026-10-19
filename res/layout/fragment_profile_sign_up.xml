@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_separated" />
+    <ScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/profile_sign_up" />
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/profile_sign_up_description" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:hint="@string/profile_field_email" app:helperText="mail@example.com" app:helperTextEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/inputEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textEmailAddress" android:imeOptions="actionDone|flagNoPersonalizedLearning" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.alohamobile.component.button.ProgressButton android:id="@id/continueButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" app:progressButtonText="@string/button_continue" />
+            <TextView android:textAppearance="?textAppearanceBody2Regular" android:textColor="?textColorPrimary" android:gravity="center" android:id="@id/goToLoginButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

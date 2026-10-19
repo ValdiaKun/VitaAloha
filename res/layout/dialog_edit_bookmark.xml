@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:hint="@string/bookmarks_title">
+        <com.alohamobile.component.textfield.NoAutofillTextInputEditText android:id="@id/titleEditText" android:nextFocusDown="@id/inputLayoutUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:hint="@string/bookmarks_url">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/urlEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:inputType="textUri" android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

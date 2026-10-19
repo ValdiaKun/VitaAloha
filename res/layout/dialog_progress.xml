@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp">
+        <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:ellipsize="end" android:id="@id/subtitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+</LinearLayout>

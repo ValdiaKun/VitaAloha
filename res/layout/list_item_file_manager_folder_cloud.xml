@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/ripple_brand_secondary_rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/previewContainer" android:padding="4.0dp" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintDimensionRatio="164:124" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@id/filePreview" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" app:shapeAppearance="?shapeAppearanceL" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/badgeContainer" android:padding="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginEnd="8.0dp" app:layout_constraintEnd_toEndOf="@id/previewContainer" app:layout_constraintTop_toTopOf="@id/previewContainer">
+        <TextView android:textAppearance="?textAppearanceCaption2Bold" android:textColor="?textColorOnAccent" android:id="@id/newBadge" android:background="@drawable/shape_rounded_rectangle_xs" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/label_new" android:layout_marginEnd="2.0dp" android:backgroundTint="?fillColorBrandPrimary" android:paddingHorizontal="6.0dp" android:paddingVertical="2.0dp" app:layout_goneMarginEnd="12.0dp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/cloudAccessBadge" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_star_16" android:importantForAccessibility="no" android:paddingHorizontal="1.0dp" android:paddingVertical="4.0dp" app:tint="?fillColorGiftPrimary" />
+    </LinearLayout>
+    <include layout="@layout/list_item_file_manager_base_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>

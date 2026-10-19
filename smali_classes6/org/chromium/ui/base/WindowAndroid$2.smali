@@ -1,0 +1,44 @@
+.class Lorg/chromium/ui/base/WindowAndroid$2;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lorg/chromium/ui/insets/InsetObserver$WindowInsetObserver;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/chromium/ui/base/WindowAndroid;-><init>(Landroid/content/Context;ZLorg/chromium/ui/base/IntentRequestTracker;Lorg/chromium/ui/insets/InsetObserver;Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lorg/chromium/ui/base/WindowAndroid;
+
+
+# direct methods
+.method public constructor <init>(Lorg/chromium/ui/base/WindowAndroid;)V
+    .locals 0
+
+    iput-object p1, p0, Lorg/chromium/ui/base/WindowAndroid$2;->this$0:Lorg/chromium/ui/base/WindowAndroid;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onInsetChanged()V
+    .locals 0
+
+    iget-object p0, p0, Lorg/chromium/ui/base/WindowAndroid$2;->this$0:Lorg/chromium/ui/base/WindowAndroid;
+
+    invoke-static {p0}, Lorg/chromium/ui/base/WindowAndroid;->e(Lorg/chromium/ui/base/WindowAndroid;)V
+
+    return-void
+.end method

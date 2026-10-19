@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton android:id="@id/inviteMoreFriendsButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_invite_more" />
+    <com.google.android.material.button.MaterialButton android:id="@id/greatButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_great" style="?textButtonStyle" />
+</LinearLayout>

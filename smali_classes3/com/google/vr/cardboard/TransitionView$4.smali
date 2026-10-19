@@ -1,0 +1,87 @@
+.class Lcom/google/vr/cardboard/TransitionView$4;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/animation/Animation$AnimationListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/vr/cardboard/TransitionView;->fadeOutAndRemove(Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/google/vr/cardboard/TransitionView;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/vr/cardboard/TransitionView;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/vr/cardboard/TransitionView$4;->this$0:Lcom/google/vr/cardboard/TransitionView;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationEnd(Landroid/view/animation/Animation;)V
+    .locals 1
+
+    iget-object p1, p0, Lcom/google/vr/cardboard/TransitionView$4;->this$0:Lcom/google/vr/cardboard/TransitionView;
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Lcom/google/vr/cardboard/TransitionView;->setVisibility(I)V
+
+    iget-object p1, p0, Lcom/google/vr/cardboard/TransitionView$4;->this$0:Lcom/google/vr/cardboard/TransitionView;
+
+    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/ViewGroup;
+
+    iget-object v0, p0, Lcom/google/vr/cardboard/TransitionView$4;->this$0:Lcom/google/vr/cardboard/TransitionView;
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
+    iget-object p1, p0, Lcom/google/vr/cardboard/TransitionView$4;->this$0:Lcom/google/vr/cardboard/TransitionView;
+
+    invoke-static {p1}, Lcom/google/vr/cardboard/TransitionView;->access$600(Lcom/google/vr/cardboard/TransitionView;)Ljava/lang/Runnable;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    iget-object p0, p0, Lcom/google/vr/cardboard/TransitionView$4;->this$0:Lcom/google/vr/cardboard/TransitionView;
+
+    invoke-static {p0}, Lcom/google/vr/cardboard/TransitionView;->access$600(Lcom/google/vr/cardboard/TransitionView;)Ljava/lang/Runnable;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onAnimationRepeat(Landroid/view/animation/Animation;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/view/animation/Animation;)V
+    .locals 0
+
+    return-void
+.end method

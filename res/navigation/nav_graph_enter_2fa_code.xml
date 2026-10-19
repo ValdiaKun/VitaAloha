@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_enter_2fa_code" app:startDestination="@id/enterAuthenticatorCodeFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    <fragment android:label="EnterAuthenticatorCodeFragment" android:name="com.alohamobile.profile.auth.twofactor.presentation.login.EnterAuthenticatorCodeFragment" android:id="@id/enterAuthenticatorCodeFragment">
+        <action android:id="@id/action_enterAuthenticatorCodeFragment_to_enterBackupCodeFragment" app:destination="@id/enterBackupCodeFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <argument android:name="email" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="password" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="oAuthLoginData" android:defaultValue="@null" app:argType="com.alohamobile.profile.core.data.auth.OAuthLoginData" app:nullable="true" />
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    </fragment>
+    <fragment android:label="EnterBackupCodeFragment" android:name="com.alohamobile.profile.auth.twofactor.presentation.login.EnterBackupCodeFragment" android:id="@id/enterBackupCodeFragment">
+        <argument android:name="email" app:argType="string" app:nullable="true" />
+        <argument android:name="password" app:argType="string" app:nullable="true" />
+        <argument android:name="oAuthLoginData" app:argType="com.alohamobile.profile.core.data.auth.OAuthLoginData" app:nullable="true" />
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    </fragment>
+</navigation>

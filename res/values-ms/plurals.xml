@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="other">Salinan fail %1$d gagal</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="other">Melebihi had. Pendekkan mesej kepada %1$d aksara dan cuba semula.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="other">%1$d permintaan lagi</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="other">Anda mempunyai %1$d permintaan percuma setiap hari untuk %2$s. Tingkatkan kepada Premium Plus dan alih keluar semua had!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="other">%s bookmark</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="other">Anda boleh mencuba ciri terbaik kami dengan status Premium selama %1$d hari secara percuma secara percuma</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="other">Anda boleh mencuba ciri terbaik kami dengan status Premium selama %1$d hari secara percuma. Tetapkan Aloha sebagai pelayar lalai anda untuk mendapatkan pengalaman penuh.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="other">Kami memberi anda %1$d hari lagi akses penuh, percuma sepenuhnya</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="other">Kami memberi anda %1$d hari lagi akses penuh, percuma sepenuhnya. Tetapkan Aloha sebagai pelayar lalai anda untuk mendapatkan pengalaman penuh.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="other">Jika anda tidak mengosongkan ruang, fail yang melebihi had akan menjadi baca sahaja. Ia akan dipadamkan selepas %1$d hari.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="other">Langganan Aloha Cloud anda telah tamat. Aloha Cloud akan dipadamkan secara kekal dalam %1$d hari. Perbaharui pelan anda untuk memulihkan akses.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="other">Perbaharui langganan Aloha Cloud anda dalam masa %1$d hari supaya fail awan anda tidak hilang</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="other">Langganan Aloha Premium anda telah tamat. Fail anda akan dipadamkan secara automatik dalam tempoh %1$d hari. Dapatkan pelan Aloha Cloud untuk mengekalkan fail anda dan memperoleh ruang storan tambahan.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="other">Langganan Aloha Premium anda telah tamat. Aloha Cloud akan dipadamkan secara kekal dalam %1$d hari. Perbaharui pelan anda untuk memulihkan akses.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="other">Perbaharui langganan Aloha Premium anda dalam masa %1$d hari supaya fail awan anda tidak hilang</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="other">Sesetengah fail akan dipadamkan dalam %1$d hari</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="other">Sesetengah fail akan dipadamkan dalam %1$d hari. Perbaharui pelan anda untuk memastikan fail anda boleh diakses.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="other">Perbaharui Premium dalam %1$d hari supaya fail cloud anda tidak hilang</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d hari</item>
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="other">%d item akan dihapuskan secara kekal. Adakah anda pasti mahu membersihkan sampah?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="other">Frasa salah — %1$d percubaan lagi</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="other">Anda tidak boleh memilih lebih daripada %d item</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Mundar laju %d saat</item>
+        <item quantity="other">Mundar laju %d saat</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Mandir %d saat</item>
+        <item quantity="other">Mandir %d saat</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="other">%d item</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="other">Free Premium tamat dalam %1$d hari</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="other">%1$d hari lagi</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="other">%1$d percubaan lagi</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d bulan</item>
+        <item quantity="other">%1$d bulan</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="other">%1$d bulan</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d pemberitahuan baharu</item>
+        <item quantity="other">%d pemberitahuan baharu</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="other">Menyimpan %1$d daripada %2$d fail</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="other">%1$d kata laluan ditemui</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="other">Selain %1$d lagi ciri eksklusif yang tersedia untuk pengguna Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="other">%d pop timbul disekat</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="other">Anda boleh mencuba ciri terbaik kami dengan &lt;b>status Premium&lt;/b> selama &lt;b>%1$d bulan – secara percuma – secara percuma!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="other">Anda boleh mencuba ciri terbaik kami dengan &lt;b>status Premium&lt;/b> selama &lt;b>%1$d minggu – secara percuma – secara percuma!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="other">Anda boleh mencuba ciri terbaik kami dengan &lt;b>status Premium&lt;/b> selama &lt;b>%1$d tahun – secara percuma – secara percuma!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="other">"%1$s/bulan untuk %3$d bulan pertama, kemudian %2$s/bulan.
+Pembaharuan secara automatik. Batal pada bila-bila masa."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="other">"%1$s untuk %3$d tahun pertama, kemudian %2$s/tahun. 
+Diperbaharui secara automatik. Batal pada bila-bila masa."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="other">%1$d bulan pertama</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="other">%1$d tahun pertama</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="other">%1$s/bln untuk %2$d bln</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="other">%1$s untuk %2$d tahun pertama</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="other">Diskaun %1$d%% untuk %2$d bulan pertama anda</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="other">Rakan anda akan mendapat %1$d bulan Premium secara percuma!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="other">Rakan anda akan mendapat %1$d minggu Premium secara percuma!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="other">Rakan anda akan mendapat %1$d tahun Premium secara percuma!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="other">Terima kasih kepada anda, &lt;b>%1$d rakan&lt;/b> kini menikmati Aloha dan anda menikmati &lt;b>status Premium.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="other">Jemput %1$d lagi rakan untuk mendapatkan Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="other">Ingin membuat rakaman lebih lama daripada %1$d saat?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="other">Anda mempunyai %1$d bulan Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="other">Anda mempunyai %1$d minggu Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="other">Anda mempunyai %1$d tahun Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="other">%1$d kata laluan diimport</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="other">%1$d minggu</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="other">%1$d minggu</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d tahun</item>
+        <item quantity="other">%1$d tahun</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="other">%1$d tahun</item>
+    </plurals>
+</resources>

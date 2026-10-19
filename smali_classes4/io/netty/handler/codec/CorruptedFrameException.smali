@@ -1,0 +1,16 @@
+.class public abstract Lio/netty/handler/codec/CorruptedFrameException;
+.super Lio/netty/handler/codec/DecoderException;
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x365fb7bf292bb7f8L
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lio/netty/handler/codec/DecoderException;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method

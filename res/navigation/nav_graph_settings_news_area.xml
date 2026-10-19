@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_settings_news_area" app:startDestination="@id/newsAreaSettingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="NewsAreaSettingsFragment" android:name="com.alohamobile.news.presentation.fragment.NewsAreaSettingsFragment" android:id="@id/newsAreaSettingsFragment" />
+    <action android:id="@id/action_global_newsAreaSettingsFragment" app:destination="@id/newsAreaSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+</navigation>

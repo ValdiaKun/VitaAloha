@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_bookmarks" app:startDestination="@id/bookmarksFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="BookmarksFragment" android:name="com.alohamobile.bookmarks.presentation.fragment.BookmarksFragment" android:id="@id/bookmarksFragment">
+        <argument android:name="bookmarksScreenRootFolder" android:defaultValue="@null" app:argType="com.alohamobile.browser.navigation.SettingsNavigator$BookmarksScreenFolder" app:nullable="true" />
+    </fragment>
+</navigation>

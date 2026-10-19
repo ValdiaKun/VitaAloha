@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/autoInsetsContent" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:tag="toolbar" android:background="@null" android:layout_width="match_parent" app:navigationIcon="@drawable/ic_close_24" style="@style/Component.Aloha.Toolbar" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_marginHorizontal="64.0dp">
+            <TextView android:textAppearance="?textAppearanceBody2Medium" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_two_factor_authentication" android:maxLines="2" />
+            <com.alohamobile.component.view.ProgressTrackerView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:progressTrackerViewStep="1" app:progressTrackerViewStepsTotal="3" />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:overScrollMode="never" android:paddingVertical="24.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_install_or_open_generator_app" android:paddingHorizontal="16.0dp" />
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/message_install_or_open_generator_app" android:paddingHorizontal="16.0dp" />
+            <HorizontalScrollView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:paddingHorizontal="16.0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.google.android.material.imageview.ShapeableImageView android:id="@id/googleAuthenticatorButton" android:background="@null" android:padding="1.0dp" android:layout_width="@dimen/icon_size_56" android:layout_height="@dimen/icon_size_56" android:src="@drawable/static_ic_app_google" app:shapeAppearance="?shapeAppearanceL" app:strokeColor="?staticColorBlackAlpha10" app:strokeWidth="1.0dp" />
+                    <com.google.android.material.imageview.ShapeableImageView android:id="@id/authyButton" android:background="@null" android:layout_width="@dimen/icon_size_56" android:layout_height="@dimen/icon_size_56" android:src="@drawable/static_ic_app_authy" android:layout_marginStart="12.0dp" app:shapeAppearance="?shapeAppearanceL" />
+                    <com.google.android.material.imageview.ShapeableImageView android:id="@id/microsoftAuthenticatorButton" android:background="@null" android:padding="1.0dp" android:layout_width="@dimen/icon_size_56" android:layout_height="@dimen/icon_size_56" android:src="@drawable/static_ic_app_microsoft" android:layout_marginStart="12.0dp" app:shapeAppearance="?shapeAppearanceL" app:strokeColor="?staticColorBlackAlpha10" app:strokeWidth="1.0dp" />
+                    <com.google.android.material.imageview.ShapeableImageView android:id="@id/duoAuthenticatorButton" android:background="@null" android:layout_width="@dimen/icon_size_56" android:layout_height="@dimen/icon_size_56" android:src="@drawable/static_ic_app_duo" android:layout_marginStart="12.0dp" app:shapeAppearance="?shapeAppearanceL" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorTertiary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/suggestion_tap_to_open_app" android:paddingHorizontal="16.0dp" />
+        </LinearLayout>
+    </ScrollView>
+    <com.alohamobile.component.button.ProgressButton android:id="@id/continueButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dp" android:layout_marginHorizontal="16.0dp" app:progressButtonText="@string/button_continue" />
+</LinearLayout>

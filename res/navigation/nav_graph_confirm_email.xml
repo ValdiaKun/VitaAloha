@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_confirm_email" app:startDestination="@id/confirmEmailFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ConfirmEmailFragment" android:name="com.alohamobile.profile.auth.presentation.fragment.ConfirmEmailFragment" android:id="@id/confirmEmailFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="email" app:argType="string" />
+    </fragment>
+</navigation>

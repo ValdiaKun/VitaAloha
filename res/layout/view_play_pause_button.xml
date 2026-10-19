@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/playPauseButton" android:layout_width="@dimen/icon_size_56" android:layout_height="@dimen/icon_size_56" android:src="@drawable/ic_start_56" app:tint="?staticColorWhiteBasic" />
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:id="@id/playPauseButtonProgress" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0.0dp" android:indeterminate="true" app:indicatorColor="?staticColorWhiteBasic" app:indicatorSize="56.0dp" app:trackThickness="3.0dp" />
+</merge>

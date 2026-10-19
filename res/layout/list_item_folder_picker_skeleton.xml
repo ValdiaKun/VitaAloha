@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/shape_rounded_rectangle_xs" android:layout_width="24.0dp" android:layout_height="24.0dp" android:backgroundTint="?fillColorSenary" />
+    <View android:background="@drawable/shape_rounded_rectangle_xxs" android:layout_width="86.0dp" android:layout_height="14.0dp" android:layout_marginStart="16.0dp" android:backgroundTint="?fillColorSenary" />
+</LinearLayout>

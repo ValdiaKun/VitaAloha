@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Не вдалося завантажити %1$d файл</item>
+        <item quantity="few">Не вдалося завантажити %1$d файли</item>
+        <item quantity="many">Не вдалося завантажити %1$d файлів</item>
+        <item quantity="other">Не вдалося завантажити %1$d файлів</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Перевищено ліміт. Скоротіть повідомлення до %1$d символу та спробуйте ще раз.</item>
+        <item quantity="few">Перевищено ліміт. Скоротіть повідомлення до %1$d символів та спробуйте ще раз.</item>
+        <item quantity="many">Перевищено ліміт. Скоротіть повідомлення до %1$d символів та спробуйте ще раз.</item>
+        <item quantity="other">Перевищено ліміт. Скоротіть повідомлення до %1$d символів та спробуйте ще раз.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="zero">Запитів більше немає</item>
+        <item quantity="one">Залишився %1$d запит</item>
+        <item quantity="few">Залишилося %1$d запити</item>
+        <item quantity="many">Залишилося %1$d запитів</item>
+        <item quantity="other">Залишилося %1$d запитів</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">В вас є %1$d безкоштовний запит на день для %2$s. Оновіться до Premium Plus та зніміть усі ліміти!</item>
+        <item quantity="few">В вас є %1$d безкоштовні запити на день для %2$s. Оновіться до Premium Plus та зніміть усі ліміти!</item>
+        <item quantity="many">В вас є %1$d безкоштовних запитів на день для %2$s. Оновіться до Premium Plus та зніміть усі ліміти!</item>
+        <item quantity="other">В вас є %1$d безкоштовних запитів на день для %2$s. Оновіться до Premium Plus та зніміть усі ліміти!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s закладка</item>
+        <item quantity="few">%s закладки</item>
+        <item quantity="many">%s закладок</item>
+        <item quantity="other">%s закладки</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Випробуйте наші найкращі Premium функції безкоштовно протягом %1$d дня</item>
+        <item quantity="few">Випробуйте наші найкращі Premium функції безкоштовно протягом %1$d днів</item>
+        <item quantity="many">Випробуйте наші найкращі Premium функції безкоштовно протягом %1$d днів</item>
+        <item quantity="other">Випробуйте наші найкращі Premium функції безкоштовно протягом %1$d днів</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Ви можете користуватися нашими найкращими функціями із Premium статусом безкоштовно протягом %1$d дня. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+        <item quantity="few">Ви можете користуватися нашими найкращими функціями із Premium статусом безкоштовно протягом %1$d днів. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+        <item quantity="many">Ви можете користуватися нашими найкращими функціями із Premium статусом безкоштовно протягом %1$d днів. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+        <item quantity="other">Ви можете користуватися нашими найкращими функціями із Premium статусом безкоштовно протягом %1$d днів. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Даємо вам ще %1$d день повного доступу, абсолютно безкоштовно</item>
+        <item quantity="few">Даємо вам ще %1$d дні повного доступу, абсолютно безкоштовно</item>
+        <item quantity="many">Даємо вам ще %1$d дні повного доступу, абсолютно безкоштовно</item>
+        <item quantity="other">Даємо вам ще %1$d дні повного доступу, абсолютно безкоштовно</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">Ми даємо вам ще %1$d день повного доступу, абсолютно безкоштовно. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+        <item quantity="few">Ви можете користуватися нашими найкращими функціями із Premium статусом безкоштовно протягом %1$d днів. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+        <item quantity="many">Ви можете користуватися нашими найкращими функціями із Premium статусом безкоштовно протягом %1$d днів. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+        <item quantity="other">Ви можете користуватися нашими найкращими функціями із Premium статусом безкоштовно протягом %1$d днів. Зробіть Aloha своїм браузером за замовчуванням, щоб отримати повний досвід.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Якщо ви не звільните місце, файли, що перевищують ліміт, стануть доступними лише для читання. Їх буде видалено через %1$d день.</item>
+        <item quantity="few">Якщо ви не звільните місце, файли, що перевищують ліміт, стануть доступними лише для читання. Їх буде видалено через %1$d дні.</item>
+        <item quantity="many">Якщо ви не звільните місце, файли, що перевищують ліміт, стануть доступними лише для читання. Їх буде видалено через %1$d днів.</item>
+        <item quantity="other">Якщо ви не звільните місце, файли, що перевищують ліміт, стануть доступними лише для читання. Їх буде видалено через %1$d днів.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Термін дії вашої підписки на Aloha Cloud закінчився. Aloha Cloud буде назавжди видалено через %1$d день. Поновіть свій план, щоб відновити доступ.</item>
+        <item quantity="few">Термін дії вашої підписки на Aloha Cloud закінчився. Aloha Cloud буде назавжди видалено через %1$d дні. Поновіть свій план, щоб відновити доступ.</item>
+        <item quantity="many">Термін дії вашої підписки на Aloha Cloud закінчився. Aloha Cloud буде назавжди видалено через %1$d днів. Поновіть свій план, щоб відновити доступ.</item>
+        <item quantity="other">Термін дії вашої підписки на Aloha Cloud закінчився. Aloha Cloud буде назавжди видалено через %1$d днів. Поновіть свій план, щоб відновити доступ.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Поновіть підписку на Aloha Cloud протягом %1$d дня, щоб ваші файли у хмарі не зникли</item>
+        <item quantity="few">Поновіть підписку на Aloha Cloud протягом %1$d днів, щоб ваші файли у хмарі не зникли</item>
+        <item quantity="many">Поновіть підписку на Aloha Cloud протягом %1$d днів, щоб ваші файли у хмарі не зникли</item>
+        <item quantity="other">Поновіть підписку на Aloha Cloud протягом %1$d днів, щоб ваші файли у хмарі не зникли</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Ваша підписка Aloha Premium закінчилася. Ваші файли буде автоматично видалено через %1$d день. Придбайте план Aloha Cloud, щоб зберегти файли та отримати додаткове сховище.</item>
+        <item quantity="few">Ваша підписка Aloha Premium закінчилася. Ваші файли буде автоматично видалено через %1$d дні. Придбайте план Aloha Cloud, щоб зберегти файли та отримати додаткове сховище.</item>
+        <item quantity="many">Ваша підписка Aloha Premium закінчилася. Ваші файли буде автоматично видалено через %1$d днів. Придбайте план Aloha Cloud, щоб зберегти файли та отримати додаткове сховище.</item>
+        <item quantity="other">Ваша підписка Aloha Premium закінчилася. Ваші файли буде автоматично видалено через %1$d днів. Придбайте план Aloha Cloud, щоб зберегти файли та отримати додаткове сховище.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Ваша підписка Aloha Premium закінчилася. Aloha Cloud буде остаточно видалено через %1$d день. Поновіть свій план, щоб відновити доступ.</item>
+        <item quantity="few">Ваша підписка Aloha Premium закінчилася. Aloha Cloud буде остаточно видалено через %1$d дні. Поновіть свій план, щоб відновити доступ.</item>
+        <item quantity="many">Ваша підписка Aloha Premium закінчилася. Aloha Cloud буде остаточно видалено через %1$d днів. Поновіть свій план, щоб відновити доступ.</item>
+        <item quantity="other">Ваша підписка Aloha Premium закінчилася. Aloha Cloud буде остаточно видалено через %1$d днів. Поновіть свій план, щоб відновити доступ.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Поновіть підписку Aloha Premium протягом %1$d дня, щоб ваші хмарні файли не зникли</item>
+        <item quantity="few">Поновіть підписку Aloha Premium протягом %1$d днів, щоб ваші хмарні файли не зникли</item>
+        <item quantity="many">Поновіть підписку Aloha Premium протягом %1$d днів, щоб ваші хмарні файли не зникли</item>
+        <item quantity="other">Поновіть підписку Aloha Premium протягом %1$d днів, щоб ваші хмарні файли не зникли</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Деякі файли буде видалено через %1$d день</item>
+        <item quantity="few">Деякі файли буде видалено через %1$d дні</item>
+        <item quantity="many">Деякі файли буде видалено через %1$d днів</item>
+        <item quantity="other">Деякі файли буде видалено через %1$d днів</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Деякі файли буде видалено через %1$d день. Поновіть свій план, щоб зберегти доступ до файлів.</item>
+        <item quantity="few">Деякі файли буде видалено через %1$d дні. Поновіть свій план, щоб зберегти доступ до файлів.</item>
+        <item quantity="many">Деякі файли буде видалено через %1$d днів. Поновіть свій план, щоб зберегти доступ до файлів.</item>
+        <item quantity="other">Деякі файли буде видалено через %1$d днів. Поновіть свій план, щоб зберегти доступ до файлів.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Поновіть Premium через %1$d день, щоб ваші хмарні файли не зникли</item>
+        <item quantity="few">Поновіть Premium через %1$d дні, щоб ваші хмарні файли не зникли</item>
+        <item quantity="many">Поновіть Premium через %1$d днів, щоб ваші хмарні файли не зникли</item>
+        <item quantity="other">Поновіть Premium через %1$d днів, щоб ваші хмарні файли не зникли</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d днів</item>
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дні</item>
+        <item quantity="many">%d днів</item>
+        <item quantity="other">%d дня</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d елемент буде видалено остаточно. Справді хочете очистити кошик?</item>
+        <item quantity="few">%d елементи буде видалено остаточно. Справді хочете очистити кошик?</item>
+        <item quantity="many">%d елементів буде видалено остаточно. Справді хочете очистити кошик?</item>
+        <item quantity="other">%d елемента буде видалено остаточно. Справді хочете очистити кошик?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Неправильна фраза - залишилася %1$d спроба</item>
+        <item quantity="few">Неправильна фраза - залишилося %1$d спроби</item>
+        <item quantity="many">Неправильна фраза - залишилося %1$d спроб</item>
+        <item quantity="other">Неправильна фраза - залишилося %1$d спроб</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Ви не можете обрати більше ніж %d обʼєкт</item>
+        <item quantity="few">Ви не можете обрати більше ніж %d обʼєкти</item>
+        <item quantity="many">Ви не можете обрати більше ніж %d обʼєктів</item>
+        <item quantity="other">Ви не можете обрати більше ніж %d обʼєктів</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Перемотати вперед на %d секунду</item>
+        <item quantity="few">Перемотати вперед на %d секунди</item>
+        <item quantity="many">Перемотати вперед на %d секунд</item>
+        <item quantity="other">Перемотати вперед на %d секунди</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Перемотати назад на %d секунду</item>
+        <item quantity="few">Перемотати назад на %d секунди</item>
+        <item quantity="many">Перемотати назад на %d секунд</item>
+        <item quantity="other">Перемотати назад на %d секунди</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d елемент</item>
+        <item quantity="few">%d елементи</item>
+        <item quantity="many">%d елементів</item>
+        <item quantity="other">%d елемента</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium закінчується через %1$d день</item>
+        <item quantity="few">Free Premium закінчується через %1$d дні</item>
+        <item quantity="many">Free Premium закінчується через %1$d днів</item>
+        <item quantity="other">Free Premium закінчується через %1$d днів</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">Залишився %1$d день</item>
+        <item quantity="few">Залишилося %1$d дні</item>
+        <item quantity="many">Залишилося %1$d днів</item>
+        <item quantity="other">Залишилося %1$d днів</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">Залишилася %1$d спроба</item>
+        <item quantity="few">Залишилися %1$d спроби</item>
+        <item quantity="many">Залишилось %1$d спроб</item>
+        <item quantity="other">Залишилось %1$d спроб</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d місяців</item>
+        <item quantity="one">%1$d місяць</item>
+        <item quantity="few">%1$d місяці</item>
+        <item quantity="many">%1$d місяців</item>
+        <item quantity="other">%1$d місяців</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d місяць</item>
+        <item quantity="few">%1$d місяці</item>
+        <item quantity="many">%1$d місяців</item>
+        <item quantity="other">%1$d місяців</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+        <item quantity="other">%d нового сповіщення</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Завантажується %1$d із %2$d файлів</item>
+        <item quantity="few">Завантажуються %1$d із %2$d файлів</item>
+        <item quantity="many">Завантажуються %1$d із%2$d файлів</item>
+        <item quantity="other">Завантажуються %1$d із %2$d файлів</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d пароль знайдено</item>
+        <item quantity="few">%1$d паролі знайдено</item>
+        <item quantity="many">%1$d паролів знайдено</item>
+        <item quantity="other">%1$d паролів знайдено</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">На додаток до %1$d іншої ексклюзивної функції доступної Premium користувачам</item>
+        <item quantity="few">На додаток до %1$d інших ексклюзивних функцій доступних Premium користувачам</item>
+        <item quantity="many">На додаток до %1$d інших ексклюзивних функцій доступних Premium користувачам</item>
+        <item quantity="other">На додаток до %1$d інших ексклюзивних функцій доступних Premium користувачам</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d спливаюче вікно заблоковано</item>
+        <item quantity="few">%d спливаючих вікна заблоковано</item>
+        <item quantity="many">%d спливаючих вікон заблоковано</item>
+        <item quantity="other">%d спливаючих вікон заблоковано</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> на &lt;b>%1$d місяць - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="few">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> на &lt;b>%1$d місяці - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="many">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> на &lt;b>%1$d місяців - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="other">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> на &lt;b>%1$d місяців - безкоштовно - від нас!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d тижня - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="few">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d тижнів - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="many">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d тижнів - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="other">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d тижнів - безкоштовно - від нас!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d року - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="few">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d років - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="many">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d років - безкоштовно - від нас!&lt;/b></item>
+        <item quantity="other">Ви можете випробувати наші найкращі функції із &lt;b>Premium статусом&lt;/b> протягом &lt;b>%1$d років - безкоштовно - від нас!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s за перший місяць, потім %2$s/місяць.
+Авто-поновлення. Скасуйте будь-коли."</item>
+        <item quantity="few">"%1$s/місяць за перші %3$d місяці, потім %2$s/місяць.
+Авто-поновлення. Скасуйте будь-коли."</item>
+        <item quantity="many">"%1$s/місяць за перші %3$d місяців, потім %2$s/місяць.
+Авто-поновлення. Скасуйте будь-коли."</item>
+        <item quantity="other">"%1$s/місяць за перші %3$d місяців, потім %2$s/місяць.
+Авто-поновлення. Скасуйте будь-коли."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s за перший рік, потім %2$s/рік.
+Авто-поновлення. Скасуйте будь-коли."</item>
+        <item quantity="few">"%1$s за перші %3$d роки, потім %2$s/рік.
+Авто-поновлення. Скасуйте будь-коли."</item>
+        <item quantity="many">"%1$s за перших %3$d років, потім %2$s/рік.
+Авто-поновлення. Скасуйте будь-коли."</item>
+        <item quantity="other">"%1$s за перших %3$d років, потім %2$s/рік.
+Авто-поновлення. Скасуйте будь-коли."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d місяць</item>
+        <item quantity="few">перші %1$d місяці</item>
+        <item quantity="many">перші %1$d місяців</item>
+        <item quantity="other">перші %1$d місяців</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d рік</item>
+        <item quantity="few">перші %1$d роки</item>
+        <item quantity="many">перші %1$d років</item>
+        <item quantity="other">перші %1$d років</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/міс. на %2$d міс.</item>
+        <item quantity="few">%1$s/міс. на %2$d міс.</item>
+        <item quantity="many">%1$s/міс. на %2$d міс.</item>
+        <item quantity="other">%1$s/міс. на %2$d міс.</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s за перший рік</item>
+        <item quantity="few">%1$s за перші %2$d роки</item>
+        <item quantity="many">%1$s за перших %2$d років</item>
+        <item quantity="other">%1$s за перших %2$d років</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d%% знижка на перший місяць</item>
+        <item quantity="few">%1$d%% знижка на перші %2$d місяці</item>
+        <item quantity="many">%1$d%% знижка на перших %2$d місяців</item>
+        <item quantity="other">%1$d%% знижка на перших %2$d місяців</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Ваші друзі отримають %1$d місяць Premium абсолютно безкоштовно!</item>
+        <item quantity="few">Ваші друзі отримають %1$d місяці Premium абсолютно безкоштовно!</item>
+        <item quantity="many">Ваші друзі отримають %1$d місяців Premium абсолютно безкоштовно!</item>
+        <item quantity="other">Ваші друзі отримають %1$d місяців Premium абсолютно безкоштовно!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Ваші друзі отримають %1$d тиждень Premium абсолютно безкоштовно!</item>
+        <item quantity="few">Ваші друзі отримають %1$d тижні Premium абсолютно безкоштовно!</item>
+        <item quantity="many">Ваші друзі отримають %1$d тижнів Premium абсолютно безкоштовно!</item>
+        <item quantity="other">Ваші друзі отримають %1$d тижнів Premium абсолютно безкоштовно!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Ваші друзі отримають %1$d рік Premium абсолютно безкоштовно!</item>
+        <item quantity="few">Ваші друзі отримають %1$d роки Premium абсолютно безкоштовно!</item>
+        <item quantity="many">Ваші друзі отримають %1$d років Premium абсолютно безкоштовно!</item>
+        <item quantity="other">Ваші друзі отримають %1$d років Premium абсолютно безкоштовно!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Завдяки вам зараз &lt;b>%1$d друг&lt;/b> насолоджується Aloha, а ви - &lt;b>Premium статусом.&lt;/b></item>
+        <item quantity="few">Завдяки вам зараз &lt;b>%1$d друзі&lt;/b> насолоджуються Aloha, а ви - &lt;b>Premium статусом.&lt;/b></item>
+        <item quantity="many">Завдяки вам зараз &lt;b>%1$d друзів&lt;/b> насолоджуються Aloha, а ви - &lt;b>Premium статусом.&lt;/b></item>
+        <item quantity="other">Завдяки вам зараз &lt;b>%1$d друзів&lt;/b> насолоджуються Aloha, а ви - &lt;b>Premium статусом.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Запросіть ще %1$d друга, щоб отримати Free Premium</item>
+        <item quantity="few">Запросіть ще %1$d друзів, щоб отримати Free Premium</item>
+        <item quantity="many">Запросіть ще %1$d друзів, щоб отримати Free Premium</item>
+        <item quantity="other">Запросіть ще %1$d друзів, щоб отримати Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Хочете зробити запис довший ніж %1$d секунда?</item>
+        <item quantity="few">Хочете зробити запис довший ніж %1$d секунди?</item>
+        <item quantity="many">Хочете зробити запис довший ніж %1$d секунд?</item>
+        <item quantity="other">Хочете зробити запис довший ніж %1$d секунд?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">В вас є Premium на %1$d місяць</item>
+        <item quantity="few">В вас є Premium на %1$d місяці</item>
+        <item quantity="many">В вас є Premium на %1$d місяців</item>
+        <item quantity="other">В вас є Premium на %1$d місяців</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">В вас є Premium на %1$d тиждень</item>
+        <item quantity="few">В вас є Premium на %1$d тижні</item>
+        <item quantity="many">В вас є Premium на %1$d тижнів</item>
+        <item quantity="other">В вас є Premium на %1$d тижнів</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">В вас є Premium на %1$d рік</item>
+        <item quantity="few">В вас є Premium на %1$d роки</item>
+        <item quantity="many">В вас є Premium на %1$d років</item>
+        <item quantity="other">В вас є Premium на %1$d років</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d пароль імпортовано</item>
+        <item quantity="few">%1$d паролі імпортовано</item>
+        <item quantity="many">%1$d паролів імпортовано</item>
+        <item quantity="other">%1$d пароля імпортовано</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">0</item>
+        <item quantity="one">%1$d тиждень</item>
+        <item quantity="few">%1$d тижні</item>
+        <item quantity="many">%1$d тижнів</item>
+        <item quantity="other">%1$d тижнів</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d тиждень</item>
+        <item quantity="few">%1$d тижні</item>
+        <item quantity="many">%1$d тижнів</item>
+        <item quantity="other">%1$d тижнів</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d років</item>
+        <item quantity="one">%1$d рік</item>
+        <item quantity="few">%1$d роки</item>
+        <item quantity="many">%1$d років</item>
+        <item quantity="other">%1$d років</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d рік</item>
+        <item quantity="few">%1$d роки</item>
+        <item quantity="many">%1$d років</item>
+        <item quantity="other">%1$d років</item>
+    </plurals>
+</resources>

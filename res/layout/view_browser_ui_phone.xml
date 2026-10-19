@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alohamobile.browser.presentation.browser.animation.AnimateableLayout android:id="@id/browserLayout" android:background="?layerColorFloor1" android:visibility="gone" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/baseFrameViewContainer" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.alohamobile.browser.presentation.browser.WebViewFrameLayout android:id="@id/baseFrameView" android:layout_width="match_parent" android:layout_height="match_parent" android:translationY="0.0dp" />
+            <com.alohamobile.privacysetttings.view.HttpWarningView android:id="@id/httpWarningView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.alohamobile.component.view.SinglePointerSwipeRefreshLayout android:id="@id/webErrorSwipeRefresh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.alohamobile.browser.presentation.browser.WebErrorView android:id="@id/webErrorView" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </com.alohamobile.component.view.SinglePointerSwipeRefreshLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/webVideoControlsContainer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.alohamobile.browser.presentation.browser.animation.AnimateableLayout>
+</FrameLayout>

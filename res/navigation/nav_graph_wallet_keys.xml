@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_wallet_keys" app:startDestination="@id/walletSettingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="WalletSettingsFragment" android:name="com.alohamobile.settings.wallet.presentation.WalletSettingsFragment" android:id="@id/walletSettingsFragment">
+        <action android:id="@id/action_walletSettingsFragment_to_walletRecoveryPhraseFragment" app:destination="@id/walletRecoveryPhraseFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_walletSettingsFragment_to_walletPrivateKeyFragment" app:destination="@id/walletPrivateKeyFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="WalletRecoveryPhraseFragment" android:name="com.alohamobile.settings.wallet.presentation.WalletRecoveryPhraseFragment" android:id="@id/walletRecoveryPhraseFragment" />
+    <fragment android:label="WalletPrivateKeyFragment" android:name="com.alohamobile.settings.wallet.presentation.WalletPrivateKeyFragment" android:id="@id/walletPrivateKeyFragment" />
+</navigation>

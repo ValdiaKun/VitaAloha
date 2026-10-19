@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="2.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="com.alohamobile.component.util.NoStateNavHostFragment" android:id="@id/navigationController" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:defaultNavHost="true" />
+    <View android:id="@id/activityNavigationBarBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/richSnackbarContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="@dimen/menu_container_height_collapsed" />
+    <FrameLayout android:id="@id/secureOverlay" android:background="?layerColorFloor1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

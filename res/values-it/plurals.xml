@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Impossibile caricare %1$d file</item>
+        <item quantity="other">Impossibile caricare %1$d file</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Limite superato. Diminuisci il messaggio di %1$d carattere e riprova.</item>
+        <item quantity="other">Limite superato. Diminuisci il messaggio di %1$d caratteri e riprova.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d richiesta rimasta</item>
+        <item quantity="other">%1$d richieste rimaste</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Hai %1$d richiesta gratis al giorno per %2$s. Aggiorna a Premium Plus e rimuovi ogni limite!</item>
+        <item quantity="other">Hai %1$d richieste gratis al giorno per %2$s. Aggiorna a Premium Plus e rimuovi ogni limite!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s segnalibro</item>
+        <item quantity="other">%s segnalibri</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Puoi provare le nostre migliori funzionalità con lo status Premium per %1$d un giorno gratis paghiamo noi</item>
+        <item quantity="other">Puoi provare le nostre migliori funzionalità con lo status Premium per %1$d giorni gratis paghiamo noi</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">"Puoi provare le nostre migliori caratteristiche con lo status Premium per %1$d giorno gratis. Imposta Aloha come il tuo browser predefinito per avere l'esperienza completa"</item>
+        <item quantity="other">"Puoi provare le nostre migliori caratteristiche con lo status Premium per %1$d giorni gratis. Imposta Aloha come il tuo browser predefinito per avere l'esperienza completa"</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Ti diamo %1$d giorno in più di accesso completo, completamente gratuito</item>
+        <item quantity="other">Ti diamo %1$d giorni in più di accesso completo, completamente gratuito</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">"Ti diamo %1$d giorno in più di accesso totale, completamente gratis. Imposta Aloha come il tuo browser predefinito per ottenere l'esperienza completa."</item>
+        <item quantity="other">"Ti diamo %1$d giorni in più di accesso totale, completamente gratis. Imposta Aloha come il tuo browser predefinito per ottenere l'esperienza completa."</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Se non liberi spazio, i file che superano il limite diventeranno di sola lettura. Verranno eliminati dopo %1$d giorno.</item>
+        <item quantity="other">Se non liberi spazio, i file che superano il limite diventeranno di sola lettura. Verranno eliminati dopo %1$d giorni.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">"Il tuo abbonamento ad Aloha Cloud è scaduto. Aloha Cloud verrà eliminato definitivamente tra %1$d giorno. Rinnova il tuo piano per ripristinare l'accesso."</item>
+        <item quantity="other">"Il tuo abbonamento ad Aloha Cloud è scaduto. Aloha Cloud verrà eliminato definitivamente tra %1$d giorni. Rinnova il tuo piano per ripristinare l'accesso."</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Rinnova il tuo abbonamento ad Aloha Cloud entro %1$d giorno per evitare che i tuoi file sul cloud vadano persi</item>
+        <item quantity="other">Rinnova il tuo abbonamento ad Aloha Cloud entro %1$d giorni per evitare che i tuoi file sul cloud vadano persi</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Il tuo abbonamento Aloha Premium è terminato. I tuoi file verranno cancellati automaticamente fra %1$d giorno. Acquista un piano Aloha CLoud per mantenere i tuoi file e ottenere un archivio aggiuntivo.</item>
+        <item quantity="other">Il tuo abbonamento Aloha Premium è terminato. I tuoi file verranno cancellati automaticamente fra %1$d giorni. Acquista un piano Aloha CLoud per mantenere i tuoi file e ottenere un archivio aggiuntivo.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">"Il tuo abbonamento Aloha Premium è scaduto. Aloha Cloud verrà eliminato definitivamente tra %1$d giorno. Rinnova il tuo piano per ripristinare l'accesso."</item>
+        <item quantity="other">"Il tuo abbonamento Aloha Premium è scaduto. Aloha Cloud verrà eliminato definitivamente tra %1$d giorni. Rinnova il tuo piano per ripristinare l'accesso."</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Rinnova il tuo abbonamento ad Aloha Premium entro %1$d giorno per evitare che i tuoi file su cloud vadano persi</item>
+        <item quantity="other">Rinnova il tuo abbonamento ad Aloha Premium entro %1$d giorni per evitare che i tuoi file su cloud vadano persi</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Alcuni file verranno cancellati fra %1$d giorno</item>
+        <item quantity="other">Alcuni file verranno cancellati fra %1$d giorni</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Alcuni file verranno eliminati tra %1$d giorno. Rinnova il tuo abbonamento per continuare ad accedere ai tuoi file.</item>
+        <item quantity="other">Alcuni file verranno eliminati tra %1$d giorni. Rinnova il tuo abbonamento per continuare ad accedere ai tuoi file.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Rinnova Premium tra %1$d giorno così che i tuoi file non verranno persi</item>
+        <item quantity="other">Rinnova Premium tra %1$d giorni così che i tuoi file non verranno persi</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d giorni</item>
+        <item quantity="one">%d giorno</item>
+        <item quantity="other">%d giorni</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d elemento sarà eliminato definitivamente. Sei sicuro di voler svuotare il cestino?</item>
+        <item quantity="other">%d elementi saranno elimintai definitivamente. Sei sicuro di voler svuotare il cestino?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Frase sbagliata — %1$d tentativo rimasto</item>
+        <item quantity="other">Frase sbagliata — %1$d tentativi rimasti</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Non puoi cercare più di %d oggetto</item>
+        <item quantity="other">Non puoi cercare più di %d oggetti</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avanti di %d secondo</item>
+        <item quantity="other">Avanti di %d secondi</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Indietro di %d secondo</item>
+        <item quantity="other">Indietro di %d secondi</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d elemento</item>
+        <item quantity="other">%d elementi</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium termina fra %1$d giorno</item>
+        <item quantity="other">Free Premium termina fra %1$d giorni</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d giorno rimasto</item>
+        <item quantity="other">%1$d giorni rimasti</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d tentativo rimasto</item>
+        <item quantity="other">%1$d tentativo rimasti</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d mesi</item>
+        <item quantity="one">%1$d mese</item>
+        <item quantity="other">%1$d mesi</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d mese</item>
+        <item quantity="other">%1$d mesi</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nuova notifica</item>
+        <item quantity="other">%d nuove notifiche</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Salvataggio %1$d di %2$d documento</item>
+        <item quantity="other">Salvataggio %1$d di %2$d documenti</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d password trovata</item>
+        <item quantity="other">%1$d password trovate</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">oltre %1$d caratteristica più esclusiva disponibile per utenti Premium</item>
+        <item quantity="other">oltre %1$d caratteristiche più esclusive disponibili per utenti Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d pop-up blocked</item>
+        <item quantity="other">%d pop-up bloccati</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Puoi provare le nostre migliori caratteritische con &lt;b>status Premium&lt;/b> per &lt;b>%1$d mese – gratis – in regalo!&lt;/b></item>
+        <item quantity="other">Puoi provare le nostre migliori caratteritische con &lt;b>status Premium&lt;/b> per &lt;b>%1$d mesi – gratis – in regalo!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Puoi provare le nostre migliori caratteritische con &lt;b>status Premium&lt;/b> per &lt;b>%1$d settimana – gratis – in regalo!&lt;/b></item>
+        <item quantity="other">Puoi provare le nostre migliori caratteritische con &lt;b>status Premium&lt;/b> per &lt;b>%1$d settimane – gratis – in regalo!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Puoi provare le nostre migliori caratteritische con &lt;b>status Premium&lt;/b> per &lt;b>%1$d anno – gratis – in regalo!&lt;/b></item>
+        <item quantity="other">Puoi provare le nostre migliori caratteritische con &lt;b>status Premium&lt;/b> per &lt;b>%1$d anni – gratis – in regalo!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s per il primo mese, poi %2$s/mese.
+Si auto rinnova. Disdici quando vuoi."</item>
+        <item quantity="other">"%1$s/mese per i primi %3$d mesi, poi %2$s/mese.
+Si auto rinnova. Disdici quando vuoi."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s per il primo anno, poi %2$s/anno.
+Si autorinnova. Disdici quando vuoi."</item>
+        <item quantity="other">"%1$s per i primi %3$d anni, poi %2$s/anno.
+Si autorinnova. Disdici quando vuoi."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d mese</item>
+        <item quantity="other">primi %1$d mesi</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d anno</item>
+        <item quantity="other">primi %1$d anni</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/mm per %2$d mm</item>
+        <item quantity="other">%1$s/mm per %2$d mm</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s per il primo anno</item>
+        <item quantity="other">%1$s per i primi %2$d anni</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d%% di sconto per il tuo primo mese</item>
+        <item quantity="other">%1$d%% di sconto per i tuoi primi %2$d mesi</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">I tuoi amici avranno %1$d mese di Premium totalmente gratis!</item>
+        <item quantity="other">I tuoi amici avranno %1$d mesi di Premium totalmente gratis!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">I tuoi amici avranno %1$d settimana di Premium totalmente gratis!</item>
+        <item quantity="other">I tuoi amici avranno %1$d settimane di Premium totalmente gratis!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">I tuoi amici avranno %1$d anno di Premium totalmente gratis!</item>
+        <item quantity="other">I tuoi amici avranno %1$d anni di Premium totalmente gratis!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Grazie a te, &lt;b>%1$d amico&lt;/b> ora gode di Aloha e tu godi dello &lt;b>status Premium.&lt;/b></item>
+        <item quantity="other">Grazie a te, &lt;b>%1$d amici&lt;/b> ora godono di Aloha e tu godi dello &lt;b>status Premium.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Invita %1$d amico in più per ottenere Free Premium</item>
+        <item quantity="other">Invita %1$d amici in più per ottenere Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Vuoi rendere le registrazioni più lunghe di %1$d secondo?</item>
+        <item quantity="other">Vuoi rendere le registrazioni più lunghe di %1$d secondi?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Hai %1$d mese di Premium</item>
+        <item quantity="other">Hai %1$d mesi di Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Hai %1$d settimana di Premium</item>
+        <item quantity="other">Hai %1$d settimane di Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">Hai %1$d anno di Premium</item>
+        <item quantity="other">Hai %1$d anni di Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d password importata</item>
+        <item quantity="other">%1$d password importate</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d settimane</item>
+        <item quantity="one">%1$d settimana</item>
+        <item quantity="other">%1$d settimane</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d settimana</item>
+        <item quantity="other">%1$d settimane</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d anni</item>
+        <item quantity="one">%1$d anno</item>
+        <item quantity="other">%1$d anni</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d anno</item>
+        <item quantity="other">%1$d anni</item>
+    </plurals>
+</resources>

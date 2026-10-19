@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_search_engine_edit" app:startDestination="@id/editSearchEngineFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="EditSearchEngineFragment" android:name="com.alohamobile.browser.search.presentation.EditSearchEngineFragment" android:id="@id/editSearchEngineFragment">
+        <argument android:name="searchEngineId" app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,250 @@
+.class public final synthetic Lr8/dbl;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lr8/xu9;
+
+
+# static fields
+.field public static final a:Lr8/dbl;
+
+.field private static final descriptor:Lkotlinx/serialization/descriptors/SerialDescriptor;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    new-instance v0, Lr8/dbl;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lr8/dbl;->a:Lr8/dbl;
+
+    new-instance v1, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;
+
+    const-string v2, "com.alohamobile.purchases.core.data.offers.SubscriptionBundlesResponse"
+
+    const/4 v3, 0x2
+
+    invoke-direct {v1, v2, v0, v3}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;-><init>(Ljava/lang/String;Lr8/xu9;I)V
+
+    const-string v0, "offers"
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v0, v2}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;->b(Ljava/lang/String;Z)V
+
+    const-string v0, "cloud_offers"
+
+    invoke-virtual {v1, v0, v2}, Lkotlinx/serialization/internal/PluginGeneratedSerialDescriptor;->b(Ljava/lang/String;Z)V
+
+    sput-object v1, Lr8/dbl;->descriptor:Lkotlinx/serialization/descriptors/SerialDescriptor;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final childSerializers()[Lkotlinx/serialization/KSerializer;
+    .locals 2
+
+    sget-object p0, Lr8/fbl;->c:[Lkotlin/Lazy;
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Lkotlinx/serialization/KSerializer;
+
+    const/4 v1, 0x0
+
+    aget-object p0, p0, v1
+
+    invoke-interface {p0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    aput-object p0, v0, v1
+
+    const/4 p0, 0x1
+
+    sget-object v1, Lr8/mgc;->b:Lr8/mgc;
+
+    aput-object v1, v0, p0
+
+    return-object v0
+.end method
+
+.method public final deserialize(Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+    .locals 9
+
+    sget-object p0, Lr8/dbl;->descriptor:Lkotlinx/serialization/descriptors/SerialDescriptor;
+
+    invoke-interface {p1, p0}, Lkotlinx/serialization/encoding/Decoder;->a(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lr8/vb5;
+
+    move-result-object p1
+
+    sget-object v0, Lr8/fbl;->c:[Lkotlin/Lazy;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move v5, v1
+
+    move v6, v2
+
+    move-object v4, v3
+
+    :goto_0
+    if-eqz v5, :cond_3
+
+    invoke-interface {p1, p0}, Lr8/vb5;->s(Lkotlinx/serialization/descriptors/SerialDescriptor;)I
+
+    move-result v7
+
+    const/4 v8, -0x1
+
+    if-eq v7, v8, :cond_2
+
+    if-eqz v7, :cond_1
+
+    if-ne v7, v1, :cond_0
+
+    sget-object v7, Lr8/mgc;->b:Lr8/mgc;
+
+    invoke-interface {p1, p0, v1, v7, v4}, Lr8/vb5;->D(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/KSerializer;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/List;
+
+    or-int/lit8 v6, v6, 0x2
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p0, Lkotlinx/serialization/UnknownFieldException;
+
+    invoke-direct {p0, v7}, Lkotlinx/serialization/UnknownFieldException;-><init>(I)V
+
+    throw p0
+
+    :cond_1
+    aget-object v7, v0, v2
+
+    invoke-interface {v7}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Lkotlinx/serialization/KSerializer;
+
+    invoke-interface {p1, p0, v2, v7, v3}, Lr8/vb5;->D(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/KSerializer;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/List;
+
+    or-int/lit8 v6, v6, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    move v5, v2
+
+    goto :goto_0
+
+    :cond_3
+    invoke-interface {p1, p0}, Lr8/vb5;->l(Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+
+    new-instance p0, Lr8/fbl;
+
+    invoke-direct {p0, v3, v4, v6}, Lr8/fbl;-><init>(Ljava/util/List;Ljava/util/List;I)V
+
+    return-object p0
+.end method
+
+.method public final getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+    .locals 0
+
+    sget-object p0, Lr8/dbl;->descriptor:Lkotlinx/serialization/descriptors/SerialDescriptor;
+
+    return-object p0
+.end method
+
+.method public final serialize(Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+    .locals 4
+
+    check-cast p2, Lr8/fbl;
+
+    iget-object p0, p2, Lr8/fbl;->b:Ljava/util/List;
+
+    iget-object p2, p2, Lr8/fbl;->a:Ljava/util/List;
+
+    sget-object v0, Lr8/dbl;->descriptor:Lkotlinx/serialization/descriptors/SerialDescriptor;
+
+    invoke-interface {p1, v0}, Lkotlinx/serialization/encoding/Encoder;->a(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lr8/wb5;
+
+    move-result-object p1
+
+    sget-object v1, Lr8/fbl;->c:[Lkotlin/Lazy;
+
+    invoke-interface {p1}, Lr8/wb5;->F()Z
+
+    move-result v2
+
+    sget-object v3, Lr8/jv7;->a:Lr8/jv7;
+
+    if-eqz v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p2, v3}, Lr8/tfb;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    :goto_0
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-interface {v1}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lkotlinx/serialization/KSerializer;
+
+    invoke-interface {p1, v0, v2, v1, p2}, Lr8/wb5;->e(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/KSerializer;Ljava/lang/Object;)V
+
+    :cond_1
+    invoke-interface {p1}, Lr8/wb5;->F()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {p0, v3}, Lr8/tfb;->h(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-nez p2, :cond_3
+
+    :goto_1
+    sget-object p2, Lr8/mgc;->b:Lr8/mgc;
+
+    const/4 v1, 0x1
+
+    invoke-interface {p1, v0, v1, p2, p0}, Lr8/wb5;->e(Lkotlinx/serialization/descriptors/SerialDescriptor;ILkotlinx/serialization/KSerializer;Ljava/lang/Object;)V
+
+    :cond_3
+    invoke-interface {p1}, Lr8/wb5;->d()V
+
+    return-void
+.end method

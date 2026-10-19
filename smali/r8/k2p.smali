@@ -1,0 +1,18 @@
+.class public abstract Lr8/k2p;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final synthetic a:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const-class v0, Lr8/k2p;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    return-void
+.end method

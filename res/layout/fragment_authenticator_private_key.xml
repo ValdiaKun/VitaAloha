@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:tag="toolbar" android:background="@null" android:layout_width="match_parent" style="@style/Component.Aloha.Toolbar" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_marginHorizontal="64.0dp">
+            <TextView android:textAppearance="?textAppearanceBody2Medium" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_two_factor_authentication" android:maxLines="2" />
+            <com.alohamobile.component.view.ProgressTrackerView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:progressTrackerViewStep="2" app:progressTrackerViewStepsTotal="3" />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/profile_authenticator_private_key_title" android:layout_marginHorizontal="16.0dp" />
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/profile_authenticator_private_key_description" android:layout_marginHorizontal="16.0dp" />
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@id/tabsLayout" android:background="@null" android:layout_width="wrap_content" android:layout_height="48.0dp" android:layout_marginTop="32.0dp">
+                <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/profile_authenticator_private_key_secret_key" />
+                <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/label_qr_code" />
+            </com.google.android.material.tabs.TabLayout>
+            <com.alohamobile.component.view.SegmentedPrivateCodeView android:layout_gravity="center_horizontal" android:id="@id/privateKey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+            <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/exportKeyButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/action_export" style="?textButtonStyle" />
+            <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="center_horizontal" android:id="@id/qrCode" android:background="?staticColorWhiteBasic" android:visibility="gone" android:layout_width="212.0dp" android:layout_height="212.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="24.0dp" android:src="@drawable/bg_qr_code_preview_placeholder" app:contentPadding="8.0dp" app:shapeAppearance="?shapeAppearanceL" app:strokeColor="?fillColorQuinary" app:strokeWidth="1.0dp" />
+            <Space android:layout_width="wrap_content" android:layout_height="0.0dp" android:minHeight="24.0dp" android:layout_weight="1.0" />
+            <com.alohamobile.component.button.ProgressButton android:id="@id/continueButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:layout_marginHorizontal="16.0dp" app:progressButtonText="@string/button_continue" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

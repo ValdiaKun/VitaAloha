@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:installLocation="internalOnly" package="com.alohamobile.browser" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.google.android.gms.policy_cast_dynamite"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.alohamobile.browser.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.alohamobile.browser.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.alohamobile.browser.permission.CHILD_SERVICE" android:protectionLevel="signature"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-feature android:name="android.software.vr.mode" android:required="false"/>
+    <uses-feature android:name="android.hardware.vr.high_performance" android:required="false"/>
+    <application android:allowBackup="false" android:allowClearUserData="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:enableOnBackInvokedCallback="true" android:fullBackupContent="@xml/full_backup_content_rules" android:hardwareAccelerated="true" android:hasFragileUserData="true" android:icon="@mipmap/ic_launcher_aqua_light_on_dark" android:label="Aloha" android:largeHeap="true" android:name="com.alohamobile.browser.BrowserApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_aqua_light_on_dark" android:supportsRtl="true" android:theme="@style/Theme.Aloha">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_light_on_dark" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.LauncherActivity" android:roundIcon="@mipmap/ic_launcher_aqua_light_on_dark" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.AquaLightOnDark">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="f6d238e9eb942cce32d7f2a1d69351a5"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.enable" android:value="false"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.multiinstance.enable" android:value="false"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.multiinstance.launchmode" android:value="singleTask"/>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="false"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.AquaDarkOnLightLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.AquaDarkOnLight">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_starfish_dark_on_light" android:name="com.alohamobile.browser.AbstractWhiteIcon" android:roundIcon="@mipmap/ic_launcher_aqua_starfish_dark_on_light" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaDarkOnLightLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_starfish_dark_on_light" android:name="com.alohamobile.browser.StarBlueIcon" android:roundIcon="@mipmap/ic_launcher_aqua_starfish_dark_on_light" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaDarkOnLightLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_dark_on_light" android:name="com.alohamobile.browser.BlueIcon" android:roundIcon="@mipmap/ic_launcher_aqua_dark_on_light" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaDarkOnLightLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.OldLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.Old">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_old" android:name="com.alohamobile.browser.OldIcon" android:roundIcon="@mipmap/ic_launcher_old" android:targetActivity="com.alohamobile.browser.presentation.launcher.OldLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.AquaLightOnDarkLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.AquaLightOnDark">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:name="com.alohamobile.browser.AbstractNavyIcon" android:roundIcon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaLightOnDarkLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:name="com.alohamobile.browser.AbstractBlueIcon" android:roundIcon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaLightOnDarkLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:name="com.alohamobile.browser.StarPinkIcon" android:roundIcon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaLightOnDarkLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:name="com.alohamobile.browser.StarNavyIcon" android:roundIcon="@mipmap/ic_launcher_aqua_starfish_light_on_dark" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaLightOnDarkLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_light_on_dark" android:name="com.alohamobile.browser.BetaIcon" android:roundIcon="@mipmap/ic_launcher_aqua_light_on_dark" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaLightOnDarkLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.WhiteOnPinkLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.WhiteOnPink">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_pink" android:name="com.alohamobile.browser.PinkIcon" android:roundIcon="@mipmap/ic_launcher_pink" android:targetActivity="com.alohamobile.browser.presentation.launcher.WhiteOnPinkLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.LoveAlohaLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.LoveAloha">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_love_aloha" android:name="com.alohamobile.browser.LoveAlohaIcon" android:roundIcon="@mipmap/ic_launcher_love_aloha" android:targetActivity="com.alohamobile.browser.presentation.launcher.LoveAlohaLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.HeartLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.Heart">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_heart" android:name="com.alohamobile.browser.HeartIcon" android:roundIcon="@mipmap/ic_launcher_heart" android:targetActivity="com.alohamobile.browser.presentation.launcher.HeartLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.WhiteOnMidnightLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.WhiteOnMidnight">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_midnight" android:name="com.alohamobile.browser.MidnightIcon" android:roundIcon="@mipmap/ic_launcher_midnight" android:targetActivity="com.alohamobile.browser.presentation.launcher.WhiteOnMidnightLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.ObsidianDarkOnLightLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.ObsidianDarkOnLight">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_obsidian_dark_on_light" android:name="com.alohamobile.browser.NavyIcon" android:roundIcon="@mipmap/ic_launcher_obsidian_dark_on_light" android:targetActivity="com.alohamobile.browser.presentation.launcher.ObsidianDarkOnLightLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.AquaOnBlackLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.AquaOnBlack">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_aqua_on_black" android:name="com.alohamobile.browser.Icon16" android:roundIcon="@mipmap/ic_launcher_aqua_on_black" android:targetActivity="com.alohamobile.browser.presentation.launcher.AquaOnBlackLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.ObsidianLightOnDarkLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.ObsidianLightOnDark">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_obsidian_light_on_dark" android:name="com.alohamobile.browser.Icon17" android:roundIcon="@mipmap/ic_launcher_obsidian_light_on_dark" android:targetActivity="com.alohamobile.browser.presentation.launcher.ObsidianLightOnDarkLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.launcher.WhiteOnNavyLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Browser.Launcher.WhiteOnNavy">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_search_in_aloha">
+                <action android:name="android.intent.action.PROCESS_TEXT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="about"/>
+                <data android:scheme="alohabrowser"/>
+                <data android:scheme="content"/>
+                <data android:scheme="fns"/>
+                <data android:scheme="ipfs"/>
+                <data android:scheme="ipns"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="alohabrowser"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_pride" android:name="com.alohamobile.browser.PrideIcon" android:roundIcon="@mipmap/ic_launcher_pride" android:targetActivity="com.alohamobile.browser.presentation.launcher.WhiteOnNavyLauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/action_open">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.alohamobile.browser.presentation.main.BrowserActivity" android:theme="@style/Theme.Aloha" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.alohamobile.browser.player.CardboardVideoActivity" android:theme="@style/Theme.Aloha.Cardboard"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.alohamobile.subscriptions.presentation.BuySubscriptionActivity" android:theme="@style/Theme.Aloha">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="buysubscription" android:scheme="alohabrowser"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:label="Aloha Browser" android:name="com.alohamobile.browser.presentation.update.AvailableUpdateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Aloha"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTop" android:name="com.alohamobile.browser.customtabs.CustomTabActivity" android:taskAffinity="" android:theme="@style/Theme.Aloha.CustomTab" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.alohamobile.browser.brotlin.customtabs.AlohaCustomTabsService">
+            <intent-filter>
+                <action android:name="android.support.customtabs.action.CustomTabsService"/>
+                <category android:name="androidx.browser.auth.category.AuthTab"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.support.customtabs.action.CustomTabsService"/>
+                <category android:name="androidx.browser.customtabs.category.ColorSchemeCustomization"/>
+                <category android:name="androidx.browser.customtabs.category.NavBarColorCustomization"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.alohamobile.browser.services.downloads.DownloadService"/>
+        <receiver android:exported="false" android:name="com.alohamobile.browser.services.downloads.CancelDownloadNotificationReceiver"/>
+        <service android:exported="false" android:name="com.alohamobile.browser.services.ffmpeg.concat.ConcatFfmpegWorkerService" android:process=":ffmpeg_concat"/>
+        <service android:exported="false" android:name="com.alohamobile.browser.services.ffmpeg.videotrimming.TrimVideoFfmpegWorkerService" android:process=":ffmpeg_trim"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.alohamobile.browser.bromium.feature.player.media.WebMediaService"/>
+        <receiver android:exported="false" android:name="com.alohamobile.browser.bromium.feature.player.media.WebMediaBroadcastReceiver"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync|mediaProcessing" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <provider android:authorities="com.alohamobile.browser.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.alohamobile.browser.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:autoRemoveFromRecents="true" android:enabled="false" android:exported="true" android:label="@string/action_name_save_to_downloads" android:name="com.alohamobile.filemanager.feature.import.FileImportActivity" android:theme="@style/Theme.Aloha.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name="com.alohamobile.filemanager.util.SdCardEventsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.alohamobile.filemanager.util.ChosenComponentReceiver"/>
+        <activity android:configChanges="keyboard|keyboardHidden|uiMode|screenSize" android:exported="false" android:name="com.alohamobile.profile.resetpasscode.ResetPasscodeActivity" android:theme="@style/Theme.Aloha" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.alohamobile.bromium.webid.FedCmModalActivity" android:theme="@style/Theme.Aloha"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.alohamobile.player.cast.PlayerCastOptionsProvider"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:name="com.alohamobile.player.cast.CastNavigationActivity" android:theme="@style/Theme.Aloha.Translucent"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.alohamobile.player.service.MediaPlayerService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.alohamobile.cloud.main.service.CloudUploadService"/>
+        <service android:exported="false" android:foregroundServiceType="connectedDevice" android:name="com.alohamobile.filemanager.wfs.server.service.WifiFileSharingService"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/widget_name_search_dark" android:name="com.alohamobile.searchwidget.SearchWidgetDark">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/search_widget_info_dark"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/widget_name_search_light" android:name="com.alohamobile.searchwidget.SearchWidgetLight">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/search_widget_info_light"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/search_widget_title" android:name="com.alohamobile.browser.widget.search.SearchWidgetReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/search_widget_info"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="@string/search_and_new_tabs_widget_title" android:name="com.alohamobile.browser.widget.searchandnewtabs.SearchAndNewTabsWidgetReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/search_and_new_tabs_widget_info"/>
+        </receiver>
+        <activity android:autoRemoveFromRecents="true" android:enabled="false" android:exported="true" android:label="@string/passwords_import_title" android:name="com.alohamobile.password.transfer.PasswordsCsvImportActivity" android:theme="@style/Theme.Aloha">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/csv"/>
+                <data android:mimeType="text/comma-separated-values"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name="com.alohamobile.webapp.WebAppShortcutPinnedReceiver"/>
+        <service android:exported="false" android:name="com.alohamobile.notifications.push.FirebaseMessagingService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.alohamobile.notifications.push.DeleteNotificationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="notification_cancelled"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="systemExempted" android:gwpAsanMode="always" android:name="com.alohamobile.vpn.client.xray.service.AlohaXRayVpnService" android:permission="android.permission.BIND_VPN_SERVICE" android:process=":xray">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.alohamobile.vpn.trafficmask.TrafficMaskService" android:process=":trafficmask"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identityauth.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <service android:exported="false" android:name="org.strongswan.android.logic.VpnStateService"/>
+        <service android:exported="false" android:foregroundServiceType="systemExempted" android:name="org.strongswan.android.logic.CharonVpnService" android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+            <meta-data android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON" android:value="false"/>
+        </service>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="9.1.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="tflite_gpu_dynamite:222612000:required" android:value=""/>
+            <meta-data android:name="tflite_dynamite:3:required" android:value=""/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.google.android.exoplayer2.ui.PlayerNotificationManager$ActionReceiver"/>
+        <provider android:authorities="com.alohamobile.browser.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionTrampolineActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:enabled="true" android:exported="false" android:launchMode="singleInstance" android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity" android:noHistory="true" android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline" android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.UnmanagedSessionReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.MyPackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="androidx.glance.appwidget.GlanceRemoteViewsService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="androidx.work.multiprocess.RemoteWorkManagerService"/>
+        <provider android:authorities="com.alohamobile.browser.resources.AndroidContextProvider" android:enabled="true" android:exported="false" android:name="org.jetbrains.compose.resources.AndroidContextProvider"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:name="androidx.core.widget.RemoteViewsCompatService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.alohamobile.browser.BugsnagPerformanceProvider" android:exported="false" android:initOrder="9001" android:name="com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.alohamobile.browser.bugsnag-startup" android:exported="false" android:initOrder="9000" android:name="com.bugsnag.android.internal.BugsnagContentProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="org.chromium.content.browser.NUM_SANDBOXED_SERVICES" android:value="40"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService0" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process0"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService1" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process1"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService2" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process2"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService3" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process3"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService4" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process4"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService5" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process5"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService6" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process6"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService7" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process7"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService8" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process8"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService9" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process9"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService10" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process10"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService11" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process11"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService12" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process12"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService13" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process13"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService14" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process14"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService15" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process15"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService16" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process16"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService17" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process17"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService18" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process18"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService19" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process19"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService20" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process20"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService21" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process21"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService22" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process22"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService23" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process23"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService24" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process24"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService25" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process25"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService26" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process26"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService27" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process27"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService28" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process28"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService29" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process29"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService30" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process30"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService31" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process31"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService32" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process32"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService33" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process33"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService34" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process34"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService35" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process35"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService36" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process36"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService37" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process37"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService38" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process38"/>
+        <service android:exported="false" android:isolatedProcess="true" android:name="org.chromium.content.app.SandboxedProcessService39" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":sandboxed_process39"/>
+        <meta-data android:name="org.chromium.content.browser.NUM_PRIVILEGED_SERVICES" android:value="5"/>
+        <service android:exported="false" android:isolatedProcess="false" android:name="org.chromium.content.app.PrivilegedProcessService0" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":privileged_process0"/>
+        <service android:exported="false" android:isolatedProcess="false" android:name="org.chromium.content.app.PrivilegedProcessService1" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":privileged_process1"/>
+        <service android:exported="false" android:isolatedProcess="false" android:name="org.chromium.content.app.PrivilegedProcessService2" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":privileged_process2"/>
+        <service android:exported="false" android:isolatedProcess="false" android:name="org.chromium.content.app.PrivilegedProcessService3" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":privileged_process3"/>
+        <service android:exported="false" android:isolatedProcess="false" android:name="org.chromium.content.app.PrivilegedProcessService4" android:permission="com.alohamobile.browser.permission.CHILD_SERVICE" android:process=":privileged_process4"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <uses-native-library android:name="libOpenCL.so" android:required="false"/>
+        <uses-native-library android:name="libOpenCL-car.so" android:required="false"/>
+        <uses-native-library android:name="libOpenCL-pixel.so" android:required="false"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+    </application>
+</manifest>

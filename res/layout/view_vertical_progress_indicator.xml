@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="@dimen/vertical_progress_indicator_width" android:layout_height="match_parent" android:alpha="0.8" app:cardBackgroundColor="#b2181818" app:cardElevation="0.0dp" app:shapeAppearance="?shapeAppearanceXL">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/indicatorBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/shape_rounded_rectangle_xl" app:tint="?fillColorBrandPrimary" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center|top" android:id="@id/indicatorIcon" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_marginTop="8.0dp" android:tint="?staticColorWhiteBasic" />
+    </com.google.android.material.card.MaterialCardView>
+</merge>

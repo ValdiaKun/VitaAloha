@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/newsSettingsPopupMenu" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/popupButtonRefreshFeed" android:background="@drawable/ripple_brand_secondary_rectangle_layer_floor_2" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" style="?listItemTouchableStyle">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorPrimary" android:id="@id/refreshFeedButtonTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speed_dial_refresh_feed" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorTertiary" android:id="@id/newsSettingsPopupLastUpdatedSubtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorPrimary" android:id="@id/popupButtonEditFeed" android:background="@drawable/ripple_brand_secondary_rectangle_layer_floor_2" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/speed_dial_edit_feed" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" style="?listItemTouchableStyle" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutFileUrl" android:nextFocusDown="@id/inputLayoutSiteUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/report_screen_file_url">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/inputEditTextFileUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textWebEditText" android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutSiteUrl" android:nextFocusDown="@id/inputLayoutComment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:hint="@string/report_screen_site_url">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/inputEditTextSiteUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textWebEditText" android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutComment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:hint="@string/report_screen_comment" app:counterEnabled="true" app:counterMaxLength="200">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/inputEditTextComment" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:maxLength="200" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/report_screen_rationale" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/reportButtonContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:id="@id/reportButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/action_report" />
+    </FrameLayout>
+</LinearLayout>

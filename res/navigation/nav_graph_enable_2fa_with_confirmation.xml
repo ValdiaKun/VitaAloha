@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_enable_2fa_with_confirmation" app:startDestination="@id/enterPasswordFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_enable_2fa" />
+    <fragment android:label="EnterPasswordFragment" android:name="com.alohamobile.profile.auth.twofactor.presentation.enable.EnterPasswordFragment" android:id="@id/enterPasswordFragment">
+        <action android:id="@id/action_enterPasswordFragment_to_authenticatorAppsFragment" app:destination="@id/nav_graph_enable_2fa" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" app:popUpTo="@id/enterPasswordFragment" app:popUpToInclusive="true">
+            <argument android:name="privateKey" app:argType="string" app:nullable="true" />
+        </action>
+    </fragment>
+</navigation>

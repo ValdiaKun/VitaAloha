@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <ScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp" android:paddingVertical="24.0dp">
+            <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_backup_code" />
+            <TextView android:textAppearance="?textAppearanceBody2Regular" android:textColor="?textColorSecondary" android:paddingTop="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/profile_backup_code_description" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/profile_enter_confirmation_code_warning" android:drawablePadding="5.0dp" app:drawableStartCompat="@drawable/styled_ic_alert_warning" />
+            <com.alohamobile.component.view.SegmentedPrivateCodeView android:layout_gravity="center_horizontal" android:id="@id/backupCodeView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dp" />
+            <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/generateNewCodeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/action_generate_new_code" style="?textButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

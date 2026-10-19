@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton android:textColor="?textColorSecondary" android:layout_gravity="center_horizontal" android:id="@id/restorePurchasesButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_ads_restore_purchases" android:paddingStart="8.0dp" android:paddingEnd="8.0dp" style="?textButtonStyle" />
+    <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorTertiary" android:gravity="center_horizontal" android:id="@id/termsTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" />
+</merge>

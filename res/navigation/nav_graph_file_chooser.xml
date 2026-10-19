@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_file_chooser" app:startDestination="@id/fileChooserFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="FileChooserFragment" android:name="com.alohamobile.filemanager.feature.upload.FileChooserFragment" android:id="@id/fileChooserFragment">
+        <argument android:name="acceptTypes" android:defaultValue="*/*" app:argType="string" />
+        <argument android:name="allowMultipleFiles" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="uploadButtonIconResId" app:argType="integer" />
+        <argument android:name="isSelectionLimited" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="resultRequestKey" android:defaultValue="get_files_for_upload" app:argType="string" />
+    </fragment>
+</navigation>

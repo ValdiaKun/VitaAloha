@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="other">ไม่สามารถอัปโหลดได้ %1$d ไฟล์</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="other">เกินที่กำหนด ลดจำนวนอักขระลง %1$d ตัวและลองใหม่อีกครั้ง</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="other">เหลือคำร้องขอ%1$d ครั้ง</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="other">คุณได้รับคำขอฟรี %1$d ครั้งต่อวันสำหรับ %2$s อัปเกรดเป็น Premium Plus เพื่อก้าวข้ามขีดจำกัดทั้งหมด</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="other">%s บุ๊คมาร์ค</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="other">คุณสามารถทดลองใช้ฟีเจอร์ที่ดีที่สุดของเราพร้อมสถานะ Premium ได้ฟรี %1$d วัน</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="other">คุณสามารถทดลองใช้ฟีเจอร์ที่ดีที่สุดด้วยสถานะ Premium ได้ฟรีเป็นเวลา %1$d วัน ตั้งค่า Aloha เป็นเบราว์เซอร์เริ่มต้นของคุณเพื่อรับประสบการณ์การใช้งานอย่างเต็มรูปแบบ</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="other">เรามอบสิทธิ์การเข้าถึงเต็มรูปแบบให้คุณเพิ่มอีก %1$d วัน ฟรี ๆ</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="other">เราจะมอบสิทธิ์การเข้าถึงแบบเต็มรูปแบบให้คุณเพิ่มอีก %1$d วัน โดยไม่มีค่าใช้จ่ายใดๆ ทั้งสิ้น เพียงตั้งค่า Aloha เป็นเบราว์เซอร์เริ่มต้นของคุณเพื่อรับประสบการณ์การใช้งานอย่างเต็มรูปแบบ</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="other">หากคุณไม่เพิ่มพื้นที่ว่าง ไฟล์ที่เกินขีดจำกัดจะกลายเป็นแบบอ่านอย่างเดียวและจะถูกลบภายใน %d วัน</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="other">การสมัครสมาชิก Aloha Cloud ของคุณสิ้นสุดลงแล้ว Aloha Cloud จะถูกลบอย่างถาวรในอีก %1$d วัน โปรดต่ออายุแพ็กเกจของคุณเพื่อให้สามารถใช้งานได้อีกครั้ง</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="other">ต่ออายุสมาชิก Aloha Cloud ของคุณภายใน %1$d วัน เพื่อป้องกันไม่ให้ไฟล์บนคลาวด์สูญหาย</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="other">การสมัครสมาชิก Aloha Premium ของคุณสิ้นสุดลงแล้ว ไฟล์ของคุณจะถูกลบโดยอัตโนมัติในอีก %1$d วัน โปรดซื้อแพ็กเกจ Aloha Cloud เพื่อเก็บรักษาไฟล์และรับพื้นที่จัดเก็บข้อมูลเพิ่มเติม</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="other">การสมัครสมาชิก Aloha Premium ของคุณสิ้นสุดลงแล้ว ข้อมูลใน Aloha Cloud จะถูกลบอย่างถาวรในอีก %1$d วัน โปรดต่ออายุแพ็กเกจเพื่อให้สามารถกลับมาใช้งานได้อีก</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="other">ต่ออายุสมาชิก Aloha Premium ภายใน %1$d วัน เพื่อป้องกันไม่ให้ไฟล์บนคลาวด์ของคุณสูญหาย</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="other">ไฟล์บางส่วนจะถูกลบในอีก %1$d วัน</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="other">ไฟล์บางส่วนจะถูกลบในอีก %1$d วัน ต่ออายุแพ็กเกจของคุณเพื่อให้เข้าถึงไฟล์เหล่านั้นได้</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="other">ต่ออายุ Premium ภายใน %1$d วัน เพื่อไม่ให้ไฟล์บนคลาวด์ของคุณสูญหาย</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d วัน</item>
+        <item quantity="other">%d วัน</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="other">%d รายการจะถูกลบออกอย่างถาวร คุณแน่ใจหรือไม่ว่าต้องการล้างถังขยะ</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="other">ข้อความผิด — เหลือโอกาส %1$d ครั้ง</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="other">คุณไม่สามารถเลือกได้มากกว่า %d ตัวเลือก</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">กรอไปข้างหน้า %d วินาที</item>
+        <item quantity="other">กรอไปข้างหน้า %d วินาที</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">กรอกลับ %d วินาที</item>
+        <item quantity="other">กรอกลับ %d วินาที</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="other">%d รายการ</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="other">Free Premium หมดอายุใน %1$d วัน</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="other">เหลือ %1$d วัน</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="other">เหลือ %1$d ครั้ง</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d เดือน</item>
+        <item quantity="other">%1$d เดือน</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="other">%1$d เดือน</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">การแจ้งเตือนใหม่ %d รายการ</item>
+        <item quantity="other">การแจ้งเตือนใหม่ %d รายการ</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="other">กำลังบันทึก %1$d จาก %2$d ไฟล์</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="other">พบ %1$d รหัสผ่าน</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="other">นอกจาก %1$d แล้ว ยังมีฟีเจอร์พิเศษเพิ่มเติมสำหรับผู้ใช้ Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="other">ป๊อปอัพ %d ถูกบล็อก</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="other">คุณสามารถทดลองใช้ฟีเจอร์ที่ดีที่สุดของเราด้วย &lt;b>สถานะ Premium&lt;/b> เป็นเวลา &lt;b>%1$d เดือน – ฟรี – กับเรา!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="other">คุณสามารถทดลองใช้ฟีเจอร์ที่ดีที่สุดของเราด้วย &lt;b>สถานะ Premium&lt;/b> เป็นเวลา &lt;b>%1$d สัปดาห์ – ฟรี – กับเรา!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="other">คุณสามารถทดลองใช้ฟีเจอร์ที่ดีที่สุดของเราด้วย &lt;b>สถานะ Premium&lt;/b> เป็นเวลา &lt;b>%1$d ปี – ฟรี – กับเรา!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="other">"%1$s/เดือน สำหรับ %3$d เดือนแรก จากนั้น %2$s/เดือน
+ต่ออายุอัตโนมัติ ยกเลิกได้ทุกเมื่อ"</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="other">"%1$s/ปี สำหรับ %3$d ปีแรก จากนั้น %2$s/ปี
+ต่ออายุอัตโนมัติ ยกเลิกได้ทุกเมื่อ"</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="other">%1$d เดือนแรก</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="other">%1$d ปีแรก</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="other">%1$s/เดือน เป็นเวลา %2$d เดือน</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="other">%1$s สำหรับ %2$d ปีแรก</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="other">ลด %1$d%% สำหรับ %2$d เดือนแรก</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="other">เพื่อน ๆ ของคุณจะได้รับ Premium ฟรี เป็นเวลา %1$d เดือน!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="other">เพื่อน ๆ ของคุณจะได้รับ Premium ฟรี เป็นเวลา %1$d สัปดาห์!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="other">เพื่อน ๆ ของคุณจะได้รับ Premium ฟรี เป็นเวลา %1$d ปี!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="other">ตอนนี้ เพื่อน &lt;b>%1$d คน&lt;/b> ตอนนี้สามารถเพลิดเพลินกับ Aloha และคุณสามารถเพลิดเพลินกับ &lt;b>สถานะ Premium&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="other">เชิญเพื่อนเพิ่มอีก %1$d คน เพื่อรับ Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="other">ต้องการการบันทึกวิดีโอที่มีความยาวมากกว่า %1$d วินาทีใช่หรือไม่?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="other">คุณมีเวลา %1$d เดือน สำหรับการใช้ Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="other">คุณมี Premium %1$d สัปดาห์</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="other">คุณเหลือเวลา %1$d ปี สำหรับการใช้ Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="other">นำเข้ารหัสผ่าน %1$d แล้ว</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d สัปดาห์</item>
+        <item quantity="other">%1$d สัปดาห์</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="other">%1$d สัปดาห์</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d ปี</item>
+        <item quantity="other">%1$d ปี</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="other">%1$d ปี</item>
+    </plurals>
+</resources>

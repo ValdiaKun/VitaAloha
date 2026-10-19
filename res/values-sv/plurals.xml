@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Misslyckades med att ladda upp %1$d fil</item>
+        <item quantity="other">Misslyckades med att ladda upp %1$d filer</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Överskridit gränsen. Förkorta meddelandet till %1$d tecken och försök igen.</item>
+        <item quantity="other">Överskridit gränsen. Förkorta meddelandet till %1$d tecken och försök igen.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d begäran kvar</item>
+        <item quantity="other">%1$d begäran kvar</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Du har %1$d gratis begäran per dag för %2$s. Uppgradera till Premium Plus och ta bort alla gränser!</item>
+        <item quantity="other">Du har %1$d gratis begäran per dag för %2$s. Uppgradera till Premium Plus och ta bort alla gränser!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s bokmärke</item>
+        <item quantity="other">%s bokmärken</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Du kan prova våra bästa funktioner med Premium-status i %1$d dag gratis</item>
+        <item quantity="other">Du kan prova våra bästa funktioner med Premium-status i %1$d dagar gratis</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Du kan testa våra bästa funktioner med Premium-status i %1$d dag gratis. Ställ in Aloha som standardwebbläsare för att få den fulla upplevelsen.</item>
+        <item quantity="other">Du kan testa våra bästa funktioner med Premium-status i %1$d dagar gratis. Ställ in Aloha som standardwebbläsare för att få den fulla upplevelsen.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Vi ger dig %1$d extra dag med full åtkomst, helt gratis</item>
+        <item quantity="other">Vi ger dig %1$d extra dagar med full åtkomst, helt gratis</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">Vi ger dig %1$d dag till med full åtkomst, helt gratis. Ställ in Aloha som standardwebbläsare för att få den fulla upplevelsen.</item>
+        <item quantity="other">Vi ger dig %1$d dagar mer med full åtkomst, helt gratis. Ställ in Aloha som standardwebbläsare för att få den fulla upplevelsen.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Om du inte frigör utrymme kommer filer som överskrider gränsen att bli skrivskyddade. De kommer att raderas efter %1$d dag.</item>
+        <item quantity="other">Om du inte frigör utrymme kommer filer som överskrider gränsen att bli skrivskyddade. De kommer att raderas efter %1$d dagar.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Din prenumeration på Aloha Cloud har löpt ut. Aloha Cloud kommer att raderas permanent om %1$d dag. Förnya ditt abonnemang för att återfå åtkomsten.</item>
+        <item quantity="other">Din prenumeration på Aloha Cloud har löpt ut. Aloha Cloud kommer att raderas permanent om %1$d dagar. Förnya ditt abonnemang för att återfå åtkomsten.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Förnya ditt Aloha Cloud-abonnemang inom %1$d dag så att dina molnfiler inte försvinner</item>
+        <item quantity="other">Förnya ditt Aloha Cloud-abonnemang inom %1$d dagar så att dina molnfiler inte försvinner</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Din Aloha Premium-prenumeration har upphört. Dina filer raderas automatiskt om %1$d dag. Köp en Aloha Cloud-plan för att behålla dina filer och få ytterligare lagringsutrymme.</item>
+        <item quantity="other">Din Aloha Premium-prenumeration har upphört. Dina filer raderas automatiskt om %1$d dagar. Köp en Aloha Cloud-plan för att behålla dina filer och få ytterligare lagringsutrymme.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Din Aloha Premium-prenumeration har löpt ut. Aloha Cloud kommer att raderas permanent om %1$d dag. Förnya ditt abonnemang för att återfå åtkomsten.</item>
+        <item quantity="other">Din Aloha Premium-prenumeration har löpt ut. Aloha Cloud kommer att raderas permanent om %1$d dagar. Förnya ditt abonnemang för att återfå åtkomsten.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Förnya ditt Aloha Premium-abonnemang inom %1$d dag så att dina molnfiler inte försvinner</item>
+        <item quantity="other">Förnya ditt Aloha Premium-abonnemang inom %1$d dagar så att dina molnfiler inte försvinner</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Vissa filer kommer att raderas om %1$d dag</item>
+        <item quantity="other">Vissa filer kommer att raderas om %1$d dagar</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Vissa filer kommer att raderas om %1$d dag. Förnya ditt abonnemang för att behålla åtkomsten till dina filer.</item>
+        <item quantity="other">Vissa filer kommer att raderas om %1$d dagar. Förnya ditt abonnemang för att behålla åtkomsten till dina filer.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Förnya Premium om %1$d dag så att dina molnfiler inte försvinner</item>
+        <item quantity="other">Förnya Premium om %1$d dagar så att dina molnfiler inte försvinner</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d dagar</item>
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagar</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d objekt raderas permanent. Är du säker på att du vill rensa papperskorgen?</item>
+        <item quantity="other">%d objekt raderas permanent. Är du säker på att du vill rensa papperskorgen?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Fel fras — %1$d försök kvar</item>
+        <item quantity="other">Fel fras — %1$d försök kvar</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Du kan inte välja mer än %d objekt</item>
+        <item quantity="other">Du kan inte välja mer än %d objekt</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Spola framåt %d sekund</item>
+        <item quantity="other">Spola framåt %d sekunder</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Spola tillbaka %d sekund</item>
+        <item quantity="other">Spola tillbaka %d sekunder</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d objekt</item>
+        <item quantity="other">%d objekt</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium slutar om %1$d dag</item>
+        <item quantity="other">Free Premium slutar om %1$d dagar</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d dag kvar</item>
+        <item quantity="other">%1$d dagar kvar</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d försök kvar</item>
+        <item quantity="other">%1$d försök kvar</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d månader</item>
+        <item quantity="one">%1$d månad</item>
+        <item quantity="other">%1$d månader</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d månad</item>
+        <item quantity="other">%1$d månader</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ny avisering</item>
+        <item quantity="other">%d nya aviseringar</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Sparar %1$d av %2$d fil</item>
+        <item quantity="other">Sparar %1$d av %2$d filer</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d lösenord hittades</item>
+        <item quantity="other">%1$d lösenord hittades</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Utöver %1$d exklusiva funktioner tillgängliga för Premium-användare</item>
+        <item quantity="other">Utöver %1$d exklusiva funktioner tillgängliga för Premium-användare</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d popup-fönster blockerat</item>
+        <item quantity="other">%d popup-fönster blockerade</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Du kan prova våra bästa funktioner med &lt;b>Premiumstatus&lt;/b> i &lt;b>%1$d månad – gratis – på oss!&lt;/b></item>
+        <item quantity="other">Du kan prova våra bästa funktioner med &lt;b>Premiumstatus&lt;/b> i &lt;b>%1$d månader – gratis – på oss!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Du kan prova våra bästa funktioner med &lt;b>Premiumstatus&lt;/b> i &lt;b>%1$d vecka – gratis – på oss!&lt;/b></item>
+        <item quantity="other">Du kan prova våra bästa funktioner med &lt;b>Premiumstatus&lt;/b> i &lt;b>%1$d veckor – gratis – på oss!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Du kan prova våra bästa funktioner med &lt;b>Premiumstatus&lt;/b> i &lt;b>%1$d år – gratis – på oss!&lt;/b></item>
+        <item quantity="other">Du kan prova våra bästa funktioner med &lt;b>Premiumstatus&lt;/b> i &lt;b>%1$d år – gratis – på oss!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s för den första månaden, sedan %2$s/månad.
+Förnyas automatiskt. Avslutas när som helst."</item>
+        <item quantity="other">"%1$s/månad under de första %3$d månaderna, sedan %2$s/månad.
+Förnyas automatiskt. Avslutas när som helst."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s för det första året, sedan %2$s/år.
+Förnyas automatiskt. Avslutas när som helst."</item>
+        <item quantity="other">"%1$s för de första %3$d åren, sedan %2$s/år.
+Förnyas automatiskt. Avslutas när som helst."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d månad</item>
+        <item quantity="other">första %1$d månaderna</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d år</item>
+        <item quantity="other">första %1$d åren</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/mån i %2$d månad</item>
+        <item quantity="other">%1$s/mån i %2$d månad</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s för det första året</item>
+        <item quantity="other">%1$s för de första %2$d åren</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d%% rabatt på din första månad</item>
+        <item quantity="other">%1$d%% rabatt på dina första %2$d månader</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Dina vänner får %1$d månad Premium helt gratis!</item>
+        <item quantity="other">Dina vänner får %1$d månader Premium helt gratis!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Dina vänner kommer att få %1$d veckas Premium helt gratis!</item>
+        <item quantity="other">Dina vänner kommer att få %1$d veckor Premium helt gratis!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Dina vänner kommer att få %1$d års Premium helt gratis!</item>
+        <item quantity="other">Dina vänner kommer att få %1$d års Premium helt gratis!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Tack vare dig kan &lt;b>%1$d vän&lt;/b> nu njuta av Aloha och du har en &lt;b>Premiumstatus.&lt;/b></item>
+        <item quantity="other">Thanks to you, &lt;b>%1$d friends&lt;/b> now enjoy Aloha and you enjoy a &lt;b>Premiumstatus.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Bjud in %1$d vän till för att få Free Premium</item>
+        <item quantity="other">Bjud in %1$d vänner till för att få Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Vill du göra inspelningar som är längre än %1$d sekund?</item>
+        <item quantity="other">Vill du göra inspelningar som är längre än %1$d sekunder?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Du har %1$d Premium-månad</item>
+        <item quantity="other">Du har %1$d månaders Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Du har %1$d veckas Premium</item>
+        <item quantity="other">Du har %1$d veckors Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">Du har %1$d års Premium</item>
+        <item quantity="other">Du har %1$d års Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d lösenord importerat</item>
+        <item quantity="other">%1$d lösenord importerade</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d veckor</item>
+        <item quantity="one">%1$d vecka</item>
+        <item quantity="other">%1$d veckor</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d vecka</item>
+        <item quantity="other">%1$d veckor</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d år</item>
+        <item quantity="one">%1$d år</item>
+        <item quantity="other">%1$d år</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d år</item>
+        <item quantity="other">%1$d år</item>
+    </plurals>
+</resources>

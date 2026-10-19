@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="private_downloads" path="Private downloads/" />
+    <files-path name="web_recordings" path="AlohaRecordings/" />
+    <files-path name="logs" path="logs/" />
+    <external-path name="internal_downloads" path="." />
+    <cache-path name="temporary_disk_cache" path=".aloha_tmp_cache/" />
+    <root-path name="sd_card" path="/storage/" />
+</paths>

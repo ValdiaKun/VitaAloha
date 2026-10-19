@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="14.0dp" android:width="18.0dp" android:viewportWidth="18.0" android:viewportHeight="14.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h18v14h-18z" />
+        <group>
+            <clip-path android:pathData="M1,3C1,1.895 1.895,1 3,1H15C16.105,1 17,1.895 17,3V11C17,12.105 16.105,13 15,13H3C1.895,13 1,12.105 1,11V3Z" />
+            <path android:fillColor="#ffffff" android:pathData="M1,1h16v12h-16z" />
+            <path android:fillColor="#c51918" android:pathData="M10.04,6.5H5.933L10.933,12.5H1.5V1.841L10.04,6.5Z" android:strokeColor="#4857a1" android:strokeWidth="1.0" />
+            <group>
+                <clip-path android:pathData="M10.04,6.5H5.933L10.933,12.5H1.5V1.841L10.04,6.5Z" />
+                <path android:fillColor="#f7fcff" android:pathData="M3.915,11.005L3.302,11.8L3.274,10.797L2.311,11.08L2.878,10.252L1.932,9.915L2.878,9.578L2.311,8.75L3.274,9.033L3.302,8.029L3.915,8.825L4.527,8.029L4.556,9.033L5.519,8.75L4.952,9.578L5.897,9.915L4.952,10.252L5.519,11.08L4.556,10.797L4.527,11.8L3.915,11.005Z" android:fillType="evenOdd" />
+                <path android:fillColor="#f7fcff" android:pathData="M3.9,5.069L3.58,5.485L3.565,4.961L3.062,5.109L3.358,4.676L2.865,4.5L3.358,4.324L3.062,3.891L3.565,4.039L3.58,3.515L3.9,3.931L4.22,3.515L4.235,4.039L4.738,3.891L4.442,4.324L4.935,4.5L4.442,4.676L4.738,5.109L4.235,4.961L4.22,5.485L3.9,5.069Z" android:fillType="evenOdd" />
+                <path android:fillColor="#f9fafa" android:pathData="M3.833,4.947C4.946,4.951 5.54,4.32 5.54,4.32C5.657,5.041 4.751,5.52 3.844,5.52C2.937,5.52 2.388,4.866 2.05,4.32C2.05,4.32 2.72,4.943 3.833,4.947Z" android:fillType="evenOdd" />
+            </group>
+        </group>
+        <path android:fillColor="#00000000" android:pathData="M15,0.5C16.381,0.5 17.5,1.619 17.5,3V11C17.5,12.381 16.381,13.5 15,13.5H3C1.619,13.5 0.5,12.381 0.5,11V3C0.5,1.619 1.619,0.5 3,0.5H15Z" android:strokeColor="?staticColorGreyAlpha50" android:strokeWidth="1.0" />
+    </group>
+</vector>

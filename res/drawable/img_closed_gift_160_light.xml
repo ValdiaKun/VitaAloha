@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="160.0dp" android:width="160.0dp" android:viewportWidth="160.0" android:viewportHeight="160.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h160v160h-160z" />
+        <path android:fillColor="#000000" android:pathData="M44,138.93C44.34,140.36 45.56,141.71 47.1,142.09H47.1C47.59,142.21 50.14,142.47 48.4,142.99C46.57,143.55 45.17,144.32 44.19,145.98C43.85,146.55 43.72,147.08 43.64,147.71C43.56,148.34 43.45,149.01 43.08,149C42.64,148.98 42.45,148.18 42.36,147.71C42.24,147.08 42.15,146.55 41.81,145.98C40.83,144.32 39.43,143.55 37.6,142.99C35.86,142.47 38.41,142.21 38.9,142.09C40.44,141.71 41.73,140.36 42.08,138.93C42.2,138.41 42.36,135.99 43,136C43.64,136.01 43.87,138.41 44,138.93Z" android:strokeColor="#000000" android:strokeWidth="1.04864" />
+        <path android:fillColor="#b2edfb" android:pathData="M26,57.02L139.96,57L140,126.86L26.06,127L26,57.02Z" android:strokeColor="#000000" android:strokeWidth="1.04864" android:strokeLineJoin="round" />
+        <path android:fillColor="#34baff" android:pathData="M75,127V63H91V127H75Z" android:strokeColor="#000000" android:strokeWidth="1.04864" />
+        <path android:fillColor="#b2edfb" android:pathData="M145,46.7L21,46.71L21,67.05L145,67.04L145,46.7Z" android:strokeColor="#000000" android:strokeWidth="1.04864" android:strokeLineJoin="round" />
+        <path android:fillColor="#34baff" android:pathData="M71.68,67.12L71.68,46.91L94.67,46.91L94.67,67.12L71.68,67.12Z" android:strokeColor="#000000" android:strokeWidth="1.04864" />
+        <path android:fillColor="#00000000" android:pathData="M83.87,45.21C101.9,4.45 130.41,36.88 83.87,45.21ZM83.87,45.21C18.87,28.58 64.66,0.89 83.87,45.21Z" android:strokeColor="#000000" android:strokeWidth="1.04864" android:strokeLineCap="round" android:strokeLineJoin="round" />
+        <path android:fillColor="#feed3b" android:pathData="M26.75,109.16C27.86,114.08 31.83,118.76 36.83,120.07H36.83C38.4,120.48 46.72,121.38 41.04,123.21C35.09,125.13 30.54,127.79 27.36,133.53C26.27,135.51 25.85,137.34 25.58,139.54C25.31,141.73 24.97,144.04 23.77,144C22.32,143.94 21.72,141.17 21.42,139.54C21.02,137.36 20.73,135.51 19.64,133.53C16.46,127.79 11.91,125.13 5.96,123.21C0.28,121.38 8.6,120.48 10.17,120.07C15.17,118.76 19.39,114.08 20.5,109.16C20.91,107.35 21.42,98.97 23.49,99C25.57,99.03 26.34,107.35 26.75,109.16Z" android:strokeColor="#000000" android:strokeWidth="1.29032" />
+    </group>
+</vector>

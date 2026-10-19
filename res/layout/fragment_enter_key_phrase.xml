@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar_transparent" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:id="@id/autoInsetsContent" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/focusInterceptor" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1.0px" android:layout_height="1.0px" />
+                    <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/encryption_title_enter_key_phrase" android:layout_marginHorizontal="16.0dp" />
+                    <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/encryption_subtitle_enter_key_phrase" android:layout_marginHorizontal="16.0dp" />
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/keyPhraseInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:hint="@string/encryption_input_title_key_phrase" android:layout_marginHorizontal="16.0dp" app:counterEnabled="true" app:endIconCheckable="false" app:endIconContentDescription="@string/action_reveal_phrase" app:endIconDrawable="@drawable/ic_eye_closed" app:endIconMode="custom" app:endIconTint="?fillColorBrandPrimary" style="?textInputAreaLayoutStyle">
+                        <com.alohamobile.component.textfield.SensitiveEditText android:id="@id/keyPhraseEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="actionDone|flagNoPersonalizedLearning" android:importantForAutofill="no" style="?textInputAreaEditTextStyle" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.alohamobile.component.button.ProgressButton android:id="@id/continueButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginHorizontal="16.0dp" app:progressButtonState="disabled" app:progressButtonText="@string/button_continue" />
+                    <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/forgotKeyPhraseButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/button_forgot_key_phrase" android:layout_marginHorizontal="16.0dp" style="?textButtonStyle" />
+                </LinearLayout>
+            </ScrollView>
+            <com.alohamobile.component.view.ZeroScreenView android:id="@id/coolDownZeroScreen" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent" app:zeroScreenImage="@drawable/img_cross_120" app:zeroScreenShouldInterceptTouchEvents="true" app:zeroScreenTitle="@string/too_many_attempts" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

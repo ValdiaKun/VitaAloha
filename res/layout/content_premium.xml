@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alohamobile.component.view.FadingEdgeScrollView android:fadingEdgeLength="64.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:requiresFadingEdge="vertical" app:scrollViewFadingEdgeColor="?layerColorFloor1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/premiumViewContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_rounded_rectangle_xl" android:paddingTop="24.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:backgroundTint="?layerColorFloor1" android:layout_marginHorizontal="16.0dp" android:paddingHorizontal="16.0dp">
+            <ImageView android:id="@id/imageView" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/img_elements_80" android:importantForAccessibility="no" />
+            <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/onboarding_premium_block_message" />
+            <com.google.android.material.button.MaterialButton android:id="@id/explorePremiumButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/action_explore_premium" app:backgroundTint="?fillColorPremiumPrimary" app:rippleColor="?rippleColorPremiumPrimary" />
+        </LinearLayout>
+    </FrameLayout>
+</com.alohamobile.component.view.FadingEdgeScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/shortcutButtonContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/shortcutButton" android:focusable="false" android:clickable="false" android:layout_width="@dimen/icon_size_48" android:layout_height="@dimen/icon_size_48" app:icon="@drawable/ic_gear_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?materialIconButtonOutlinedStyle" />
+        <com.alohamobile.browser.component.menu.presentation.view.MenuButtonIndicatorView android:id="@id/shortcutIndicator" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_marginTop="4.0dp" android:layout_marginEnd="4.0dp" app:layout_constraintEnd_toEndOf="@id/shortcutButton" app:layout_constraintTop_toTopOf="@id/shortcutButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/shortcutTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:maxLines="2" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" android:breakStrategy="simple" android:hyphenationFrequency="full" app:autoSizeTextType="none" />
+</merge>

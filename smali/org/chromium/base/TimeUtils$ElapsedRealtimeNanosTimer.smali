@@ -1,0 +1,71 @@
+.class public Lorg/chromium/base/TimeUtils$ElapsedRealtimeNanosTimer;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/base/TimeUtils;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "ElapsedRealtimeNanosTimer"
+.end annotation
+
+.annotation build Lorg/chromium/build/annotations/CheckDiscard;
+    value = "Class should get inlined by R8."
+.end annotation
+
+
+# instance fields
+.field private final mStart:J
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {}, Lorg/chromium/base/TimeUtils;->elapsedRealtimeNanos()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lorg/chromium/base/TimeUtils$ElapsedRealtimeNanosTimer;->mStart:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getElapsedMicros()J
+    .locals 4
+
+    invoke-static {}, Lorg/chromium/base/TimeUtils;->elapsedRealtimeNanos()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Lorg/chromium/base/TimeUtils$ElapsedRealtimeNanosTimer;->mStart:J
+
+    sub-long/2addr v0, v2
+
+    const-wide/16 v2, 0x3e8
+
+    div-long/2addr v0, v2
+
+    return-wide v0
+.end method
+
+.method public getElapsedNanos()J
+    .locals 4
+
+    invoke-static {}, Lorg/chromium/base/TimeUtils;->elapsedRealtimeNanos()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Lorg/chromium/base/TimeUtils$ElapsedRealtimeNanosTimer;->mStart:J
+
+    sub-long/2addr v0, v2
+
+    return-wide v0
+.end method

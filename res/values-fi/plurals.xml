@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">%1$d tiedoston lähettäminen epäonnistui</item>
+        <item quantity="other">%1$d tiedoston lähettäminen epäonnistui</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="zero">Viesti on liian pitkä. Lyhennä se %1$d merkkiin ja yritä uudelleen.</item>
+        <item quantity="one">Viesti liian pitkä. Lyhennä se %1$d merkkiin ja yritä uudelleen.</item>
+        <item quantity="other">Viesti on liian pitkä. Lyhennä se %1$d merkkiin ja yritä uudelleen.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d kysely jäljellä</item>
+        <item quantity="other">%1$d kyselyä jäljellä</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Käytössäsi on päivittäin %1$d ilmainen kysely mallille %2$s. Päivitä Premium Plus -versioon ja poista kaikki rajoitukset!</item>
+        <item quantity="other">Käytössäsi on päivittäin %1$d ilmaista kyselyä mallille %2$s. Päivitä Premium Plus -versioon ja poista kaikki rajoitukset!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s kirjanmerkki</item>
+        <item quantity="other">%s kirjanmerkkiä</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Kokeile parhaita ominaisuuksiamme Premium-tilassa yhden päivän ajan ilmaiseksi</item>
+        <item quantity="other">Kokeile parhaita ominaisuuksiamme Premium-tilassa %1$d päivän ajan ilmaiseksi</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Voit kokeilla parhaita Premium-ominaisuuksia ilmaiseksi %1$d päivän ajan. Aseta Aloha oletusselaimeksi saadaksesi täyden käyttökokemuksen.</item>
+        <item quantity="other">Voit kokeilla parhaita Premium-ominaisuuksia ilmaiseksi %1$d päivää. Aseta Aloha oletusselaimeksi saadaksesi täyden käyttökokemuksen.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Annamme sinulle %1$d lisäpäivän ajaksi täydet käyttöoikeudet, täysin ilmaiseksi</item>
+        <item quantity="other">Annamme sinulle %1$d lisäpäivän ajaksi täydet käyttöoikeudet, täysin ilmaiseksi</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">Annamme sinulle %1$d päivää lisäaikaa täyteen käyttöön täysin ilmaiseksi. Aseta Aloha oletusselaimeksesi saadaksesi täyden käyttökokemuksen.</item>
+        <item quantity="other">Annamme sinulle %1$d päivää lisäaikaa täyteen käyttöön täysin ilmaiseksi. Aseta Aloha oletusselaimeksesi saadaksesi täyden käyttökokemuksen.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Jos et vapauta tilaa, rajan ylittäviä tiedostoja voi vain lukea. Ne poistetaan %1$d päivän kuluttua.</item>
+        <item quantity="other">Jos et vapauta tilaa, rajan ylittäviä tiedostoja voi vain lukea. Ne poistetaan %1$d päivän kuluttua.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Aloha Cloud -tilauksesi on päättynyt. Aloha Cloud -tallennustilasi poistetaan pysyvästi %1$d päivän kuluttua. Uudista tilauksesi palauttaaksesi käyttöoikeuden.</item>
+        <item quantity="other">Aloha Cloud -tilauksesi on päättynyt. Aloha Cloud -tallennustilasi poistetaan pysyvästi %1$d päivän kuluttua. Uudista tilauksesi palauttaaksesi käyttöoikeuden.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Uudista Aloha Cloud -tilauksesi %1$d päivän sisällä säilyttääksesi tiedostosi</item>
+        <item quantity="other">Uudista Aloha Cloud -tilauksesi %1$d päivän sisällä säilyttääksesi tiedostosi</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Aloha Premium -tilauksesi on päättynyt. Tiedostosi poistetaan automaattisesti %1$d päivän kuluttua. Tilaa Aloha Cloud säilyttääksesi tiedostosi ja saadaksesi lisää tallennustilaa.</item>
+        <item quantity="other">Aloha Premium -tilauksesi on päättynyt. Tiedostosi poistetaan automaattisesti %1$d päivän kuluttua. Tilaa Aloha Cloud säilyttääksesi tiedostosi ja saadaksesi lisää tallennustilaa.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Aloha Premium -tilauksesi on päättynyt. Aloha Cloud -tallennustilasi poistetaan pysyvästi %1$d päivän kuluttua. Uudista tilauksesi palauttaaksesi käyttöoikeuden.</item>
+        <item quantity="other">Aloha Premium -tilauksesi on päättynyt. Aloha Cloud -tallennustilasi poistetaan pysyvästi %1$d päivän kuluttua. Uudista tilauksesi palauttaaksesi käyttöoikeuden.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Uudista Aloha Premium -tilauksesi %1$d päivän sisällä säilyttääksesi tiedostosi</item>
+        <item quantity="other">Uudista Aloha Premium -tilauksesi %1$d päivän sisällä säilyttääksesi tiedostosi</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Osa tiedostoistasi poistetaan %1$d päivän kuluttua</item>
+        <item quantity="other">Osa tiedostoistasi poistetaan %1$d päivän kuluttua</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Osa tiedostoistasi poistetaan %1$d päivän kuluttua. Uudista tilauksesi jatkaaksesi niiden käyttöä.</item>
+        <item quantity="other">Osa tiedostoistasi poistetaan %1$d päivän kuluttua. Uudista tilauksesi jatkaaksesi niiden käyttöä.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Uudista Premium %d päivän sisällä, jotta pilvitiedostosi eivät katoa</item>
+        <item quantity="other">Uudista Premium %d päivän sisällä, jotta pilvitiedostosi eivät katoa</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d päivää</item>
+        <item quantity="one">%d päivä</item>
+        <item quantity="other">%d päivää</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d esine poistetaan pysyvästi. Haluatko varmasti tyhjentää roskakorin?</item>
+        <item quantity="other">%d esinettä poistetaan pysyvästi. Haluatko varmasti tyhjentää roskakorin?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Väärä lause — %1$d yritys jäljellä</item>
+        <item quantity="other">Väärä lause — %1$d yritystä jäljellä</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Et voi valita enempää kuin %d kohteen</item>
+        <item quantity="other">Et voi valita enempää kuin %d kohdetta</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Siirry eteenpäin %d sekunti</item>
+        <item quantity="other">Siirry eteenpäin %d sekuntia</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Siirry taaksepäin %d sekunti</item>
+        <item quantity="other">Siirry taaksepäin %d sekuntia</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d esine</item>
+        <item quantity="other">%d esinettä</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium päättyy %1$d päivän kuluttua</item>
+        <item quantity="other">Free Premium päättyy %1$d päivän kuluttua</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d päivä jäljellä</item>
+        <item quantity="other">%1$d päivää jäljellä</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d yritys jäljellä</item>
+        <item quantity="other">%1$d yritystä jäljellä</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d kuukautta</item>
+        <item quantity="one">%1$d kuukausi</item>
+        <item quantity="other">%1$d kuukautta</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d kuukausi</item>
+        <item quantity="other">%1$d kuukautta</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d uusi ilmoitus</item>
+        <item quantity="other">%d uutta ilmoitusta</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Tallennetaan %1$d / %2$d tiedostoa</item>
+        <item quantity="other">Tallennetaan %1$d / %2$d tiedostoa</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d salasana löytyi</item>
+        <item quantity="other">%1$d salasanaa löytyi</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Lisäksi %1$d ominaisuus Premium-käyttäjille yksinoikeudella</item>
+        <item quantity="other">Lisäksi %1$d ominaisuutta Premium-käyttäjille yksinoikeudella</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d ponnahdusikkuna estetty</item>
+        <item quantity="other">%d ponnahdusikkunaa estetty</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Voit kokeilla parhaita ominaisuuksiamme &lt;b>Premium-statuksella&lt;/b> &lt;b>%1$d kuukauden – maksutta – meidän tarjoamana!&lt;/b></item>
+        <item quantity="other">Voit kokeilla parhaita ominaisuuksiamme &lt;b>Premium-statuksella&lt;/b> &lt;b>%1$d kuukautta – maksutta – meidän tarjoamana!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Voit kokeilla parhaita ominaisuuksiamme &lt;b>Premium-statuksella&lt;/b> &lt;b>%1$d viikon – maksutta – meidän tarjoamana!&lt;/b></item>
+        <item quantity="other">Voit kokeilla parhaita ominaisuuksiamme &lt;b>Premium-statuksella&lt;/b> &lt;b>%1$d viikkoa – maksutta – meidän tarjoamana!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Voit kokeilla parhaita ominaisuuksiamme &lt;b>Premium-statuksella&lt;/b> &lt;b>%1$d vuoden – maksutta – meidän tarjoamana!&lt;/b></item>
+        <item quantity="other">Voit kokeilla parhaita ominaisuuksiamme &lt;b>Premium-statuksella&lt;/b> &lt;b>%1$d vuotta – maksutta – meidän tarjoamana!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s ensimmäisen kuukauden ajan, sen jälkeen %2$s/kk.
+Uusiutuu automaattisesti. Voit perua milloin tahansa."</item>
+        <item quantity="other">"%1$s/kk ensimmäisen %3$d kuukauden ajan, sen jälkeen %2$s/kk.
+Uusiutuu automaattisesti. Voit perua milloin tahansa."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s ensimmäiseltä vuodelta, sen jälkeen %2$s/vuosi.
+Uusiutuu automaattisesti. Voit perua milloin tahansa."</item>
+        <item quantity="other">"%1$s ensimmäiset %3$d vuotta, sen jälkeen %2$s/vuosi.
+Uusiutuu automaattisesti. Voit perua milloin tahansa."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d kuukausi</item>
+        <item quantity="other">ensimmäiset %1$d kuukautta</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d vuosi</item>
+        <item quantity="other">ensimmäiset %1$d vuotta</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/kk %2$d kk:n ajan</item>
+        <item quantity="other">%1$s/kk %2$d kk:n ajan</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s ensimmäiseltä vuodelta</item>
+        <item quantity="other">%1$s ensimmäiset %2$d vuotta</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">Ensimmäinen kuukausi %1$d %% alennuksella</item>
+        <item quantity="other">Ensimmäiset %2$d kuukautta %1$d %% alennuksella</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Ystäväsi saavat %1$d kuukauden Premiumia täysin ilmaiseksi!</item>
+        <item quantity="other">Ystäväsi saavat %1$d kuukautta Premiumia täysin ilmaiseksi!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Ystäväsi saavat %1$d viikon Premiumia täysin ilmaiseksi!</item>
+        <item quantity="other">Ystäväsi saavat %1$d viikkoa Premiumia täysin ilmaiseksi!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Ystäväsi saavat %1$d vuoden Premiumia täysin ilmaiseksi!</item>
+        <item quantity="other">Ystäväsi saavat %1$d vuotta Premiumia täysin ilmaiseksi!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Kiitos sinun, &lt;b>%1$d ystäväsi&lt;/b> nauttii nyt Alohasta ja sinä nautit &lt;b>Premiumista.&lt;/b></item>
+        <item quantity="other">Kiitos sinun, &lt;b>%1$d ystävääsi&lt;/b> nauttivat nyt Alohasta ja sinä nautit &lt;b>Premiumista.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Kutsu vielä %1$d ystävä saadaksesi Free Premium -palvelun</item>
+        <item quantity="other">Kutsu vielä %1$d ystävää saadaksesi Free Premium -palvelun</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Haluatko tallentaa yli %1$d sekunnin ajan?</item>
+        <item quantity="other">Haluatko tallentaa yli %1$d sekuntia?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Sinulla on %1$d kuukausi Premiumia</item>
+        <item quantity="other">Sinulla on %1$d kuukautta Premiumia</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Sinulla on %1$d viikko Premiumia</item>
+        <item quantity="other">Sinulla on %1$d viikkoa Premiumia</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">Sinulla on %1$d vuosi Premiumia</item>
+        <item quantity="other">Sinulla on %1$d vuotta Premiumia</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d salasana tuotu</item>
+        <item quantity="other">%1$d salasanaa tuotu</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d viikkoa</item>
+        <item quantity="one">%1$d viikko</item>
+        <item quantity="other">%1$d viikkoa</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d viikko</item>
+        <item quantity="other">%1$d viikkoa</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d vuotta</item>
+        <item quantity="one">%1$d vuosi</item>
+        <item quantity="other">%1$d vuotta</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d vuosi</item>
+        <item quantity="other">%1$d vuotta</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+.class interface abstract Lorg/chromium/ui/base/Clipboard$Natives;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/ui/base/Clipboard;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Natives"
+.end annotation
+
+
+# virtual methods
+.method public abstract cleanupForTesting()V
+.end method
+
+.method public abstract getLastModifiedTimeToJavaTime(J)J
+.end method
+
+.method public abstract onPrimaryClipChanged(J)V
+.end method
+
+.method public abstract onPrimaryClipTimestampInvalidated(JJ)V
+.end method

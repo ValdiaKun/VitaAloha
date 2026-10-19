@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_menu_background" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/list_menu_elevation" android:clipToOutline="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.chromium.ui.listmenu.KeyboardAccessibleListView android:id="@id/menu_header" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/menu_header_bottom_hairline" android:focusable="false" android:visibility="invisible" android:layout_height="@dimen/divider_height" android:screenReaderFocusable="false" style="@style/HorizontalDivider" />
+    <org.chromium.ui.listmenu.KeyboardAccessibleListView android:id="@id/menu_list" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+</LinearLayout>

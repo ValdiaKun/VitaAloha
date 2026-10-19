@@ -1,0 +1,142 @@
+.class public final synthetic Lr8/mth;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lr8/xp9;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lr8/uzd;
+
+.field public final synthetic c:Lr8/oxl;
+
+.field public final synthetic d:Z
+
+.field public final synthetic e:Z
+
+.field public final synthetic f:I
+
+.field public final synthetic g:I
+
+.field public final synthetic h:Ljava/lang/Object;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lr8/uzd;Lr8/oxl;ZZLjava/lang/Object;III)V
+    .locals 0
+
+    iput p8, p0, Lr8/mth;->a:I
+
+    iput-object p1, p0, Lr8/mth;->b:Lr8/uzd;
+
+    iput-object p2, p0, Lr8/mth;->c:Lr8/oxl;
+
+    iput-boolean p3, p0, Lr8/mth;->d:Z
+
+    iput-boolean p4, p0, Lr8/mth;->e:Z
+
+    iput-object p5, p0, Lr8/mth;->h:Ljava/lang/Object;
+
+    iput p6, p0, Lr8/mth;->f:I
+
+    iput p7, p0, Lr8/mth;->g:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
+
+    iget v0, p0, Lr8/mth;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, Lr8/mth;->h:Ljava/lang/Object;
+
+    move-object v5, v0
+
+    check-cast v5, Lr8/pkl;
+
+    move-object v6, p1
+
+    check-cast v6, Lr8/gb5;
+
+    check-cast p2, Ljava/lang/Integer;
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    iget p1, p0, Lr8/mth;->f:I
+
+    or-int/lit8 p1, p1, 0x1
+
+    invoke-static {p1}, Lr8/izh;->a(I)I
+
+    move-result v7
+
+    iget-object v1, p0, Lr8/mth;->b:Lr8/uzd;
+
+    iget-object v2, p0, Lr8/mth;->c:Lr8/oxl;
+
+    iget-boolean v3, p0, Lr8/mth;->d:Z
+
+    iget-boolean v4, p0, Lr8/mth;->e:Z
+
+    iget v8, p0, Lr8/mth;->g:I
+
+    invoke-static/range {v1 .. v8}, Lr8/ell;->a(Lr8/uzd;Lr8/oxl;ZZLr8/pkl;Lr8/gb5;II)V
+
+    :goto_0
+    sget-object p0, Lr8/bym;->a:Lr8/bym;
+
+    return-object p0
+
+    :pswitch_0
+    iget-object v0, p0, Lr8/mth;->h:Ljava/lang/Object;
+
+    move-object v5, v0
+
+    check-cast v5, Lr8/hth;
+
+    move-object v6, p1
+
+    check-cast v6, Lr8/gb5;
+
+    check-cast p2, Ljava/lang/Integer;
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    iget p1, p0, Lr8/mth;->f:I
+
+    or-int/lit8 p1, p1, 0x1
+
+    invoke-static {p1}, Lr8/izh;->a(I)I
+
+    move-result v7
+
+    iget-object v1, p0, Lr8/mth;->b:Lr8/uzd;
+
+    iget-object v2, p0, Lr8/mth;->c:Lr8/oxl;
+
+    iget-boolean v3, p0, Lr8/mth;->d:Z
+
+    iget-boolean v4, p0, Lr8/mth;->e:Z
+
+    iget v8, p0, Lr8/mth;->g:I
+
+    invoke-static/range {v1 .. v8}, Lr8/c03;->a(Lr8/uzd;Lr8/oxl;ZZLr8/hth;Lr8/gb5;II)V
+
+    goto :goto_0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

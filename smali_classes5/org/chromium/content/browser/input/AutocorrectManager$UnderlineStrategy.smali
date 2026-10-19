@@ -1,0 +1,26 @@
+.class interface abstract annotation Lorg/chromium/content/browser/input/AutocorrectManager$UnderlineStrategy;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/content/browser/input/AutocorrectManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2609
+    name = "UnderlineStrategy"
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->SOURCE:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+
+# static fields
+.field public static final APPLY_ON_COMMIT_CORRECTION:I = 0x1
+
+.field public static final DEFER_UNTIL_COMMIT_TEXT:I

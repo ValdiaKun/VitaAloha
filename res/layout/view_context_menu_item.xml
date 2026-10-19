@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/menuItemImage" android:visibility="gone" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_margin="16.0dp" android:importantForAccessibility="no" app:shapeAppearance="?shapeAppearanceXS" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="16.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody2Regular" android:textColor="@color/control_text_color_primary" android:id="@id/menuItemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorTertiary" android:id="@id/menuItemSubtitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" />
+    </LinearLayout>
+    <TextView android:textAppearance="?textAppearanceBody2Regular" android:textColor="?textColorTertiary" android:id="@id/value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dp" />
+    <View android:id="@id/newFeatureIndicator" android:background="@drawable/badge_update" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginEnd="16.0dp" />
+    <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/toggle" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dp" />
+    <ImageView android:id="@id/isSelectedIcon" android:visibility="gone" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:src="@drawable/ic_check_24" android:importantForAccessibility="no" android:layout_marginEnd="16.0dp" app:tint="?fillColorBrandPrimary" />
+    <ImageView android:id="@id/endIcon" android:visibility="gone" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:src="@drawable/ic_copy_24" android:importantForAccessibility="no" android:layout_marginEnd="16.0dp" app:tint="?fillColorBrandPrimary" />
+</merge>

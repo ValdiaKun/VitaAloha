@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/alohaFileBadge" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/alohaFileBadgeImage" android:background="@drawable/shape_rounded_rectangle_xs" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:layout_margin="8.0dp" android:src="@drawable/ic_edit_disabled" android:tint="?fillColorBrandPrimary" android:importantForAccessibility="no" android:backgroundTint="?fillColorBrandQuaternary" />
+</FrameLayout>

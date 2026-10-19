@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <androidx.core.widget.NestedScrollView android:id="@id/autoInsetsContent" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/screen_list_bottom_padding" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_rounded_rectangle_l" android:paddingTop="16.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:backgroundTint="?layerColorFloor1" android:paddingHorizontal="16.0dp">
+                <ImageView android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/img_cookie_block_120" android:importantForAccessibility="no" />
+                <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/setting_cookie_consent_disclaimer_title" android:textAlignment="center" />
+                <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/setting_cookie_consent_disclaimer_description" android:textAlignment="center" />
+                <com.google.android.material.button.MaterialButton android:id="@id/readMoreButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/action_read_more" style="?textButtonStyle" />
+            </LinearLayout>
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/allowAllSetting" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingTitle="@string/cookie_consent_action_allow_all" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/denyAllSetting" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingTitle="@string/cookie_consent_action_deny_all" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/askForEverySiteSetting" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingTitle="@string/cookie_consent_action_ask_for_every_site" />
+            <View android:id="@id/websitePreferencesSettingTopSpace" android:layout_width="match_parent" android:layout_height="16.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/websitePreferencesSetting" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingDescription="@string/setting_description_website_preferences" app:settingTitle="@string/setting_title_website_preferences" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

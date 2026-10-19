@@ -1,0 +1,18 @@
+.class public interface abstract Lorg/chromium/blink/mojom/LocalFrame$UpdatePrerenderUrl_Response;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/blink/mojom/LocalFrame;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "UpdatePrerenderUrl_Response"
+.end annotation
+
+
+# virtual methods
+.method public abstract call()V
+.end method

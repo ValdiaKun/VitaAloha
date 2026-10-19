@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="other">无法上传 %1$d 个文件</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="other">超出限制。 将消息缩短为%1$d个字符并重试。</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="other">剩下%1$d个请求</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="other">您每天可享受 %1$d 次免费请求，费用为 %2$s。升级至Premium Plus，即可解除所有限制！</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="other">%s书签</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="other">您可以免费试用我们Premium %1$d 天的最佳功能</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="other">您可以免费试用我们的最佳功能，享受 %1$d 日的Premium资格。 将 Aloha 设置为默认浏览器以获得完整体验。</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="other">我们将额外赠送您 %1$d 天的完整访问权限，完全免费</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="other">我们为您提供额外%1$d 天的免费完全访问。 将 Aloha 设置为默认浏览器以获得完整体验。</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="other">如果您不腾出空间，超出限额的文件将变为只读状态，并将在 %1$d 天后被删除。</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="other">您的 Aloha Cloud 订阅已到期。Aloha Cloud 将在 %1$d 天后被永久删除。请续订套餐以恢复访问权限。</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="other">请在 %1$d 天内续订 Aloha Cloud 订阅，以免您的云端文件丢失</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="other">您的 Aloha Premium 订阅已到期。您的文件将在 %1$d 天后自动删除。购买 Aloha Cloud 套餐，即可保留文件并获得额外存储空间。</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="other">您的 Aloha Premium 订阅已到期。Aloha Cloud 将在 %1$d 天后被永久删除。请续订套餐以恢复访问权限。</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="other">请在 %1$d 天内续订 Aloha Premium 订阅，以免您的云端文件丢失</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="other">部分文件将在 %1$d 天后删除</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="other">部分文件将在 %1$d 天后被删除。请续订套餐，以确保文件仍可访问。</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="other">请在 %1$d 天内续订Premium，以免您的云端文件丢失</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d天</item>
+        <item quantity="other">%d天</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="other">%d项将被永久删除。 您确定要清除垃圾吗？</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="other">错误短语 — 还剩%1$d次尝试</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="other">您选择的项目不能超过%d</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">快进 %d 秒</item>
+        <item quantity="other">快进 %d 秒</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">快退 %d 秒</item>
+        <item quantity="other">快退 %d 秒</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="other">%d项</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="other">Free Premium 将于 %1$d 天后结束</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="other">还剩%1$d天</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="other">还剩%1$d次尝试</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d个月</item>
+        <item quantity="other">%1$d个月</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="other">%1$d 个月</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 条新通知</item>
+        <item quantity="other">%d 条新通知</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="other">正在保存%1$d个文件（共%2$d个）</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="other">找到 %1$d 个密码</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="other">除了 %1$d 之外，Premium用户还可享受更多专属功能</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="other">已阻止 %d 个弹出窗口</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="other">您可以免费试用我们&lt;b>Premium身份&lt;/b>的最佳功能&lt;b>%1$d个月！&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="other">您可以免费试用我们&lt;b>Premium身份&lt;/b>的最佳功能&lt;b>%1$d周！&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="other">您可以免费试用我们&lt;b>Premium身份&lt;/b>的最佳功能&lt;b>%1$d年！&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="zero">"首月 %1$s，之后​​ %2$s/月。
+自动续订。可随时取消。"</item>
+        <item quantity="other">"前%3$d个月每月 %1$s，之后%2$s/月。
+自动续订。随时可取消。"</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="zero">"首年 %1$s，之后每年 %2$s。
+自动续订。可随时取消。"</item>
+        <item quantity="other">"前 %3$d年每年 %1$s，之后每年 %2$s。
+自动续订。随时可以取消。"</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="zero">第%1$d个月</item>
+        <item quantity="other">前 %1$d 个月</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="zero">第%1$d年</item>
+        <item quantity="other">前 %1$d 年</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="other">每月%1$s ，持续%2$d 个月</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="zero">首年 %1$s</item>
+        <item quantity="other">前 %2$d 年，%1$s</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="zero">首月享 %1$d%% 降价折扣</item>
+        <item quantity="other">前%2$d个月享受%1$d%% 降价折扣</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="other">您的朋友将免费获得 %1$d 个月的 Premium 服务！</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="other">您的朋友将免费获得 %1$d 周的 Premium 服务！</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="other">您的朋友将完全免费获得 %1$d 年的 Premium 服务！</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="other">感谢您，&lt;b>%1$d 位朋友&lt;/b>现在享受Aloha服务，而您则享受&lt;b>Premium身份。&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="other">邀请 %1$d 位好友即可获得Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="other">想录制超过 %1$d 秒的视频吗？</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="other">您有%1$d个月的Premium资格</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="other">您有%1$d周的Premium资格</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="other">您有%1$d年的Premium资格</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="other">已导入%1$d个密码</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d周</item>
+        <item quantity="other">%1$d周</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="other">%1$d 周</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d年</item>
+        <item quantity="other">%1$d年</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="other">%1$d 年</item>
+    </plurals>
+</resources>

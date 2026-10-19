@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/browser_nav_graph" app:startDestination="@id/browserFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_about" />
+    <include app:graph="@navigation/nav_graph_ai_info" />
+    <include app:graph="@navigation/nav_graph_appearance_settings" />
+    <include app:graph="@navigation/nav_graph_assistant" />
+    <include app:graph="@navigation/nav_graph_assistant_first_visit" />
+    <include app:graph="@navigation/nav_graph_bookmarks" />
+    <include app:graph="@navigation/nav_graph_browser_profile_settings" />
+    <include app:graph="@navigation/nav_graph_confirm_email" />
+    <include app:graph="@navigation/nav_graph_cookie_consent_settings" />
+    <include app:graph="@navigation/nav_graph_custom_cookie_popup" />
+    <include app:graph="@navigation/nav_graph_enter_key_phrase" />
+    <include app:graph="@navigation/nav_graph_cloud" />
+    <include app:graph="@navigation/nav_graph_cloud_managed_elsewhere" />
+    <include app:graph="@navigation/nav_graph_cloud_subscription" />
+    <include app:graph="@navigation/nav_graph_cloud_upload_progress" />
+    <include app:graph="@navigation/nav_graph_file_chooser" />
+    <include app:graph="@navigation/nav_graph_file_manager" />
+    <include app:graph="@navigation/nav_graph_image_viewer" />
+    <include app:graph="@navigation/nav_graph_modal" />
+    <include app:graph="@navigation/nav_graph_password_details" />
+    <include app:graph="@navigation/nav_graph_password_import" />
+    <include app:graph="@navigation/nav_graph_password_manager_settings" />
+    <include app:graph="@navigation/nav_graph_player" />
+    <include app:graph="@navigation/nav_graph_premium_plus" />
+    <include app:graph="@navigation/nav_graph_profile_login" />
+    <include app:graph="@navigation/nav_graph_profile_signup" />
+    <include app:graph="@navigation/nav_graph_qr_code_reader" />
+    <include app:graph="@navigation/nav_graph_referral" />
+    <include app:graph="@navigation/nav_graph_referral_reward" />
+    <include app:graph="@navigation/nav_graph_search_engine_edit" />
+    <include app:graph="@navigation/nav_graph_settings_ad_block_filters" />
+    <include app:graph="@navigation/nav_graph_settings_general" />
+    <include app:graph="@navigation/nav_graph_settings_player" />
+    <include app:graph="@navigation/nav_graph_settings_news" />
+    <include app:graph="@navigation/nav_graph_settings_news_area" />
+    <include app:graph="@navigation/nav_graph_settings_news_region" />
+    <include app:graph="@navigation/nav_graph_settings_privacy" />
+    <include app:graph="@navigation/nav_graph_settings_start_page" />
+    <include app:graph="@navigation/nav_graph_transparent_helper" />
+    <include app:graph="@navigation/nav_graph_vpn_settings" />
+    <include app:graph="@navigation/nav_graph_wallet_keys" />
+    <include app:graph="@navigation/nav_graph_website_settings" />
+    <include app:graph="@navigation/nav_graph_wfs_first_visit" />
+    <include app:graph="@navigation/nav_graph_wfs_settings" />
+    <fragment android:label="SettingsFragment" android:name="com.alohamobile.settings.SettingsFragment" android:id="@id/settingsFragment">
+        <action android:id="@id/action_settingsFragment_to_adBlockSettingsFragment" app:destination="@id/adBlockSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_playerSettingsFragment" app:destination="@id/nav_graph_settings_player" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_settingsFragment_to_downloadsSettingsFragment" app:destination="@id/downloadsSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_nav_graph_wfs_settings" app:destination="@id/nav_graph_wfs_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+            <argument android:name="sessionEntryPoint" app:argType="com.alohamobile.analytics.core.wfs.WfsSessionEntryPointKey" />
+        </action>
+        <action android:id="@id/action_settingsFragment_to_aiSettingsFragment" app:destination="@id/aiSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_about_nav_graph" app:destination="@id/about_nav_graph" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_settingsFragment_to_nav_graph_vpn_settings" app:destination="@id/nav_graph_vpn_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+            <argument android:name="clickViewId" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_settingsFragment_to_nav_graph_wallet_keys" app:destination="@id/nav_graph_wallet_keys" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_brandBookFragment" app:destination="@id/brandBookFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_brandBookComposeFragment" app:destination="@id/brandBookComposeFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_stringsDebugToolFragment" app:destination="@id/stringsDebugToolFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_debugPanelFragment" app:destination="@id/debugPanelFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_settingsFragment_to_nav_graph_settings_ad_block_filters" app:destination="@id/nav_graph_settings_ad_block_filters" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_settingsFragment_to_nav_graph_settings_general" app:destination="@id/nav_graph_settings_general" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment android:label="BrandBookFragment" android:name="com.alohamobile.dev.brandbook.presentation.BrandBookFragment" android:id="@id/brandBookFragment" />
+    <fragment android:label="BrandBookComposeFragment" android:name="com.alohamobile.dev.brandbook.compose.presentation.BrandBookComposeFragment" android:id="@id/brandBookComposeFragment" />
+    <fragment android:label="StringsDebugToolFragment" android:name="com.alohamobile.dev.strings.tool.presentation.StringsDebugToolFragment" android:id="@id/stringsDebugToolFragment" />
+    <fragment android:label="DebugPanelFragment" android:name="com.alohamobile.dev.settings.presentation.DebugPanelFragment" android:id="@id/debugPanelFragment" />
+    <action android:id="@id/action_global_settingsFragment" app:destination="@id/settingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_nav_graph_cloud" app:destination="@id/nav_graph_cloud" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_nav_graph_cloud_managed_elsewhere" app:destination="@id/nav_graph_cloud_managed_elsewhere" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="entryPoint" app:argType="com.alohamobile.cloud.navigation.CloudSubscriptionEntryPoint" />
+    </action>
+    <action android:id="@id/action_global_nav_graph_cloud_subscription" app:destination="@id/nav_graph_cloud_subscription" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="entryPoint" app:argType="com.alohamobile.cloud.navigation.CloudSubscriptionEntryPoint" />
+    </action>
+    <action android:id="@id/action_global_nav_graph_cloud_upload_progress" app:destination="@id/nav_graph_cloud_upload_progress" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="showOutOfSpaceDialog" android:defaultValue="false" app:argType="boolean" />
+    </action>
+    <fragment android:name="com.alohamobile.profile.auth.presentation.fragment.CreateProfileOfferFragment" android:id="@id/createProfileOfferDialog" />
+    <action android:id="@id/action_global_createProfileOfferDialog" app:destination="@id/createProfileOfferDialog" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <fragment android:name="com.alohamobile.promocodes.presentation.ProfilePromoCodeSignUpFragment" android:id="@id/profilePromoCodeSignUpFragment" />
+    <action android:id="@id/action_global_profilePromoCodeSignUpFragment" app:destination="@id/profilePromoCodeSignUpFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <fragment android:label="BrowserFragment" android:name="com.alohamobile.browser.presentation.browser.BrowserStubFragment" android:id="@id/browserFragment">
+        <action android:id="@id/action_browserFragment_to_historyFragment" app:destination="@id/historyFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_browserFragment_to_bookmarksFragment" app:destination="@id/nav_graph_bookmarks" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_browserFragment_to_privacyReportFragment" app:destination="@id/privacyReportFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_browserFragment_to_nav_graph_vpn_settings" app:destination="@id/nav_graph_vpn_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_browserFragment_to_nav_graph_wfs_settings" app:destination="@id/nav_graph_wfs_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="sessionEntryPoint" app:argType="com.alohamobile.analytics.core.wfs.WfsSessionEntryPointKey" />
+            <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_browserFragment_to_nav_graph_wfs_first_visit" app:destination="@id/nav_graph_wfs_first_visit" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="entryPoint" app:argType="com.alohamobile.filemanager.wfs.core.info.WfsInfoEntryPoint" />
+        </action>
+        <action android:id="@id/action_browserFragment_to_passwordDetailsFragment" app:destination="@id/nav_graph_password_details" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="passwordUuid" app:argType="string" />
+        </action>
+        <action android:id="@id/action_browserFragment_to_tabsManagerFragment" app:destination="@id/tabsManagerFragment" app:enterAnim="@anim/tabs_fragment_enter" app:exitAnim="@anim/fade_out" app:popEnterAnim="@anim/fade_in" app:popExitAnim="@anim/tabs_fragment_pop_exit">
+            <argument android:name="fromLockArea" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_browserFragment_to_nav_graph_assistant_first_visit" app:destination="@id/nav_graph_assistant_first_visit" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" app:popUpTo="@id/appLanguageFragment">
+            <argument android:name="initialUserMessage" app:argType="string" app:nullable="true" />
+            <argument android:name="entryPoint" app:argType="com.alohamobile.assistant.presentation.model.AIInfoEntryPoint" />
+        </action>
+        <action android:id="@id/action_browserFragment_to_nav_graph_assistant" app:destination="@id/nav_graph_assistant" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="initialUserMessage" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_browserFragment_to_websiteSettingsFragment" app:destination="@id/nav_graph_website_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="url" app:argType="string" />
+        </action>
+    </fragment>
+    <fragment android:label="AppLanguageFragment" android:name="com.alohamobile.settings.general.languages.AppLanguageFragment" android:id="@id/appLanguageFragment" />
+    <action android:id="@id/action_global_newsSettingsFragment" app:destination="@id/nav_graph_settings_news" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="isFromNewsHeader" android:defaultValue="false" app:argType="boolean" />
+    </action>
+    <action android:id="@id/action_global_newsRegionSettingsFragment" app:destination="@id/nav_graph_settings_news_region" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <fragment android:label="HistoryFragment" android:name="com.alohamobile.history.presentation.fragment.HistoryFragment" android:id="@id/historyFragment" />
+    <action android:id="@id/action_global_imageViewerFragment" app:destination="@id/nav_graph_image_viewer" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="sourceType" app:argType="com.alohamobile.browser.navigation.SourceType" />
+        <argument android:name="currentImageIndex" app:argType="integer" />
+        <argument android:name="imagesQueue" app:argType="string[]" app:nullable="false" />
+    </action>
+    <fragment android:label="TrustedWebsitesFragment" android:name="com.alohamobile.privacysetttings.ui.TrustedWebsitesFragment" android:id="@id/trustedWebsitesFragment" />
+    <action android:id="@id/action_global_trustedWebsitesFragment" app:destination="@id/trustedWebsitesFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <fragment android:label="PrivacyReportFragment" android:name="com.alohamobile.browser.settings.privacy.PrivacyReportFragment" android:id="@id/privacyReportFragment" />
+    <fragment android:label="AdBlockSettingsFragment" android:name="com.alohamobile.browser.settings.adblock.AdBlockSettingsFragment" android:id="@id/adBlockSettingsFragment">
+        <action android:id="@id/action_adBlockSettingsFragment_to_privacyReportFragment" app:destination="@id/privacyReportFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_adBlockSettingsFragment_to_adBlockFilterListsFragment" app:destination="@id/nav_graph_settings_ad_block_filters" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_adBlockSettingsFragment_to_nav_graph_cookie_consent_settings" app:destination="@id/nav_graph_cookie_consent_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+    <action android:id="@id/action_global_to_nav_graph_referral" app:destination="@id/nav_graph_referral" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_to_nav_graph_referral_reward" app:destination="@id/nav_graph_referral_reward" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="mode" app:argType="com.alohamobile.profile.referral.presentation.reward.data.ReferralRewardScreenMode" />
+    </action>
+    <action android:id="@id/action_global_privacySettingsFragment" app:destination="@id/nav_graph_settings_privacy" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="scrollToHttpsSettings" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="setPasscode" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+    </action>
+    <action android:id="@id/action_global_adBlockSettingsFragment" app:destination="@id/adBlockSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_generalSettingsFragment_to_appLanguageFragment" app:destination="@id/appLanguageFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_generalSettingsFragment_to_searchEnginesFragment" app:destination="@id/searchEnginesFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_generalSettingsFragment_to_fontSettingsFragment" app:destination="@id/fontSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <fragment android:label="SearchEnginesFragment" android:name="com.alohamobile.settings.general.search.SearchEnginesFragment" android:id="@id/searchEnginesFragment">
+        <action android:id="@id/action_searchEnginesFragment_to_searchEngineEditFragment" app:destination="@id/nav_graph_search_engine_edit" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="searchEngineId" app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment android:label="DownloadsSettingsFragment" android:name="com.alohamobile.browser.settings.downloads.DownloadsSettingsFragment" android:id="@id/downloadsSettingsFragment">
+        <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+    <fragment android:label="AISettingsFragment" android:name="com.alohamobile.settings.ai.presentation.AISettingsFragment" android:id="@id/aiSettingsFragment">
+        <action android:id="@id/action_aiSettingsFragment_to_aiChatInfoFragment" app:destination="@id/nav_graph_ai_info" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="entryPoint" app:argType="com.alohamobile.assistant.presentation.model.AIInfoEntryPoint" />
+        </action>
+        <action android:id="@id/action_aiSettingsFragment_to_premiumPlusFragment" app:destination="@id/nav_graph_premium_plus" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="entryPoint" app:argType="com.alohamobile.purchases.core.data.PremiumEntryPoint$PremiumPlusEntryPoint" />
+        </action>
+    </fragment>
+    <action android:id="@id/action_global_privacyReportFragment" app:destination="@id/privacyReportFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_newsAreaSettingsFragment" app:destination="@id/nav_graph_settings_news_area" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_bookmarksFragment" app:destination="@id/nav_graph_bookmarks" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="bookmarksScreenRootFolder" android:defaultValue="@null" app:argType="com.alohamobile.browser.navigation.SettingsNavigator$BookmarksScreenFolder" app:nullable="true" />
+    </action>
+    <action android:id="@id/action_global_profileSignUp" app:destination="@id/nav_graph_profile_signup" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="enterPoint" android:defaultValue="UNKNOWN" app:argType="com.alohamobile.profile.navigation.ProfileEntryPoint" />
+        <argument android:name="successfulLoginAction" android:defaultValue="OPEN_PROFILE_SETTINGS" app:argType="com.alohamobile.profile.core.data.auth.SuccessfulLoginAction" />
+    </action>
+    <action android:id="@id/action_global_confirmEmailFragment" app:destination="@id/nav_graph_confirm_email" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="email" app:argType="string" />
+    </action>
+    <action android:id="@id/action_global_qrCodeReader" app:destination="@id/nav_graph_qr_code_reader" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_fileManagerFragment" app:destination="@id/nav_graph_file_manager" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="initialFolderPath" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </action>
+    <action android:id="@id/action_global_profileSettings" app:destination="@id/nav_graph_browser_profile_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="extraAction" android:defaultValue="@null" app:argType="com.alohamobile.profile.navigation.AuthorizedProfileAction" app:nullable="true" />
+    </action>
+    <fragment android:label="TabsFragment" android:name="com.alohamobile.browser.tabsview.presentation.fragment.TabsManagerFragment" android:id="@id/tabsManagerFragment" />
+    <action android:id="@id/action_global_profileTokenExpired" app:destination="@id/nav_graph_profile_login" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="isTokenExpired" android:defaultValue="true" app:argType="boolean" />
+    </action>
+    <action android:id="@id/action_global_appearanceSettingsFragment" app:destination="@id/nav_graph_appearance_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+    </action>
+    <action android:id="@id/action_global_startPageSettingsFragment" app:destination="@id/nav_graph_settings_start_page" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+    </action>
+    <action android:id="@id/action_global_transparentHelperFragment" app:destination="@id/nav_graph_transparent_helper" app:enterAnim="@null" app:exitAnim="@null" app:popEnterAnim="@null" app:popExitAnim="@null" />
+    <action android:id="@id/action_global_modal_nav_graph" app:destination="@id/nav_graph_modal" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="url" app:argType="string" />
+        <argument android:name="toolbarTitle" app:argType="string" />
+        <argument android:name="loadsNewWindowsInPlace" android:defaultValue="true" app:argType="boolean" />
+    </action>
+    <action android:id="@id/action_global_to_nav_graph_file_chooser" app:destination="@id/nav_graph_file_chooser" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="acceptTypes" app:argType="string" />
+        <argument android:name="allowMultipleFiles" app:argType="boolean" />
+        <argument android:name="uploadButtonIconResId" app:argType="integer" />
+        <argument android:name="isSelectionLimited" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="resultRequestKey" android:defaultValue="get_files_for_upload" app:argType="string" />
+    </action>
+    <action android:id="@id/action_global_to_nav_graph_password_manager" app:destination="@id/nav_graph_password_manager" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+    </action>
+    <action android:id="@id/action_global_downloadsSettingsFragment" app:destination="@id/downloadsSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_playerSettingsFragment" app:destination="@id/nav_graph_settings_player" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit_no_alpha" app:popEnterAnim="@anim/fragment_pop_enter_no_alpha" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="forceDarkTheme" android:defaultValue="false" app:argType="boolean" />
+    </action>
+    <action android:id="@id/action_global_playerFragment" app:destination="@id/nav_graph_player" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_enterKeyPhraseFragment" app:destination="@id/nav_graph_enter_key_phrase" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_passwordsImportFragment" app:destination="@id/nav_graph_password_import" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <fragment android:label="FontSettingsFragment" android:name="com.alohamobile.browser.settings.general.FontSettingsFragment" android:id="@id/fontSettingsFragment" />
+    <fragment android:label="UpdateNotificationsPromoFragment" android:name="com.alohamobile.browser.presentation.update.UpdateNotificationsPromoFragment" android:id="@id/updateNotificationsPromoFragment" />
+    <action android:id="@id/action_global_updateNotificationsPromoFragment" app:destination="@id/updateNotificationsPromoFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <action android:id="@id/action_global_nav_graph_custom_cookie_settings_popup" app:destination="@id/nav_graph_custom_cookie_settings_popup" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+        <argument android:name="request" app:argType="com.alohamobile.browser.cookieconsent.data.SelectableCookiesRequest" />
+    </action>
+    <fragment android:label="UpgradeAppForVpnFragment" android:name="com.alohamobile.vpn.upgrade.presentation.UpgradeAppForVpnFragment" android:id="@id/upgradeAppForVpnFragment" />
+    <action android:id="@id/action_global_upgradeAppForVpnFragment" app:destination="@id/upgradeAppForVpnFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    <fragment android:label="MyPremiumFragment" android:name="com.alohamobile.subscriptions.presentation.MyPremiumFragment" android:id="@id/myPremiumFragment" />
+    <action android:id="@id/action_global_myPremiumFragment" app:destination="@id/myPremiumFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+</navigation>

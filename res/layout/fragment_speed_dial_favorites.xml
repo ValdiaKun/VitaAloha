@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/favoritesContainer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alohamobile.favorites.presentation.view.FavoritesRecyclerView android:layout_gravity="center_horizontal" android:id="@id/favoritesRecyclerView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:nestedScrollingEnabled="false" android:defaultFocusHighlightEnabled="false" />
+</FrameLayout>

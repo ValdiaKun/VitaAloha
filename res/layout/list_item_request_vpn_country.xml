@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="?textAppearanceBody2Regular" android:textColor="?textColorPrimary" android:id="@id/countryName" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?listItemTouchableStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

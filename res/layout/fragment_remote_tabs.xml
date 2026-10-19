@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.alohamobile.component.view.ZeroScreenView android:id="@id/zeroView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/tabs_page_content_padding_bottom" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/remoteTabsList" android:paddingTop="@dimen/tabs_page_content_padding_top" android:paddingBottom="@dimen/tabs_page_content_padding_bottom" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</FrameLayout>

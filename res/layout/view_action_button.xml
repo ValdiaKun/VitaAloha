@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/buttonLayout" android:paddingTop="14.0dp" android:paddingBottom="12.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/action_button_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton android:id="@id/imageButton" android:focusable="false" android:clickable="false" android:layout_width="56.0dp" android:layout_height="56.0dp" android:backgroundTint="?fillColorSenary" app:iconTint="?fillColorPrimary" app:shapeAppearance="?shapeAppearanceL" style="?materialIconButtonFilledStyle" />
+    <com.bosphere.fadingedgelayout.FadingEdgeLayout android:id="@id/fadingEdgeLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="3.0dp">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/buttonText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:lines="1" app:autoSizeTextType="none" />
+    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+</LinearLayout>

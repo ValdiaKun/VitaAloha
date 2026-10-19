@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Nepodarilo sa nahrať %1$d súbor</item>
+        <item quantity="few">Nepodarilo sa nahrať %1$d súbory</item>
+        <item quantity="many">Nepodarilo sa nahrať %1$d súborov</item>
+        <item quantity="other">Nepodarilo sa nahrať %1$d súborov</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Prekročili ste limit. Skráťte správu na %1$d znak a skúste to znova.</item>
+        <item quantity="few">Prekročili ste limit. Skráťte správu na %1$d znaky a skúste to znova.</item>
+        <item quantity="many">Prekročili ste limit. Skráťte správu na %1$d znaku a skúste to znova.</item>
+        <item quantity="other">Prekročili ste limit. Skráťte správu na %1$d znakov a skúste to znova.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">Ostáva %1$d žiadosť</item>
+        <item quantity="few">Ostávajú %1$d žiadosti</item>
+        <item quantity="many">Ostáva %1$d žiadosti</item>
+        <item quantity="other">Ostáva %1$d žiadostí</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Máte %1$d bezplatnú žiadosť na deň pre %2$s. Prejdite na Premium Plus a zbavte sa všetkých obmedzení!</item>
+        <item quantity="few">Máte %1$d bezplatné žiadosti na deň pre %2$s. Prejdite na Premium Plus a zbavte sa všetkých obmedzení!</item>
+        <item quantity="many">Máte %1$d bezplatných žiadostí na deň pre %2$s. Prejdite na Premium Plus a zbavte sa všetkých obmedzení!</item>
+        <item quantity="other">Máte %1$d bezplatných žiadostí na deň pre %2$s. Prejdite na Premium Plus a zbavte sa všetkých obmedzení!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s záložka</item>
+        <item quantity="few">%s záložky</item>
+        <item quantity="many">%s záložky</item>
+        <item quantity="other">%s záložiek</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Naše najlepšie funkcie si môžete vyskúšať so statusom Premium na %1$d deň zadarmo</item>
+        <item quantity="few">Naše najlepšie funkcie si môžete vyskúšať so statusom Premium na %1$d dni zadarmo</item>
+        <item quantity="many">Naše najlepšie funkcie si môžete vyskúšať so statusom Premium na %1$d dní zadarmo</item>
+        <item quantity="other">Naše najlepšie funkcie si môžete vyskúšať so statusom Premium na %1$d dní zadarmo</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Môžete si vyskúšať naše najlepšie funkcie s Premium na %1$d deň zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+        <item quantity="few">Môžete si vyskúšať naše najlepšie funkcie s Premium na %1$d dni zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+        <item quantity="many">Môžete si vyskúšať naše najlepšie funkcie s Premium na %1$d dní zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+        <item quantity="other">Môžete si vyskúšať naše najlepšie funkcie s Premium na %1$d dní zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Dávame vám ešte %1$d deň plného prístupu, úplne zadarmo</item>
+        <item quantity="few">Dávame vám ešte %1$d dni plného prístupu, úplne zadarmo</item>
+        <item quantity="many">Dávame vám ešte %1$d dní plného prístupu, úplne zadarmo</item>
+        <item quantity="other">Dávame vám ešte %1$d dní plného prístupu, úplne zadarmo</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">Dávame vám ešte %1$d deň plného prístupu, úplne zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+        <item quantity="few">Dávame vám ešte %1$d dni plného prístupu, úplne zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+        <item quantity="many">Dávame vám ešte %1$d dní plného prístupu, úplne zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+        <item quantity="other">Dávame vám ešte %1$d dní plného prístupu, úplne zadarmo. Nastavte si Alohu ako predvolený prehliadač pre plnohodnotný zážitok.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Ak neuvoľníte miesto, súbory nad limitom budú iba na čítanie. Po %1$d dni sa odstránia.</item>
+        <item quantity="few">Ak neuvoľníte miesto, súbory nad limitom budú iba na čítanie. Po %1$d dňoch sa odstránia.</item>
+        <item quantity="many">Ak neuvoľníte miesto, súbory nad limitom budú iba na čítanie. Po %1$d dňoch sa odstránia.</item>
+        <item quantity="other">Ak neuvoľníte miesto, súbory nad limitom budú iba na čítanie. Po %1$d dňoch sa odstránia.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Vaše predplatné Aloha Cloud sa skončilo. Aloha Cloud bude natrvalo vymazaný o %d deň. Obnovte si plán, aby ste obnovili prístup.</item>
+        <item quantity="few">Vaše predplatné Aloha Cloud sa skončilo. Aloha Cloud bude natrvalo vymazaný o %d dni. Obnovte si plán, aby ste obnovili prístup.</item>
+        <item quantity="many">Vaše predplatné Aloha Cloud sa skončilo. Aloha Cloud bude natrvalo vymazaný o %d dní. Obnovte si plán, aby ste obnovili prístup.</item>
+        <item quantity="other">Vaše predplatné Aloha Cloud sa skončilo. Aloha Cloud bude natrvalo vymazaný o %d dní. Obnovte si plán, aby ste obnovili prístup.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Obnovte svoje predplatné Aloha Cloud do %1$d dňa, aby ste neprišli o svoje cloudové súbory</item>
+        <item quantity="few">Obnovte svoje predplatné Aloha Cloud do %1$d dní, aby ste neprišli o svoje cloudové súbory</item>
+        <item quantity="many">Obnovte svoje predplatné Aloha Cloud do %1$d dní, aby ste neprišli o svoje cloudové súbory</item>
+        <item quantity="other">Obnovte svoje predplatné Aloha Cloud do %1$d dní, aby ste neprišli o svoje cloudové súbory</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Vaše predplatné Aloha Premium sa skončilo. Vaše súbory budú automaticky odstránené o %1$d deň. Zakúpte si plán Aloha Cloud, aby ste si ich zachovali a získali ďalší úložný priestor.</item>
+        <item quantity="few">Vaše predplatné Aloha Premium sa skončilo. Vaše súbory budú automaticky odstránené o %1$d dni. Zakúpte si plán Aloha Cloud, aby ste si ich zachovali a získali ďalší úložný priestor.</item>
+        <item quantity="many">Vaše predplatné Aloha Premium sa skončilo. Vaše súbory budú automaticky odstránené o %1$d dní. Zakúpte si plán Aloha Cloud, aby ste si ich zachovali a získali ďalší úložný priestor.</item>
+        <item quantity="other">Vaše predplatné Aloha Premium sa skončilo. Vaše súbory budú automaticky odstránené o %1$d dní. Zakúpte si plán Aloha Cloud, aby ste si ich zachovali a získali ďalší úložný priestor.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Vaše predplatné Aloha Premium sa skončilo. Aloha Cloud sa natrvalo odstráni o %1$d deň. Obnovte svoj plán a obnovte si prístup.</item>
+        <item quantity="few">Vaše predplatné Aloha Premium sa skončilo. Aloha Cloud sa natrvalo odstráni o %1$d dni. Obnovte svoj plán a obnovte si prístup.</item>
+        <item quantity="many">Vaše predplatné Aloha Premium sa skončilo. Aloha Cloud sa natrvalo odstráni o %1$d dní. Obnovte svoj plán a obnovte si prístup.</item>
+        <item quantity="other">Vaše predplatné Aloha Premium sa skončilo. Aloha Cloud sa natrvalo odstráni o %1$d dní. Obnovte svoj plán a obnovte si prístup.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Obnovte svoje predplatné Aloha Premium do %1$d dňa, aby ste neprišli o svoje cloudové súbory</item>
+        <item quantity="few">Obnovte svoje predplatné Aloha Premium do %1$d dní, aby ste neprišli o svoje cloudové súbory</item>
+        <item quantity="many">Obnovte svoje predplatné Aloha Premium do %1$d dní, aby ste neprišli o svoje cloudové súbory</item>
+        <item quantity="other">Obnovte svoje predplatné Aloha Premium do %1$d dní, aby ste neprišli o svoje cloudové súbory</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Niektoré súbory sa odstránia o %1$d deň</item>
+        <item quantity="few">Niektoré súbory sa odstránia o %1$d dni</item>
+        <item quantity="many">Niektoré súbory sa odstránia o %1$d dní</item>
+        <item quantity="other">Niektoré súbory sa odstránia o %1$d dní</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Niektoré súbory sa odstránia o %1$d deň. Obnovte svoj plán, aby ste mali naďalej prístup k svojim súborom.</item>
+        <item quantity="few">Niektoré súbory sa odstránia o %1$d dni. Obnovte svoj plán, aby ste mali naďalej prístup k svojim súborom.</item>
+        <item quantity="many">Niektoré súbory sa odstránia o %1$d dní. Obnovte svoj plán, aby ste mali naďalej prístup k svojim súborom.</item>
+        <item quantity="other">Niektoré súbory sa odstránia o %1$d dní. Obnovte svoj plán, aby ste mali naďalej prístup k svojim súborom.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Obnovte si Premium do %1$d dňa, aby sa vaše cloudové súbory nestratili</item>
+        <item quantity="few">Obnovte si Premium do %1$d dní, aby sa vaše cloudové súbory nestratili</item>
+        <item quantity="many">Obnovte si Premium do %1$d dní, aby sa vaše cloudové súbory nestratili</item>
+        <item quantity="other">Obnovte si Premium do %1$d dní, aby sa vaše cloudové súbory nestratili</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d dní</item>
+        <item quantity="one">%d deň</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dňa</item>
+        <item quantity="other">%d dní</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d položka sa natrvalo vymaže. Naozaj chcete vysypať kôš?</item>
+        <item quantity="few">%d položky sa natrvalo vymažú. Naozaj chcete vysypať kôš?</item>
+        <item quantity="many">%d položky sa natrvalo vymaže. Naozaj chcete vysypať kôš?</item>
+        <item quantity="other">%d položiek sa natrvalo vymaže. Naozaj chcete vysypať kôš?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Nesprávna fráza – zostáva %1$d pokus</item>
+        <item quantity="few">Nesprávna fráza – zostávajú %1$d pokusy</item>
+        <item quantity="many">Nesprávna fráza – zostáva %1$d pokusov</item>
+        <item quantity="other">Nesprávna fráza – zostáva %1$d pokusov</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Nemôžete vybrať viac ako %d položku</item>
+        <item quantity="few">Nemôžete vybrať viac ako %d položky</item>
+        <item quantity="many">Nemôžete vybrať viac ako %d položiek</item>
+        <item quantity="other">Nemôžete vybrať viac ako %d položiek</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Pretočiť dopredu o %d sekundu</item>
+        <item quantity="few">Pretočiť dopredu o %d sekundy</item>
+        <item quantity="many">Pretočiť dopredu o %d sekundy</item>
+        <item quantity="other">Pretočiť dopredu o %d sekúnd</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Pretočiť späť o %d sekundu</item>
+        <item quantity="few">Pretočiť späť o %d sekundy</item>
+        <item quantity="many">Pretočiť späť o %d sekundy</item>
+        <item quantity="other">Pretočiť späť o %d sekúnd</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d položka</item>
+        <item quantity="few">%d položky</item>
+        <item quantity="many">%d položky</item>
+        <item quantity="other">%d položiek</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium končí o %1$d deň</item>
+        <item quantity="few">Free Premium končí o %1$d dni</item>
+        <item quantity="many">Free Premium končí o %1$d dní</item>
+        <item quantity="other">Free Premium končí o %1$d dní</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">Zostáva %1$d deň</item>
+        <item quantity="few">Zostáva %1$d dni</item>
+        <item quantity="many">Zostáva %1$d dní</item>
+        <item quantity="other">Zostáva %1$d dní</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">Zostáva %1$d pokus</item>
+        <item quantity="few">Zostávajú %1$d pokusy</item>
+        <item quantity="many">Zostáva %1$d pokusu</item>
+        <item quantity="other">Zostáva %1$d pokusov</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d týždňov</item>
+        <item quantity="one">%1$d týždeň</item>
+        <item quantity="few">%1$d týždne</item>
+        <item quantity="many">%1$d týždňov</item>
+        <item quantity="other">%1$d týždňov</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d mesiac</item>
+        <item quantity="few">%1$d mesiace</item>
+        <item quantity="many">%1$d mesiacov</item>
+        <item quantity="other">%1$d mesiacov</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nové upozornenie</item>
+        <item quantity="few">%d nové upozornenia</item>
+        <item quantity="many">%d new notifications</item>
+        <item quantity="other">%d nových upozornení</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Ukladá sa %1$d z %2$d súboru</item>
+        <item quantity="few">Ukladá sa %1$d z %2$d súborov</item>
+        <item quantity="many">Ukladá sa %1$d z %2$d súborov</item>
+        <item quantity="other">Ukladá sa %1$d z %2$d súborov</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">Nájdené %1$d heslo</item>
+        <item quantity="few">Nájdené %1$d heslá</item>
+        <item quantity="many">Nájdených %1$d hesiel</item>
+        <item quantity="other">Nájdených %1$d hesiel</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Navyše k %1$d ďalšej exkluzívnej funkcii dostupnej pre používateľov Premium</item>
+        <item quantity="few">Navyše k %1$d ďalším exkluzívnym funkciám dostupným pre používateľov Premium</item>
+        <item quantity="many">Navyše k %1$d ďalším exkluzívnym funkciám dostupným pre používateľov Premium</item>
+        <item quantity="other">Navyše k %1$d ďalším exkluzívnym funkciám dostupným pre používateľov Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d vyskakovacie okno zablokované</item>
+        <item quantity="few">%d vyskakovacie okná zablokované</item>
+        <item quantity="many">%d vyskakovacích okien zablokovaných</item>
+        <item quantity="other">%d vyskakovacích okien zablokovaných</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d mesiac – zadarmo od nás!&lt;/b></item>
+        <item quantity="few">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d mesiace – zadarmo od nás!&lt;/b></item>
+        <item quantity="many">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d mesiacov – zadarmo od nás!&lt;/b></item>
+        <item quantity="other">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d mesiacov – zadarmo od nás!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d týždeň – zadarmo od nás!&lt;/b></item>
+        <item quantity="few">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d týždne – zadarmo od nás!&lt;/b></item>
+        <item quantity="many">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d týždňov – zadarmo od nás!&lt;/b></item>
+        <item quantity="other">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d týždňov – zadarmo od nás!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d rok – zadarmo od nás!&lt;/b></item>
+        <item quantity="few">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d roky – zadarmo od nás!&lt;/b></item>
+        <item quantity="many">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d rokov – zadarmo od nás!&lt;/b></item>
+        <item quantity="other">Môžete si vyskúšať naše najlepšie funkcie s &lt;b>Premium&lt;/b> na &lt;b>%1$d rokov – zadarmo od nás!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s za prvý mesiac, potom %2$s/mesiac.
+Predplatné sa automaticky obnovuje. Zrušiť ho môžete kedykoľvek."</item>
+        <item quantity="few">"%1$s/mesiac počas prvých %3$d mesiacov, potom %2$s/mesiac.
+Predplatné sa automaticky obnovuje. Zrušiť ho môžete kedykoľvek."</item>
+        <item quantity="many">"%1$s/mesiac počas prvých %3$d mesiacov, potom %2$s/mesiac.
+Predplatné sa automaticky obnovuje. Zrušiť ho môžete kedykoľvek."</item>
+        <item quantity="other">"%1$s/mesiac počas prvých %3$d mesiacov, potom %2$s/mesiac.
+Predplatné sa automaticky obnovuje. Zrušiť ho môžete kedykoľvek."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s za prvý rok, potom %2$s/rok.
+Automaticky sa obnovuje. Zrušiť môžete kedykoľvek."</item>
+        <item quantity="few">"%1$s/rok počas prvých %3$d rokov, potom %2$s/rok.
+Automaticky sa obnovuje. Zrušiť môžete kedykoľvek."</item>
+        <item quantity="many">"%1$s/rok počas prvých %3$d rokov, potom %2$s/rok.
+Automaticky sa obnovuje. Zrušiť môžete kedykoľvek."</item>
+        <item quantity="other">"%1$s/rok počas prvých %3$d rokov, potom %2$s/rok.
+Automaticky sa obnovuje. Zrušiť môžete kedykoľvek."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d mesiac</item>
+        <item quantity="few">prvé %1$d mesiace</item>
+        <item quantity="many">prvých %1$d mesiacov</item>
+        <item quantity="other">prvých %1$d mesiacov</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d rok</item>
+        <item quantity="few">prvé %1$d roky</item>
+        <item quantity="many">prvých %1$d rokov</item>
+        <item quantity="other">prvých %1$d rokov</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/mes. na %2$d mes.</item>
+        <item quantity="few">%1$s/mes. na %2$d mes.</item>
+        <item quantity="many">%1$s/mes. na %2$d mes.</item>
+        <item quantity="other">%1$s/mes. na %2$d mes.</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s na prvý rok</item>
+        <item quantity="few">%1$s/rok počas prvých %2$d rokov</item>
+        <item quantity="many">%1$s/rok počas prvých %2$d rokov</item>
+        <item quantity="other">%1$s/rok počas prvých %2$d rokov</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">Zľava %1$d %% na prvý mesiac</item>
+        <item quantity="few">Zľava %1$d %% na prvé %2$d mesiace</item>
+        <item quantity="many">Zľava %1$d %% na prvých %2$d mesiacov</item>
+        <item quantity="other">Zľava %1$d %% na prvých %2$d mesiacov</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Vaši priatelia dostanú Premium na %1$d mesiac úplne zadarmo!</item>
+        <item quantity="few">Vaši priatelia dostanú Premium na %1$d mesiace úplne zadarmo!</item>
+        <item quantity="many">Vaši priatelia dostanú Premium na %1$d mesiacov úplne zadarmo!</item>
+        <item quantity="other">Vaši priatelia dostanú Premium na %1$d mesiacov úplne zadarmo!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Vaši priatelia dostanú Premium na %1$d týždeň úplne zadarmo!</item>
+        <item quantity="few">Vaši priatelia dostanú Premium na %1$d týždne úplne zadarmo!</item>
+        <item quantity="many">Vaši priatelia dostanú Premium na %1$d týždňov úplne zadarmo!</item>
+        <item quantity="other">Vaši priatelia dostanú Premium na %1$d týždňov úplne zadarmo!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Vaši priatelia dostanú Premium na %1$d rok úplne zadarmo!</item>
+        <item quantity="few">Vaši priatelia dostanú Premium na %1$d roky úplne zadarmo!</item>
+        <item quantity="many">Vaši priatelia dostanú Premium na %1$d rokov úplne zadarmo!</item>
+        <item quantity="other">Vaši priatelia dostanú Premium na %1$d rokov úplne zadarmo!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Vďaka vám si &lt;b>%1$d priateľ&lt;/b> teraz užíva Alohu a vy máte &lt;b>Premium.&lt;/b></item>
+        <item quantity="few">Vďaka vám si &lt;b>%1$d priatelia&lt;/b> teraz užívajú Alohu a vy máte &lt;b>Premium.&lt;/b></item>
+        <item quantity="many">Vďaka vám si &lt;b>%1$d priateľov&lt;/b> teraz užíva Alohu a vy máte &lt;b>Premium.&lt;/b></item>
+        <item quantity="other">Vďaka vám si &lt;b>%1$d priateľov&lt;/b> teraz užíva Alohu a vy máte &lt;b>Premium.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Pozvite ďalšieho %1$d priateľa, aby ste získali Free Premium</item>
+        <item quantity="few">Pozvite ďalších %1$d priateľov, aby ste získali Free Premium</item>
+        <item quantity="many">Pozvite ďalších %1$d priateľov, aby ste získali Free Premium</item>
+        <item quantity="other">Pozvite ďalších %1$d priateľov, aby ste získali Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Chcete vytvárať nahrávky dlhšie než %1$d sekunda?</item>
+        <item quantity="few">Chcete vytvárať nahrávky dlhšie než %1$d sekundy?</item>
+        <item quantity="many">Chcete vytvárať nahrávky dlhšie než %1$d sekúnd?</item>
+        <item quantity="other">Chcete vytvárať nahrávky dlhšie než %1$d sekúnd?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Máte Premium na %1$d mesiac</item>
+        <item quantity="few">Máte Premium na %1$d mesiace</item>
+        <item quantity="many">Máte Premium na %1$d mesiacov</item>
+        <item quantity="other">Máte Premium na %1$d mesiacov</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Máte Premium na %1$d týždeň</item>
+        <item quantity="few">Máte Premium na %1$d týždne</item>
+        <item quantity="many">Máte Premium na %1$d týždňov</item>
+        <item quantity="other">Máte Premium na %1$d týždňov</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">Máte Premium na %1$d rok</item>
+        <item quantity="few">Máte Premium na %1$d roky</item>
+        <item quantity="many">Máte Premium na %1$d rokov</item>
+        <item quantity="other">Máte Premium na %1$d rokov</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d heslo importované</item>
+        <item quantity="few">%1$d heslá importované</item>
+        <item quantity="many">%1$d hesla importované</item>
+        <item quantity="other">%1$d hesiel importovaných</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d týždňov</item>
+        <item quantity="one">%1$d týždeň</item>
+        <item quantity="few">%1$d týždne</item>
+        <item quantity="many">%1$d týždnov</item>
+        <item quantity="other">%1$d týždnov</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d týždeň</item>
+        <item quantity="few">%1$d týždne</item>
+        <item quantity="many">%1$d týždňov</item>
+        <item quantity="other">%1$d týždňov</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d rokov</item>
+        <item quantity="one">%1$d rok</item>
+        <item quantity="few">%1$d roky</item>
+        <item quantity="many">%1$d rokov</item>
+        <item quantity="other">%1$d rokov</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d rok</item>
+        <item quantity="few">%1$d roky</item>
+        <item quantity="many">%1$d rokov</item>
+        <item quantity="other">%1$d rokov</item>
+    </plurals>
+</resources>

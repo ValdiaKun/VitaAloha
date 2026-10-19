@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/header" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/main_error_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/persistent_error_message" />
+    <FrameLayout android:id="@id/content_fragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/bottom_divider" android:layout_below="@id/main_error_view" />
+    <View android:id="@id/bottom_divider" android:background="?android:listDivider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_above="@id/nav_view" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/nav_view" android:background="?android:windowBackground" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center_horizontal" android:id="@id/navigation_home" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Home" android:drawableTop="@drawable/ic_action_home" android:layout_weight="1.0" />
+        <TextView android:gravity="center_horizontal" android:id="@id/navigation_crash_ui" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Crashes" android:drawableTop="@drawable/ic_alert_error" android:layout_weight="1.0" />
+        <TextView android:gravity="center_horizontal" android:id="@id/navigation_flags_ui" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Flags" android:drawableTop="@drawable/ic_flag" android:layout_weight="1.0" />
+        <TextView android:gravity="center_horizontal" android:id="@id/navigation_net_logs_ui" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="Net Logs" android:drawableTop="@drawable/ic_net_log" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="8.0dp" android:paddingBottom="32.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:gravity="center" android:id="@id/scanQrCodeTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/scan_qr_code" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.imageview.ShapeableImageView android:layout_gravity="center" android:id="@id/qrCodePreview" android:layout_width="160.0dp" android:layout_height="160.0dp" android:layout_marginTop="24.0dp" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/scanQrCodeTitle" app:shapeAppearance="?shapeAppearanceL" />
+</androidx.constraintlayout.widget.ConstraintLayout>

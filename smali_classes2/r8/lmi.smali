@@ -1,0 +1,12 @@
+.class public final Lr8/lmi;
+.super Lr8/pc;
+
+
+# virtual methods
+.method public final j(Ljava/lang/Throwable;)Z
+    .locals 0
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method

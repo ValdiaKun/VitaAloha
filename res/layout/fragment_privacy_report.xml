@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_flat" />
+    <com.alohamobile.component.tabindicator.AlohaTabLayout android:id="@id/tabLayout" android:layout_width="match_parent" android:layout_height="48.0dp" />
+    <com.duolingo.open.rtlviewpager.RtlViewPager android:id="@id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

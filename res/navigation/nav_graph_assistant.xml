@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_assistant" app:startDestination="@id/aiChatFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_ai_info" />
+    <include app:graph="@navigation/nav_graph_premium_plus" />
+    <fragment android:label="AIChatFragment" android:name="com.alohamobile.assistant.presentation.AIChatFragment" android:id="@id/aiChatFragment">
+        <action android:id="@id/action_aiChatFragment_to_premiumPlusFragment" app:destination="@id/nav_graph_premium_plus" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="entryPoint" app:argType="com.alohamobile.purchases.core.data.PremiumEntryPoint$PremiumPlusEntryPoint" />
+        </action>
+        <action android:id="@id/action_aiChatFragment_to_aiChatInfoFragment" app:destination="@id/nav_graph_ai_info" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="entryPoint" app:argType="com.alohamobile.assistant.presentation.model.AIInfoEntryPoint" />
+        </action>
+        <argument android:name="initialUserMessage" app:argType="string" app:nullable="true" />
+    </fragment>
+</navigation>

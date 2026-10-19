@@ -1,0 +1,16 @@
+.class public Landroidx/camera/camera2/internal/compat/quirk/PreviewDelayWhenVideoCaptureIsBoundQuirk;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroidx/camera/camera2/internal/compat/quirk/CaptureIntentPreviewQuirk;
+.implements Lr8/rsh;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

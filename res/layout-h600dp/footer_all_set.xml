@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp" android:paddingVertical="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton android:id="@id/adjustPrivacySettingsButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/intro_button_adjust_settings" style="?textButtonLargeStyle" />
+    <com.alohamobile.component.button.TwoLinesButton android:id="@id/startBrowsingButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" app:twoLinesButtonStyle="containedLarge" app:twoLinesButtonSubtitle="@string/intro_button_continue_with_default_settings" app:twoLinesButtonTitle="@string/start_browsing" />
+</LinearLayout>

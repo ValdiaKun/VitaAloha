@@ -1,0 +1,13 @@
+.class public interface abstract Lr8/mrj;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Object;Lr8/l72;)V
+.end method
+
+.method public abstract b()Ljava/lang/Object;
+.end method
+
+.method public abstract c(Ljava/io/FileInputStream;)Ljava/lang/Object;
+.end method

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="14.0dp" android:width="18.0dp" android:viewportWidth="18.0" android:viewportHeight="14.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h18v14h-18z" />
+        <group>
+            <clip-path android:pathData="M1,3C1,1.895 1.895,1 3,1H15C16.105,1 17,1.895 17,3V11C17,12.105 16.105,13 15,13H3C1.895,13 1,12.105 1,11V3Z" />
+            <path android:fillColor="#2e42a5" android:pathData="M1,1V13H17V1H1Z" android:fillType="evenOdd" />
+            <group>
+                <clip-path android:pathData="M1,1V13H17V1H1Z" android:fillType="evenOdd" />
+                <path android:fillColor="#f7fcff" android:pathData="M2.647,6.032L2.204,6.306L2.376,5.846L2,5.498H2.457L2.647,5L2.793,5.498H3.25L2.921,5.846L3.082,6.306L2.647,6.032Z" android:fillType="evenOdd" />
+                <path android:fillColor="#f7fcff" android:pathData="M4.647,4.032L4.204,4.306L4.376,3.846L4,3.498H4.457L4.647,3L4.793,3.498H5.25L4.92,3.846L5.082,4.306L4.647,4.032Z" android:fillType="evenOdd" />
+                <path android:fillColor="#f7fcff" android:pathData="M6.647,6.032L6.204,6.306L6.376,5.846L6,5.498H6.457L6.647,5L6.793,5.498H7.25L6.92,5.846L7.082,6.306L6.647,6.032Z" android:fillType="evenOdd" />
+                <path android:fillColor="#f7fcff" android:pathData="M4.647,8.032L4.204,8.306L4.376,7.846L4,7.498H4.457L4.647,7L4.793,7.498H5.25L4.92,7.846L5.082,8.306L4.647,8.032Z" android:fillType="evenOdd" />
+                <path android:fillColor="#feca00" android:pathData="M13.421,3.732C11.379,4.74 4.671,9.273 4.671,9.273H15.846C15.735,9.248 15.63,9.227 15.532,9.207C14.712,9.044 14.307,8.963 13.421,7.199C12.429,5.222 13.421,3.732 13.421,3.732ZM4.308,9.983L4.155,10.363L4.308,10.78L15.685,11L16,10.42L15.685,10.003L4.308,9.983Z" android:fillType="evenOdd" />
+            </group>
+        </group>
+        <path android:fillColor="#00000000" android:pathData="M15,0.5C16.381,0.5 17.5,1.619 17.5,3V11C17.5,12.381 16.381,13.5 15,13.5H3C1.619,13.5 0.5,12.381 0.5,11V3C0.5,1.619 1.619,0.5 3,0.5H15Z" android:strokeColor="?staticColorGreyAlpha50" android:strokeWidth="1.0" />
+    </group>
+</vector>

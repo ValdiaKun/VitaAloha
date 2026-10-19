@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootContainer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/backgroundView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/dismissContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.stfalcon.imageviewer.common.pager.MultiTouchViewPager android:id="@id/imagesPager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+</FrameLayout>

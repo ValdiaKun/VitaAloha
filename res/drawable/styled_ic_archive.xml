@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dp" android:width="40.0dp" android:viewportWidth="40.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h40v40h-40z" />
+        <path android:fillColor="?fillColorBrandSecondary" android:pathData="M4.726,2.353C2.129,2.353 0.022,4.457 0.021,7.055L0.003,32.938C0.001,35.538 2.109,37.647 4.709,37.647H35.294C37.893,37.647 40,35.54 40,32.941V11.764C40,9.165 37.893,7.058 35.294,7.058H20.894C19.976,7.058 19.104,6.656 18.508,5.959L16.838,4.002C15.944,2.955 14.636,2.353 13.259,2.353H4.726Z" android:fillType="evenOdd" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M26,9C26,8.448 26.448,8 27,8H28C28.552,8 29,8.448 29,9V10C29,10.552 28.552,11 28,11H27C26.448,11 26,10.552 26,10V9Z" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M29,12C29,11.448 29.448,11 30,11H31C31.552,11 32,11.448 32,12V13C32,13.552 31.552,14 31,14H30C29.448,14 29,13.552 29,13V12Z" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M27,14C26.448,14 26,14.448 26,15V16C26,16.552 26.448,17 27,17H28C28.552,17 29,16.552 29,16V15C29,14.448 28.552,14 28,14H27Z" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M29,18C29,17.448 29.448,17 30,17H31C31.552,17 32,17.448 32,18V19C32,19.552 31.552,20 31,20H30C29.448,20 29,19.552 29,19V18Z" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M27,20C26.448,20 26,20.448 26,21V22C26,22.552 26.448,23 27,23H28C28.552,23 29,22.552 29,22V21C29,20.448 28.552,20 28,20H27Z" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M28.8,24C28.358,24 28,24.358 28,24.8V25.307C26.667,26.17 26,28.647 26,30C26,31.657 27.343,33 29,33C30.657,33 32,31.657 32,30C32,28.647 31.333,26.17 30,25.307V24.8C30,24.358 29.642,24 29.2,24H28.8ZM30.5,30.5C30.5,31.328 29.828,32 29,32C28.172,32 27.5,31.328 27.5,30.5C27.5,29.672 28.172,29 29,29C29.828,29 30.5,29.672 30.5,30.5Z" android:fillType="evenOdd" />
+    </group>
+</vector>

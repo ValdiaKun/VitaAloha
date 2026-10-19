@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rootLayout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/patternsLayout" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout android:id="@id/starfish" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/starfishPattern" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/patternStar" android:layout_width="1347.0dp" android:layout_height="968.0dp" android:src="@drawable/img_pattern_star" android:importantForAccessibility="no" />
+                <ImageView android:id="@id/patternWave" android:layout_width="1070.0dp" android:layout_height="1009.0dp" android:importantForAccessibility="no" />
+            </FrameLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/topLeftBlur" android:layout_width="844.0dp" android:layout_height="1007.0dp" android:src="@drawable/img_top_left_blur" android:importantForAccessibility="no" />
+    </FrameLayout>
+    <androidx.fragment.app.FragmentContainerView android:name="com.alohamobile.component.util.NoStateNavHostFragment" android:id="@id/navigationController" android:visibility="gone" android:clipChildren="false" android:layout_width="0.0dp" android:layout_height="0.0dp" app:defaultNavHost="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_max="900.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_max="600.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/toolbarContainer" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@id/navigationController" app:layout_constraintStart_toStartOf="@id/navigationController" app:layout_constraintTop_toTopOf="@id/navigationController">
+        <com.alohamobile.component.view.ToolbarProgressView android:id="@id/onboardingProgress" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="2.0dp" android:layout_marginStart="16.0dp" android:layout_marginVertical="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/skipOnboarding" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="16.0dp" />
+        <TextView android:textAppearance="?textAppearanceBody1Medium" android:textColor="?textColorBrandSecondary" android:id="@id/skipOnboarding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_skip" android:paddingHorizontal="16.0dp" android:paddingVertical="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/onboardingProgress" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

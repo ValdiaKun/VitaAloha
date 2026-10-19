@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settingsContainer" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <androidx.core.widget.NestedScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorTertiary" android:id="@id/tooManyFiltersWarning" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_filter_to_many_filters_warning" android:paddingHorizontal="16.0dp" android:paddingVertical="12.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/regionalFilters" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingDescription="@string/settings_filter_regional_description" app:settingTitle="@string/settings_filter_regional_title" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/additionalFilters" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingTitle="@string/settings_filter_additional_title" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/customFilterLists" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingTitle="@string/settings_custom_filter_lists_screen_title" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/blockCookiePopups" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingDescription="@string/settings_filter_cookies_description" app:settingShowSwitch="true" app:settingSwitchAutomatic="false" app:settingTitle="@string/settings_filter_cookies_title" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

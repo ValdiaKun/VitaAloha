@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alohamobile.browser.component.menu.presentation.main.BrowserMenuView android:layout_gravity="bottom" android:id="@id/browserMenu" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/menu_container_height_collapsed" />
+</FrameLayout>

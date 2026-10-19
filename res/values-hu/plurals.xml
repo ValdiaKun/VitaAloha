@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">%1$d fájl feltöltése nem sikerült</item>
+        <item quantity="other">%1$d fájl feltöltése nem sikerült</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Túllépte a korlátot. Rövidítse %1$d karakterre az üzenetet, és próbálja újra.</item>
+        <item quantity="other">Túllépte a korlátot. Rövidítse %1$d karakterre az üzenetet, és próbálja újra.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d kérelem maradt</item>
+        <item quantity="other">%1$d kérelem maradt</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">A(z) %2$s számára napi %1$d ingyenes kérelme van. Frissítsen Premium Plus-ra, és távolítsa el a korlátokat!</item>
+        <item quantity="other">A(z) %2$s számára napi %1$d ingyenes kérelme van. Frissítsen Premium Plus-ra, és távolítsa el a korlátokat!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s könyvjelző</item>
+        <item quantity="other">%s könyvjelző</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Premium státusszal %1$d napig próbálhatja ki ingyenesen a legjobb funkcióinkat</item>
+        <item quantity="other">Premium státusszal %1$d napig próbálhatja ki ingyenesen a legjobb funkcióinkat</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">%1$d napig ingyenesen kipróbálhatja a legjobb funkcióinkat Premium státusszal. Állítsa be az Alohat alapértelmezett böngészőként, hogy megkapja a teljes élményt.</item>
+        <item quantity="other">%1$d napig ingyenesen kipróbálhatja a legjobb funkcióinkat Premium státusszal. Állítsa be az Alohat alapértelmezett böngészőként, hogy megkapja a teljes élményt.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">%1$d további napra teljes hozzáférést biztosítunk, teljesen ingyen</item>
+        <item quantity="other">%1$d további napra teljes hozzáférést biztosítunk, teljesen ingyen</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">%1$d további napot adunk Önnek a teljes hozzáférésből, teljesen ingyen. Állítsa be az Alohat alapértelmezett böngészőként, hogy megkapja a teljes élményt</item>
+        <item quantity="other">%1$d további napot adunk Önnek a teljes hozzáférésből, teljesen ingyen. Állítsa be az Alohat alapértelmezett böngészőként, hogy megkapja a teljes élményt</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Ha nem szabadít fel tárhelyet, a korlátot meghaladó fájlok írásvédetté válnak. %1$d nap múlva törlődnek.</item>
+        <item quantity="other">Ha nem szabadít fel tárhelyet, a korlátot meghaladó fájlok írásvédetté válnak. %1$d nap múlva törlődnek.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Az Aloha Cloud-előfizetése véget ért. Az Aloha Cloud %1$d nap múlva véglegesen törölve lesz. A hozzáférés visszaállításához újítsa meg a csomagját.</item>
+        <item quantity="other">Az Aloha Cloud-előfizetése véget ért. Az Aloha Cloud %1$d nap múlva véglegesen törölve lesz. A hozzáférés visszaállításához újítsa meg a csomagját.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Újítsa meg az Aloha Cloud-előfizetését %1$d napon belül, hogy a felhőfájljai ne tűnjenek el</item>
+        <item quantity="other">Újítsa meg az Aloha Cloud-előfizetését %1$d napon belül, hogy a felhőfájljai ne tűnjenek el</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Az Aloha Premium-előfizetése véget ért. A fájljai %1$d nap múlva automatikusan törlésre kerülnek. Vásároljon Aloha Cloud-csomagot, hogy megtartsa a fájljait és további tárhelyet szerezzen.</item>
+        <item quantity="other">Az Aloha Premium-előfizetése véget ért. A fájljai %1$d nap múlva automatikusan törlésre kerülnek. Vásároljon Aloha Cloud-csomagot, hogy megtartsa a fájljait és további tárhelyet szerezzen.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Az Aloha Premium-előfizetése véget ért. Az Aloha Cloud véglegesen törölve lesz %1$d nap múlva. Újítsa meg a csomagját, hogy helyreállítsa a hozzáférést.</item>
+        <item quantity="other">Az Aloha Premium-előfizetése véget ért. Az Aloha Cloud véglegesen törölve lesz %1$d nap múlva. Újítsa meg a csomagját, hogy helyreállítsa a hozzáférést.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Újítsa meg az Aloha Premium-előfizetését %1$d napon belül, hogy a felhőfájljai ne tűnjenek el</item>
+        <item quantity="other">Újítsa meg az Aloha Premium-előfizetését %1$d napon belül, hogy a felhőfájljai ne tűnjenek el</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Néhány fájl %1$d napon belül törlődik</item>
+        <item quantity="other">Néhány fájl %1$d napon belül törlődik</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Néhány fájl %1$d nap múlva törlésre kerül. Újítsa meg a csomagját, hogy a fájljai elérhetők maradjanak.</item>
+        <item quantity="other">Néhány fájl %1$d nap múlva törlésre kerül. Újítsa meg a csomagját, hogy a fájljai elérhetők maradjanak.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Újítsa meg a Premiumot %1$d napon belül, hogy ne tűnjenek el a felhőfájljai</item>
+        <item quantity="other">Újítsa meg a Premiumot %1$d napon belül, hogy ne tűnjenek el a felhőfájljai</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d nap</item>
+        <item quantity="one">%d nap</item>
+        <item quantity="other">%d nap</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d elem végleges törlésre kerül. Biztos benne, hogy üríteni akarja a kukát?</item>
+        <item quantity="other">%d elem végleges törlésre kerül. Biztos benne, hogy üríteni akarja a kukát?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Helytelen kifejezés - %1$d próbálkozás maradt</item>
+        <item quantity="other">Helytelen kifejezés - %1$d próbálkozás maradt</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Nem választhat %d elemnél többet</item>
+        <item quantity="other">Nem választhat %d elemnél többet</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Előretekerés %d másodperccel</item>
+        <item quantity="other">Előretekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Visszatekerés %d másodperccel</item>
+        <item quantity="other">Visszatekerés %d másodperccel</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d elem</item>
+        <item quantity="other">%d elem</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">A Free Premium %1$d nap múlva véget ér</item>
+        <item quantity="other">A Free Premium %1$d nap múlva véget ér</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d nap maradt</item>
+        <item quantity="other">%1$d nap maradt</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d próbálkozás maradt</item>
+        <item quantity="other">%1$d próbálkozás maradt</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d hónap</item>
+        <item quantity="one">%1$d hónap</item>
+        <item quantity="other">%1$d hónap</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d hónap</item>
+        <item quantity="other">%1$d hónap</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d új értesítés</item>
+        <item quantity="other">%d új értesítés</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">%1$d/%2$d fájl mentése</item>
+        <item quantity="other">%1$d/%2$d fájl mentése</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d talált jelszó</item>
+        <item quantity="other">%1$d talált jelszó</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">A Premium felhasználók számára elérhető %1$d további exkluzív funkció mellett</item>
+        <item quantity="other">A Premium felhasználók számára elérhető %1$d további exkluzív funkció mellett</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d felugró ablak blokkolva</item>
+        <item quantity="other">%d felugró ablak blokkolva</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">A &lt;b>Premium státusszal&lt;/b> kipróbálhatja a legjobb funkcióinkat &lt;b>%1$d hónapig – ingyenesen, – amit mi állunk!&lt;/b></item>
+        <item quantity="other">A &lt;b>Premium státusszal&lt;/b> kipróbálhatja a legjobb funkcióinkat &lt;b>%1$d hónapig – ingyenesen, – amit mi állunk!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">A &lt;b>Premium státusszal&lt;/b> kipróbálhatja a legjobb funkcióinkat &lt;b>%1$d hétig – ingyenesen, – amit mi állunk!&lt;/b></item>
+        <item quantity="other">A &lt;b>Premium státusszal&lt;/b> kipróbálhatja a legjobb funkcióinkat &lt;b>%1$d hétig – ingyenesen, – amit mi állunk!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">A &lt;b>Premium státusszal&lt;/b> kipróbálhatja a legjobb funkcióinkat &lt;b>%1$d évig – ingyenesen, – amit mi állunk!&lt;/b></item>
+        <item quantity="other">A &lt;b>Premium státusszal&lt;/b> kipróbálhatja a legjobb funkcióinkat &lt;b>%1$d évig – ingyenesen, – amit mi állunk!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s az első hónapra, ezután %2$s/hó.
+Automatikusan megújul. Bármikor lemondható."</item>
+        <item quantity="other">"%1$s/hó az első %3$d hónapra, ezután %2$s/hó.
+Automatikusan megújul. Bármikor lemondható."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s az első évre, majd %2$s/év.
+Automatikusan megújul. Bármikor lemondható."</item>
+        <item quantity="other">"%1$s az első %3$d évre, majd %2$s/év.
+Automatikusan megújul. Bármikor lemondható."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d hónap</item>
+        <item quantity="other">első %1$d hónap</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d év</item>
+        <item quantity="other">első %1$d év</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/hó %2$d hónapig</item>
+        <item quantity="other">%1$s/hó %2$d hónapig</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s az első évre</item>
+        <item quantity="other">%1$s az első %2$d évre</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d%% kedvezmény az első hónapra</item>
+        <item quantity="other">%1$d%% kedvezmény az első %2$d hónapra</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">A barátai %1$d hónapnyi Premiumot kapnak teljesen ingyen!</item>
+        <item quantity="other">A barátai %1$d hónapnyi Premiumot kapnak teljesen ingyen!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">A barátai %1$d hétnyi Premiumot kapnak teljesen ingyen!</item>
+        <item quantity="other">A barátai %1$d hétnyi Premiumot kapnak teljesen ingyen!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">A barátai %1$d évnyi Premiumot kapnak teljesen ingyen!</item>
+        <item quantity="other">A barátai %1$d évnyi Premiumot kapnak teljesen ingyen!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Önnek köszönhetően &lt;b>%1$d barát&lt;/b> élvezi az Alohat, és Ön &lt;b>Premium státuszt élvez.&lt;/b></item>
+        <item quantity="other">Önnek köszönhetően &lt;b>%1$d barát&lt;/b> élvezi az Alohat, és Ön &lt;b>Premium státuszt élvez.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Hívjon meg még %1$d barátot, hogy Free Premiumot szerezzen</item>
+        <item quantity="other">Hívjon meg még %1$d barátot, hogy Free Premiumot szerezzen</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Hosszabb felvételeket szeretne, mint %1$d másodperc?</item>
+        <item quantity="other">Hosszabb felvételeket szeretne, mint %1$d másodperc?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">%1$d havi Premiuma van</item>
+        <item quantity="other">%1$d havi Premiuma van</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">%1$d hete maradt a Premiumból</item>
+        <item quantity="other">%1$d hete maradt a Premiumból</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">%1$d évnyi Premiuma van</item>
+        <item quantity="other">%1$d évnyi Premiuma van</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d jelszó importálva</item>
+        <item quantity="other">%1$d jelszó importálva</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d hét</item>
+        <item quantity="one">%1$d hét</item>
+        <item quantity="other">%1$d hét</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d hét</item>
+        <item quantity="other">%1$d hét</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d év</item>
+        <item quantity="one">%1$d év</item>
+        <item quantity="other">%1$d év</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d év</item>
+        <item quantity="other">%1$d év</item>
+    </plurals>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">alhapi.com</domain>
+        <domain includeSubdomains="true">alohabrowser.com</domain>
+        <domain includeSubdomains="true">alohaprofile.com</domain>
+    </domain-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">ac.duckduckgo.com</domain>
+        <domain includeSubdomains="true">ac.ecosia.org</domain>
+        <domain includeSubdomains="true">api.bing.com</domain>
+        <domain includeSubdomains="true">suggestqueries.google.com</domain>
+        <domain includeSubdomains="true">www.baidu.com</domain>
+        <domain includeSubdomains="true">www.startpage.com</domain>
+    </domain-config>
+</network-security-config>

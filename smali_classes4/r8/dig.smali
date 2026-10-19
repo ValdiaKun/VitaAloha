@@ -1,0 +1,42 @@
+.class public final Lr8/dig;
+.super Lr8/b1i;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lr8/b1i;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public newObject(Lr8/x0i;)Lio/netty/buffer/c0;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lr8/x0i;",
+            ")",
+            "Lio/netty/buffer/c0;"
+        }
+    .end annotation
+
+    new-instance p0, Lio/netty/buffer/c0;
+
+    invoke-direct {p0, p1}, Lio/netty/buffer/c0;-><init>(Lr8/c1f;)V
+
+    return-object p0
+.end method
+
+.method public bridge synthetic newObject(Lr8/x0i;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lr8/dig;->newObject(Lr8/x0i;)Lio/netty/buffer/c0;
+
+    move-result-object p0
+
+    return-object p0
+.end method

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">"No s'ha pogut penjar %1$d fitxer"</item>
+        <item quantity="other">"No s'han pogut penjar %1$d fitxers"</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Límit excedit. Escurça el missatge a %1$d caràcter i torna-ho a intentar.</item>
+        <item quantity="other">Límit excedit. Escurça el missatge a %1$d caràcters i torna-ho a intentar.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">Queda %1$d sol·licitud</item>
+        <item quantity="other">Queden %1$d sol·licituds</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Tens %1$d sol·licitud diària gratuïta del model %2$s. Millora a Premium Plus i elimina tots els límits.</item>
+        <item quantity="other">Tens %1$d sol·licituds diàries gratuïtes del model %2$s. Millora a Premium Plus i elimina tots els límits.</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s marcador</item>
+        <item quantity="other">%s marcadors</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Prova de franc les millors funcions Premium durant %1$d dia</item>
+        <item quantity="other">Prova de franc les millors funcions Premium durant %1$d dies</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Prova les nostres millors funcions amb l’estat Premium durant %1$d dia, totalment de franc. Configura Aloha com a navegador predeterminat i gaudeix de l’experiència completa.</item>
+        <item quantity="other">Prova les nostres millors funcions amb l’estat Premium durant %1$d dies, totalment de franc. Configura Aloha com a navegador predeterminat i gaudeix de l’experiència completa.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">"Et regalem %1$d dia més d'accés complet totalment de franc"</item>
+        <item quantity="other">"Et regalem %1$d dies més d'accés complet totalment de franc"</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">T’oferim %1$d dia més d’accés complet i totalment gratuït. Configura Aloha com a navegador predeterminat i gaudeix de l’experiència completa.</item>
+        <item quantity="other">T’oferim %1$d dies més d’accés complet i totalment gratuït. Configura Aloha com a navegador predeterminat i gaudeix de l’experiència completa.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">"Si no alliberes espai, els fitxers per sobre del límit passaran a ser només de lectura i es podrien eliminar al cap d'%1$d dia."</item>
+        <item quantity="other">Si no alliberes espai, els fitxers per sobre del límit passaran a ser només de lectura i es podrien eliminar al cap de %1$d dies.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">"La teva subscripció a Aloha Cloud ha finalitzat. Aloha Cloud s'eliminarà d'aquí %1$d dia. Renova el teu pla per restaurar l'accés."</item>
+        <item quantity="other">"La teva subscripció a Aloha Cloud ha finalitzat. Aloha Cloud s'eliminarà d'aquí %1$d dies. Renova el teu pla per restaurar l'accés."</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">"Renova la teva subscripció a Aloha Cloud en el termini d'%1$d dia per no perdre els fitxers del núvol"</item>
+        <item quantity="other">Renova la teva subscripció a Aloha Cloud en el termini de %1$d dies per no perdre els fitxers del núvol</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">"La teva subscripció a Aloha Premium ha finalitzat. Eliminarem automàticament els teus fitxers d'aquí %1$d dia. Compra el teu pla d'Aloha Cloud per conservar-los i obtenir més espai d'emmagatzematge."</item>
+        <item quantity="other">"La teva subscripció a Aloha Premium ha finalitzat. Eliminarem automàticament els teus fitxers d'aquí %1$d dies. Compra el teu pla d'Aloha Cloud per conservar-los i obtenir més espai d'emmagatzematge."</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">"La teva subscripció a Aloha Premium ha finalitzat. Eliminarem Aloha Cloud permanentment d'aquí %1$d dia. Renova el teu pla per conservar l'accés."</item>
+        <item quantity="other">"La teva subscripció a Aloha Premium ha finalitzat. Eliminarem Aloha Cloud permanentment d'aquí %1$d dies. Renova el teu pla per conservar l'accés."</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">"Renova la teva subscripció a Aloha Premium en el termini d'%1$d dia per no perdre els teus fitxers del núvol"</item>
+        <item quantity="other">Renova la teva subscripció a Aloha Premium en el termini de %1$d dies per no perdre els teus fitxers del núvol</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">"Alguns dels fitxers s'eliminaran d'aquí %1$d dia"</item>
+        <item quantity="other">"Alguns dels fitxers s'eliminaran d'aquí %1$d dies"</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">"Alguns dels fitxers s'eliminaran d'aquí %1$d dia. Renova el teu pla per poder seguir accedint als teus fitxers."</item>
+        <item quantity="other">"Alguns dels fitxers s'eliminaran d'aquí %1$d dies. Renova el teu pla per poder seguir accedint als teus fitxers."</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Renova Premium en %1$d dia per no perdre els fitxers</item>
+        <item quantity="other">Renova Premium en %1$d dies per no perdre els fitxers</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="one">%d dia</item>
+        <item quantity="other">%d dies</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">"%d element s'eliminarà permanentment. Segur que voleu buidar la paperera?"</item>
+        <item quantity="other">"%d elements s'eliminaran permanentment. Segur que voleu buidar la paperera?"</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Frase incorrecta: et queda %1$d intent</item>
+        <item quantity="other">Frase incorrecta: et queden %1$d intents</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">"No pots seleccionar més d'%d element"</item>
+        <item quantity="other">No pots seleccionar més de %d elements</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avança ràpidament %d segon</item>
+        <item quantity="other">Avança ràpidament %d segons</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rebobina %d segon</item>
+        <item quantity="other">Rebobina %d segons</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d element</item>
+        <item quantity="other">%d elements</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">"Free Premium finalitza d'aquí %1$d dia"</item>
+        <item quantity="other">"Free Premium finalitza d'aquí %1$d dies"</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">Queda %1$d dia</item>
+        <item quantity="other">Queden %1$d dies</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d intent restant</item>
+        <item quantity="other">%1$d intents restants</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d mesos</item>
+        <item quantity="one">%1$d mes</item>
+        <item quantity="other">%1$d mesos</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d mes</item>
+        <item quantity="other">%1$d mesos</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificació nova</item>
+        <item quantity="other">%d notificacions noves</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Desant %1$d de %2$d fitxer</item>
+        <item quantity="other">Desant %1$d de %2$d fitxers</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d contrasenya trobada</item>
+        <item quantity="other">%1$d contrasenyes trobades</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Més %1$d funció exclusiva disponible per a usuaris Premium</item>
+        <item quantity="other">Més %1$d funcions exclusives disponibles per a usuaris Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d finestra emergent bloquejada</item>
+        <item quantity="other">%d finestres emergents bloquejades</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Prova les nostres millors funcions amb &lt;b>l’estat Premium&lt;/b> durant &lt;b>%1$d mes totalment gratis!&lt;/b></item>
+        <item quantity="other">Prova les nostres millors funcions amb &lt;b>l’estat Premium&lt;/b> durant &lt;b>%1$d mesos totalment gratis!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Prova les nostres millors funcions amb &lt;b>l’estat Premium&lt;/b> durant &lt;b>%1$d setmana totalment de franc!&lt;/b></item>
+        <item quantity="other">Prova les nostres millors funcions amb &lt;b>l’estat Premium&lt;/b> durant &lt;b>%1$d setmanes totalment de franc!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Prova les nostres millors funcions amb &lt;b>l’estat Premium&lt;/b> durant &lt;b>%1$d any totalment de franc!&lt;/b></item>
+        <item quantity="other">Prova les nostres millors funcions amb &lt;b>l’estat Premium&lt;/b> durant &lt;b>%1$d anys totalment de franc!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s el primer mes, després %2$s/mes.
+Es renova automàticament. Cancel·la quan vulguis."</item>
+        <item quantity="other">"%1$s/mes els primers %3$d mesos, després %2$s/mes.
+Es renova automàticament. Cancel·la quan vulguis."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s el primer any; després %2$s/any.
+Es renova automàticament. Cancel·la quan vulguis."</item>
+        <item quantity="other">"%1$s/any els primers %3$d anys; després %2$s/any.
+Es renova automàticament. Cancel·la quan vulguis."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d mes</item>
+        <item quantity="other">els primers %1$d mesos</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d any</item>
+        <item quantity="other">els primers %1$d anys</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/mes durant %2$d mes</item>
+        <item quantity="other">%1$s/mes durant %2$d mesos</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s el primer any</item>
+        <item quantity="other">%1$s els primers %2$d anys</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d %% de dte. el primer mes</item>
+        <item quantity="other">%1$d %% de dte. els primers %2$d mesos</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Els teus amics tindran %1$d mes de Premium de franc!</item>
+        <item quantity="other">Els teus amics tindran %1$d mesos de Premium de franc!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Els teus amics tindran %1$d setmana de Premium de franc!</item>
+        <item quantity="other">Els teus amics tindran %1$d setmanes de Premium de franc!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Els teus amics tindran %1$d any de Premium de franc!</item>
+        <item quantity="other">Els teus amics tindran %1$d anys de Premium de franc!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Gràcies a tu, &lt;b>%1$d amic&lt;/b> ara gaudeix d’Aloha i ara tu &lt;b>ets Premium.&lt;/b></item>
+        <item quantity="other">Gràcies a tu, &lt;b>%1$d amics&lt;/b> ara gaudeixen d’Aloha i ara tu &lt;b>ets Premium.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Convida %1$d amic més per aconseguir Free Premium</item>
+        <item quantity="other">Convida %1$d amics més per aconseguir Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Vols enregistraments de més d’%1$d segon?</item>
+        <item quantity="other">Vols enregistraments de més de %1$d segons?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Gaudeix d’%1$d mes Premium</item>
+        <item quantity="other">Gaudeix de %1$d mesos Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Gaudeix d’%1$d setmana Premium</item>
+        <item quantity="other">Gaudeix de %1$d setmanes Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">"Gaudeix d'%1$d any Premium"</item>
+        <item quantity="other">Gaudeix de %1$d anys Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d contrasenya importada</item>
+        <item quantity="other">%1$d contrasenyes importades</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d setmanes</item>
+        <item quantity="one">%1$d setmana</item>
+        <item quantity="other">%1$d setmanes</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d setmana</item>
+        <item quantity="other">%1$d setmanes</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d anys</item>
+        <item quantity="one">%1$d any</item>
+        <item quantity="other">%1$d anys</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d any</item>
+        <item quantity="other">%1$d anys</item>
+    </plurals>
+</resources>

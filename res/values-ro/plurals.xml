@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Nu s-a putut încărca %1$d fișier</item>
+        <item quantity="few">Nu s-au putut încărca %1$d fișiere</item>
+        <item quantity="other">Nu s-au putut încărca %1$d fișiere</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Depășirea limitei. Scurtați mesajul la %1$d caracter și reîncercați.</item>
+        <item quantity="few">Depășirea limitei. Scurtați mesajul la %1$d caractere și reîncercați.</item>
+        <item quantity="other">Depășirea limitei. Scurtați mesajul la %1$d caractere și reîncercați.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d cerere rămasă</item>
+        <item quantity="few">%1$d cereri rămase</item>
+        <item quantity="other">%1$d cereri rămase</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Aveți %1$d solicitare gratuită pe zi pentru %2$s. Faceți upgrade la Premium Plus și eliminați toate limitele!</item>
+        <item quantity="few">Aveți %1$d solicitări gratuite pe zi pentru %2$s. Faceți upgrade la Premium Plus și eliminați toate limitele!</item>
+        <item quantity="other">Aveți %1$d solicitări gratuite pe zi pentru %2$s. Faceți upgrade la Premium Plus și eliminați toate limitele!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s marcaj</item>
+        <item quantity="few">%s marcaje</item>
+        <item quantity="other">%s marcaje</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="zero">Puteți încerca cele mai bune funcții ale noastre cu statutul Premium timp de %1$d zile gratuit</item>
+        <item quantity="one">Puteți încerca cele mai bune funcții ale noastre cu statutul Premium timp de %1$d zi gratuit</item>
+        <item quantity="few">Puteți încerca cele mai bune funcții ale noastre cu statutul Premium timp de %1$d zile gratuit</item>
+        <item quantity="other">Puteți încerca cele mai bune funcții ale noastre cu statutul Premium timp de %1$d zile gratuit</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Puteți încerca cele mai bune funcții ale noastre cu statutul Premium timp de %1$d zi gratuit. Setați Aloha ca browser implicit pentru a beneficia de experiența completă.</item>
+        <item quantity="few">Puteți încerca cele mai bune funcții ale noastre cu statutul Premium timp de %1$d zile gratuite. Setați Aloha ca browser implicit pentru a beneficia de experiența completă.</item>
+        <item quantity="other">Puteți încerca cele mai bune funcții ale noastre cu statutul Premium timp de %1$d zile gratuite. Setați Aloha ca browser implicit pentru a beneficia de experiența completă.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Vă oferim încă %1$d zi de acces complet, complet gratuit</item>
+        <item quantity="few">Vă oferim încă %1$d zile de acces complet, complet gratuit</item>
+        <item quantity="other">Vă oferim încă %1$d zile de acces complet, complet gratuit</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">Vă oferim încă %1$d zi de acces complet, complet gratuit. Setați Aloha ca browser implicit pentru a beneficia de experiența completă.</item>
+        <item quantity="few">Vă oferim încă %1$d zile de acces complet, complet gratuit. Setați Aloha ca browser implicit pentru a beneficia de experiența completă.</item>
+        <item quantity="other">Vă oferim încă %1$d zile de acces complet, complet gratuit. Setați Aloha ca browser implicit pentru a beneficia de experiența completă.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Dacă nu eliberați spațiu, fișierele care depășesc limita vor deveni disponibile doar pentru citire. Acestea vor fi șterse după %1$d zi.</item>
+        <item quantity="few">Dacă nu eliberați spațiu, fișierele care depășesc limita vor deveni disponibile doar pentru citire. Acestea vor fi șterse după %1$d zile.</item>
+        <item quantity="other">Dacă nu eliberați spațiu, fișierele care depășesc limita vor deveni disponibile doar pentru citire. Acestea vor fi șterse după %1$d zile.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Abonamentul dumneavoastră Aloha Cloud a expirat. Aloha Cloud va fi șters definitiv peste %1$d zi. Reînnoiți-vă planul pentru a restabili accesul.</item>
+        <item quantity="few">Abonamentul dumneavoastră Aloha Cloud a expirat. Aloha Cloud va fi șters definitiv peste %1$d zile. Reînnoiți-vă planul pentru a restabili accesul.</item>
+        <item quantity="other">Abonamentul dumneavoastră Aloha Cloud a expirat. Aloha Cloud va fi șters definitiv peste %1$d zile. Reînnoiți-vă planul pentru a restabili accesul.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Reînnoiți-vă abonamentul Aloha Cloud în termen de %1$d zi pentru a nu vă pierde fișierele din cloud</item>
+        <item quantity="few">Reînnoiți-vă abonamentul Aloha Cloud în termen de %1$d zile pentru a nu vă pierde fișierele din cloud</item>
+        <item quantity="other">Reînnoiți-vă abonamentul Aloha Cloud în termen de %1$d zile pentru a nu vă pierde fișierele din cloud</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Abonamentul dumneavoastră Aloha Premium a expirat. Fișierele vor fi șterse automat în %1$d zi. Achiziționați un plan Aloha Cloud pentru a vă păstra fișierele și a beneficia de spațiu de stocare suplimentar.</item>
+        <item quantity="few">Abonamentul dumneavoastră Aloha Premium a expirat. Fișierele vor fi șterse automat în %1$d zile.Achiziționați un plan Aloha Cloud pentru a vă păstra fișierele și a beneficia de spațiu de stocare suplimentar.</item>
+        <item quantity="other">Abonamentul dumneavoastră Aloha Premium a expirat. Fișierele vor fi șterse automat în %1$d zile. Achiziționați un plan Aloha Cloud pentru a vă păstra fișierele și a beneficia de spațiu de stocare suplimentar.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Abonamentul dumneavoastră Aloha Premium a expirat. Aloha Cloud va fi șters definitiv peste %1$d zi. Reînnoiți-vă planul pentru a restabili accesul.</item>
+        <item quantity="few">Abonamentul dumneavoastră Aloha Premium a expirat. Aloha Cloud va fi șters definitiv peste %1$d zile.Reînnoiți-vă planul pentru a restabili accesul.</item>
+        <item quantity="other">Abonamentul dumneavoastră Aloha Premium a expirat. Aloha Cloud va fi șters definitiv peste %1$d zile.Reînnoiți-vă planul pentru a restabili accesul.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Reînnoiți-vă abonamentul Aloha Premium în termen de %1$d zi pentru a nu vă pierde fișierele din cloud</item>
+        <item quantity="few">Reînnoiți-vă abonamentul Aloha Premium în termen de %1$d zile pentru a nu vă pierde fișierele din cloud</item>
+        <item quantity="other">Reînnoiți-vă abonamentul Aloha Premium în termen de %1$d zile pentru a nu vă pierde fișierele din cloud</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Unele fișiere vor fi șterse în %1$d zi</item>
+        <item quantity="few">Unele fișiere vor fi șterse în %1$d zile</item>
+        <item quantity="other">Unele fișiere vor fi șterse în %1$d zile</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Unele fișiere vor fi șterse peste %1$d zi. Reînnoiți-vă planul pentru a păstra fișierele accesibile.</item>
+        <item quantity="few">Unele fișiere vor fi șterse peste %1$d zile. Reînnoiți-vă planul pentru a păstra fișierele accesibile.</item>
+        <item quantity="other">Unele fișiere vor fi șterse peste %1$d zile. Reînnoiți-vă planul pentru a păstra fișierele accesibile.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Reînnoiți abonamentul Premium în %1$d zi pentru ca fișierele din cloud să nu dispară</item>
+        <item quantity="few">Reînnoiți abonamentul Premium în %1$d zile pentru ca fișierele din cloud să nu dispară</item>
+        <item quantity="other">Reînnoiți abonamentul Premium în %1$d zile pentru ca fișierele din cloud să nu dispară</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d zile</item>
+        <item quantity="one">%d zi</item>
+        <item quantity="few">%d zile</item>
+        <item quantity="other">%d zile</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d element va fi șters definitiv. Sigur doriți să ștergeți coșul de gunoi?</item>
+        <item quantity="few">%d elemente vor fi șterse definitiv. Sigur doriți să ștergeți coșul de gunoi?</item>
+        <item quantity="other">%d elemente vor fi șterse definitiv. Sigur doriți să ștergeți coșul de gunoi?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Expresie greșită — %1$d încercare rămasă</item>
+        <item quantity="few">Expresie greșită — %1$d încercări rămase</item>
+        <item quantity="other">Expresie greșită — %1$d încercări rămase</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Nu puteți selecta mai mult de %d articol</item>
+        <item quantity="few">Nu puteți selecta mai mult de %d articole</item>
+        <item quantity="other">Nu puteți selecta mai mult de %d articole</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Derulează rapid înainte cu %d secundă</item>
+        <item quantity="few">Derulează rapid înainte cu %d secunde</item>
+        <item quantity="other">Derulează rapid înainte cu %d de secunde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Derulează înapoi cu %d secundă</item>
+        <item quantity="few">Derulează înapoi cu %d secunde</item>
+        <item quantity="other">Derulează înapoi cu %d de secunde</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d element</item>
+        <item quantity="few">%d elemente</item>
+        <item quantity="other">%d elemente</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium se termină în %1$d zi</item>
+        <item quantity="few">Free Premium se termină în %1$d zile</item>
+        <item quantity="other">Free Premium se termină în %1$d zile</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d zi rămasă</item>
+        <item quantity="few">%1$d zile ramase</item>
+        <item quantity="other">%1$d zile ramase</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d încercare rămasă</item>
+        <item quantity="few">%1$d încercări rămase</item>
+        <item quantity="other">%1$d încercări rămase</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d luni</item>
+        <item quantity="one">%1$d lună</item>
+        <item quantity="few">%1$d luni</item>
+        <item quantity="other">%1$d luni</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d lună</item>
+        <item quantity="few">%1$d luni</item>
+        <item quantity="other">%1$d luni</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificare nouă</item>
+        <item quantity="few">%d notificări noi</item>
+        <item quantity="other">%d de notificări noi</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Se salvează %1$d din %2$d fișier</item>
+        <item quantity="few">Se salvează %1$d din %2$d fișiere</item>
+        <item quantity="other">Se salvează %1$d din %2$d fișiere</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d parolă găsită</item>
+        <item quantity="few">%1$d parole găsite</item>
+        <item quantity="other">%1$d parole găsite</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Pe lângă încă %1$d funcție exclusivă disponibilă utilizatorilor Premium</item>
+        <item quantity="few">Pe lângă încă %1$d funcții exclusive disponibile utilizatorilor Premium</item>
+        <item quantity="other">Pe lângă încă %1$d funcții exclusive disponibile utilizatorilor Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d pop-up blocat</item>
+        <item quantity="few">%d pop-up-uri blocate</item>
+        <item quantity="other">%d pop-up-uri blocate</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>status Premium&lt;/b> timp de &lt;b>%1$d lună – gratuit –de la noi!&lt;/b></item>
+        <item quantity="few">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>statut Premium&lt;/b> timp de &lt;b>%1$d luni – gratuit – de la noi!&lt;/b></item>
+        <item quantity="other">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>status Premium&lt;/b> timp de &lt;b>%1$d luni – gratuit – de la noi!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>statut Premium&lt;/b> timp de &lt;b>%1$d săptămână – gratuit – de la noi!&lt;/b></item>
+        <item quantity="few">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>statut Premium&lt;/b> timp de &lt;b>%1$d săptămâni – gratuit – de la noi!&lt;/b></item>
+        <item quantity="other">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>statut Premium&lt;/b> timp de &lt;b>%1$d săptămâni – gratuit – de la noi!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>statut Premium&lt;/b> timp de &lt;b>%1$d an – gratuit – de la noi!&lt;/b></item>
+        <item quantity="few">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>staatus Premium&lt;/b> timp de &lt;b>%1$d ani – gratuit – de la noi!&lt;/b></item>
+        <item quantity="other">Puteți încerca cele mai bune funcții ale noastre cu &lt;b>staatut Premium&lt;/b> timp de &lt;b>%1$d ani – gratuit – de la noi!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s pentru prima lună, apoi %2$s/lună.
+Reînnoire automată. Anulați oricând."</item>
+        <item quantity="few">"%1$s/lună pentru primele %3$d luni, apoi %2$s/lună.
+Reînnoire automată. Anulați oricând."</item>
+        <item quantity="other">"%1$s/lună pentru primele %3$d luni, apoi %2$s/lună.
+Reînnoire automată. Anulați oricând."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s pentru primul an, apoi %2$s/an.
+Reînnoire automată. Anulare oricând."</item>
+        <item quantity="few">"%1$s pentru primii %3$d ani, apoi %2$s/an.
+Reînnoire automată. Anulare oricând."</item>
+        <item quantity="other">"%1$s pentru primii %3$d ani, apoi %2$s/an.
+Reînnoire automată. Anulare oricând."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d lună</item>
+        <item quantity="few">primele %1$d luni</item>
+        <item quantity="other">primele %1$d luni</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d an</item>
+        <item quantity="few">primii %1$d ani</item>
+        <item quantity="other">primii %1$d ani</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/lună timp de %2$d lună</item>
+        <item quantity="few">%1$s/lună timp de %2$d luni</item>
+        <item quantity="other">%1$s/lună timp de %2$d luni</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s pentru primul an</item>
+        <item quantity="few">%1$s pentru primii %2$d ani</item>
+        <item quantity="other">%1$s pentru primii %2$d ani</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">reducere de %1$d%% în prima lună</item>
+        <item quantity="few">reducere de %1$d%% în primele %2$d luni</item>
+        <item quantity="other">reducere de %1$d%% în primele %2$d luni</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Prietenii dvs. vor primi %1$d lună Premium gratuit!</item>
+        <item quantity="few">Prietenii dvs. vor primi %1$d luni Premium gratuit!</item>
+        <item quantity="other">Prietenii dvs. vor primi %1$d luni Premium gratuit!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Prietenii dvs. vor primi %1$d săptămână de Premium gratuit!</item>
+        <item quantity="few">Prietenii dvs. vor primi %1$d săptămâni de Premium gratuit!</item>
+        <item quantity="other">Prietenii dvs. vor primi %1$d săptămâni de Premium gratuit!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Prietenii dvs. vor primi %1$d an de Premium gratuit!</item>
+        <item quantity="few">Prietenii dvs vor primi %1$d ani de Premium gratuit!</item>
+        <item quantity="other">Prietenii dvs. vor primi %1$d ani de Premium gratuit!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Mulțumită dumneavoastră, &lt;b>%1$d prieten&lt;/b> acum se bucură de Aloha și vă bucurați de un &lt;b>statut Premium.&lt;/b></item>
+        <item quantity="few">Mulțumită dumneavoastră, &lt;b>%1$d prieteni&lt;/b> acum se bucură de Aloha și vă bucurați de un &lt;b>statut Premium.&lt;/b></item>
+        <item quantity="other">Mulțumită dumneavoastră, &lt;b>%1$d prieteni&lt;/b> acum se bucură de Aloha și vă bucurați de un &lt;b>statut Premium.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Invitați %1$d prieten să beneficiați de Free Premium</item>
+        <item quantity="few">Invitați %1$d prieteni să beneficiați de Free Premium</item>
+        <item quantity="other">Invitați %1$d prieteni să beneficiați de Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Vreți să faceți înregistrări mai lungi de %1$d secundă?</item>
+        <item quantity="few">Vreți să faceți înregistrări mai lungi de %1$d secunde?</item>
+        <item quantity="other">Vreți să faceți înregistrări mai lungi de %1$d secunde?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Aveți %1$d lună Premium</item>
+        <item quantity="few">Aveți %1$d luni Premium</item>
+        <item quantity="other">Aveți %1$d luni Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Aveți %1$d săptămână Premium</item>
+        <item quantity="few">Aveți %1$d săptămâni Premium</item>
+        <item quantity="other">Aveți %1$d săptămâni Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">Aveți %1$d an de Premium</item>
+        <item quantity="few">Aveți %1$d ani de Premium</item>
+        <item quantity="other">Aveți %1$d ani de Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d parolă importată</item>
+        <item quantity="few">%1$d parole importate</item>
+        <item quantity="other">%1$d parole importate</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="one">%1$d săptămână</item>
+        <item quantity="few">%1$d săptămâni</item>
+        <item quantity="other">%1$d săptămâni</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d săptămână</item>
+        <item quantity="few">%1$d săptămâni</item>
+        <item quantity="other">%1$d săptămâni</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d ani</item>
+        <item quantity="one">%1$d an</item>
+        <item quantity="few">%1$d ani</item>
+        <item quantity="other">%1$d ani</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d an</item>
+        <item quantity="few">%1$d ani</item>
+        <item quantity="other">%1$d ani</item>
+    </plurals>
+</resources>

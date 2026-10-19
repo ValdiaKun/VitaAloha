@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:startDestination="@id/remoteTabsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="NormalTabsFragment" android:name="com.alohamobile.browser.tabsview.presentation.fragment.NormalTabsFragment" android:id="@id/normalTabsFragment" />
+    <fragment android:label="PrivateTabsFragment" android:name="com.alohamobile.browser.tabsview.presentation.fragment.PrivateTabsFragment" android:id="@id/privateTabsFragment" />
+    <fragment android:label="RemoteTabsFragment" android:name="com.alohamobile.browser.tabsview.presentation.fragment.RemoteTabsFragment" android:id="@id/remoteTabsFragment" />
+</navigation>

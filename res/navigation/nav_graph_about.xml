@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/about_nav_graph" app:startDestination="@id/aboutFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AboutFragment" android:name="com.alohamobile.settings.about.AboutFragment" android:id="@id/aboutFragment">
+        <action android:id="@id/action_aboutFragment_to_feedbackFragment" app:destination="@id/feedbackFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+    <fragment android:label="FeedbackFragment" android:name="com.alohamobile.feedback.FeedbackFragment" android:id="@id/feedbackFragment" />
+</navigation>

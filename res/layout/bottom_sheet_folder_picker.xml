@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/folderPickerContainer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/foldersList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/toolbar_height" android:layout_marginBottom="@dimen/bottom_sheet_folder_picker_button_container_min_height" android:minHeight="250.0dp" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <View android:id="@id/bottomSheetHeaderBackground" android:background="?layerColorFloor1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceTitle1" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_margin="16.0dp" app:autoSizeMaxTextSize="18.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+</FrameLayout>

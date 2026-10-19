@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_custom_cookie_settings_popup" app:startDestination="@id/customCookieSettingsPopupFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="CustomCookieSettingsPopupFragment" android:name="com.alohamobile.browser.cookieconsent.presentation.CustomCookieSettingsPopupFragment" android:id="@id/customCookieSettingsPopupFragment">
+        <argument android:name="request" app:argType="com.alohamobile.browser.cookieconsent.data.SelectableCookiesRequest" />
+    </fragment>
+</navigation>

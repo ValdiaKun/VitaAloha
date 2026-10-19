@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/dialog_bg_color_baseline" />
+    <corners android:topLeftRadius="@dimen/context_menu_popup_border_radius" android:topRightRadius="@dimen/context_menu_popup_border_radius" android:bottomLeftRadius="@dimen/context_menu_popup_border_radius" android:bottomRightRadius="@dimen/context_menu_popup_border_radius" />
+</shape>

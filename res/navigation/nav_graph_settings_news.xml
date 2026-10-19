@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_settings_news" app:startDestination="@id/newsSettingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_settings_news_area" />
+    <include app:graph="@navigation/nav_graph_settings_news_region" />
+    <fragment android:label="NewsSettingsFragment" android:name="com.alohamobile.news.presentation.fragment.NewsSettingsFragment" android:id="@id/newsSettingsFragment">
+        <argument android:name="isFromNewsHeader" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/action_newsSettingsFragment_to_nav_graph_settings_news_area" app:destination="@id/nav_graph_settings_news_area" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_newsSettingsFragment_to_nav_graph_settings_news_region" app:destination="@id/nav_graph_settings_news_region" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    </fragment>
+    <action android:id="@id/action_global_newsSettingsFragment" app:destination="@id/nav_graph_settings_news" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+</navigation>

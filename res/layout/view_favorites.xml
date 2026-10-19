@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.fragment.app.FragmentContainerView android:name="com.alohamobile.favorites.presentation.fragment.SpeedDialFavoritesFragment" android:id="@id/speedDialFavoritesFragment" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/favorites_horizontal_margin" android:paddingEnd="@dimen/favorites_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

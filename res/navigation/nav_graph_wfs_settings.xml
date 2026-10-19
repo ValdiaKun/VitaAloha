@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_wfs_settings" app:startDestination="@id/wfsSettingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/nav_graph_wfs_info" />
+    <fragment android:label="WfsSettingsFragment" android:name="com.alohamobile.filemanager.wfs.settings.WfsSettingsFragment" android:id="@id/wfsSettingsFragment">
+        <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="sessionEntryPoint" app:argType="com.alohamobile.analytics.core.wfs.WfsSessionEntryPointKey" />
+        <action android:id="@id/action_wfsSettingsFragment_to_wfsInfoFragment" app:destination="@id/nav_graph_wfs_info" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    </fragment>
+</navigation>

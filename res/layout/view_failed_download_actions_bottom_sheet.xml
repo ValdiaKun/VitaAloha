@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/headerLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" app:cardBackgroundColor="?layerColorFloor2" app:cardElevation="0.0dp" app:shapeAppearance="?shapeAppearanceL" app:strokeColor="?fillColorQuinary" app:strokeWidth="1.0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/headerIcon" android:layout_width="@dimen/icon_size_24" android:layout_height="@dimen/icon_size_24" android:src="@drawable/styled_ic_sign_warning" android:importantForAccessibility="no" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:ellipsize="end" android:id="@id/headerTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="20.0dp" android:paddingEnd="0.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/headerIcon" app:layout_constraintTop_toTopOf="@id/headerIcon" />
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorTertiary" android:id="@id/headerDescription" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:lineSpacingExtra="4.0sp" android:paddingStart="20.0dp" android:paddingEnd="0.0dp" app:layout_constraintEnd_toEndOf="@id/headerTitle" app:layout_constraintStart_toStartOf="@id/headerTitle" app:layout_constraintTop_toBottomOf="@id/headerTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottomSheetItemsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

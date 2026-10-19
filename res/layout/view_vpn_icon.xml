@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/icon_size_40" android:minHeight="@dimen/icon_size_40">
+        <View android:layout_gravity="center" android:id="@id/connectionIndicator" android:background="?fillColorQuaternary" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="10.0dp" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/vpnNotConnectedIcon" android:background="?staticColorTransparent" android:layout_width="24.0dp" android:layout_height="32.0dp" android:src="@drawable/ic_vpn_default_merged_30" android:importantForAccessibility="no" app:tint="?fillColorTertiary" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/vpnConnectedIcon" android:background="?staticColorTransparent" android:layout_width="24.0dp" android:layout_height="32.0dp" android:src="@drawable/ic_vpn_default_merged_30" android:scaleX="0.0" android:scaleY="0.0" android:importantForAccessibility="no" app:tint="?colorPrimary" />
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/selectedServerIcon" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="wrap_content" android:layout_marginTop="21.0dp" android:layout_marginStart="26.0dp" android:layout_marginEnd="5.0dp" />
+</merge>

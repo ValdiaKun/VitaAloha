@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragment_crashes_list" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/crashes_summary_textview" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+    <View android:background="?android:listDivider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <ExpandableListView android:id="@id/crashes_list" android:layout_width="match_parent" android:layout_height="match_parent" android:childDivider="#00000000" />
+</LinearLayout>

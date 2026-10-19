@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Nije uspio prijenos %1$d datoteke</item>
+        <item quantity="few">Nije uspio prijenos %1$d datoteke</item>
+        <item quantity="many">Nije uspio prijenos %1$d datoteka</item>
+        <item quantity="other">Nije uspio prijenos %1$d datoteka</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Premašeno je ograničenje. Skratite poruku na %1$d znak i pokušajte ponovno.</item>
+        <item quantity="few">Premašeno je ograničenje. Skratite poruku na %1$d znaka i pokušajte ponovno.</item>
+        <item quantity="many">Premašeno je ograničenje. Skratite poruku na %1$d znakova i pokušajte ponovno.</item>
+        <item quantity="other">Premašeno je ograničenje. Skratite poruku na %1$d znakova i pokušajte ponovno.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d zahtjev preostao</item>
+        <item quantity="few">%1$d zahtjeva preostala</item>
+        <item quantity="many">%1$d zahtjeva preostalo</item>
+        <item quantity="other">%1$d zahtjeva preostalo</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">Imate %1$d besplatan zahtjev dnevno za %2$s. Unaprijedite na Premium Plus i uklonite sva ograničenja!</item>
+        <item quantity="few">Imate %1$d besplatna zahtjeva dnevno za %2$s. Unaprijedite na Premium Plus i uklonite sva ograničenja!</item>
+        <item quantity="many">Imate %1$d besplatnih zahtjeva dnevno za %2$s. Unaprijedite na Premium Plus i uklonite sva ograničenja!</item>
+        <item quantity="other">Imate %1$d besplatnih zahtjeva dnevno za %2$s. Unaprijedite na Premium Plus i uklonite sva ograničenja!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s oznaka</item>
+        <item quantity="few">%s oznake</item>
+        <item quantity="many">%s oznaka</item>
+        <item quantity="other">%s oznaka</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dan</item>
+        <item quantity="few">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dana</item>
+        <item quantity="many">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dana</item>
+        <item quantity="other">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dana</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dan. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili puni doživljaj.</item>
+        <item quantity="few">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dana. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili puni doživljaj.</item>
+        <item quantity="many">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dana. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili puni doživljaj.</item>
+        <item quantity="other">Možete besplatno isprobati naše najbolje značajke uz Premium status na %1$d dana. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili puni doživljaj.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Dajemo vam još %1$d dan besplatnog pristupa, potpuno besplatno</item>
+        <item quantity="few">Dajemo vam još %1$d dana besplatnog pristupa, potpuno besplatno</item>
+        <item quantity="many">Dajemo vam još %1$d dana besplatnog pristupa, potpuno besplatno</item>
+        <item quantity="other">Dajemo vam još %1$d dana besplatnog pristupa, potpuno besplatno</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">Dajemo vam još %1$d dodatni dan potpunog pristupa, i to potpuno besplatno. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili potpuni doživljaj.</item>
+        <item quantity="few">Dajemo vam još %1$d dodatna dana potpunog pristupa, i to potpuno besplatno. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili potpuni doživljaj.</item>
+        <item quantity="many">Dajemo vam još %1$d dodatnih dana potpunog pristupa, i to potpuno besplatno. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili potpuni doživljaj.</item>
+        <item quantity="other">Dajemo vam još %1$d dodatnih dana potpunog pristupa, i to potpuno besplatno. Postavite Alohu kao svoj temeljno zadani preglednik kako biste dobili potpuni doživljaj.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Ako ne oslobodite prostor, datoteke preko granice postat će dostupne samo za očitavanje. Bit će izbrisane nakon %1$d dana.</item>
+        <item quantity="few">Ako ne oslobodite prostor, datoteke preko granice postat će dostupne samo za očitavanje. Bit će izbrisane nakon %1$d dana.</item>
+        <item quantity="many">Ako ne oslobodite prostor, datoteke preko granice postat će dostupne samo za očitavanje. Bit će izbrisane nakon %1$d dana.</item>
+        <item quantity="other">Ako ne oslobodite prostor, datoteke preko granice postat će dostupne samo za očitavanje. Bit će izbrisane nakon %1$d dana.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Vaša pretplata na Aloha Cloud je završila. Aloha Cloud bit će trajno izbrisan za %1$d dan. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+        <item quantity="few">Vaša pretplata na Aloha Cloud je završila. Aloha Cloud bit će trajno izbrisan za %1$d dana. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+        <item quantity="many">Vaša pretplata na Aloha Cloud je završila. Aloha Cloud bit će trajno izbrisan za %1$d dana. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+        <item quantity="other">Vaša pretplata na Aloha Cloud je završila. Aloha Cloud bit će trajno izbrisan za %1$d dana. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Obnovite svoju pretplatu na Aloha Cloud unutar %1$d dana kako ne biste izgubili svoje datoteke u oblaku</item>
+        <item quantity="few">Obnovite svoju pretplatu na Aloha Cloud unutar %1$d dana kako ne biste izgubili svoje datoteke u oblaku</item>
+        <item quantity="many">Obnovite svoju pretplatu na Aloha Cloud unutar %1$d dana kako ne biste izgubili svoje datoteke u oblaku</item>
+        <item quantity="other">Obnovite svoju pretplatu na Aloha Cloud unutar %1$d dana kako ne biste izgubili svoje datoteke u oblaku</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Vaša Aloha Premium pretplata je završila. Vaše datoteke bit će automatski izbrisane za %1$d dan. Kupite pretplatu na Aloha Cloud kako biste zadržali svoje datoteke i dobili dodatni prostor za pohranu.</item>
+        <item quantity="few">Vaša Aloha Premium pretplata je završila. Vaše datoteke bit će automatski izbrisane za %1$d dana. Kupite pretplatu na Aloha Cloud kako biste zadržali svoje datoteke i dobili dodatni prostor za pohranu.</item>
+        <item quantity="many">Vaša Aloha Premium pretplata je završila. Vaše datoteke bit će automatski izbrisane za %1$d dana. Kupite pretplatu na Aloha Cloud kako biste zadržali svoje datoteke i dobili dodatni prostor za pohranu.</item>
+        <item quantity="other">Vaša Aloha Premium pretplata je završila. Vaše datoteke bit će automatski izbrisane za %1$d dana. Kupite pretplatu na Aloha Cloud kako biste zadržali svoje datoteke i dobili dodatni prostor za pohranu.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Vaša pretplata na Aloha Premium subscription je istekla. Aloha Cloud bit će trajno izbrisan za %1$d dan. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+        <item quantity="few">Vaša pretplata na Aloha Premium subscription je istekla. Aloha Cloud bit će trajno izbrisan za %1$d dana. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+        <item quantity="many">Vaša pretplata na Aloha Premium subscription je istekla. Aloha Cloud bit će trajno izbrisan za %1$d dana. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+        <item quantity="other">Vaša pretplata na Aloha Premium subscription je istekla. Aloha Cloud bit će trajno izbrisan za %1$d dana. Obnovite svoju pretplatu kako biste opet dobili pristup.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Obnovite svoju pretplatu na Aloha Premium unutar %1$d dana kako ne bi bile izgubljene vaše datoteke u oblaku</item>
+        <item quantity="few">Obnovite svoju pretplatu na Aloha Premium unutar %1$d dana kako ne bi bile izgubljene vaše datoteke u oblaku</item>
+        <item quantity="many">Obnovite svoju pretplatu na Aloha Premium unutar %1$d dana kako ne bi bile izgubljene vaše datoteke u oblaku</item>
+        <item quantity="other">Obnovite svoju pretplatu na Aloha Premium unutar %1$d dana kako ne bi bile izgubljene vaše datoteke u oblaku</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Neke datoteke bit će izbrisane za %1$d dan</item>
+        <item quantity="few">Neke datoteke bit će izbrisane za %1$d dana</item>
+        <item quantity="many">Neke datoteke bit će izbrisane za %1$d dana</item>
+        <item quantity="other">Neke datoteke bit će izbrisane za %1$d dana</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Neke datoteke bit će izbrisane za %1$d dan. Obnovite svoju pretplatu kako biste zadržali dostupnost svojih datoteka.</item>
+        <item quantity="few">Neke datoteke bit će izbrisane za %1$d dana. Obnovite svoju pretplatu kako biste zadržali dostupnost svojih datoteka.</item>
+        <item quantity="many">Neke datoteke bit će izbrisane za %1$d dana. Obnovite svoju pretplatu kako biste zadržali dostupnost svojih datoteka.</item>
+        <item quantity="other">Neke datoteke bit će izbrisane za %1$d dana. Obnovite svoju pretplatu kako biste zadržali dostupnost svojih datoteka.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Obnovite Premium unutar %1$d dana kako vaše datoteke u Cloudu ne bi bile izgubljene</item>
+        <item quantity="few">Obnovite Premium unutar %1$d dana kako vaše datoteke u Cloudu ne bi bile izgubljene</item>
+        <item quantity="many">Obnovite Premium unutar %1$d dana kako vaše datoteke u Cloudu ne bi bile izgubljene</item>
+        <item quantity="other">Obnovite Premium unutar %1$d dana kako vaše datoteke u Cloudu ne bi bile izgubljene</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d dana</item>
+        <item quantity="one">%d dan</item>
+        <item quantity="few">%d dana</item>
+        <item quantity="many">%d dana</item>
+        <item quantity="other">%d dana</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d predmet bit će trajno izbrisan. Jeste li sigurni da želite isprazniti smeće?</item>
+        <item quantity="few">%d predmeta bit će trajno izbrisana. Jeste li sigurni da želite isprazniti smeće?</item>
+        <item quantity="many">%d predmeta bit će trajno izbrisano. Jeste li sigurni da želite isprazniti smeće?</item>
+        <item quantity="other">%d predmeta bit će trajno izbrisano. Jeste li sigurni da želite isprazniti smeće?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Pogrešna fraza — %1$d pokušaj preostao</item>
+        <item quantity="few">Pogrešna fraza — %1$d pokušaja preostala</item>
+        <item quantity="many">Pogrešna fraza — %1$d pokušaja preostalo</item>
+        <item quantity="other">Pogrešna fraza — %1$d pokušaja preostalo</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">Ne možete odabrati više od %d predmeta</item>
+        <item quantity="few">Ne možete odabrati više od %d predmeta</item>
+        <item quantity="many">Ne možete odabrati više od %d predmeta</item>
+        <item quantity="other">Ne možete odabrati više od %d predmeta</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Premotavanje unaprijed za %d sekundu</item>
+        <item quantity="few">Premotavanje unaprijed za %d sekunde</item>
+        <item quantity="other">Premotavanje unaprijed za %d sekundi</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Premotavanje unatrag za %d sekundu</item>
+        <item quantity="few">Premotavanje unatrag za %d sekunde</item>
+        <item quantity="other">Premotavanje unatrag za %d sekundi</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d predmet</item>
+        <item quantity="few">%d predmeta</item>
+        <item quantity="many">%d predmeta</item>
+        <item quantity="other">%d predmeta</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium završava za %1$d dan</item>
+        <item quantity="few">Free Premium završava za %1$d dana</item>
+        <item quantity="many">Free Premium završava za %1$d dana</item>
+        <item quantity="other">Free Premium završava za %1$d dana</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d dan preostao</item>
+        <item quantity="few">%1$d dana preostala</item>
+        <item quantity="many">%1$d dana preostalo</item>
+        <item quantity="other">%1$d dana preostalo</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d pokušaj preostao</item>
+        <item quantity="few">%1$d pokušaja preostala</item>
+        <item quantity="many">%1$d pokušaja preostalo</item>
+        <item quantity="other">%1$d pokušaja preostalo</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d mjeseci</item>
+        <item quantity="one">%1$d mjesec</item>
+        <item quantity="few">%1$d mjeseca</item>
+        <item quantity="many">%1$d mjeseca</item>
+        <item quantity="other">%1$d mjeseca</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d mjesec</item>
+        <item quantity="few">%1$d mjeseca</item>
+        <item quantity="many">%1$d mjeseci</item>
+        <item quantity="other">%1$d mjeseci</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nova obavijest</item>
+        <item quantity="few">%d nove obavijesti</item>
+        <item quantity="other">%d novih obavijesti</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Spremanje %1$d od %2$d datoteke</item>
+        <item quantity="few">Spremanje %1$d od %2$d datoteke</item>
+        <item quantity="many">Spremanje %1$d od %2$d datoteka</item>
+        <item quantity="other">Spremanje %1$d od %2$d datoteka</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d lozinka pronađena</item>
+        <item quantity="few">%1$d lozinke pronađene</item>
+        <item quantity="many">%1$d lozinki pronađeno</item>
+        <item quantity="other">%1$d lozinki pronađeno</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Povrh još %1$d ekskluzivne značajke dostupne Premium korisnicima</item>
+        <item quantity="few">Povrh još %1$d ekskluzivne značajke dostupne Premium korisnicima</item>
+        <item quantity="many">Povrh još %1$d ekskluzivnih značajki dostupnih Premium korisnicima</item>
+        <item quantity="other">Povrh još %1$d ekskluzivnih značajki dostupnih Premium korisnicima</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d skočni prozor blokiran</item>
+        <item quantity="few">%d skočna prozora blokirana</item>
+        <item quantity="many">%d skočnih prozora blokirano</item>
+        <item quantity="other">%d skočnih prozora blokirano</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d mjesec – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="few">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d mjeseca – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="many">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d mjeseci – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="other">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d mjeseci – i to potpuno besplatno – na naš račun!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> for &lt;b>%1$d tjedan – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="few">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> for &lt;b>%1$d tjedna – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="many">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> for &lt;b>%1$d tjedana – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="other">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> for &lt;b>%1$d tjedana – i to potpuno besplatno – na naš račun!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d godinu – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="few">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d godine – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="many">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d godina – i to potpuno besplatno – na naš račun!&lt;/b></item>
+        <item quantity="other">Možete isprobati naše najbolje značajke uz &lt;b>Premium status&lt;/b> na &lt;b>%1$d godina – i to potpuno besplatno – na naš račun!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s tijekom prvog mjeseca, a zatim, %2$s/mjesečno.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+        <item quantity="few">"%1$s/mjesečno tijekom prva %3$d mjeseca, a zatim, %2$s/mjesečno.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+        <item quantity="many">"%1$s/mjesečno tijekom prvih %3$d mjeseci, a zatim, %2$s/mjesečno.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+        <item quantity="other">"%1$s/mjesečno tijekom prvih %3$d mjeseci, a zatim, %2$s/mjesečno.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s tijekom prve godine, a zatim %2$s/godišnje.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+        <item quantity="few">"%1$s tijekom prve %3$d godine, a zatim %2$s/godišnje.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+        <item quantity="many">"%1$s tijekom prvih %3$d godina, a zatim %2$s/godišnje.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+        <item quantity="other">"%1$s tijekom prvih %3$d godina, a zatim %2$s/godišnje.
+Automatski se obnavlja. Možete otkazati bilo kada."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d mjesec</item>
+        <item quantity="few">prva %1$d mjeseca</item>
+        <item quantity="many">prvih %1$d mjeseci</item>
+        <item quantity="other">prvih %1$d mjeseci</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d godina</item>
+        <item quantity="few">prve %1$d godine</item>
+        <item quantity="many">prvih %1$d godina</item>
+        <item quantity="other">prvih %1$d godina</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/mj. tijekom %2$d mj.</item>
+        <item quantity="few">%1$s/mj. tijekom %2$d mj.</item>
+        <item quantity="many">%1$s/mj. tijekom %2$d mj.</item>
+        <item quantity="other">%1$s/mj. tijekom %2$d mj.</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s tijekom prve godine</item>
+        <item quantity="few">%1$s tijekom prve %2$d godine</item>
+        <item quantity="many">%1$s tijekom prvih %2$d godina</item>
+        <item quantity="other">%1$s tijekom prvih %2$d godina</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d%% popusta na vaš prvi mjesec</item>
+        <item quantity="few">%1$d%% popusta na vaša prva %2$d mjeseca</item>
+        <item quantity="many">%1$d%% popusta na vaših prvih %2$d mjeseci</item>
+        <item quantity="other">%1$d%% popusta na vaših prvih %2$d mjeseci</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Vaši prijatelji dobit će %1$d mjesec Premiuma potpuno besplatno!</item>
+        <item quantity="few">Vaši prijatelji dobit će %1$d mjeseca Premiuma potpuno besplatno!</item>
+        <item quantity="many">Vaši prijatelji dobit će %1$d mjeseci Premiuma potpuno besplatno!</item>
+        <item quantity="other">Vaši prijatelji dobit će %1$d mjeseci Premiuma potpuno besplatno!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Vaši prijatelji dobit će %1$d tjedan Premiuma potpuno besplatno!</item>
+        <item quantity="few">Vaši prijatelji dobit će %1$d tjedna Premiuma potpuno besplatno!</item>
+        <item quantity="many">Vaši prijatelji dobit će %1$d tjedana Premiuma potpuno besplatno!</item>
+        <item quantity="other">Vaši prijatelji dobit će %1$d tjedana Premiuma potpuno besplatno!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Vaši prijatelji dobit će %1$d godinu Premiuma potpuno besplatno!</item>
+        <item quantity="few">Vaši prijatelji dobit će %1$d godine Premiuma potpuno besplatno!</item>
+        <item quantity="many">Vaši prijatelji dobit će %1$d godina Premiuma potpuno besplatno!</item>
+        <item quantity="other">Vaši prijatelji dobit će %1$d godina Premiuma potpuno besplatno!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Zahvaljujući vama, &lt;b>%1$d prijatelj&lt;/b> sad uživa u Aloha pregledniku, a vi uživate u &lt;b>Premium statusu.&lt;/b></item>
+        <item quantity="few">Zahvaljujući vama, &lt;b>%1$d prijatelja&lt;/b> sad uživaju u Aloha pregledniku, a vi uživate u &lt;b>Premium statusu.&lt;/b></item>
+        <item quantity="many">Zahvaljujući vama, &lt;b>%1$d prijatelja&lt;/b> sad uživa u Aloha pregledniku, a vi uživate u &lt;b>Premium statusu.&lt;/b></item>
+        <item quantity="other">Zahvaljujući vama, &lt;b>%1$d prijatelja&lt;/b> sad uživa u Aloha pregledniku, a vi uživate u &lt;b>Premium statusu.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Pozovite još %1$d prijatelja kako biste dobili Free Premium</item>
+        <item quantity="few">Pozovite još %1$d prijatelja kako biste dobili Free Premium</item>
+        <item quantity="many">Pozovite još %1$d prijatelja kako biste dobili Free Premium</item>
+        <item quantity="other">Pozovite još %1$d prijatelja kako biste dobili Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Želite raditi snimke dulje od %1$d sekunde?</item>
+        <item quantity="few">Želite raditi snimke dulje od %1$d sekunde?</item>
+        <item quantity="many">Želite raditi snimke dulje od %1$d sekundi?</item>
+        <item quantity="other">Želite raditi snimke dulje od %1$d sekundi?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">Imate %1$d mjesec Premium pretplate</item>
+        <item quantity="few">Imate %1$d mjeseca Premium pretplate</item>
+        <item quantity="many">Imate %1$d mjeseci Premium pretplate</item>
+        <item quantity="other">Imate %1$d mjeseci Premium pretplate</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">Imate %1$d tjedan Premium pretplate</item>
+        <item quantity="few">Imate %1$d tjedna Premium pretplate</item>
+        <item quantity="many">Imate %1$d tjedana Premium pretplate</item>
+        <item quantity="other">Imate %1$d tjedana Premium pretplate</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">Imate %1$d godinu Premium pretplate</item>
+        <item quantity="few">Imate %1$d godine Premium pretplate</item>
+        <item quantity="many">Imate %1$d godina Premium pretplate</item>
+        <item quantity="other">Imate %1$d godina Premium pretplate</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d lozinka uvezena</item>
+        <item quantity="few">%1$d lozinke uvezene</item>
+        <item quantity="many">%1$d lozinki uvezeno</item>
+        <item quantity="other">%1$d lozinki uvezeno</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d tjedana</item>
+        <item quantity="one">%1$d tjedan</item>
+        <item quantity="few">%1$d tjedna</item>
+        <item quantity="many">%1$d tjedana</item>
+        <item quantity="other">%1$d tjedana</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d tjedan</item>
+        <item quantity="few">%1$d tjedna</item>
+        <item quantity="many">%1$d tjedana</item>
+        <item quantity="other">%1$d tjedana</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d godina</item>
+        <item quantity="one">%1$d godina</item>
+        <item quantity="few">%1$d godina</item>
+        <item quantity="many">%1$d godina</item>
+        <item quantity="other">%1$d godina</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d godinu</item>
+        <item quantity="few">%1$d godine</item>
+        <item quantity="many">%1$d godina</item>
+        <item quantity="other">%1$d godina</item>
+    </plurals>
+</resources>

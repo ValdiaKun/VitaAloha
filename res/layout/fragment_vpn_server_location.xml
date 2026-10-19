@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fragmentRootLayout" android:background="?layerColorFloor1" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <com.alohamobile.component.view.ZeroScreenView android:id="@id/emptySearchZeroScreen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:zeroScreenDescription="@string/zero_screen_description_vpn_servers" app:zeroScreenImage="@drawable/img_lens_120" app:zeroScreenTitle="@string/zero_screen_title_not_found" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton android:id="@id/maybeLaterButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/action_maybe_later" style="?textButtonLargeStyle" />
+    <com.google.android.material.button.MaterialButton android:id="@id/enableButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:text="@string/action_enable" style="?containedButtonLargeStyle" />
+</LinearLayout>

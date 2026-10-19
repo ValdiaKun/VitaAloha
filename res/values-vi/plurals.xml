@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="other">%1$d tệp tải lên không thành công</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="other">Vượt số ký tự cho phép. Xoá bớt %1$d ký tự và thử lại.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="other">Còn %1$d yêu cầu</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="other">Bạn có %1$d yêu cầu miễn phí mỗi ngày trong %2$s. Nâng cấp lên Premium Plus và xoá bỏ mọi giới hạn!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="zero">%s đánh dấu trang</item>
+        <item quantity="other">%s đánh dấu trang</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="other">Bạn có thể thử các tính năng tốt nhất của chúng tôi với trạng thái Premium hoàn toàn miễn phí trong %1$d ngày</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="other">Bạn có thể dùng thử các tính năng tốt nhất của chúng tôi với trạng thái Premium cho %1$d ngày miễn phí. Đặt Aloha làm trình duyệt mặc định của bạn để có được trải nghiệm trọn vẹn.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="other">Chúng tôi tặng bạn thêm %1$d ngày truy cập đầy đủ, hoàn toàn miễn phí</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="other">Chúng tôi đang cung cấp cho bạn thêm %1$d ngày truy cập trọn vẹn, hoàn toàn miễn phí. Đặt Aloha làm trình duyệt mặc định của bạn để có được trải nghiệm trọn vẹn.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="other">Nếu bạn không giải phóng dung lượng, các tệp vượt quá giới hạn sẽ chuyển sang chế độ chỉ đọc. Chúng sẽ bị xóa sau %1$d ngày.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="other">Đăng ký Aloha Cloud của bạn đã hết hạn. Aloha Cloud sẽ bị xóa vĩnh viễn sau %1$d ngày. Gia hạn gói của bạn để khôi phục quyền truy cập.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="other">Gia hạn đăng ký gói Aloha Cloud của bạn trong vòng %1$d ngày để các tệp trên bộ lưu trữ đám mây của bạn không bị mất</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="other">Gói Aloha Premium của bạn đã kết thúc. Các tệp sẽ tự động bị xóa trong %1$d ngày. Mua gói Aloha Cloud để giữ các tệp của bạn và nhận thêm không gian lưu trữ.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="other">Đăng ký Aloha Premium của bạn đã kết thúc. Aloha Cloud sẽ bị xóa vĩnh viễn sau %1$d ngày. Gia hạn gói của bạn để khôi phục quyền truy cập.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="other">Gia hạn gói Aloha Premium của bạn trong vòng %1$d ngày để các tệp trên bộ lưu trữ đám mây của bạn không bị mất</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="other">Một số tệp sẽ bị xoá trong %1$d ngày</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="other">Một số tệp sẽ bị xóa sau %1$d ngày. Gia hạn gói của bạn để có thể tiếp tục truy cập các tệp của bạn.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="other">Gia hạn gói Premium trong %1$d ngày để không bị mất các tệp tin trên đám mây của bạn</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d ngày</item>
+        <item quantity="other">%d ngày</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="zero">%d mục sẽ bị xóa vĩnh viễn. Bạn có chắc chắn muốn dọn sạch thùng rác không?</item>
+        <item quantity="other">%d mục sẽ bị xóa vĩnh viễn. Bạn có chắc chắn muốn dọn sạch thùng rác không?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="other">Cụm từ sai — còn %1$d lượt thử</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="other">Bạn không thể chọn nhiều hơn %d mục</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Tua nhanh %d giây</item>
+        <item quantity="other">Tua nhanh %d giây</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Tua lại %d giây</item>
+        <item quantity="other">Tua lại %d giây</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="zero">%d mục</item>
+        <item quantity="other">%d mục</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="other">Free Premium hết hạn trong %1$d ngày</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="other">Còn %1$d ngày</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="other">Còn %1$d lần thử</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d tháng</item>
+        <item quantity="other">%1$d tháng</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="other">%1$d tháng</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d thông báo mới</item>
+        <item quantity="other">%d thông báo mới</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="other">Đang lưu %1$d của %2$d tệp</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="other">Đã tìm thấy %1$d mật khẩu</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="other">Ngoài ra còn có thêm %1$d tính năng độc quyền hơn có sẵn cho người dùng Premium</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="other">%d pop-up đã chặn</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="other">Bạn có thể dùng thử các tính năng tốt nhất của chúng tôi với &lt;b>Trạng thái Premium&lt;/b> cho &lt;b>%1$d tháng - miễn phí - chúng tôi trả!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="other">Bạn có thể dùng thử các tính năng tốt nhất của chúng tôi với &lt;b>Trạng thái Premium&lt;/b> cho &lt;b>%1$d tuần - miễn phí - chúng tôi bao!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="other">Bạn có thể dùng thử các tính năng tốt nhất của chúng tôi với &lt;b>Trạng thái Premium&lt;/b> cho &lt;b>%1$d năm - miễn phí - chúng tôi mời!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="other">"%1$s/tháng cho tháng đầu, sau đó sẽ là %2$s/tháng.
+Tự động gia hạn. Huỷ bất cứ lúc nào."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="other">"%1$s cho năm đầu, sau đó sẽ là %2$s/năm.
+Tự động gia hạn. Huỷ bất cứ lúc nào."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="other">%1$d tháng đầu</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="other">%1$d năm đầu</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="other">%1$s/tháng cho %2$d tháng</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="other">%1$s cho năm đầu</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="other">Giảm %1$d%% cho tháng đầu tiên</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="other">Bạn bè của bạn sẽ nhận được %1$d tháng sử dụng Premium hoàn toàn miễn phí!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="other">Bạn bè của bạn sẽ nhận được %1$d tuần sử dụng Premium hoàn toàn miễn phí!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="other">Bạn bè của bạn sẽ nhận được %1$d năm sử dụng Premium hoàn toàn miễn phí!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="other">Nhờ có bạn, &lt;b>%1$d bạn bè&lt;/b> đang tận hưởng Aloha và bạn tận hưởng &lt;b>trạng thái Premium.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="other">Mời thêm %1$d bạn bè để nhận Free Premium</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="other">Bạn muốn ghi dài hơn %1$d giây?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="other">Bạn nhận được %1$d tháng sử dụng Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="other">Bạn có %1$d tuần dùng Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="other">Bạn nhận được %1$d năm sử dụng Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="other">%1$d mật khẩu đã được nhập</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d tuần</item>
+        <item quantity="other">%1$d tuần</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="other">%1$d tuần</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d năm</item>
+        <item quantity="other">%1$d năm</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="other">%1$d năm</item>
+    </plurals>
+</resources>

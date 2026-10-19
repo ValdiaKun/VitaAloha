@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <androidx.core.widget.NestedScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/screen_list_bottom_padding" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.alohamobile.settings.core.view.AboutSettingItemView android:id="@id/help" android:layout_width="match_parent" android:layout_height="56.0dp" app:aboutSettingIcon="@drawable/ic_help_24" app:aboutSettingIconTint="?fillColorBrandPrimary" app:aboutSettingText="@string/title_help" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" app:separatorPaddingStart="72.0dp" />
+            <com.alohamobile.settings.core.view.AboutSettingItemView android:id="@id/feedback" android:layout_width="match_parent" android:layout_height="56.0dp" app:aboutSettingIcon="@drawable/ic_feedback" app:aboutSettingIconTint="?fillColorBrandPrimary" app:aboutSettingText="@string/feedback_label" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" app:separatorPaddingStart="72.0dp" />
+            <com.alohamobile.settings.core.view.AboutSettingItemView android:id="@id/rateUs" android:layout_width="match_parent" android:layout_height="56.0dp" app:aboutSettingIcon="@drawable/ic_rate" app:aboutSettingIconTint="?fillColorBrandPrimary" app:aboutSettingText="@string/settings_title_rate_us" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" app:separatorPaddingStart="72.0dp" />
+            <com.alohamobile.settings.core.view.AboutSettingItemView android:id="@id/privacyPolicy" android:layout_width="match_parent" android:layout_height="56.0dp" app:aboutSettingIcon="@drawable/ic_policy" app:aboutSettingIconTint="?fillColorBrandPrimary" app:aboutSettingText="@string/privacy" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" app:separatorPaddingStart="72.0dp" />
+            <com.alohamobile.settings.core.view.AboutSettingItemView android:id="@id/termsAndConditions" android:layout_width="match_parent" android:layout_height="56.0dp" app:aboutSettingIcon="@drawable/ic_terms" app:aboutSettingIconTint="?fillColorBrandPrimary" app:aboutSettingText="@string/terms" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" app:separatorPaddingStart="72.0dp" />
+            <com.alohamobile.settings.core.view.AboutSettingItemView android:id="@id/openSource" android:layout_width="match_parent" android:layout_height="56.0dp" app:aboutSettingIcon="@drawable/ic_coding_24" app:aboutSettingIconTint="?fillColorBrandPrimary" app:aboutSettingText="@string/title_open_source" />
+            <com.alohamobile.component.view.SettingsSeparator android:layout_width="match_parent" android:layout_height="1.0dp" app:separatorPaddingStart="72.0dp" />
+            <com.alohamobile.settings.core.view.AboutSettingItemView android:id="@id/about" android:layout_width="match_parent" android:layout_height="56.0dp" app:aboutSettingIcon="@drawable/ic_about" app:aboutSettingIconTint="?fillColorBrandPrimary" app:aboutSettingText="@string/about" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

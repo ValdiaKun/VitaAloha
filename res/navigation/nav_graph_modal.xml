@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_modal" app:startDestination="@id/modalWindowFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="ModalWindowFragment" android:name="com.alohamobile.modal.ModalWindowFragment" android:id="@id/modalWindowFragment">
+        <argument android:name="url" app:argType="string" />
+        <argument android:name="toolbarTitle" app:argType="string" />
+        <argument android:name="loadsNewWindowsInPlace" android:defaultValue="true" app:argType="boolean" />
+    </fragment>
+</navigation>

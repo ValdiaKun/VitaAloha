@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_vpn_settings" app:startDestination="@id/vpnSettingsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="VpnSettingsFragment" android:name="com.alohamobile.vpn.settings.presentation.VpnSettingsFragment" android:id="@id/vpnSettingsFragment">
+        <action android:id="@id/action_vpnSettingsFragment_to_vpnServerLocationFragment" app:destination="@id/vpnServerLocationFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <argument android:name="highlightViewId" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="clickViewId" android:defaultValue="-1" app:argType="integer" />
+    </fragment>
+    <fragment android:label="VpnServerLocationFragment" android:name="com.alohamobile.vpn.settings.presentation.VpnServerLocationFragment" android:id="@id/vpnServerLocationFragment">
+        <action android:id="@id/action_vpnServerLocationFragment_to_vpnServerLocationRequestFragment" app:destination="@id/vpnServerLocationRequestFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="VpnServerLocationRequestFragment" android:name="com.alohamobile.vpn.settings.presentation.VpnServerLocationRequestFragment" android:id="@id/vpnServerLocationRequestFragment" />
+    <action android:id="@id/action_global_vpnSettingsFragment" app:destination="@id/vpnSettingsFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+</navigation>

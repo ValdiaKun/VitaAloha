@@ -1,0 +1,121 @@
+.class Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl$3;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->startBindingManagement(Landroid/content/Context;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic val$context:Landroid/content/Context;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl$3;->val$context:Landroid/content/Context;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 5
+
+    invoke-static {}, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->z()Lorg/chromium/content/browser/ChildProcessRanking;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lorg/chromium/build/NullUtil;->assumeNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v0, p0, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl$3;->val$context:Landroid/content/Context;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->getConnectionAllocator(Landroid/content/Context;Z)Lorg/chromium/base/process_launcher/ChildConnectionAllocator;
+
+    move-result-object v0
+
+    invoke-static {}, Lorg/chromium/base/process_launcher/ChildProcessConnection;->supportVariableConnections()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    new-instance v0, Lorg/chromium/content/browser/BindingManager;
+
+    iget-object p0, p0, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl$3;->val$context:Landroid/content/Context;
+
+    invoke-static {}, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->z()Lorg/chromium/content/browser/ChildProcessRanking;
+
+    move-result-object v1
+
+    new-instance v2, Lr8/fv0;
+
+    const/4 v3, 0x3
+
+    invoke-direct {v2, v3}, Lr8/fv0;-><init>(I)V
+
+    const/4 v3, -0x1
+
+    invoke-direct {v0, p0, v3, v1, v2}, Lorg/chromium/content/browser/BindingManager;-><init>(Landroid/content/Context;ILjava/lang/Iterable;Ljava/util/function/Consumer;)V
+
+    invoke-static {v0}, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->C(Lorg/chromium/content/browser/BindingManager;)V
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v1, Lorg/chromium/content/browser/BindingManager;
+
+    iget-object p0, p0, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl$3;->val$context:Landroid/content/Context;
+
+    invoke-virtual {v0}, Lorg/chromium/base/process_launcher/ChildConnectionAllocator;->getMaxNumberOfAllocations()I
+
+    move-result v0
+
+    invoke-static {}, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->z()Lorg/chromium/content/browser/ChildProcessRanking;
+
+    move-result-object v2
+
+    new-instance v3, Lr8/fv0;
+
+    const/4 v4, 0x3
+
+    invoke-direct {v3, v4}, Lr8/fv0;-><init>(I)V
+
+    invoke-direct {v1, p0, v0, v2, v3}, Lorg/chromium/content/browser/BindingManager;-><init>(Landroid/content/Context;ILjava/lang/Iterable;Ljava/util/function/Consumer;)V
+
+    invoke-static {v1}, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->C(Lorg/chromium/content/browser/BindingManager;)V
+
+    :goto_0
+    invoke-static {}, Lorg/chromium/content/browser/ChildProcessConnectionMetrics;->getInstance()Lorg/chromium/content/browser/ChildProcessConnectionMetrics;
+
+    move-result-object p0
+
+    invoke-static {}, Lorg/chromium/content/browser/ChildProcessLauncherHelperImpl;->x()Lorg/chromium/content/browser/BindingManager;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lorg/chromium/content/browser/ChildProcessConnectionMetrics;->setBindingManager(Lorg/chromium/content/browser/BindingManager;)V
+
+    return-void
+.end method

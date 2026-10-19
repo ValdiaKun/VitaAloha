@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="@dimen/counter_floating_action_button_size" android:layout_height="@dimen/counter_floating_action_button_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/counterFab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_upload" android:importantForAccessibility="no" app:backgroundTint="?fillColorBrandPrimary" app:tint="?fillColorOnAccent" />
+    <FrameLayout android:id="@id/counterLayout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/counter_floating_action_button_counter_size" android:layout_height="@dimen/counter_floating_action_button_counter_size" android:layout_marginTop="@dimen/counter_floating_action_button_counter_margin_top" android:layout_marginStart="@dimen/counter_floating_action_button_counter_margin_start" android:outlineProvider="none">
+        <View android:id="@id/counterBackground" android:background="@drawable/bg_counter_fab_indicator" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption2Medium" android:textColor="?textColorOnAccent" android:gravity="center" android:id="@id/counterTextView" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="match_parent" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="6.0sp" app:autoSizeTextType="uniform" />
+    </FrameLayout>
+</merge>

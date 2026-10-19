@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/toolbarComposeView" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/autoInsetsContent" android:padding="8.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LegacyGridLayoutManager" app:spanCount="2" />
+            <com.alohamobile.component.view.ZeroScreenView android:id="@id/zeroView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:zeroScreenDescription="@string/zero_screen_description_trash" app:zeroScreenImage="@drawable/img_bin_120" app:zeroScreenTitle="@string/zero_screen_title_trash" />
+        </FrameLayout>
+    </LinearLayout>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/overflowMenuComposeView" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

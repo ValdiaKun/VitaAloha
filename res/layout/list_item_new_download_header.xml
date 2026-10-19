@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1.0px" android:layout_height="1.0px" />
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/fileNameInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_marginBottom="12.0dp" android:hint="@string/title" android:layout_marginHorizontal="16.0dp">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/fileNameEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:selectAllOnFocus="true" android:maxLength="@integer/file_name_max_length" android:inputType="textCapSentences" android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textAppearance="?textAppearanceBody1Medium" android:textColor="?textColorPrimary" android:id="@id/recentFolderHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/new_download_recent" android:paddingHorizontal="16.0dp" android:paddingVertical="12.0dp" />
+    <include android:id="@id/recentFolderLayout" layout="@layout/list_item_folder_picker" />
+    <TextView android:textAppearance="?textAppearanceBody1Medium" android:textColor="?textColorPrimary" android:id="@id/locationFolderHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_new_download_location" android:paddingHorizontal="16.0dp" android:paddingVertical="12.0dp" />
+</LinearLayout>

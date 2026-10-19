@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.alohamobile.component.view.SwitchIconedView android:id="@id/vpnSwitch" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" app:switchIconedDescription="@string/feature_state_off" app:switchIconedIcon="@drawable/styled_ic_vpn_default_24" app:switchIconedState="off" app:switchIconedText="@string/vpn_string" />
+    <Space android:layout_width="match_parent" android:layout_height="12.0dp" />
+    <com.alohamobile.component.view.SwitchIconedView android:id="@id/trafficMaskSwitch" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" app:switchIconedDescription="@string/feature_state_off" app:switchIconedIcon="@drawable/ic_mask_24" app:switchIconedState="off" app:switchIconedText="@string/title_traffic_mask" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dp" android:width="40.0dp" android:viewportWidth="40.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,19.2C0,12.479 0,9.119 1.308,6.552C2.458,4.294 4.294,2.458 6.552,1.308C9.119,0 12.479,0 19.2,0H20.8C27.521,0 30.881,0 33.448,1.308C35.706,2.458 37.542,4.294 38.692,6.552C40,9.119 40,12.479 40,19.2V20.8C40,27.521 40,30.881 38.692,33.448C37.542,35.706 35.706,37.542 33.448,38.692C30.881,40 27.521,40 20.8,40H19.2C12.479,40 9.119,40 6.552,38.692C4.294,37.542 2.458,35.706 1.308,33.448C0,30.881 0,27.521 0,20.8V19.2Z" />
+        <group>
+            <clip-path android:pathData="M0,0h40v40h-40z" />
+            <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M0,0h40v40h-40z" />
+        </group>
+        <group>
+            <clip-path android:pathData="M10,10h20v20h-20z" />
+            <path android:fillColor="?fillColorBrandSecondary" android:pathData="M10.01,12.998C10.011,11.342 11.354,10 13.01,10H27C28.657,10 30,11.343 30,13V27C30,28.657 28.657,30 27,30H13.002C11.344,30 10.001,28.656 10.002,26.998L10.01,12.998Z" />
+        </group>
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M12.009,16.999C12.01,16.447 12.457,16 13.009,16H27C27.553,16 28,16.448 28,17V27C28,27.552 27.553,28 27,28H13.001C12.449,28 12.001,27.552 12.001,26.999L12.009,16.999Z" android:fillType="evenOdd" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M13.001,12C12.449,12 12.001,12.448 12.001,12.999C12.001,13.552 12.448,14 13.001,14C13.553,14 14,13.552 14,13C14,12.448 13.553,12 13.001,12Z" android:fillType="evenOdd" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M15.001,12.999C15.001,12.448 15.449,12 16.001,12C16.553,12 17,12.448 17,13C17,13.552 16.553,14 16.001,14C15.448,14 15.001,13.552 15.001,12.999Z" android:fillType="evenOdd" />
+        <path android:fillColor="?fillColorBrandQuaternary" android:pathData="M19.001,12C18.449,12 18.001,12.448 18.001,12.999C18.001,13.552 18.448,14 19.001,14C19.553,14 20,13.552 20,13C20,12.448 19.553,12 19.001,12Z" android:fillType="evenOdd" />
+    </group>
+</vector>

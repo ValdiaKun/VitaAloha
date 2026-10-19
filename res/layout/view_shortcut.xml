@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton android:id="@id/shortcutButton" android:focusable="false" android:clickable="false" android:layout_width="@dimen/icon_size_56" android:layout_height="@dimen/icon_size_56" android:layout_marginTop="11.0dp" android:insetLeft="0.0dp" android:insetRight="0.0dp" android:insetTop="0.0dp" android:insetBottom="0.0dp" android:importantForAccessibility="no" android:backgroundTint="?fillColorBrandPrimary" app:iconTint="?fillColorOnAccent" app:shapeAppearance="?shapeAppearanceL" style="?materialIconButtonFilledStyle" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/shortcutTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="11.0dp" android:maxLines="2" android:paddingStart="3.0dp" android:paddingEnd="3.0dp" app:autoSizeTextType="none" />
+</merge>

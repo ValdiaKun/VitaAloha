@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?android:listChoiceBackgroundIndicator" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListMenuItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioButton android:id="@id/radio_button" android:clickable="false" app:buttonCompat="@drawable/btn_radio" style="@style/ListMenuItemIconStyle.Start" />
+    <TextView android:ellipsize="end" android:id="@id/radio_button_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:labelFor="@id/radio_button" style="@style/TextAppearance.DensityAdaptive.ListMenuItem" />
+</LinearLayout>

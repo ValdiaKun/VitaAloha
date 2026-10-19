@@ -1,0 +1,155 @@
+.class public final Lr8/gq1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/security/PublicKey;
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x4df536aca40a3826L
+
+
+# instance fields
+.field public transient a:Lr8/oxo;
+
+.field public transient b:Lr8/m4;
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lr8/gq1;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1
+
+    check-cast p1, Lr8/gq1;
+
+    :try_start_0
+    iget-object v1, p0, Lr8/gq1;->b:Lr8/m4;
+
+    iget-object v3, p1, Lr8/gq1;->b:Lr8/m4;
+
+    invoke-virtual {v1, v3}, Lr8/p4;->q(Lr8/p4;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object p0, p0, Lr8/gq1;->a:Lr8/oxo;
+
+    invoke-virtual {p0}, Lr8/oxo;->getEncoded()[B
+
+    move-result-object p0
+
+    iget-object p1, p1, Lr8/gq1;->a:Lr8/oxo;
+
+    invoke-virtual {p1}, Lr8/oxo;->getEncoded()[B
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Ljava/util/Arrays;->equals([B[B)Z
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-eqz p0, :cond_1
+
+    return v0
+
+    :catch_0
+    :cond_1
+    return v2
+.end method
+
+.method public final getAlgorithm()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "XMSS"
+
+    return-object p0
+.end method
+
+.method public final getEncoded()[B
+    .locals 0
+
+    :try_start_0
+    iget-object p0, p0, Lr8/gq1;->a:Lr8/oxo;
+
+    invoke-static {p0}, Lr8/boj;->d(Lr8/oa1;)Lr8/cal;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lr8/j4;->getEncoded()[B
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public final getFormat()Ljava/lang/String;
+    .locals 0
+
+    const-string p0, "X.509"
+
+    return-object p0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    :try_start_0
+    iget-object v0, p0, Lr8/gq1;->b:Lr8/m4;
+
+    iget-object v0, v0, Lr8/m4;->a:[B
+
+    invoke-static {v0}, Lr8/x2p;->H([B)I
+
+    move-result v0
+
+    iget-object v1, p0, Lr8/gq1;->a:Lr8/oxo;
+
+    invoke-virtual {v1}, Lr8/oxo;->getEncoded()[B
+
+    move-result-object v1
+
+    invoke-static {v1}, Lr8/x2p;->H([B)I
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    mul-int/lit8 p0, p0, 0x25
+
+    add-int/2addr p0, v0
+
+    return p0
+
+    :catch_0
+    iget-object p0, p0, Lr8/gq1;->b:Lr8/m4;
+
+    iget-object p0, p0, Lr8/m4;->a:[B
+
+    invoke-static {p0}, Lr8/x2p;->H([B)I
+
+    move-result p0
+
+    return p0
+.end method

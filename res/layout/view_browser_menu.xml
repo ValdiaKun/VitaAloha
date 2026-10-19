@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_gravity="bottom" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/primaryMenuLayout" android:layout_width="match_parent" android:layout_height="@dimen/menu_container_height_collapsed">
+        <View android:id="@id/menuDivider" android:background="?fillColorSenary" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <com.alohamobile.browser.component.menu.presentation.view.FiveCellsLayout android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <com.alohamobile.browser.component.menu.presentation.view.ImageMenuButton android:id="@id/backwardButton" android:layout_width="match_parent" android:layout_height="match_parent" app:menuImageButtonIcon="@drawable/ic_chevron_left_24" />
+            <com.alohamobile.browser.component.menu.presentation.view.HomeButton android:id="@id/forwardButton" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <com.alohamobile.browser.component.menu.presentation.view.MenuButtonWithIndicator android:id="@id/openMenuButton" android:layout_width="match_parent" android:layout_height="match_parent" app:menuImageButtonIcon="@drawable/ic_menu_24" />
+            <com.alohamobile.browser.component.menu.presentation.view.MenuButtonWithIndicator android:id="@id/downloadsButton" android:layout_width="match_parent" android:layout_height="match_parent" app:menuImageButtonIcon="@drawable/ic_downloads_24" />
+            <com.alohamobile.browser.component.menu.presentation.view.TabsMenuButton android:id="@id/tabsButton" android:layout_width="match_parent" android:layout_height="match_parent" app:menuImageButtonIcon="@drawable/ic_tabs_normal" />
+        </com.alohamobile.browser.component.menu.presentation.view.FiveCellsLayout>
+    </LinearLayout>
+</merge>

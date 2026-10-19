@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu android:id="@id/bookmarksToolbarPopupMenu"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search_aloha" android:id="@id/searchAction" android:orderInCategory="1" android:title="@string/title_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:iconTint="?fillColorPrimary" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/styled_ic_sync_no_profile" android:id="@id/actionSync" android:orderInCategory="2" android:title="@string/profile_settings_synchronization_title" app:showAsAction="always" />
+    <item android:id="@id/actionAddBookmark" android:orderInCategory="3" android:title="@string/add_bookmark" app:showAsAction="never" />
+    <item android:id="@id/actionAddBookmarksFolder" android:orderInCategory="4" android:title="@string/bookmarks_menu_add_folder" app:showAsAction="never" />
+    <item android:id="@id/actionImportBookmarks" android:orderInCategory="5" android:title="@string/bookmarks_import" app:showAsAction="never" />
+    <item android:id="@id/actionExportBookmarks" android:orderInCategory="6" android:title="@string/bookmarks_export" app:showAsAction="never" />
+    <item android:id="@id/actionSortBookmarks" android:orderInCategory="7" android:title="@string/downloads_sort_by" app:showAsAction="never" />
+    <item android:id="@id/actionViewMode" android:orderInCategory="8" android:title="@string/bookmarks_view_mode" app:showAsAction="never" />
+    <item android:id="@id/actionSelectBookmarks" android:orderInCategory="9" android:title="@string/start_edit" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="@dimen/onboarding_popup_width" android:layout_height="wrap_content" android:layoutDirection="locale" app:cardBackgroundColor="?fillColorBrandPrimary" app:shapeAppearance="?shapeAppearanceXL"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorButtonPrimary" android:id="@id/onboardingMessage" android:paddingTop="24.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dp" />
+        <com.google.android.material.button.MaterialButton android:textAppearance="?textAppearanceButton" android:textColor="?textColorButtonPrimary" android:layout_gravity="end" android:id="@id/onboardingOkButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="50.0dp" android:minWidth="44.0dp" android:text="@string/ok" android:layout_marginHorizontal="16.0dp" app:rippleColor="?rippleColorBrandSecondary" style="?textButtonStyle" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

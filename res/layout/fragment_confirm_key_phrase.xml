@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/autoInsetsContent" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/toolbar_separated" />
+    <androidx.core.widget.NestedScrollView android:clipChildren="false" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toTopOf="@id/continueButton" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:paddingTop="24.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp">
+            <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/encryption_title_confirm_key_phrase" />
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:id="@id/keyPhraseInstruction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/encryption_subtitle_confirm_key_phrase" />
+            <com.alohamobile.component.keyphrase.KeyPhraseView android:id="@id/keyPhraseView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" app:keyPhraseMode="confirm" />
+            <TextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorNegative" android:id="@id/invalidKeyPhraseLabel" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/encryption_error_key_phrase_incorrect" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.alohamobile.component.button.ProgressButton android:id="@id/continueButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:progressButtonState="disabled" app:progressButtonText="@string/button_continue" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_cloud_managed_elsewhere" app:startDestination="@id/cloudManagedElsewhereFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="CloudManagedElsewhereFragment" android:name="com.alohamobile.cloud.main.presentation.subscription.CloudManagedElsewhereFragment" android:id="@id/cloudManagedElsewhereFragment">
+        <argument android:name="entryPoint" app:argType="com.alohamobile.cloud.navigation.CloudSubscriptionEntryPoint" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:tag="toolbar" android:background="@null" android:layout_width="match_parent" style="@style/Component.Aloha.Toolbar" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" android:layout_marginHorizontal="64.0dp">
+            <TextView android:textAppearance="?textAppearanceBody2Medium" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_two_factor_authentication" android:maxLines="2" />
+            <com.alohamobile.component.view.ProgressTrackerView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:progressTrackerViewStep="3" app:progressTrackerViewStepsTotal="3" />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/profile_enter_confirmation_code_title" android:layout_marginHorizontal="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:id="@id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/profile_enter_confirmation_code_description" android:layout_marginHorizontal="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+            <com.alohamobile.component.view.NumberInputView android:id="@id/inputCodeView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginHorizontal="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/description" />
+            <com.alohamobile.component.button.ProgressButton android:id="@id/continueButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:layout_marginBottom="8.0dp" android:layout_marginHorizontal="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/inputCodeView" app:progressButtonText="@string/action_confirm" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">Upload van %1$d bestand niet gelukt</item>
+        <item quantity="other">Upload van %1$d bestanden niet gelukt</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Limiet overschreden. Kort bericht in tot %1$d teken en probeer nogmaals.</item>
+        <item quantity="other">Limiet overschreden. Kort bericht in tot %1$d tekens en probeer nogmaals.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d vraag over</item>
+        <item quantity="other">%1$d vragen over</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">U heeft %1$d gratis verzoek per dag voor %2$s. Upgrade naar Premium Plus en verwijder alle beperkingen!</item>
+        <item quantity="other">U heeft %1$d gratis verzoeken per dag voor %2$s. Upgrade naar Premium Plus en verwijder alle beperkingen!</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s bladwijzer</item>
+        <item quantity="other">%s bladwijzers</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">U kunt onze beste functies uitproberen met %1$d dag gratis Premium status</item>
+        <item quantity="other">U kunt onze beste functies uitproberen met %1$d dagen gratis Premium status</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">Probeer onze beste mogelijkheden met Premium status, %1$d dag gratis. Stel Aloha in als uw standaardbrowser voor de beste ervaring.</item>
+        <item quantity="other">Probeer onze beste mogelijkheden met Premium status, %1$d dagen gratis. Stel Aloha in als uw standaardbrowser voor de beste ervaring.</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">We geven u %1$d extra dag volledige toegang, helemaal gratis</item>
+        <item quantity="other">We geven u %1$d extra dagen volledige toegang, helemaal gratis</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">We geven u %1$d dag langer volledige toegang, helemaal gratis. Stel Aloha in als uw standaardbrowser voor de beste ervaring.</item>
+        <item quantity="other">We geven u %1$d dagen langer volledige toegang, helemaal gratis. Stel Aloha in als uw standaardbrowser voor de beste ervaring.</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Als u geen ruimte vrijmaakt, wordt alles wat boven de limiet uitkomt alleen-lezen en over %1$d dag gewist.</item>
+        <item quantity="other">Als u geen ruimte vrijmaakt, wordt alles wat boven de limiet uitkomt alleen-lezen en over %1$d dagen gewist.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Uw Aloha Cloud abonnement is verlopen. Aloha Cloud wordt over %1$d dag permanent verwijderd. Verleng uw abonnement om toegang te behouden.</item>
+        <item quantity="other">Uw Aloha Cloud abonnement is verlopen. Aloha Cloud wordt over %1$d dagen permanent verwijderd. Verleng uw abonnement om toegang te behouden.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Verleng uw Aloha Cloud-abonnement binnen %1$d dag om uw bestanden niet te verliezen</item>
+        <item quantity="other">Verleng uw Aloha Cloud-abonnement binnen %1$d dagen om uw bestanden niet te verliezen</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Uw Aloha Premium abonnement is beëindigd. Uw bestanden worden over %1$d dag automatisch verwijderd. Neem een Aloha Cloud abonnement om uw bestanden te behouden en over meer opslagruimte te beschikken.</item>
+        <item quantity="other">Uw Aloha Premium abonnement is beëindigd. Uw bestanden worden over %1$d dagen automatisch verwijderd. Neem een Aloha Cloud abonnement om uw bestanden te behouden en over meer opslagruimte te beschikken.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Uw Aloha Premium abonnement is verlopen. Aloha Cloud wordt over %1$d dag permanent gewist. Verleng uw abonnement om weer toegang te krijgen.</item>
+        <item quantity="other">Uw Aloha Premium abonnement is verlopen. Aloha Cloud wordt over %1$d dagen permanent gewist. Verleng uw abonnement om weer toegang te krijgen.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Verleng uw Aloha Premium-abonnement binnen %1$d dag om uw bestanden niet te verliezen</item>
+        <item quantity="other">Verleng uw Aloha Premium-abonnement binnen %1$d dagen om uw bestanden niet te verliezen</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Sommige bestanden worden over %1$d dag gewist</item>
+        <item quantity="other">Sommige bestanden worden over %1$d dagen gewist</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Sommige bestanden worden over %1$d dag verwijderd. Verleng uw abonnement om toegang tot uw bestanden te behouden.</item>
+        <item quantity="other">Sommige bestanden worden over %1$d dagen verwijderd. Verleng uw abonnement om toegang tot uw bestanden te behouden.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Verleng Premium binnen %1$d dag zodat u uw cloud-bestanden niet verliest</item>
+        <item quantity="other">Verleng Premium binnen %1$d dagen zodat u uw cloud-bestanden niet verliest</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d dagen</item>
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dagen</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d item wordt permanent verwijderd. Weet u zeker dat u de prullenmand wilt legen?</item>
+        <item quantity="other">%d items worden permanent verwijderd. Weet u zeker dat u de prullenmand wilt legen?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Verkeerde zin — %1$d poging over</item>
+        <item quantity="other">Verkeerde zin — %1$d pogingen over</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">U kunt niet meer dan %d item kiezen</item>
+        <item quantity="other">U kunt niet meer dan %d items kiezen</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d seconde vooruitspoelen</item>
+        <item quantity="other">%d seconden vooruitspoelen</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d seconde terugspoelen</item>
+        <item quantity="other">%d seconden terugspoelen</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium eindigt over %1$d dag</item>
+        <item quantity="other">Free Premium eindigt over %1$d dagen</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d dag over</item>
+        <item quantity="other">%1$d dagen over</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d poging over</item>
+        <item quantity="other">%1$d pogingen over</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d maanden</item>
+        <item quantity="one">%1$d maand</item>
+        <item quantity="other">%1$d maanden</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d maand</item>
+        <item quantity="other">%1$d maanden</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nieuwe melding</item>
+        <item quantity="other">%d nieuwe meldingen</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">Bestand %1$d van %2$d opslaan</item>
+        <item quantity="other">Bestand %1$d van %2$d opslaan</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d wachtwoord gevonden</item>
+        <item quantity="other">%1$d wachtwoorden gevonden</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">Plus nog %1$d functie exclusief voor Premium gebruikers</item>
+        <item quantity="other">Plus nog %1$d functies exclusief voor Premium gebruikers</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d pop-up geblokkeerd</item>
+        <item quantity="other">%d pop-ups geblokkeerd</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">U kunt onze beste functies uitproberen met &lt;b>Premium status&lt;/b> gedurende &lt;b>%1$d maand – gratis – op onze kosten!&lt;/b></item>
+        <item quantity="other">U kunt onze beste functies uitproberen met &lt;b>Premium status&lt;/b> gedurende &lt;b>%1$d maanden – gratis – op onze kosten!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">U kunt onze beste functies uitproberen met &lt;b>Premium status&lt;/b> gedurende &lt;b>%1$d week – gratis – op onze kosten!&lt;/b></item>
+        <item quantity="other">U kunt onze beste functies uitproberen met &lt;b>Premium status&lt;/b> gedurende &lt;b>%1$d weken – gratis – op onze kosten!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">U kunt onze beste functies uitproberen met &lt;b>Premium status&lt;/b> gedurende &lt;b>%1$d jaar – gratis – op onze kosten!&lt;/b></item>
+        <item quantity="other">U kunt onze beste functies uitproberen met &lt;b>Premium status&lt;/b> gedurende &lt;b>%1$d jaar – gratis – op onze kosten!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"%1$s voor de eerste maand, daarna %2$s/maand.
+Wordt automatisch verlengd. Op elk moment opzegbaar."</item>
+        <item quantity="other">"%1$s/maand voor de eerste %3$d maanden, daarna %2$s/maand.
+Wordt automatisch verlengd. Op elk moment opzegbaar."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"%1$s voor het eerste jaar, daarna %2$s/jaar.
+Auto-verlengt. Altijd opzegbaar."</item>
+        <item quantity="other">"%1$s voor de eerste %3$d jaar, daarna %2$s/jaar.
+Auto-verlengt. Altijd opzegbaar."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d maand</item>
+        <item quantity="other">eerste %1$d maanden</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d jaar</item>
+        <item quantity="other">eerste %1$d jaar</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%1$s/mnd gedurende %2$d mnd</item>
+        <item quantity="other">%1$s/mnd gedurende %2$d mnd</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">%1$s voor het eerste jaar</item>
+        <item quantity="other">%1$s voor de eerste %2$d jaar</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">%1$d%% korting op uw eerste maand</item>
+        <item quantity="other">%1$d%% korting op uw eerste %2$d maanden</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">Uw vrienden krijgen %1$d maand Premium helemaal gratis!</item>
+        <item quantity="other">Uw vrienden krijgen %1$d maanden Premium helemaal gratis!</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">Uw vrienden krijgen %1$d week Premium helemaal gratis!</item>
+        <item quantity="other">Uw vrienden krijgen %1$d weken Premium helemaal gratis!</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">Uw vrienden krijgen %1$d jaar Premium helemaal gratis!</item>
+        <item quantity="other">Uw vrienden krijgen %1$d jaar Premium helemaal gratis!</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">Dankzij u geniet &lt;b>%1$d vriend&lt;/b> van Aloha en geniet u van &lt;b>Premium status.&lt;/b></item>
+        <item quantity="other">Dankzij u genieten &lt;b>%1$d vrienden&lt;/b> van Aloha en geniet u van &lt;b>Premium status.&lt;/b></item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Nodig nog %1$d vriend uit om Free Premium te ontvangen</item>
+        <item quantity="other">Nodig nog %1$d vrienden uit om Free Premium te ontvangen</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">Wilt u langer dan %1$d seconde opnemen?</item>
+        <item quantity="other">Wilt u langer dan %1$d seconden opnemen?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">U heeft %1$d maand Premium</item>
+        <item quantity="other">U heeft %1$d maanden Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">U heeft %1$d week Premium</item>
+        <item quantity="other">U heeft %1$d weken Premium</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">U heeft %1$d jaar Premium</item>
+        <item quantity="other">U heeft %1$d jaar Premium</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d paswoord geïmporteerd</item>
+        <item quantity="other">%1$d paswoorden geïmporteerd</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d weken</item>
+        <item quantity="one">%1$d week</item>
+        <item quantity="other">%1$d weken</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d week</item>
+        <item quantity="other">%1$d weken</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d jaren</item>
+        <item quantity="one">%1$d jaar</item>
+        <item quantity="other">%1$d jaren</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d jaar</item>
+        <item quantity="other">%1$d jaar</item>
+    </plurals>
+</resources>

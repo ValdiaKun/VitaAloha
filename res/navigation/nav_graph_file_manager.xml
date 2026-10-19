@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_file_manager" app:startDestination="@id/fileManagerFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <argument android:name="initialFolderPath" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    <include app:graph="@navigation/nav_graph_video_trimming" />
+    <include app:graph="@navigation/nav_graph_wfs_first_visit" />
+    <include app:graph="@navigation/nav_graph_wfs_settings" />
+    <fragment android:label="FileManagerFragment" android:name="com.alohamobile.filemanager.presentation.FileManagerFragment" android:id="@id/fileManagerFragment">
+        <action android:id="@id/action_fileManagerFragment_to_reportDownloadFragment" app:destination="@id/reportDownloadFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_fileManagerFragment_to_trashBinFragment" app:destination="@id/trashBinFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_fileManagerFragment_to_nav_graph_cloud" app:destination="@id/nav_graph_cloud" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="origin" app:argType="com.alohamobile.cloud.navigation.CloudScreenOrigin" />
+        </action>
+        <action android:id="@id/action_fileManagerFragment_to_nav_graph_wfs_settings" app:destination="@id/nav_graph_wfs_settings" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="sessionEntryPoint" app:argType="com.alohamobile.analytics.core.wfs.WfsSessionEntryPointKey" />
+            <argument android:name="highlightSettingsItemInfoOrdinal" android:defaultValue="-1" app:argType="integer" />
+        </action>
+        <action android:id="@id/action_fileManagerFragment_to_nav_graph_wfs_first_visit" app:destination="@id/nav_graph_wfs_first_visit" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit">
+            <argument android:name="entryPoint" app:argType="com.alohamobile.filemanager.wfs.core.info.WfsInfoEntryPoint" />
+        </action>
+        <argument android:name="initialFolderPath" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="ReportDownloadFragment" android:name="com.alohamobile.filemanager.feature.report.ReportFailedDownloadFragment" android:id="@id/reportDownloadFragment">
+        <argument android:name="downloadLocalPath" app:argType="string" />
+    </fragment>
+    <fragment android:label="TrashBinFragment" android:name="com.alohamobile.filemanager.feature.trashbin.TrashBinFragment" android:id="@id/trashBinFragment" />
+</navigation>

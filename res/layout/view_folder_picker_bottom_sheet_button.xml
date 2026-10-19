@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/buttonContainer" android:background="?layerColorFloor1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/bottom_sheet_folder_picker_button_container_min_height" android:outlineProvider="none"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/separator" android:background="?fillColorSenary" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" />
+    <com.google.android.material.button.MaterialButton android:enabled="false" android:id="@id/okButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dp" android:layout_marginVertical="10.0dp" style="?containedButtonSmallStyle" />
+</LinearLayout>

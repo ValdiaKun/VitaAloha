@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/crashes_list_activity_layout" android:background="@color/warning_yellow" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10.0dp" android:paddingEnd="10.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/black" android:orientation="horizontal" android:id="@id/error_text" android:paddingTop="15.0dp" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="15.0dp" android:drawableStart="@drawable/ic_alert_error" style="?android:textAppearanceMedium" />
+    <Button android:textColor="@android:color/black" android:layout_gravity="end" android:id="@id/action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:buttonBarButtonStyle" />
+</LinearLayout>

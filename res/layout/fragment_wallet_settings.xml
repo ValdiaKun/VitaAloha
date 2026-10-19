@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <androidx.core.widget.NestedScrollView android:id="@id/autoInsetsContent" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/screen_list_bottom_padding" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_rounded_rectangle_l" android:paddingTop="16.0dp" android:paddingBottom="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:backgroundTint="?layerColorFloor1" android:paddingHorizontal="16.0dp">
+                <ImageView android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/img_wallet_wings_120" android:importantForAccessibility="no" />
+                <TextView android:textAppearance="?textAppearanceBody2Medium" android:textColor="?textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/wallet_deprecated_title" android:textAlignment="center" />
+                <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/wallet_deprecated_description" android:textAlignment="center" />
+            </LinearLayout>
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/recoveryPhraseSetting" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingTitle="@string/wallet_setting_recovery_phrase" />
+            <com.alohamobile.component.view.SettingsSeparator android:id="@id/recoveryPhraseSeparator" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/privateKeySetting" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingTitle="@string/wallet_setting_private_key" />
+            <com.alohamobile.component.view.SettingsSeparator android:id="@id/privateKeySeparator" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/resetWallet" android:background="@drawable/ripple_negative_secondary_rectangle_layer_floor_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingShowSwitch="false" app:settingTitle="@string/settings_wallet_reset_wallet" app:settingTitleColor="?textColorNegative" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

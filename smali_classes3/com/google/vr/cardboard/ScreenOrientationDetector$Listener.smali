@@ -1,0 +1,18 @@
+.class public interface abstract Lcom/google/vr/cardboard/ScreenOrientationDetector$Listener;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/vr/cardboard/ScreenOrientationDetector;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Listener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onScreenOrientationChanged(I)V
+.end method

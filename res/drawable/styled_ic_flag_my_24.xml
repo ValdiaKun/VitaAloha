@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M2,6C2,4.895 2.895,4 4,4H20C21.105,4 22,4.895 22,6V17C22,18.105 21.105,19 20,19H4C2.895,19 2,18.105 2,17V6Z" />
+        <path android:fillColor="#f7fcff" android:pathData="M2,4H22V19H2V4Z" android:fillType="evenOdd" />
+        <path android:fillColor="#e31d1c" android:pathData="M2.017,7.125h20v1.813h-20z" />
+        <path android:fillColor="#e31d1c" android:pathData="M2.017,10.375h20v1.813h-20z" />
+        <path android:fillColor="#e31d1c" android:pathData="M2,13.5h20v1.563h-20z" />
+        <path android:fillColor="#e31d1c" android:pathData="M2,16.625h20v1.688h-20z" />
+        <path android:fillColor="#e31d1c" android:pathData="M2,4H22V5.563H2V4Z" android:fillType="evenOdd" />
+        <path android:fillColor="#3d58db" android:pathData="M2,4H12V12.5H2V4Z" android:fillType="evenOdd" />
+        <path android:fillColor="#feca00" android:pathData="M4.246,7.876C4.246,8.737 4.651,9.55 5.475,9.55C6.712,9.55 6.953,9.286 7.53,8.923C7.666,9.229 7.206,10.54 5.458,10.54C4.061,10.512 2.931,9.389 2.931,7.876C2.931,6.14 4.209,5.202 5.423,5.213C6.496,5.213 7.633,5.821 7.599,6.598C7.093,6.104 6.544,6.104 5.631,6.104C4.718,6.104 4.246,7.016 4.246,7.876Z" android:fillType="evenOdd" />
+        <path android:fillColor="#feca00" android:pathData="M8.875,8.563L8.296,9.408L8.324,8.383L7.358,8.727L7.983,7.915L7,7.625L7.983,7.335L7.358,6.523L8.324,6.867L8.296,5.842L8.875,6.688L9.454,5.842L9.426,6.867L10.392,6.523L9.767,7.335L10.75,7.625L9.767,7.915L10.392,8.727L9.426,8.383L9.454,9.408L8.875,8.563Z" android:fillType="evenOdd" />
+    </group>
+    <path android:fillColor="#00000000" android:pathData="M20,3.5C21.381,3.5 22.5,4.619 22.5,6V17C22.5,18.381 21.381,19.5 20,19.5H4C2.619,19.5 1.5,18.381 1.5,17V6C1.5,4.619 2.619,3.5 4,3.5H20Z" android:strokeColor="?staticColorGreyAlpha50" android:strokeWidth="1.0" />
+</vector>

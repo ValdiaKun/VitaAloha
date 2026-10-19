@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="one">%1$d dosya yüklenemedi</item>
+        <item quantity="other">%1$d dosya yüklenemedi</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="one">Sınır aşıldı. İletiyi %1$d karakter olacak şekilde kısaltın ve yeniden deneyin.</item>
+        <item quantity="other">Sınır aşıldı. İletiyi %1$d karakter olacak şekilde kısaltın ve yeniden deneyin.</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="one">%1$d istek kaldı</item>
+        <item quantity="other">%1$d istek kaldı</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="one">"%2$s için günlük %1$d ücretsiz isteğiniz var. Premium Plus'a yükseltin ve tüm sınırları kaldırın!"</item>
+        <item quantity="other">"%2$s için günlük %1$d ücretsiz isteğiniz var. Premium Plus'a yükseltin ve tüm sınırları kaldırın!"</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="one">%s yer işareti</item>
+        <item quantity="other">%s yer işaretleri</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="one">Premium statüsüyle en iyi özelliklerimizi %1$d gün boyunca ücretsiz deneyebilirsiniz</item>
+        <item quantity="other">Premium statüsüyle en iyi özelliklerimizi %1$d gün boyunca ücretsiz deneyebilirsiniz</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="one">"Premium statüsüyle en iyi özelliklerimizi %1$d gün boyunca ücretsiz deneyebilirsiniz. Tam deneyimden yararlanmak için Aloha'yı varsayılan tarayıcınız olarak ayarlayın."</item>
+        <item quantity="other">"Premium statüsüyle en iyi özelliklerimizi %1$d gün boyunca ücretsiz deneyebilirsiniz. Tam deneyimden yararlanmak için Aloha'yı varsayılan tarayıcınız olarak ayarlayın."</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="one">Size %1$d gün daha tam erişim sağlıyoruz, tamamen ücretsiz</item>
+        <item quantity="other">Size %1$d gün daha tam erişim sağlıyoruz, tamamen ücretsiz</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="one">"Size %1$d gün daha tam erişim sağlıyoruz, tamamen ücretsiz. Tam deneyimden yararlanmak için Aloha'yı varsayılan tarayıcınız olarak ayarlayın."</item>
+        <item quantity="other">"Size %1$d gün daha tam erişim sağlıyoruz, tamamen ücretsiz. Tam deneyimden yararlanmak için Aloha'yı varsayılan tarayıcınız olarak ayarlayın."</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="one">Yer açmazsanız limiti aşan dosyalar salt okunur duruma gelecektir. Bu dosyalar %1$d gün sonra silinecektir.</item>
+        <item quantity="other">Yer açmazsanız limiti aşan dosyalar salt okunur duruma gelecektir. Bu dosyalar %1$d gün sonra silinecektir.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="one">Aloha Cloud aboneliğiniz bitti. Aloha Cloud %1$d gün içinde kalıcı olarak silinecek. Erişim için planınızı yenileyin.</item>
+        <item quantity="other">Aloha Cloud aboneliğiniz bitti. Aloha Cloud %1$d gün içinde kalıcı olarak silinecek. Erişim için planınızı yenileyin.</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="one">Buluttaki dosyaların silinmemesi için Aloha Cloud aboneliğinizi %1$d gün içinde yenileyin</item>
+        <item quantity="other">Buluttaki dosyaların silinmemesi için Aloha Cloud aboneliğinizi %1$d gün içinde yenileyin</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="one">Aloha Premium aboneliğiniz sona erdi. Dosyalar %1$d gün içinde otomatik olarak silinecek. Dosyaları saklamak ve ek depolama alanı için bir Aloha Cloud planı satın alın.</item>
+        <item quantity="other">Aloha Premium aboneliğiniz sona erdi. Dosyalar %1$d gün içinde otomatik olarak silinecek. Dosyaları saklamak ve ek depolama alanı için bir Aloha Cloud planı satın alın.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="one">Aloha Premium aboneliğiniz sona erdi. Aloha Cloud %1$d gün sonra kalıcı olarak silinecek. Tekrar erişebilmek için planı yenileyin.</item>
+        <item quantity="other">Aloha Premium aboneliğiniz sona erdi. Aloha Cloud %1$d gün sonra kalıcı olarak silinecek. Tekrar erişebilmek için planı yenileyin.</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="one">Buluttaki dosyaların silinmemesi için Aloha Premium aboneliğinizi %1$d gün içinde yenileyin</item>
+        <item quantity="other">Buluttaki dosyaların silinmemesi için Aloha Premium aboneliğinizi %1$d gün içinde yenileyin</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="one">Bazı dosyalar %1$d gün içinde silinecek</item>
+        <item quantity="other">Bazı dosyalar %1$d gün içinde silinecek</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="one">Bazı dosyalar %1$d gün içinde silinecek. Dosyalara erişmek için planınızı yenileyin.</item>
+        <item quantity="other">Bazı dosyalar %1$d gün içinde silinecek. Dosyalara erişmek için planınızı yenileyin.</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="one">Bulut dosyalarınızın kaybolmaması için Premium üyeliğinizi %1$d gün içinde yenileyin</item>
+        <item quantity="other">Bulut dosyalarınızın kaybolmaması için Premium üyeliğinizi %1$d gün içinde yenileyin</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="zero">%d gün</item>
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="one">%d öğe kalıcı olarak silinecek. Çöp kutusunu temizlemek istediğinizden emin misiniz?</item>
+        <item quantity="other">%d öğe kalıcı olarak silinecek. Çöp kutusunu temizlemek istediğinizden emin misiniz?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="one">Yanlış ifade — %1$d deneme kaldı</item>
+        <item quantity="other">Yanlış ifade — %1$d deneme kaldı</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="one">%d öğeden fazlasını seçemezsiniz</item>
+        <item quantity="other">%d öğeden fazlasını seçemezsiniz</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d saniye ileri sar</item>
+        <item quantity="other">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d saniye geri sar</item>
+        <item quantity="other">%d saniye geri sar</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="one">%d öğe</item>
+        <item quantity="other">%d öğe</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="one">Free Premium %1$d gün içinde sona eriyor</item>
+        <item quantity="other">Free Premium %1$d gün içinde sona eriyor</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="one">%1$d gün kaldı</item>
+        <item quantity="other">%1$d gün kaldı</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="one">%1$d deneme kaldı</item>
+        <item quantity="other">%1$d deneme kaldı</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$d ay</item>
+        <item quantity="one">%1$d ay</item>
+        <item quantity="other">%1$d ay</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="one">%1$d ay</item>
+        <item quantity="other">%1$d ay</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildirim</item>
+        <item quantity="other">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="one">%2$d dosyadan %1$d tanesi kaydediliyor</item>
+        <item quantity="other">%2$d dosyadan %1$d tanesi kaydediliyor</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="one">%1$d parola bulundu</item>
+        <item quantity="other">%1$d parola bulundu</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="one">"Premium kullanıcılara özel %1$d'ye ek olarak daha fazla özel özellik mevcuttur"</item>
+        <item quantity="other">"Premium kullanıcılara özel %1$d'ye ek olarak daha fazla özel özellik mevcuttur"</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="one">%d açılır pencere engellendi</item>
+        <item quantity="other">%d açılır pencere engellendi</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="one">&lt;b>Premium statüsündeki&lt;/b> en iyi özelliklerimizi &lt;b>%1$d ay boyunca ücretsiz olarak - bizden deneyebilirsiniz!&lt;/b></item>
+        <item quantity="other">&lt;b>Premium statüsündeki&lt;/b> en iyi özelliklerimizi &lt;b>%1$d ay boyunca ücretsiz olarak - bizden deneyebilirsiniz!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="one">&lt;b>Premium statüsündeki&lt;/b> en iyi özelliklerimizi &lt;b>%1$d hafta boyunca ücretsiz olarak - bizden deneyebilirsiniz!&lt;/b></item>
+        <item quantity="other">&lt;b>Premium statüsündeki&lt;/b> en iyi özelliklerimizi &lt;b>%1$d hafta boyunca ücretsiz olarak - bizden deneyebilirsiniz!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="one">&lt;b>Premium statüsündeki&lt;/b> en iyi özelliklerimizi &lt;b>%1$d yıl boyunca ücretsiz olarak - bizden deneyebilirsiniz!&lt;/b></item>
+        <item quantity="other">&lt;b>Premium statüsündeki&lt;/b> en iyi özelliklerimizi &lt;b>%1$d yıl boyunca ücretsiz olarak - bizden deneyebilirsiniz!&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="one">"İlk ay için %1$s, sonrasında aylık %2$s.
+Otomatik yenilenir. İstediğiniz zaman iptal edin."</item>
+        <item quantity="other">"İlk %3$d ay için aylık %1$s, sonrasında aylık %2$s.
+Otomatik yenilenir. İstediğiniz zaman iptal edin."</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="one">"İlk yıl için %1$s, sonrasında yıllık %2$s.
+Otomatik yenilenir. İstediğiniz zaman iptal edin."</item>
+        <item quantity="other">"İlk %3$d yıl için %1$s, sonrasında yıllık %2$s.
+Otomatik yenilenir. İstediğiniz zaman iptal edin."</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="one">%1$d ay</item>
+        <item quantity="other">ilk %1$d ay</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="one">%1$d yıl</item>
+        <item quantity="other">ilk %1$d yıl</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="one">%2$d ay için aylık %1$s</item>
+        <item quantity="other">%2$d ay için aylık %1$s</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="one">İlk yıl için %1$s</item>
+        <item quantity="other">İlk %2$d yıl için %1$s</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="one">İlk ayınızda %%%1$d indirim</item>
+        <item quantity="other">İlk %2$d ayınızda %%%1$d indirim</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="one">"Arkadaşlarınız %1$d aylık Premium'u tamamen ücretsiz alacak!"</item>
+        <item quantity="other">"Arkadaşlarınız %1$d aylık Premium'u tamamen ücretsiz alacak!"</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="one">"Arkadaşlarınız %1$d haftalık Premium'u tamamen ücretsiz alacak!"</item>
+        <item quantity="other">"Arkadaşlarınız %1$d haftalık Premium'u tamamen ücretsiz alacak!"</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="one">"Arkadaşlarınız %1$d yıllık Premium'a tamamen ücretsiz sahip olacak!"</item>
+        <item quantity="other">"Arkadaşlarınız %1$d yıllık Premium'a tamamen ücretsiz sahip olacak!"</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="one">"Sayenizde, &lt;b>%1$d arkadaşınız&lt;/b> artık Aloha'nın tadını çıkarıyor ve siz de &lt;b>Premium statüsünün&lt;/b> keyfini sürüyorsunuz."</item>
+        <item quantity="other">"Sayenizde, &lt;b>%1$d arkadaşınız&lt;/b> artık Aloha'nın tadını çıkarıyor ve siz de &lt;b>Premium statüsünün&lt;/b> keyfini sürüyorsunuz."</item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="one">Free Premium edinmek için %1$d arkadaşınızı daha davet edin</item>
+        <item quantity="other">Free Premium edinmek için %1$d arkadaşınızı daha davet edin</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="one">%1$d saniyeden daha uzun kayıtlar yapmak ister misiniz?</item>
+        <item quantity="other">%1$d saniyeden daha uzun kayıtlar yapmak ister misiniz?</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="one">"%1$d aylık Premium'unuz var"</item>
+        <item quantity="other">"%1$d aylık Premium'unuz var"</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="one">"%1$d haftalık Premium'unuz var"</item>
+        <item quantity="other">"%1$d haftalık Premium'unuz var"</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="one">"%1$d yıllık Premium'unuz var"</item>
+        <item quantity="other">"%1$d yıllık Premium'unuz var"</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="one">%1$d şifre aktarıldı</item>
+        <item quantity="other">%1$d şifre aktarıldı</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d hafta</item>
+        <item quantity="one">%1$d hafta</item>
+        <item quantity="other">%1$d hafta</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="one">%1$d hafta</item>
+        <item quantity="other">%1$d hafta</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d yıl</item>
+        <item quantity="one">%1$d yıl</item>
+        <item quantity="other">%1$d yıl</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="one">%1$d yıl</item>
+        <item quantity="other">%1$d yıl</item>
+    </plurals>
+</resources>

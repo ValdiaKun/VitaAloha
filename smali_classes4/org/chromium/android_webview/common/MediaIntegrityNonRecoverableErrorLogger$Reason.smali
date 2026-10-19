@@ -1,0 +1,26 @@
+.class interface abstract annotation Lorg/chromium/android_webview/common/MediaIntegrityNonRecoverableErrorLogger$Reason;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/annotation/Annotation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/chromium/android_webview/common/MediaIntegrityNonRecoverableErrorLogger;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2609
+    name = "Reason"
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Retention;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->SOURCE:Ljava/lang/annotation/RetentionPolicy;
+.end annotation
+
+.annotation runtime Ljava/lang/annotation/Target;
+    value = {
+        .enum Ljava/lang/annotation/ElementType;->TYPE_USE:Ljava/lang/annotation/ElementType;
+    }
+.end annotation

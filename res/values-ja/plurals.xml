@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="aloha_cloud_snackbar_upload_failed">
+        <item quantity="other">%1$d個のアップロードに失敗</item>
+    </plurals>
+    <plurals name="assistant_message_message_too_long">
+        <item quantity="other">文字数の制限を超えました。メッセージを%1$d 文字に変更して、再度お試しください。</item>
+    </plurals>
+    <plurals name="assistant_upgrade_banner_requests_left">
+        <item quantity="other">残り%1$d 回</item>
+    </plurals>
+    <plurals name="assistant_welcome_message_3">
+        <item quantity="other">%2$sでは、毎日%1$d回まで無料でリクエスト可能です。Premium Plusにアップグレードすると、すべての制限が解除されます！</item>
+    </plurals>
+    <plurals name="bookmark_folder_subtitle">
+        <item quantity="other">%s ブックマーク</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_custom">
+        <item quantity="other">Premiumステータスで最高の機能を%1$d日間無料でお試しいただけます</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_first_default_browser_promo">
+        <item quantity="other">Premium機能を%1$d日間無料でお試しいただけます。すべての機能を利用するにはAlohaを既定のブラウザに設定してください。</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_custom">
+        <item quantity="other">すべての機能さらに%1$d日間無料でお楽しみいただけます</item>
+    </plurals>
+    <plurals name="churn_prevention_dialog_message_subsequent_default_browser_promo">
+        <item quantity="other">さらに%1$d 日間すべての機能を無料でご利用いただけます。すべての機能を利用するにはAlohaを既定のブラウザに設定してください。</item>
+    </plurals>
+    <plurals name="cloud_downgrade_read_only_note">
+        <item quantity="other">空き容量を確保しない場合、上限を超えたファイルは読み取り専用になり、%1$d日後に削除されます。</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_deletion_message">
+        <item quantity="other">Aloha Cloudのサブスクリプションが終了しました。Aloha Cloudは%1$d日後に完全に削除されます。プランを更新すると、アクセスを復元できます。</item>
+    </plurals>
+    <plurals name="cloud_expired_cloud_renew_notification">
+        <item quantity="other">%1$d日以内にAloha Cloudのサブスクリプションを更新して、クラウドファイルが消えないようにしましょう</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_buy_storage_message">
+        <item quantity="other">お客様のAloha Premiumサブスクリプションが終了しました。ファイルは%1$d日後に自動的に削除されます。ファイルを残し、ストレージを追加するには、Aloha Cloudプランをご購入ください。</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_deletion_message">
+        <item quantity="other">Aloha Premiumのサブスクリプションが終了しました。%1$d日後にAloha Cloudは完全に削除されます。プランを更新すると、アクセスを復元できます。</item>
+    </plurals>
+    <plurals name="cloud_expired_premium_renew_notification">
+        <item quantity="other">%1$d日以内にAloha Premiumサブスクリプションを更新して、クラウドファイルが消えないようにしましょう</item>
+    </plurals>
+    <plurals name="cloud_expiring_files_subtitle">
+        <item quantity="other">%1$d日後に一部のファイルが削除されます</item>
+    </plurals>
+    <plurals name="cloud_offer_subtitle_files_expiring">
+        <item quantity="other">一部のファイルは%1$d日後に削除されます。ファイルへのアクセスを維持するには、プランを更新してください。</item>
+    </plurals>
+    <plurals name="cloud_premium_lost_message">
+        <item quantity="other">削除を防ぐため、%1$d日以内にPremiumを更新してください</item>
+    </plurals>
+    <plurals name="days_amount">
+        <item quantity="other">&lt; %d 日</item>
+    </plurals>
+    <plurals name="dialog_clear_trash_description">
+        <item quantity="other">%d アイテムが完全に削除されます。本当にごみ箱を空にしてよろしいですか?</item>
+    </plurals>
+    <plurals name="encryption_input_error_key_phrase_incorrect_plural">
+        <item quantity="other">フレーズが間違っています — 残り%1$d回</item>
+    </plurals>
+    <plurals name="error_selection_limit_reached_plural">
+        <item quantity="other">%d個を超える項目は選択できません</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d 秒早送り</item>
+        <item quantity="other">%d 秒早送り</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d 秒巻き戻し</item>
+        <item quantity="other">%d 秒巻き戻し</item>
+    </plurals>
+    <plurals name="items_amount">
+        <item quantity="other">%d アイテム</item>
+    </plurals>
+    <plurals name="label_free_premium_days_left_full">
+        <item quantity="other">Free Premium 残り%1$d日</item>
+    </plurals>
+    <plurals name="label_promo_days_left">
+        <item quantity="other">残り%1$d日</item>
+    </plurals>
+    <plurals name="message_attempts_left">
+        <item quantity="other">残り%1$d回</item>
+    </plurals>
+    <plurals name="months_amount">
+        <item quantity="zero">%1$dヶ月</item>
+        <item quantity="other">%1$dヶ月</item>
+    </plurals>
+    <plurals name="months_count_accusative">
+        <item quantity="other">%1$dヶ月</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 件の新しい通知</item>
+        <item quantity="other">%d 件の新しい通知</item>
+    </plurals>
+    <plurals name="notification_file_import_progress_plural">
+        <item quantity="other">%2$d個中、%1$d個を保存中</item>
+    </plurals>
+    <plurals name="passwords_import_found_entries">
+        <item quantity="other">%1$d件のパスワードを検出</item>
+    </plurals>
+    <plurals name="paywall_dialog_message">
+        <item quantity="other">Premiumユーザーはさらに%1$d種類の限定機能が利用可能です</item>
+    </plurals>
+    <plurals name="popup_blocked_count_dialog_many_blocked_plural">
+        <item quantity="other">%d個のポップアップがブロックされました</item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_months">
+        <item quantity="other">&lt;b>Premiumステータス&lt;/b>で最高の機能を&lt;b>%1$dヶ月間無料でお試しいただけます！&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_weeks">
+        <item quantity="other">&lt;b>Premiumステータス&lt;/b>で最高の機能を&lt;b>%1$d週間無料でお試しいただけます！&lt;/b></item>
+    </plurals>
+    <plurals name="premium_description_free_on_us_years">
+        <item quantity="other">&lt;b>Premiumステータス&lt;/b>で最高の機能を&lt;b>%1$d年間無料でお試しいただけます！&lt;/b></item>
+    </plurals>
+    <plurals name="premium_introductory_caption_month">
+        <item quantity="other">"最初の%3$dヶ月間は%1$s/月、その後は%2$s/月です。
+自動更新されます。いつでもキャンセル可能です。"</item>
+    </plurals>
+    <plurals name="premium_introductory_caption_year">
+        <item quantity="other">"最初の%3$d年間は%1$s、その後は%2$s/年です。
+自動更新されます。いつでもキャンセル可能です。"</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_month">
+        <item quantity="other">最初の%1$dヶ月</item>
+    </plurals>
+    <plurals name="premium_introductory_card_duration_year">
+        <item quantity="other">最初の%1$d年</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_month">
+        <item quantity="other">%2$dか月間は%1$s/月</item>
+    </plurals>
+    <plurals name="premium_introductory_card_price_year">
+        <item quantity="other">最初の%2$d年間は%1$s</item>
+    </plurals>
+    <plurals name="premium_introductory_subtitle_month">
+        <item quantity="other">最初の%2$dヶ月間は%1$d%%オフ</item>
+    </plurals>
+    <plurals name="referral_banner_message_month">
+        <item quantity="other">友達はPremiumを%1$dヶ月間無料でご利用いただけます！</item>
+    </plurals>
+    <plurals name="referral_banner_message_week">
+        <item quantity="other">友達はPremiumを%1$d週間無料でご利用いただけます！</item>
+    </plurals>
+    <plurals name="referral_banner_message_year">
+        <item quantity="other">友達はPremiumを%1$d年間無料でご利用いただけます！</item>
+    </plurals>
+    <plurals name="referral_premium_achievement_message_2">
+        <item quantity="other">ご協力により、&lt;b>%1$d人の友達&lt;/b>がAlohaを体験できるようになり、お客様は&lt;b>Premiumステータス&lt;/b>をご利用いただけます。</item>
+    </plurals>
+    <plurals name="referral_stats_description_yes_invite_no_premium">
+        <item quantity="other">あと%1$d人招待してFree Premiumを獲得</item>
+    </plurals>
+    <plurals name="stream_recording_duration_limit_dialog_title">
+        <item quantity="other">録画を%1$d秒より長くしますか？</item>
+    </plurals>
+    <plurals name="title_you_got_premium_month">
+        <item quantity="other">%1$dヶ月間のPremiumを獲得</item>
+    </plurals>
+    <plurals name="title_you_got_premium_week">
+        <item quantity="other">%1$d週間のPremiumを獲得</item>
+    </plurals>
+    <plurals name="title_you_got_premium_year">
+        <item quantity="other">%1$d年間のPremiumを獲得</item>
+    </plurals>
+    <plurals name="toast_message_passwords_import_results">
+        <item quantity="other">%1$d パスワードをインポートしました</item>
+    </plurals>
+    <plurals name="weeks_amount">
+        <item quantity="zero">%1$d週間</item>
+        <item quantity="other">%1$d週間</item>
+    </plurals>
+    <plurals name="weeks_count_accusative">
+        <item quantity="other">%1$d週間</item>
+    </plurals>
+    <plurals name="years_amount">
+        <item quantity="zero">%1$d年</item>
+        <item quantity="other">%1$d年</item>
+    </plurals>
+    <plurals name="years_count_accusative">
+        <item quantity="other">%1$d年</item>
+    </plurals>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_sync" android:enabled="true" android:id="@id/remoteTabsFragment" android:title="@string/tabs_manager_title_synced" />
+    <item android:icon="@drawable/ic_browser" android:enabled="true" android:id="@id/normalTabsFragment" android:title="@string/normal_tab_title" />
+    <item android:icon="@drawable/ic_tab_private_24" android:enabled="true" android:id="@id/privateTabsFragment" android:title="@string/private_tab_title" />
+</menu>

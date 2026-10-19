@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph_cloud" app:startDestination="@id/alohaCloudFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="AlohaCloudFragment" android:name="com.alohamobile.cloud.main.presentation.AlohaCloudFragment" android:id="@id/alohaCloudFragment">
+        <argument android:name="origin" android:defaultValue="CloudFolder" app:argType="com.alohamobile.cloud.navigation.CloudScreenOrigin" />
+        <action android:id="@id/action_alohaCloudFragment_to_nav_graph_cloud_upload_progress" app:destination="@id/nav_graph_cloud_upload_progress" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_alohaCloudFragment_to_cloudExpiringFilesFragment" app:destination="@id/cloudExpiringFilesFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+        <action android:id="@id/action_alohaCloudFragment_to_cloudTrashBinFragment" app:destination="@id/cloudTrashBinFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="CloudExpiringFilesFragment" android:name="com.alohamobile.cloud.main.presentation.expiring.CloudExpiringFilesFragment" android:id="@id/cloudExpiringFilesFragment">
+        <action android:id="@id/action_cloudExpiringFilesFragment_to_cloudTrashBinFragment" app:destination="@id/cloudTrashBinFragment" app:enterAnim="@anim/fragment_enter" app:exitAnim="@anim/fragment_exit" app:launchSingleTop="true" app:popEnterAnim="@anim/fragment_pop_enter" app:popExitAnim="@anim/fragment_pop_exit" />
+    </fragment>
+    <fragment android:label="CloudTrashBinFragment" android:name="com.alohamobile.cloud.main.presentation.trash.CloudTrashBinFragment" android:id="@id/cloudTrashBinFragment" />
+</navigation>

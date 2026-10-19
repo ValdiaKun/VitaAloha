@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="80.0dp" android:src="@drawable/img_sunglasses_80_dark" android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?textAppearanceTitle2" android:textColor="?textColorPrimary" android:gravity="center_horizontal" android:id="@id/privateModeDisclaimerTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/private_mode_zero_title" />
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:gravity="center_horizontal" android:id="@id/privateModeDisclaimerDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:maxHeight="104.0dp" android:text="@string/start_page_private_mode_disclaimer" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" />
+</merge>

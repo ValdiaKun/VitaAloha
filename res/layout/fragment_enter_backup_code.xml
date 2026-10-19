@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <ScrollView android:id="@id/autoInsetsContent" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dp">
+            <TextView android:textAppearance="?textAppearanceTitle3" android:textColor="?textColorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/title_enter_backup_code" />
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/message_enter_backup_code_12_digit" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp">
+                <com.google.android.material.textfield.TextInputLayout android:id="@id/inputLayoutPassword" android:layout_width="0.0dp" android:layout_height="wrap_content" android:hint="@string/input_hint_code" app:counterEnabled="true" app:counterMaxLength="12" app:counterTextAppearance="?textAppearanceCaption2Regular" app:counterTextColor="?textColorTertiary" app:endIconDrawable="@drawable/ic_eye" app:endIconMode="password_toggle" app:endIconTint="?fillColorBrandPrimary" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <com.google.android.material.textfield.TextInputEditText android:id="@id/backupCodeInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="12" android:inputType="textPassword" android:imeOptions="actionDone|flagNoPersonalizedLearning" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton android:id="@id/clearPasswordButton" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginTop="16.0dp" android:layout_marginEnd="48.0dp" app:icon="@drawable/ic_clear_24" app:iconTint="?fillColorPrimary" app:layout_constraintEnd_toEndOf="@id/inputLayoutPassword" app:layout_constraintTop_toTopOf="@id/inputLayoutPassword" style="?materialIconButtonStyle" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.alohamobile.component.button.ProgressButton android:id="@id/confirmButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" app:progressButtonState="disabled" app:progressButtonText="@string/action_confirm" />
+            <com.google.android.material.button.MaterialButton android:layout_gravity="center_horizontal" android:id="@id/useVerificationCodeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/action_use_verification_code" style="?textButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <com.alohamobile.component.view.ZeroScreenView android:id="@id/coolDownZeroScreen" android:background="?layerColorFloor1" android:layout_width="match_parent" android:layout_height="match_parent" app:zeroScreenImage="@drawable/img_cross_120" app:zeroScreenShouldInterceptTouchEvents="true" app:zeroScreenTitle="@string/too_many_attempts" />
+</LinearLayout>

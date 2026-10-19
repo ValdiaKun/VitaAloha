@@ -1,0 +1,30 @@
+.class public abstract Lr8/vjc;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method public static length([Ljava/lang/Object;)I
+    .locals 0
+
+    array-length p0, p0
+
+    return p0
+.end method
+
+.method public static modifiedCalcCircularRefElementOffset(JJ)J
+    .locals 2
+
+    sget-wide v0, Lr8/kzm;->REF_ARRAY_BASE:J
+
+    and-long/2addr p0, p2
+
+    sget p2, Lr8/kzm;->REF_ELEMENT_SHIFT:I
+
+    add-int/lit8 p2, p2, -0x1
+
+    shl-long/2addr p0, p2
+
+    add-long/2addr v0, p0
+
+    return-wide v0
+.end method

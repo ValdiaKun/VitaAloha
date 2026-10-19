@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?layerColorFloor0" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar_separated" />
+    <androidx.core.widget.NestedScrollView android:id="@id/autoInsetsContent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@id/focusInterceptor" android:background="?layerColorFloor1" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/showNewsFeedSwitch" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingShowSwitch="true" app:settingTitle="@string/settings_title_show_news_feed" />
+            <com.alohamobile.component.view.SettingsSeparator android:id="@id/showNewsFeedSwitchSeparator" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/showNewsHeadlinesOnlySwitch" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingShowSwitch="true" app:settingTitle="@string/settings_title_headlines_only" />
+            <com.alohamobile.component.view.SettingsSeparator android:id="@id/showNewsHeadlinesOnlySwitchSeparator" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/speedDialCountry" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingDescription="" app:settingTitle="@string/settings_item_feed_country" />
+            <com.alohamobile.component.view.SettingsSeparator android:id="@id/newsAreaSeparator" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <com.alohamobile.settings.core.view.SettingItemView android:id="@id/newsArea" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingDescription="" app:settingTitle="@string/settings_item_feed_area" />
+            <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:indeterminate="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/categoriesHeaderTitle" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorTertiary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_title_news_categories" />
+                <TextView android:textAppearance="?textAppearanceCaption2Regular" android:textColor="?textColorTertiary" android:id="@id/newsProviderNameHeader" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textAppearance="?textAppearanceBody1Regular" android:textColor="?textColorTertiary" android:id="@id/newsProviderName" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
