@@ -98,7 +98,7 @@ jobs:
           for name, (digest, size) in expected.items():
               data = Path(name).read_bytes()
               assert len(data) == size, f"{name}: wrong size {len(data)}"
-              assert data[:4] == b"\\x7fELF", f"{name}: not an ELF binary / possible LFS pointer"
+              assert data[:4] == b"\x7fELF", f"{name}: not an ELF binary / possible LFS pointer"
               assert hashlib.sha256(data).hexdigest() == digest, f"{name}: SHA-256 mismatch"
               print(f"Native library OK: {name} ({size} bytes, SHA-256 verified)")
 
@@ -142,7 +142,7 @@ jobs:
                   "lib/arm64-v8a/libwebviewchromium.so": "4879d292f9dcccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db",
               }.items():
                   data = z.read(name)
-                  assert data[:4] == b"\\x7fELF", f"{name} is not ELF"
+                  assert data[:4] == b"\x7fELF", f"{name} is not ELF"
                   assert hashlib.sha256(data).hexdigest() == digest, f"{name} changed in APK"
           print("Packaged policy and both native Chromium libraries verified.")
           PY
