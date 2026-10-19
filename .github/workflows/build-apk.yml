@@ -85,12 +85,67 @@ jobs:
           print("App label: VitaAloha")
           PY
 
+      - name: Validate source assets, native libraries, and recording policy
+        run: |
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+
+          expected = {
+              "lib/armeabi-v7a/libwebviewchromium.so": ("569bf6739f9745e17705fd597f1c56f894655e513d93911b18964ceb7996344a", 81417932),
+              "lib/arm64-v8a/libwebviewchromium.so": ("4879d292f9dcccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db", 173017672),
+          }
+          for name, (digest, size) in expected.items():
+              data = Path(name).read_bytes()
+              assert len(data) == size, f"{name}: wrong size {len(data)}"
+              assert data[:4] == b"\\x7fELF", f"{name}: not an ELF binary / possible LFS pointer"
+              assert hashlib.sha256(data).hexdigest() == digest, f"{name}: SHA-256 mismatch"
+              print(f"Native library OK: {name} ({size} bytes, SHA-256 verified)")
+
+          raw = Path("assets/blocked_video_hosts.json").read_text()
+          config = json.loads(raw[::-1])
+          assert "stripchat.com" not in config["videoRecordingDisabled"]
+          assert "stripchat.com" in config["videoDownloadsDisabled"]
+          assert "youtube.com" in config["videoRecordingDisabled"]
+          assert "youtube.com" in config["videoDownloadsDisabled"]
+          assert "example.com" not in config["videoRecordingDisabled"]
+          # The source's existing matcher performs a case-insensitive substring
+          # comparison; ensure no new wildcard/suffix rule was introduced.
+          assert all("*" not in host for hosts in config.values() for host in hosts)
+          print("Recording policy OK: Stripchat recording allowed; download restriction preserved.")
+          print("Regression policy OK: YouTube remains blocked; example.com remains unblocked.")
+          PY
+
       - name: Build unsigned APK
         run: |
           mkdir -p build-output
           java -jar "$RUNNER_TEMP/apktool.jar" b . -f \
             -o "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
           test -s "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
+
+      - name: Verify packaged recording policy and native libraries
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, zipfile
+          from pathlib import Path
+          apk = Path("build-output/VitaAloha-unsigned.apk")
+          with zipfile.ZipFile(apk) as z:
+              names = set(z.namelist())
+              asset_name = "assets/blocked_video_hosts.json"
+              assert asset_name in names, "Packaged recording policy missing"
+              config = json.loads(z.read(asset_name).decode("utf-8")[::-1])
+              assert "stripchat.com" not in config["videoRecordingDisabled"]
+              assert "stripchat.com" in config["videoDownloadsDisabled"]
+              assert "youtube.com" in config["videoRecordingDisabled"]
+              for name, digest in {
+                  "lib/armeabi-v7a/libwebviewchromium.so": "569bf6739f9745e17705fd597f1c56f894655e513d93911b18964ceb7996344a",
+                  "lib/arm64-v8a/libwebviewchromium.so": "4879d292f9dcccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db",
+              }.items():
+                  data = z.read(name)
+                  assert data[:4] == b"\\x7fELF", f"{name} is not ELF"
+                  assert hashlib.sha256(data).hexdigest() == digest, f"{name} changed in APK"
+          print("Packaged policy and both native Chromium libraries verified.")
+          PY
 
       - name: Align APK
         run: |
