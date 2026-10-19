@@ -100,9 +100,11 @@ jobs:
           }
           for name, (digest, size) in expected.items():
               data = Path(name).read_bytes()
+              actual_digest = hashlib.sha256(data).hexdigest()
+              print(f"Native library candidate: {name} size={len(data)} SHA-256={actual_digest}")
               assert len(data) == size, f"{name}: wrong size {len(data)}"
               assert data[:4] == b"\x7fELF", f"{name}: not an ELF binary / possible LFS pointer"
-              assert hashlib.sha256(data).hexdigest() == digest, f"{name}: SHA-256 mismatch"
+              assert actual_digest == digest, f"{name}: SHA-256 mismatch (expected {digest}, got {actual_digest})"
               print(f"Native library OK: {name} ({size} bytes, SHA-256 verified)")
 
           raw = Path("assets/blocked_video_hosts.json").read_text()
