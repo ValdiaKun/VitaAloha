@@ -88,6 +88,26 @@ jobs:
           print("App label: VitaAloha")
           PY
 
+      - name: Verify VitaAloha startup package profile guard
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          smali = Path("smali/r8/ci2.smali").read_text(encoding="utf-8")
+          sig = ".method public static v(Landroid/content/Context;)Lr8/o5c;"
+          assert smali.count(sig) == 1, "Missing unique package-profile lookup method"
+          body = smali.split(sig, 1)[1].split(".end method", 1)[0]
+          expected = (
+              'const-string v0, "com.alohamobile.browser.vitaaloha"',
+              'Ljava/lang/String;->equals(Ljava/lang/Object;)Z',
+              "if-eqz v0, :cond_package_name_check",
+              "sget-object p0, Lr8/z4c;->f:Lr8/z4c;",
+              "return-object p0",
+          )
+          for instruction in expected:
+              assert instruction in body, f"Startup package profile guard missing: {instruction}"
+          print("Startup package profile guard verified before APK build.")
+          PY
+
       - name: Run focused recording-policy regression tests
         run: python3 scripts/test_recording_policy.py
 
