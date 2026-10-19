@@ -96,7 +96,7 @@ jobs:
 
           expected = {
               "lib/armeabi-v7a/libwebviewchromium.so": ("569bf6739f9745e17705fd597f1c56f894655e513d93911b18964ceb7996344a", 81417932),
-              "lib/arm64-v8a/libwebviewchromium.so": ("4879d292f9dcccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db", 173017672),
+              "lib/arm64-v8a/libwebviewchromium.so": ("4879d292f9dccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db", 173017672),
           }
           for name, (digest, size) in expected.items():
               data = Path(name).read_bytes()
@@ -144,7 +144,7 @@ jobs:
               assert "youtube.com" in config["videoRecordingDisabled"]
               for name, digest in {
                   "lib/armeabi-v7a/libwebviewchromium.so": "569bf6739f9745e17705fd597f1c56f894655e513d93911b18964ceb7996344a",
-                  "lib/arm64-v8a/libwebviewchromium.so": "4879d292f9dcccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db",
+                  "lib/arm64-v8a/libwebviewchromium.so": "4879d292f9dccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db",
               }.items():
                   data = z.read(name)
                   assert data[:4] == b"\x7fELF", f"{name} is not ELF"
