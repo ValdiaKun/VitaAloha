@@ -98,13 +98,38 @@ def test_host_regressions() -> None:
         assert actual is expected, f"{url}: expected blocked={expected}, got {actual}"
 
 
+def test_vitaaloha_package_profile() -> None:
+    # BrowserApplication calls ci2.v(Context) during startup. The cloned package
+    # must map to the same release profile as com.alohamobile.browser rather
+    # than falling through to the fatal "Unknown package name" branch.
+    smali = (ROOT / "smali/r8/ci2.smali").read_text(encoding="utf-8")
+    method_sig = ".method public static v(Landroid/content/Context;)Lr8/o5c;"
+    assert smali.count(method_sig) == 1, "Expected unique package-profile method v(Context)"
+    body = smali.split(method_sig, 1)[1].split(".end method", 1)[0]
+    required = (
+        'const-string v0, "com.alohamobile.browser.vitaaloha"',
+        'Ljava/lang/String;->equals(Ljava/lang/Object;)Z',
+        "if-eqz v0, :cond_package_name_check",
+        "sget-object p0, Lr8/z4c;->f:Lr8/z4c;",
+        "return-object p0",
+        ":cond_package_name_check",
+    )
+    for instruction in required:
+        assert instruction in body, f"Missing VitaAloha package-profile instruction: {instruction}"
+    assert body.index('const-string v0, "com.alohamobile.browser.vitaaloha"') < body.index(
+        'invoke-virtual {p0}, Ljava/lang/String;->hashCode()I'
+    )
+
+
 def main() -> None:
     test_policy_asset()
     test_real_smali_path_contains_guard()
     test_host_regressions()
+    test_vitaaloha_package_profile()
     print("PASS: recording/download configuration")
     print("PASS: actual Smali policy method and GURL normalizer references")
     print("PASS: root, subdomain, trailing-dot, blob, case, lookalike, unrelated blocked/allowed host cases")
+    print("PASS: VitaAloha package maps to the Aloha release profile before startup lookup can throw")
     print("NOTE: hostname behavior is modeled statically; runtime Dalvik and server-policy enforcement are not exercised.")
 
 

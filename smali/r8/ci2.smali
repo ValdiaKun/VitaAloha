@@ -1111,6 +1111,20 @@
 
     if-eqz p0, :cond_0
 
+    # VitaAloha is a separate install identity but should use Aloha's release profile.
+    const-string v0, "com.alohamobile.browser.vitaaloha"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_package_name_check
+
+    sget-object p0, Lr8/z4c;->f:Lr8/z4c;
+
+    return-object p0
+
+    :cond_package_name_check
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
