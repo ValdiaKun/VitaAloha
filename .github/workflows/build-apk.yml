@@ -151,6 +151,41 @@ jobs:
             -o "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
           test -s "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
 
+      - name: Verify startup guard is present in packaged DEX
+        run: |
+          java -jar "$RUNNER_TEMP/apktool.jar" d -f \
+            build-output/VitaAloha-unsigned.apk \
+            -o "$RUNNER_TEMP/vitaaloha-packaged-check"
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+
+          root = Path(os.environ["RUNNER_TEMP"]) / "vitaaloha-packaged-check"
+          candidates = list(root.glob("smali*/r8/ci2.smali"))
+          assert candidates, "Packaged APK does not contain r8/ci2.smali"
+          matching = []
+          sig = ".method public static v(Landroid/content/Context;)Lr8/o5c;"
+          for path in candidates:
+              text = path.read_text(encoding="utf-8")
+              if sig in text:
+                  matching.append((path, text))
+          assert len(matching) == 1, f"Expected one packaged package-profile method, found {len(matching)}"
+          path, text = matching[0]
+          body = text.split(sig, 1)[1].split(".end method", 1)[0]
+          expected = (
+              'const-string v0, "com.alohamobile.browser.vitaaloha"',
+              'Ljava/lang/String;->equals(Ljava/lang/Object;)Z',
+              "if-eqz v0, :cond_package_name_check",
+              "sget-object p0, Lr8/z4c;->f:Lr8/z4c;",
+              "return-object p0",
+          )
+          for instruction in expected:
+              assert instruction in body, f"Packaged startup guard missing: {instruction}"
+          assert body.index(expected[0]) < body.index(expected[1]) < body.index(expected[2]) < body.index(expected[3]) < body.index(expected[4]), \
+              "Packaged startup guard instruction order is incorrect"
+          print(f"Packaged startup profile guard verified in {path}.")
+          PY
+
       - name: Verify packaged recording policy and native libraries
         run: |
           python3 - <<'PY'
