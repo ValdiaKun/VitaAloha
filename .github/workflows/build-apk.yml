@@ -1,0 +1,271 @@
+name: Build VitaAloha APK
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+      - "automation/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vitaaloha-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Android SDK tools
+        uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools build-tools;36.0.0'
+
+      - name: Download pinned Apktool
+        run: |
+          curl --fail --location --retry 3 \
+            https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar \
+            --output "$RUNNER_TEMP/apktool.jar"
+          java -jar "$RUNNER_TEMP/apktool.jar" --version
+
+      - name: Set unique package ID and app label
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path("AndroidManifest.xml")
+          manifest = path.read_text()
+          original = 'com.alohamobile.browser'
+          clone = 'com.alohamobile.browser.vitaaloha'
+
+          # Change the install identity, not the app's Java/smali component class names.
+          manifest, count = re.subn(
+              r'(<manifest\b[^>]*\bpackage=")' + re.escape(original) + r'(")',
+              r'\g<1>' + clone + r'\2',
+              manifest,
+              count=1,
+          )
+          if count != 1:
+              raise SystemExit("Could not uniquely update the manifest package ID")
+
+          # Give app-scoped authorities and custom permission names their own namespace.
+          manifest = re.sub(
+              r'(android:authorities=")' + re.escape(original) + r'(?=\.)',
+              r'\g<1>' + clone,
+              manifest,
+          )
+          for suffix in (
+              '.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION',
+              '.permission.CHILD_SERVICE',
+          ):
+              manifest = manifest.replace(original + suffix, clone + suffix)
+
+          # Make the second launcher entry distinguishable from the original app.
+          manifest = manifest.replace('android:label="Aloha"', 'android:label="VitaAloha"', 1)
+          path.write_text(manifest)
+
+          assert 'package="' + clone + '"' in manifest
+          assert 'android:label="VitaAloha"' in manifest
+          print(f"Package ID: {clone}")
+          print("App label: VitaAloha")
+          PY
+
+      - name: Verify VitaAloha startup package profile guard
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          smali = Path("smali/r8/ci2.smali").read_text(encoding="utf-8")
+          sig = ".method public static v(Landroid/content/Context;)Lr8/o5c;"
+          assert smali.count(sig) == 1, "Missing unique package-profile lookup method"
+          body = smali.split(sig, 1)[1].split(".end method", 1)[0]
+          expected = (
+              'const-string v0, "com.alohamobile.browser.vitaaloha"',
+              'Ljava/lang/String;->equals(Ljava/lang/Object;)Z',
+              "if-eqz v0, :cond_package_name_check",
+              "sget-object p0, Lr8/z4c;->f:Lr8/z4c;",
+              "return-object p0",
+          )
+          for instruction in expected:
+              assert instruction in body, f"Startup package profile guard missing: {instruction}"
+          print("Startup package profile guard verified before APK build.")
+          PY
+
+      - name: Run focused recording-policy regression tests
+        run: python3 scripts/test_recording_policy.py
+
+      - name: Validate source assets, native libraries, and recording policy
+        run: |
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+
+          expected = {
+              "lib/armeabi-v7a/libwebviewchromium.so": ("569bf6739f9745e17705fd597f1c56f894655e513d93911b18964ceb7996344a", 81417932),
+              "lib/arm64-v8a/libwebviewchromium.so": ("4879d292f9dccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db", 173017672),
+          }
+          for name, (digest, size) in expected.items():
+              data = Path(name).read_bytes()
+              actual_digest = hashlib.sha256(data).hexdigest()
+              print(f"Native library candidate: {name} size={len(data)} SHA-256={actual_digest}")
+              assert len(data) == size, f"{name}: wrong size {len(data)}"
+              assert data[:4] == b"\x7fELF", f"{name}: not an ELF binary / possible LFS pointer"
+              assert actual_digest == digest, f"{name}: SHA-256 mismatch (expected {digest}, got {actual_digest})"
+              print(f"Native library OK: {name} ({size} bytes, SHA-256 verified)")
+
+          raw = Path("assets/blocked_video_hosts.json").read_text()
+          config = json.loads(raw[::-1])
+          assert "stripchat.com" not in config["videoRecordingDisabled"]
+          assert "stripchat.com" in config["videoDownloadsDisabled"]
+          assert "youtube.com" in config["videoRecordingDisabled"]
+          assert "youtube.com" in config["videoDownloadsDisabled"]
+          assert "example.com" not in config["videoRecordingDisabled"]
+          # The source matches substrings on a GURL-normalized host. Boundary checks
+          # in the recording method preserve lookalike-host blocking.
+          assert all("*" not in host for hosts in config.values() for host in hosts)
+          print("Recording policy OK: Stripchat recording allowed; download restriction preserved.")
+          print("Regression policy OK: YouTube remains blocked; example.com remains unblocked.")
+          PY
+
+      - name: Build unsigned APK
+        run: |
+          mkdir -p build-output
+          java -jar "$RUNNER_TEMP/apktool.jar" b . -f \
+            -o "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
+          test -s "$GITHUB_WORKSPACE/build-output/VitaAloha-unsigned.apk"
+
+      - name: Verify startup guard is present in packaged DEX
+        run: |
+          java -jar "$RUNNER_TEMP/apktool.jar" d -f \
+            build-output/VitaAloha-unsigned.apk \
+            -o "$RUNNER_TEMP/vitaaloha-packaged-check"
+          python3 - <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          root = Path(os.environ["RUNNER_TEMP"]) / "vitaaloha-packaged-check"
+          candidates = list(root.glob("smali*/r8/ci2.smali"))
+          assert candidates, "Packaged APK does not contain r8/ci2.smali"
+          matching = []
+          sig = ".method public static v(Landroid/content/Context;)Lr8/o5c;"
+          for path in candidates:
+              text = path.read_text(encoding="utf-8")
+              if sig in text:
+                  matching.append((path, text))
+          assert len(matching) == 1, f"Expected one packaged package-profile method, found {len(matching)}"
+          path, text = matching[0]
+          body = text.split(sig, 1)[1].split(".end method", 1)[0]
+          # Baksmali can rename branch labels, so validate the instructions and
+          # their order rather than requiring a source-only label name.
+          const = body.find('const-string v0, "com.alohamobile.browser.vitaaloha"')
+          equals = body.find("invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z", const)
+          move = body.find("move-result v0", equals)
+          branch_match = re.search(r"if-eqz v0, :[A-Za-z0-9_]+", body[move + 1:]) if move >= 0 else None
+          assert const >= 0 and equals > const and move > equals and branch_match, \
+              "Packaged package-name equality check missing or out of order"
+          branch = move + 1 + branch_match.start()
+          profile = body.find("sget-object p0, Lr8/z4c;->f:Lr8/z4c;", branch)
+          ret = body.find("return-object p0", profile)
+          assert profile > branch and ret > profile, \
+              "Packaged guard does not return the expected release profile on match"
+          assert "Unknown package name: " in body, "Unexpected package-profile method body"
+          print(f"Packaged startup profile guard verified in {path}.")
+          PY
+
+      - name: Verify packaged recording policy and native libraries
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, zipfile
+          from pathlib import Path
+          apk = Path("build-output/VitaAloha-unsigned.apk")
+          with zipfile.ZipFile(apk) as z:
+              names = set(z.namelist())
+              asset_name = "assets/blocked_video_hosts.json"
+              assert asset_name in names, "Packaged recording policy missing"
+              config = json.loads(z.read(asset_name).decode("utf-8")[::-1])
+              assert "stripchat.com" not in config["videoRecordingDisabled"]
+              assert "stripchat.com" in config["videoDownloadsDisabled"]
+              assert "youtube.com" in config["videoRecordingDisabled"]
+              for name, digest in {
+                  "lib/armeabi-v7a/libwebviewchromium.so": "569bf6739f9745e17705fd597f1c56f894655e513d93911b18964ceb7996344a",
+                  "lib/arm64-v8a/libwebviewchromium.so": "4879d292f9dccade3c706c6f810c8d4c59f49f6fc4d1371b55db4c955f3bb5db",
+              }.items():
+                  data = z.read(name)
+                  assert data[:4] == b"\x7fELF", f"{name} is not ELF"
+                  assert hashlib.sha256(data).hexdigest() == digest, f"{name} changed in APK"
+          print("Packaged policy and both native Chromium libraries verified.")
+          PY
+
+      - name: Align APK
+        run: |
+          "$ANDROID_HOME/build-tools/36.0.0/zipalign" -p -f 4 \
+            build-output/VitaAloha-unsigned.apk \
+            build-output/VitaAloha-aligned.apk
+
+      - name: Create ephemeral CI test key
+        run: |
+          keytool -genkeypair -noprompt \
+            -keystore "$RUNNER_TEMP/vitaaloha-ci.jks" \
+            -storepass ci-test-password \
+            -keypass ci-test-password \
+            -alias vitaaloha-ci \
+            -dname "CN=VitaAloha CI Test,O=Local Build,C=US" \
+            -keyalg RSA -keysize 2048 -validity 3650
+
+      - name: Sign APK for testing
+        run: |
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" sign \
+            --ks "$RUNNER_TEMP/vitaaloha-ci.jks" \
+            --ks-key-alias vitaaloha-ci \
+            --ks-pass pass:ci-test-password \
+            --key-pass pass:ci-test-password \
+            --out build-output/VitaAloha-ci-signed.apk \
+            build-output/VitaAloha-aligned.apk
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose \
+            build-output/VitaAloha-ci-signed.apk
+          "$ANDROID_HOME/build-tools/36.0.0/zipalign" -c -v 4 \
+            build-output/VitaAloha-ci-signed.apk
+
+      - name: Verify package ID and record build metadata
+        run: |
+          {
+            echo "Commit: $GITHUB_SHA"
+            echo "Apktool: $(java -jar "$RUNNER_TEMP/apktool.jar" --version)"
+            echo "Java: $(java -version 2>&1 | head -n 1)"
+            echo "Expected package ID: com.alohamobile.browser.vitaaloha"
+            echo "APK size:"
+            ls -lh build-output/VitaAloha-ci-signed.apk
+            echo "APK SHA-256:"
+            sha256sum build-output/VitaAloha-ci-signed.apk
+            echo "Package metadata:"
+            "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging build-output/VitaAloha-ci-signed.apk | head -n 5
+          } | tee build-output/BUILD-INFO.txt
+          "$ANDROID_HOME/build-tools/36.0.0/aapt" dump badging build-output/VitaAloha-ci-signed.apk | grep -F "package: name='com.alohamobile.browser.vitaaloha'"
+
+      - name: Upload signed test APK and build report
+        uses: actions/upload-artifact@v4
+        with:
+          name: VitaAloha-ci-build-${{ github.run_number }}
+          path: |
+            build-output/VitaAloha-ci-signed.apk
+            build-output/BUILD-INFO.txt
+          if-no-files-found: error
+          retention-days: 14
