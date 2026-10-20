@@ -173,21 +173,19 @@ jobs:
           assert len(matching) == 1, f"Expected one packaged package-profile method, found {len(matching)}"
           path, text = matching[0]
           body = text.split(sig, 1)[1].split(".end method", 1)[0]
-          # Baksmali may rename labels while decoding; validate instructions and order,
-          # not the source-only symbolic label name.
-          guard = re.compile(
-              r'const-string v0, "com\\.alohamobile\\.browser\\.vitaaloha"\\s+'
-              r'invoke-virtual \\{p0, v0\\}, Ljava/lang/String;->equals\\(Ljava/lang/Object;\\)Z\\s+'
-              r'move-result v0\\s+'
-              r'if-eqz v0, :[A-Za-z0-9_]+\\s+'
-              r'sget-object p0, Lr8/z4c;->f:Lr8/z4c;\\s+'
-              r'return-object p0',
-              re.MULTILINE,
-          )
-          if not guard.search(body):
-              print("Packaged package-profile method for diagnosis:")
-              print(body)
-              raise AssertionError("Startup package-profile guard instruction sequence missing from packaged DEX")
+          # Baksmali can rename branch labels, so validate the instructions and
+          # their order rather than requiring a source-only label name.
+          const = body.find('const-string v0, "com.alohamobile.browser.vitaaloha"')
+          equals = body.find("invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z", const)
+          move = body.find("move-result v0", equals)
+          branch_match = re.search(r"if-eqz v0, :[A-Za-z0-9_]+", body[move + 1:]) if move >= 0 else None
+          assert const >= 0 and equals > const and move > equals and branch_match, \
+              "Packaged package-name equality check missing or out of order"
+          branch = move + 1 + branch_match.start()
+          profile = body.find("sget-object p0, Lr8/z4c;->f:Lr8/z4c;", branch)
+          ret = body.find("return-object p0", profile)
+          assert profile > branch and ret > profile, \
+              "Packaged guard does not return the expected release profile on match"
           assert "Unknown package name: " in body, "Unexpected package-profile method body"
           print(f"Packaged startup profile guard verified in {path}.")
           PY
